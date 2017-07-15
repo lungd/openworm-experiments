@@ -59,3 +59,10 @@
     - DB6 at t=165 ms
     - DB7 at t=175 ms
 
+
+# Results
+![fitness evolution](evo.png)
+![neurons membrane potential heatmap](neurons_C2_AVB_DB.png)
+![neurons membrane potential traces](traces_neurons_C2_AVB_DB.png)
+![muscles membrane potential heatmap](muscles_C2_AVB_DB.png)
+![muscles membrane potential traces](traces_muscles_C2_AVB_DB.png)

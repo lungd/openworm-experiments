@@ -42,3 +42,10 @@
 
 - PLACEHOLDER
 
+
+# Results
+![fitness evolution](evo.png)
+![neurons membrane potential heatmap](_.png)
+![neurons membrane potential traces](_.png)
+![muscles membrane potential heatmap](_.png)
+![muscles membrane potential traces](_.png)
