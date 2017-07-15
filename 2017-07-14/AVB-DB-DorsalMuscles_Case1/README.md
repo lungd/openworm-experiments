@@ -2,7 +2,7 @@
 
 # Network:
 
-### Cells to simulate:
+### Neural Circuit:
 
 - Command neurons: AVBL, AVBR
 - Motor neurons: DB1, DB2, DB3, DB4, DB5, DB6, DB7
@@ -19,7 +19,7 @@
     - DB - muscle
 
 
-# Simulation:
+# Simulation Setup:
 
 - duration: 1000 ms
 - dt: 0.05
