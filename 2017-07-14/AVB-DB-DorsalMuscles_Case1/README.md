@@ -61,6 +61,16 @@
 
 
 # Results
+
+- 'DB1/0/GenericNeuronCell/v:first_spike_time': 138.55
+- 'DB2/0/GenericNeuronCell/v:first_spike_time': 143.35
+- 'DB3/0/GenericNeuronCell/v:first_spike_time': 143.7
+- 'DB4/0/GenericNeuronCell/v:first_spike_time': 147.04999999999998
+- 'DB5/0/GenericNeuronCell/v:first_spike_time': 145.95
+- 'DB6/0/GenericNeuronCell/v:first_spike_time': 146.8
+- 'DB7/0/GenericNeuronCell/v:first_spike_time': 144.9
+
+
 ![fitness evolution](evo.png)
 ![neurons membrane potential heatmap](neurons_C2_AVB_DB.png)
 ![neurons membrane potential traces](traces_muscles_AVB_DB_C2.png)
