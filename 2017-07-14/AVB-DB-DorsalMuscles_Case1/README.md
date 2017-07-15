@@ -73,6 +73,6 @@
 
 ![fitness evolution](evo.png)
 ![neurons membrane potential heatmap](neurons_C2_AVB_DB.png)
-![neurons membrane potential traces](traces_muscles_AVB_DB_C2.png)
+![neurons membrane potential traces](traces_neurons_AVB_DB_C2.png)
 ![muscles membrane potential heatmap](muscles_C2_AVB_DB.png)
 ![muscles membrane potential traces](traces_muscles_AVB_DB_C2.png)
