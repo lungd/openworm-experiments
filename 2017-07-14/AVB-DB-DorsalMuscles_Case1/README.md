@@ -2,7 +2,7 @@
 
 # Network:
 
-### Cells to simulate:
+### Neural Circuit:
 
 - Command neurons: AVBL, AVBR
 - Motor neurons: DB1, DB2, DB3, DB4, DB5, DB6, DB7
@@ -19,9 +19,7 @@
     - DB - muscle
 
 
-
-
-# Simulation:
+# Simulation Setup:
 
 - duration: 1000 ms
 - dt: 0.05
@@ -99,4 +97,3 @@ To rerun the simulation for the best individual execute `pynml LEMS_CASE1AVB_DB.
 # Conclusion
 
 Due to the huge number of parameters and the corresponding ranges, the optimizer didn't find a good solution for the given number of max evaluations.
-
