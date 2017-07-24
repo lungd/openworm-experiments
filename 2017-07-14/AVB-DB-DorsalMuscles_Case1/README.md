@@ -14,9 +14,11 @@
     - DB1 - DB2, DB2 - DB3, ..., DB6 - DB7
     - muscle - muscle 
 - Delayed gap-junctions:
-    - AVB(L/R) - DB(1-7) (no connection from AVBL to DB1)
+    - AVB(L/R) - DB(1-7) (no connection between AVBL - DB1)
 - Chemical synapses:
     - DB - muscle
+
+
 
 
 # Simulation:
@@ -30,9 +32,19 @@
 
 # Optimization:
 
+### Parameters for the genetic algorithm:
+
+- Population size: 130
+- Selection size / offspring size: 30
+- Mutation rate: 0.1
+- Termination conditions:
+    - Maximal number of evaluations: 2000
+
+
 ### Parameters to optimize
 
-- conductance, sigma, mu, of the delayed gap-junctions
+- conductance of the gap-junctions.
+- conductance, sigma, mu, of the delayed gap-junctions.
 - conductance of the chemical-synapses.
 
 ### Ranges
@@ -60,6 +72,7 @@
     - DB7 at t=175 ms
 
 
+
 # Results
 
 - 'DB1/0/GenericNeuronCell/v:first_spike_time': 138.55
@@ -76,3 +89,14 @@
 ![neurons membrane potential traces](traces_neuron_AVB_DB_C2.png)
 ![muscles membrane potential heatmap](muscles_C2_AVB_DB.png)
 ![muscles membrane potential traces](traces_muscles_AVB_DB_C2.png)
+
+
+All the parameters for the best individual can be found inside the nml file at [CASE1AVB_DB.nml](CASE1AVB_DB.nml).
+
+To rerun the simulation for the best individual execute `pynml LEMS_CASE1AVB_DB.xml`.
+
+
+# Conclusion
+
+Due to the huge number of parameters and the corresponding ranges, the optimizer didn't find a good solution for the given number of max evaluations.
+
