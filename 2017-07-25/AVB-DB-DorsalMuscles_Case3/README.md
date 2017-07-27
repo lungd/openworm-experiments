@@ -38,63 +38,50 @@
 - Selection size / offspring size: 30
 - Mutation rate: 0.1
 - Termination conditions:
-    - Maximal number of evaluations: 4000
+    - Maximal number of evaluations: 6000
 
 
 ### Parameters to optimize
 
 - conductance of chemical synapses.
-    - DB - muscle
-- conductance of gap-junctions.
-    - muscle - muscle
+    - DB1 - MDL06, MDL08, MDL09, MDR08, MDR09
+    - DB2 - MDL09, MDL10, MDR09, MDR10
 
-
-# TODO: CHANGE following !!
 
 
 ### Ranges
 
-- AVB - DB
-    - conductance: [0.00052, 0.06252] nS
-    - sigma: [0.01, 0.9] per_mV
-    - mu: [-90, 40] mV 
-- DB1 - DB2, ..., DB6 - DB7
-    - conductance: [0.00002, 0.04252] nS
-
+- DB - muscle
+    - conductance: [0.02, 2] nS
 
 
 
 
 ### Targets of the optimization:
 
-- 'first spike time' of DB motor neurons (spike time is depending on the spike theshold of -20 mV).
-    - DB1 at t=115 ms
-    - DB2 at t=125 ms
-    - DB3 at t=135 ms
-    - DB4 at t=145 ms
-    - DB5 at t=155 ms
-    - DB6 at t=165 ms
-    - DB7 at t=175 ms
+- 'mean spike frequency' of muscle cells (spike is depending on the spike theshold of -10 mV).
+    - spike frequency for MDL(6,8,9,10) and MDR(8, 9, 10): 4.0
 
 
 ### Weights of the targets:
 
-- DB1 first spike time: 5
-- DB2-DB7 first spike time: 1
+- every target has the same weight of 1
 
 
 # Results
 
-- 'DB1/0/GenericNeuronCell/v:first_spike_time': 115.55,
-- 'DB2/0/GenericNeuronCell/v:first_spike_time': 130.6,
-- 'DB3/0/GenericNeuronCell/v:first_spike_time': 135.05,
-- 'DB4/0/GenericNeuronCell/v:first_spike_time': 153.25,
-- 'DB5/0/GenericNeuronCell/v:first_spike_time': 155.4,
-- 'DB6/0/GenericNeuronCell/v:first_spike_time': 169.95,
-- 'DB7/0/GenericNeuronCell/v:first_spike_time': 166.55
+- 'MDL06/0/GenericMuscleCell/v:mean_spike_frequency': 4.077194889915738
+- 'MDL08/0/GenericMuscleCell/v:mean_spike_frequency': 4.0106951871657754
+- 'MDL09/0/GenericMuscleCell/v:mean_spike_frequency': 3.9617035325189831
+- 'MDL10/0/GenericMuscleCell/v:mean_spike_frequency': 3.9596119580281135
+- 'MDR08/0/GenericMuscleCell/v:mean_spike_frequency': 4.1014423405564289
+- 'MDR09/0/GenericMuscleCell/v:mean_spike_frequency': 3.9898922729086315
+- 'MDR10/0/GenericMuscleCell/v:mean_spike_frequency': 4.032258064516129
 
 
 ![fitness evolution](evo.png)
+
+![best solution](best.png)
 
 ![neurons membrane potential heatmap](neurons_C2_AVB_DB.png)
 
