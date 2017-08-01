@@ -3,3 +3,10 @@ notebooks/.ipynb_checkpoints
 **/x86_64/*
 **/*.hoc
 **/*.mod
+
+
+# files bigger than 100 MB
+2017-07-31/AVB-DB-DorsalMuscles_Case15/generated_files/c302_C2_AVB_DB.muscles.activity.dat
+2017-07-31/AVB-DB-DorsalMuscles_Case15/generated_files/c302_C2_AVB_DB.muscles.dat
+2017-07-31/AVB-DB-DorsalMuscles_Case16/generated_files/c302_C2_AVB_DB.muscles.activity.dat
+2017-07-31/AVB-DB-DorsalMuscles_Case16/generated_files/c302_C2_AVB_DB.muscles.dat
