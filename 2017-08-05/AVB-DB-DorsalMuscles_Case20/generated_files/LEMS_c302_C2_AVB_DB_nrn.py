@@ -89,7 +89,7 @@ Components:
     DB6_to_MDL21_exc_syn_2conns (Type: gradedSynapse:  conductance=2.4E-10 (SI conductance) delta=0.019 (SI voltage) k=1205.0 (SI per_time) Vth=0.027 (SI voltage) erev=0.037 (SI voltage))
     DB7_to_MDL22_exc_syn_2conns (Type: gradedSynapse:  conductance=4.4000000000000003E-10 (SI conductance) delta=0.019 (SI voltage) k=1205.0 (SI per_time) Vth=0.027 (SI voltage) erev=0.037 (SI voltage))
     DB7_to_MDL23_exc_syn_2conns (Type: gradedSynapse:  conductance=4.3E-10 (SI conductance) delta=0.019 (SI voltage) k=1205.0 (SI per_time) Vth=0.027 (SI voltage) erev=0.037 (SI voltage))
-    DB7_to_MDL24_exc_syn_2conns (Type: gradedSynapse:  conductance=4.2E-10 (SI conductance) delta=0.019 (SI voltage) k=1205.0 (SI per_time) Vth=0.027 (SI voltage) erev=0.037 (SI voltage))
+    DB7_to_MDL24_exc_syn_2conns (Type: gradedSynapse:  conductance=4.3E-10 (SI conductance) delta=0.019 (SI voltage) k=1205.0 (SI per_time) Vth=0.027 (SI voltage) erev=0.037 (SI voltage))
     GenericMuscleCell (Type: cell)
     GenericNeuronCell (Type: cell)
     offset_current (Type: pulseGenerator:  delay=0.0 (SI time) duration=2.0 (SI time) amplitude=0.0 (SI current))

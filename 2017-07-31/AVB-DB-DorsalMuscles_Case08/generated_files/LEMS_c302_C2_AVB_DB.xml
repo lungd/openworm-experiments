@@ -65,7 +65,7 @@ Parameters and setting used to generate this network:
         BioParameter: neuron_to_neuron_elec_syn_weight = 1 (SRC: BlindGuess, certainty 0.1)
         BioParameter: neuron_to_neuron_elec_syn_gbase = 0.01252 nS (SRC: BlindGuess, certainty 0.1)
         BioParameter: neuron_to_muscle_elec_syn_gbase = 0.00152 nS (SRC: BlindGuess, certainty 0.1)
-        BioParameter: muscle_to_muscle_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: muscle_to_muscle_elec_syn_gbase = 0.002 nS (SRC: Set with param_overrides, certainty 0)
         BioParameter: neuron_to_motor_delayed_elec_syn_weight = 1 (SRC: BlindGuess, certainty 0.1)
         BioParameter: neuron_to_motor_delayed_elec_syn_gbase = 0.01252 nS (SRC: BlindGuess, certainty 0.1)
         BioParameter: neuron_to_motor_delayed_elec_syn_sigma = 0.4 (SRC: BlindGuess, certainty 0.1)

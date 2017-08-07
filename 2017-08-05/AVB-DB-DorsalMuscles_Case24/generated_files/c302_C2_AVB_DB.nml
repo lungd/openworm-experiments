@@ -63,7 +63,7 @@ Parameters and setting used to generate this network:
         BioParameter: neuron_to_neuron_elec_syn_weight = 1 (SRC: BlindGuess, certainty 0.1)
         BioParameter: neuron_to_neuron_elec_syn_gbase = 0.01252 nS (SRC: BlindGuess, certainty 0.1)
         BioParameter: neuron_to_muscle_elec_syn_gbase = 0.00152 nS (SRC: BlindGuess, certainty 0.1)
-        BioParameter: muscle_to_muscle_elec_syn_gbase = 0.00011 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: muscle_to_muscle_elec_syn_gbase = 0.00009 nS (SRC: Set with param_overrides, certainty 0)
         BioParameter: neuron_to_motor_delayed_elec_syn_weight = 1 (SRC: BlindGuess, certainty 0.1)
         BioParameter: neuron_to_motor_delayed_elec_syn_gbase = 0.01252 nS (SRC: BlindGuess, certainty 0.1)
         BioParameter: neuron_to_motor_delayed_elec_syn_sigma = 0.4 (SRC: BlindGuess, certainty 0.1)
@@ -271,8 +271,8 @@ Parameters and setting used to generate this network:
     <delayedGapJunction id="DB7_to_AVBL_elec_syn_13conns" weight="1" conductance="0.0310939587543nS" sigma="0.533655913612 per_mV" mu="-44.2515469934 mV" />
     <delayedGapJunction id="DB7_to_AVBR_elec_syn_3conns" weight="1" conductance="0.0107418249547nS" sigma="0.206916730813 per_mV" mu="0.0896939109345 mV" />
     <gapJunction id="DB7_to_DB6_elec_syn_5conns" conductance="0.1126nS"/>
-    <gapJunction id="muscle_to_muscle_elec_syn_15conns" conductance="0.00165nS"/>
-    <gapJunction id="muscle_to_muscle_elec_syn_2conns" conductance="0.00022nS"/>
+    <gapJunction id="muscle_to_muscle_elec_syn_15conns" conductance="0.00135nS"/>
+    <gapJunction id="muscle_to_muscle_elec_syn_2conns" conductance="0.00018nS"/>
     <silentSynapse id="silent"/>
     <gradedSynapse id="neuron_to_neuron_exc_syn_6conns" conductance="2.94nS" delta="5 mV" Vth="00 mV" k="0.5per_ms" erev="-10 mV"/>
     <gradedSynapse id="neuron_to_neuron_exc_syn_2conns" conductance="0.98nS" delta="5 mV" Vth="00 mV" k="0.5per_ms" erev="-10 mV"/>
@@ -357,8 +357,8 @@ Parameters and setting used to generate this network:
         </biophysicalProperties>
     </cell>
     <pulseGenerator id="offset_current" delay="0 ms" duration="2000 ms" amplitude="0pA"/>
-    <pulseGenerator id="stim_AVBL_1" delay="50ms" duration="1900ms" amplitude="15pA"/>
-    <pulseGenerator id="stim_AVBR_1" delay="50ms" duration="1900ms" amplitude="15pA"/>
+    <pulseGenerator id="stim_AVBL_1" delay="50ms" duration="4900ms" amplitude="15pA"/>
+    <pulseGenerator id="stim_AVBR_1" delay="50ms" duration="4900ms" amplitude="15pA"/>
     <network id="c302_C2_AVB_DB">
         <population id="AVBL" component="GenericNeuronCell" type="populationList">
             <instance id="0">

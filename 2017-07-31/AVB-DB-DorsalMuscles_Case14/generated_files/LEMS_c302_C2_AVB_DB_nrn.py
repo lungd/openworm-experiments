@@ -50,8 +50,8 @@ Components:
     DB7_to_AVBL_elec_syn_13conns (Type: delayedGapJunction:  weight=1.0 (dimensionless) conductance=3.10939587543E-11 (SI conductance) sigma=533.6559136120001 (SI per_voltage) mu=-0.0442515469934 (SI voltage))
     DB7_to_AVBR_elec_syn_3conns (Type: delayedGapJunction:  weight=1.0 (dimensionless) conductance=1.0741824954700001E-11 (SI conductance) sigma=206.916730813 (SI per_voltage) mu=8.969391093450001E-5 (SI voltage))
     DB7_to_DB6_elec_syn_5conns (Type: gapJunction:  conductance=1.1260000000000002E-10 (SI conductance))
-    muscle_to_muscle_elec_syn_15conns (Type: gapJunction:  conductance=2.25E-11 (SI conductance))
-    muscle_to_muscle_elec_syn_2conns (Type: gapJunction:  conductance=3.0E-12 (SI conductance))
+    muscle_to_muscle_elec_syn_15conns (Type: gapJunction:  conductance=0.0 (SI conductance))
+    muscle_to_muscle_elec_syn_2conns (Type: gapJunction:  conductance=0.0 (SI conductance))
     silent (Type: silentSynapse)
     neuron_to_neuron_exc_syn_6conns (Type: gradedSynapse:  conductance=2.94E-9 (SI conductance) delta=0.005 (SI voltage) k=500.0 (SI per_time) Vth=0.0 (SI voltage) erev=-0.01 (SI voltage))
     neuron_to_neuron_exc_syn_2conns (Type: gradedSynapse:  conductance=9.800000000000001E-10 (SI conductance) delta=0.005 (SI voltage) k=500.0 (SI per_time) Vth=0.0 (SI voltage) erev=-0.01 (SI voltage))
@@ -64,12 +64,12 @@ Components:
     DB1_to_MDR09_exc_syn_2conns (Type: gradedSynapse:  conductance=2.0000000000000003E-10 (SI conductance) delta=0.019 (SI voltage) k=1205.0 (SI per_time) Vth=0.027 (SI voltage) erev=0.037 (SI voltage))
     DB2_to_MDL09_exc_syn_2conns (Type: gradedSynapse:  conductance=2.0000000000000003E-10 (SI conductance) delta=0.019 (SI voltage) k=1205.0 (SI per_time) Vth=0.027 (SI voltage) erev=0.037 (SI voltage))
     DB2_to_MDL10_exc_syn_4conns (Type: gradedSynapse:  conductance=2.4E-10 (SI conductance) delta=0.019 (SI voltage) k=1205.0 (SI per_time) Vth=0.027 (SI voltage) erev=0.037 (SI voltage))
-    DB2_to_MDL11_exc_syn_5conns (Type: gradedSynapse:  conductance=1.75E-10 (SI conductance) delta=0.019 (SI voltage) k=1205.0 (SI per_time) Vth=0.027 (SI voltage) erev=0.037 (SI voltage))
-    DB2_to_MDL12_exc_syn_1conns (Type: gradedSynapse:  conductance=1.1500000000000002E-10 (SI conductance) delta=0.019 (SI voltage) k=1205.0 (SI per_time) Vth=0.027 (SI voltage) erev=0.037 (SI voltage))
+    DB2_to_MDL11_exc_syn_5conns (Type: gradedSynapse:  conductance=1.5E-10 (SI conductance) delta=0.019 (SI voltage) k=1205.0 (SI per_time) Vth=0.027 (SI voltage) erev=0.037 (SI voltage))
+    DB2_to_MDL12_exc_syn_1conns (Type: gradedSynapse:  conductance=1.0000000000000002E-10 (SI conductance) delta=0.019 (SI voltage) k=1205.0 (SI per_time) Vth=0.027 (SI voltage) erev=0.037 (SI voltage))
     DB2_to_MDR09_exc_syn_1conns (Type: gradedSynapse:  conductance=1.0000000000000002E-10 (SI conductance) delta=0.019 (SI voltage) k=1205.0 (SI per_time) Vth=0.027 (SI voltage) erev=0.037 (SI voltage))
     DB2_to_MDR10_exc_syn_6conns (Type: gradedSynapse:  conductance=6.0E-10 (SI conductance) delta=0.019 (SI voltage) k=1205.0 (SI per_time) Vth=0.027 (SI voltage) erev=0.037 (SI voltage))
     DB2_to_MDR11_exc_syn_8conns (Type: gradedSynapse:  conductance=8.000000000000001E-10 (SI conductance) delta=0.019 (SI voltage) k=1205.0 (SI per_time) Vth=0.027 (SI voltage) erev=0.037 (SI voltage))
-    DB3_to_MDL11_exc_syn_6conns (Type: gradedSynapse:  conductance=9.0E-11 (SI conductance) delta=0.019 (SI voltage) k=1205.0 (SI per_time) Vth=0.027 (SI voltage) erev=0.037 (SI voltage))
+    DB3_to_MDL11_exc_syn_6conns (Type: gradedSynapse:  conductance=6.0E-11 (SI conductance) delta=0.019 (SI voltage) k=1205.0 (SI per_time) Vth=0.027 (SI voltage) erev=0.037 (SI voltage))
     DB3_to_MDL13_exc_syn_3conns (Type: gradedSynapse:  conductance=9.0E-11 (SI conductance) delta=0.019 (SI voltage) k=1205.0 (SI per_time) Vth=0.027 (SI voltage) erev=0.037 (SI voltage))
     DB3_to_MDL14_exc_syn_1conns (Type: gradedSynapse:  conductance=4.0000000000000004E-11 (SI conductance) delta=0.019 (SI voltage) k=1205.0 (SI per_time) Vth=0.027 (SI voltage) erev=0.037 (SI voltage))
     neuron_to_muscle_exc_syn_2conns (Type: gradedSynapse:  conductance=2.0000000000000003E-10 (SI conductance) delta=0.019 (SI voltage) k=1205.0 (SI per_time) Vth=0.027 (SI voltage) erev=0.037 (SI voltage))
@@ -82,7 +82,7 @@ Components:
     neuron_to_muscle_exc_syn_5conns (Type: gradedSynapse:  conductance=5.0E-10 (SI conductance) delta=0.019 (SI voltage) k=1205.0 (SI per_time) Vth=0.027 (SI voltage) erev=0.037 (SI voltage))
     DB5_to_MDL16_exc_syn_2conns (Type: gradedSynapse:  conductance=8.000000000000001E-11 (SI conductance) delta=0.019 (SI voltage) k=1205.0 (SI per_time) Vth=0.027 (SI voltage) erev=0.037 (SI voltage))
     DB5_to_MDL17_exc_syn_2conns (Type: gradedSynapse:  conductance=1.8E-10 (SI conductance) delta=0.019 (SI voltage) k=1205.0 (SI per_time) Vth=0.027 (SI voltage) erev=0.037 (SI voltage))
-    DB5_to_MDL18_exc_syn_2conns (Type: gradedSynapse:  conductance=2.3000000000000003E-10 (SI conductance) delta=0.019 (SI voltage) k=1205.0 (SI per_time) Vth=0.027 (SI voltage) erev=0.037 (SI voltage))
+    DB5_to_MDL18_exc_syn_2conns (Type: gradedSynapse:  conductance=1.6000000000000002E-10 (SI conductance) delta=0.019 (SI voltage) k=1205.0 (SI per_time) Vth=0.027 (SI voltage) erev=0.037 (SI voltage))
     DB5_to_MDL19_exc_syn_2conns (Type: gradedSynapse:  conductance=1.0000000000000002E-10 (SI conductance) delta=0.019 (SI voltage) k=1205.0 (SI per_time) Vth=0.027 (SI voltage) erev=0.037 (SI voltage))
     DB6_to_MDL19_exc_syn_2conns (Type: gradedSynapse:  conductance=1.2E-10 (SI conductance) delta=0.019 (SI voltage) k=1205.0 (SI per_time) Vth=0.027 (SI voltage) erev=0.037 (SI voltage))
     DB6_to_MDL20_exc_syn_2conns (Type: gradedSynapse:  conductance=2.8000000000000007E-10 (SI conductance) delta=0.019 (SI voltage) k=1205.0 (SI per_time) Vth=0.027 (SI voltage) erev=0.037 (SI voltage))
@@ -93,10 +93,10 @@ Components:
     GenericMuscleCell (Type: cell)
     GenericNeuronCell (Type: cell)
     offset_current (Type: pulseGenerator:  delay=0.0 (SI time) duration=2.0 (SI time) amplitude=0.0 (SI current))
-    stim_AVBL_1 (Type: pulseGenerator:  delay=0.05 (SI time) duration=1.9000000000000001 (SI time) amplitude=1.5E-11 (SI current))
-    stim_AVBR_1 (Type: pulseGenerator:  delay=0.05 (SI time) duration=1.9000000000000001 (SI time) amplitude=1.5E-11 (SI current))
+    stim_AVBL_1 (Type: pulseGenerator:  delay=0.05 (SI time) duration=4.9 (SI time) amplitude=1.5E-11 (SI current))
+    stim_AVBR_1 (Type: pulseGenerator:  delay=0.05 (SI time) duration=4.9 (SI time) amplitude=1.5E-11 (SI current))
     c302_C2_AVB_DB (Type: network)
-    sim_c302_C2_AVB_DB (Type: Simulation:  length=2.0 (SI time) step=5.0E-5 (SI time))
+    sim_c302_C2_AVB_DB (Type: Simulation:  length=5.0 (SI time) step=5.0E-5 (SI time))
 
 
     This NEURON file has been generated by org.neuroml.export (see https://github.com/NeuroML/org.neuroml.export)
@@ -2946,2761 +2946,2761 @@ class NeuronSimulation():
         # ######################   Electrical Projection: NC_AVBL_AVBR_Generic_GJ
         print("Adding electrical projection: NC_AVBL_AVBR_Generic_GJ from AVBL to AVBR, with 1 connection(s)")
 
-        #h("objectvar syn_NC_AVBL_AVBR_Generic_GJ_neuron_to_neuron_elec_syn_17conns_A[1]")
+        h("objectvar syn_NC_AVBL_AVBR_Generic_GJ_neuron_to_neuron_elec_syn_17conns_A[1]")
         h("objectvar syn_NC_AVBL_AVBR_Generic_GJ_neuron_to_neuron_elec_syn_17conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_AVBL[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_AVBR[0].soma], weight: 1.0
-        #h("a_AVBL[0].soma { syn_NC_AVBL_AVBR_Generic_GJ_neuron_to_neuron_elec_syn_17conns_A[0] = new neuron_to_neuron_elec_syn_17conns(0.5) }")
+        h("a_AVBL[0].soma { syn_NC_AVBL_AVBR_Generic_GJ_neuron_to_neuron_elec_syn_17conns_A[0] = new neuron_to_neuron_elec_syn_17conns(0.5) }")
         h("a_AVBR[0].soma { syn_NC_AVBL_AVBR_Generic_GJ_neuron_to_neuron_elec_syn_17conns_B[0] = new neuron_to_neuron_elec_syn_17conns(0.5) }")
-        #h("setpointer syn_NC_AVBL_AVBR_Generic_GJ_neuron_to_neuron_elec_syn_17conns_A[0].vpeer, a_AVBR[0].soma.v(0.5)")
+        h("setpointer syn_NC_AVBL_AVBR_Generic_GJ_neuron_to_neuron_elec_syn_17conns_A[0].vpeer, a_AVBR[0].soma.v(0.5)")
         h("setpointer syn_NC_AVBL_AVBR_Generic_GJ_neuron_to_neuron_elec_syn_17conns_B[0].vpeer, a_AVBL[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_AVBL_DB2_Generic_GJ
         print("Adding electrical projection: NC_AVBL_DB2_Generic_GJ from AVBL to DB2, with 1 connection(s)")
 
-        #h("objectvar syn_NC_AVBL_DB2_Generic_GJ_AVBL_to_DB2_elec_syn_4conns_A[1]")
+        h("objectvar syn_NC_AVBL_DB2_Generic_GJ_AVBL_to_DB2_elec_syn_4conns_A[1]")
         h("objectvar syn_NC_AVBL_DB2_Generic_GJ_AVBL_to_DB2_elec_syn_4conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_AVBL[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_DB2[0].soma], weight: 1.0
-        #h("a_AVBL[0].soma { syn_NC_AVBL_DB2_Generic_GJ_AVBL_to_DB2_elec_syn_4conns_A[0] = new AVBL_to_DB2_elec_syn_4conns(0.5) }")
+        h("a_AVBL[0].soma { syn_NC_AVBL_DB2_Generic_GJ_AVBL_to_DB2_elec_syn_4conns_A[0] = new AVBL_to_DB2_elec_syn_4conns(0.5) }")
         h("a_DB2[0].soma { syn_NC_AVBL_DB2_Generic_GJ_AVBL_to_DB2_elec_syn_4conns_B[0] = new AVBL_to_DB2_elec_syn_4conns(0.5) }")
-        #h("setpointer syn_NC_AVBL_DB2_Generic_GJ_AVBL_to_DB2_elec_syn_4conns_A[0].vpeer, a_DB2[0].soma.v(0.5)")
+        h("setpointer syn_NC_AVBL_DB2_Generic_GJ_AVBL_to_DB2_elec_syn_4conns_A[0].vpeer, a_DB2[0].soma.v(0.5)")
         h("setpointer syn_NC_AVBL_DB2_Generic_GJ_AVBL_to_DB2_elec_syn_4conns_B[0].vpeer, a_AVBL[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_AVBL_DB3_Generic_GJ
         print("Adding electrical projection: NC_AVBL_DB3_Generic_GJ from AVBL to DB3, with 1 connection(s)")
 
-        #h("objectvar syn_NC_AVBL_DB3_Generic_GJ_AVBL_to_DB3_elec_syn_9conns_A[1]")
+        h("objectvar syn_NC_AVBL_DB3_Generic_GJ_AVBL_to_DB3_elec_syn_9conns_A[1]")
         h("objectvar syn_NC_AVBL_DB3_Generic_GJ_AVBL_to_DB3_elec_syn_9conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_AVBL[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_DB3[0].soma], weight: 1.0
-        #h("a_AVBL[0].soma { syn_NC_AVBL_DB3_Generic_GJ_AVBL_to_DB3_elec_syn_9conns_A[0] = new AVBL_to_DB3_elec_syn_9conns(0.5) }")
+        h("a_AVBL[0].soma { syn_NC_AVBL_DB3_Generic_GJ_AVBL_to_DB3_elec_syn_9conns_A[0] = new AVBL_to_DB3_elec_syn_9conns(0.5) }")
         h("a_DB3[0].soma { syn_NC_AVBL_DB3_Generic_GJ_AVBL_to_DB3_elec_syn_9conns_B[0] = new AVBL_to_DB3_elec_syn_9conns(0.5) }")
-        #h("setpointer syn_NC_AVBL_DB3_Generic_GJ_AVBL_to_DB3_elec_syn_9conns_A[0].vpeer, a_DB3[0].soma.v(0.5)")
+        h("setpointer syn_NC_AVBL_DB3_Generic_GJ_AVBL_to_DB3_elec_syn_9conns_A[0].vpeer, a_DB3[0].soma.v(0.5)")
         h("setpointer syn_NC_AVBL_DB3_Generic_GJ_AVBL_to_DB3_elec_syn_9conns_B[0].vpeer, a_AVBL[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_AVBL_DB4_Generic_GJ
         print("Adding electrical projection: NC_AVBL_DB4_Generic_GJ from AVBL to DB4, with 1 connection(s)")
 
-        #h("objectvar syn_NC_AVBL_DB4_Generic_GJ_AVBL_to_DB4_elec_syn_4conns_A[1]")
+        h("objectvar syn_NC_AVBL_DB4_Generic_GJ_AVBL_to_DB4_elec_syn_4conns_A[1]")
         h("objectvar syn_NC_AVBL_DB4_Generic_GJ_AVBL_to_DB4_elec_syn_4conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_AVBL[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_DB4[0].soma], weight: 1.0
-        #h("a_AVBL[0].soma { syn_NC_AVBL_DB4_Generic_GJ_AVBL_to_DB4_elec_syn_4conns_A[0] = new AVBL_to_DB4_elec_syn_4conns(0.5) }")
+        h("a_AVBL[0].soma { syn_NC_AVBL_DB4_Generic_GJ_AVBL_to_DB4_elec_syn_4conns_A[0] = new AVBL_to_DB4_elec_syn_4conns(0.5) }")
         h("a_DB4[0].soma { syn_NC_AVBL_DB4_Generic_GJ_AVBL_to_DB4_elec_syn_4conns_B[0] = new AVBL_to_DB4_elec_syn_4conns(0.5) }")
-        #h("setpointer syn_NC_AVBL_DB4_Generic_GJ_AVBL_to_DB4_elec_syn_4conns_A[0].vpeer, a_DB4[0].soma.v(0.5)")
+        h("setpointer syn_NC_AVBL_DB4_Generic_GJ_AVBL_to_DB4_elec_syn_4conns_A[0].vpeer, a_DB4[0].soma.v(0.5)")
         h("setpointer syn_NC_AVBL_DB4_Generic_GJ_AVBL_to_DB4_elec_syn_4conns_B[0].vpeer, a_AVBL[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_AVBL_DB5_Generic_GJ
         print("Adding electrical projection: NC_AVBL_DB5_Generic_GJ from AVBL to DB5, with 1 connection(s)")
 
-        #h("objectvar syn_NC_AVBL_DB5_Generic_GJ_AVBL_to_DB5_elec_syn_3conns_A[1]")
+        h("objectvar syn_NC_AVBL_DB5_Generic_GJ_AVBL_to_DB5_elec_syn_3conns_A[1]")
         h("objectvar syn_NC_AVBL_DB5_Generic_GJ_AVBL_to_DB5_elec_syn_3conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_AVBL[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_DB5[0].soma], weight: 1.0
-        #h("a_AVBL[0].soma { syn_NC_AVBL_DB5_Generic_GJ_AVBL_to_DB5_elec_syn_3conns_A[0] = new AVBL_to_DB5_elec_syn_3conns(0.5) }")
+        h("a_AVBL[0].soma { syn_NC_AVBL_DB5_Generic_GJ_AVBL_to_DB5_elec_syn_3conns_A[0] = new AVBL_to_DB5_elec_syn_3conns(0.5) }")
         h("a_DB5[0].soma { syn_NC_AVBL_DB5_Generic_GJ_AVBL_to_DB5_elec_syn_3conns_B[0] = new AVBL_to_DB5_elec_syn_3conns(0.5) }")
-        #h("setpointer syn_NC_AVBL_DB5_Generic_GJ_AVBL_to_DB5_elec_syn_3conns_A[0].vpeer, a_DB5[0].soma.v(0.5)")
+        h("setpointer syn_NC_AVBL_DB5_Generic_GJ_AVBL_to_DB5_elec_syn_3conns_A[0].vpeer, a_DB5[0].soma.v(0.5)")
         h("setpointer syn_NC_AVBL_DB5_Generic_GJ_AVBL_to_DB5_elec_syn_3conns_B[0].vpeer, a_AVBL[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_AVBL_DB6_Generic_GJ
         print("Adding electrical projection: NC_AVBL_DB6_Generic_GJ from AVBL to DB6, with 1 connection(s)")
 
-        #h("objectvar syn_NC_AVBL_DB6_Generic_GJ_AVBL_to_DB6_elec_syn_4conns_A[1]")
+        h("objectvar syn_NC_AVBL_DB6_Generic_GJ_AVBL_to_DB6_elec_syn_4conns_A[1]")
         h("objectvar syn_NC_AVBL_DB6_Generic_GJ_AVBL_to_DB6_elec_syn_4conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_AVBL[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_DB6[0].soma], weight: 1.0
-        #h("a_AVBL[0].soma { syn_NC_AVBL_DB6_Generic_GJ_AVBL_to_DB6_elec_syn_4conns_A[0] = new AVBL_to_DB6_elec_syn_4conns(0.5) }")
+        h("a_AVBL[0].soma { syn_NC_AVBL_DB6_Generic_GJ_AVBL_to_DB6_elec_syn_4conns_A[0] = new AVBL_to_DB6_elec_syn_4conns(0.5) }")
         h("a_DB6[0].soma { syn_NC_AVBL_DB6_Generic_GJ_AVBL_to_DB6_elec_syn_4conns_B[0] = new AVBL_to_DB6_elec_syn_4conns(0.5) }")
-        #h("setpointer syn_NC_AVBL_DB6_Generic_GJ_AVBL_to_DB6_elec_syn_4conns_A[0].vpeer, a_DB6[0].soma.v(0.5)")
+        h("setpointer syn_NC_AVBL_DB6_Generic_GJ_AVBL_to_DB6_elec_syn_4conns_A[0].vpeer, a_DB6[0].soma.v(0.5)")
         h("setpointer syn_NC_AVBL_DB6_Generic_GJ_AVBL_to_DB6_elec_syn_4conns_B[0].vpeer, a_AVBL[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_AVBL_DB7_Generic_GJ
         print("Adding electrical projection: NC_AVBL_DB7_Generic_GJ from AVBL to DB7, with 1 connection(s)")
 
-        #h("objectvar syn_NC_AVBL_DB7_Generic_GJ_AVBL_to_DB7_elec_syn_13conns_A[1]")
+        h("objectvar syn_NC_AVBL_DB7_Generic_GJ_AVBL_to_DB7_elec_syn_13conns_A[1]")
         h("objectvar syn_NC_AVBL_DB7_Generic_GJ_AVBL_to_DB7_elec_syn_13conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_AVBL[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_DB7[0].soma], weight: 1.0
-        #h("a_AVBL[0].soma { syn_NC_AVBL_DB7_Generic_GJ_AVBL_to_DB7_elec_syn_13conns_A[0] = new AVBL_to_DB7_elec_syn_13conns(0.5) }")
+        h("a_AVBL[0].soma { syn_NC_AVBL_DB7_Generic_GJ_AVBL_to_DB7_elec_syn_13conns_A[0] = new AVBL_to_DB7_elec_syn_13conns(0.5) }")
         h("a_DB7[0].soma { syn_NC_AVBL_DB7_Generic_GJ_AVBL_to_DB7_elec_syn_13conns_B[0] = new AVBL_to_DB7_elec_syn_13conns(0.5) }")
-        #h("setpointer syn_NC_AVBL_DB7_Generic_GJ_AVBL_to_DB7_elec_syn_13conns_A[0].vpeer, a_DB7[0].soma.v(0.5)")
+        h("setpointer syn_NC_AVBL_DB7_Generic_GJ_AVBL_to_DB7_elec_syn_13conns_A[0].vpeer, a_DB7[0].soma.v(0.5)")
         h("setpointer syn_NC_AVBL_DB7_Generic_GJ_AVBL_to_DB7_elec_syn_13conns_B[0].vpeer, a_AVBL[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_AVBR_AVBL_Generic_GJ
         print("Adding electrical projection: NC_AVBR_AVBL_Generic_GJ from AVBR to AVBL, with 1 connection(s)")
 
-        #h("objectvar syn_NC_AVBR_AVBL_Generic_GJ_neuron_to_neuron_elec_syn_17conns_A[1]")
+        h("objectvar syn_NC_AVBR_AVBL_Generic_GJ_neuron_to_neuron_elec_syn_17conns_A[1]")
         h("objectvar syn_NC_AVBR_AVBL_Generic_GJ_neuron_to_neuron_elec_syn_17conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_AVBR[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_AVBL[0].soma], weight: 1.0
-        #h("a_AVBR[0].soma { syn_NC_AVBR_AVBL_Generic_GJ_neuron_to_neuron_elec_syn_17conns_A[0] = new neuron_to_neuron_elec_syn_17conns(0.5) }")
+        h("a_AVBR[0].soma { syn_NC_AVBR_AVBL_Generic_GJ_neuron_to_neuron_elec_syn_17conns_A[0] = new neuron_to_neuron_elec_syn_17conns(0.5) }")
         h("a_AVBL[0].soma { syn_NC_AVBR_AVBL_Generic_GJ_neuron_to_neuron_elec_syn_17conns_B[0] = new neuron_to_neuron_elec_syn_17conns(0.5) }")
-        #h("setpointer syn_NC_AVBR_AVBL_Generic_GJ_neuron_to_neuron_elec_syn_17conns_A[0].vpeer, a_AVBL[0].soma.v(0.5)")
+        h("setpointer syn_NC_AVBR_AVBL_Generic_GJ_neuron_to_neuron_elec_syn_17conns_A[0].vpeer, a_AVBL[0].soma.v(0.5)")
         h("setpointer syn_NC_AVBR_AVBL_Generic_GJ_neuron_to_neuron_elec_syn_17conns_B[0].vpeer, a_AVBR[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_AVBR_DB1_Generic_GJ
         print("Adding electrical projection: NC_AVBR_DB1_Generic_GJ from AVBR to DB1, with 1 connection(s)")
 
-        #h("objectvar syn_NC_AVBR_DB1_Generic_GJ_AVBR_to_DB1_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_AVBR_DB1_Generic_GJ_AVBR_to_DB1_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_AVBR_DB1_Generic_GJ_AVBR_to_DB1_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_AVBR[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_DB1[0].soma], weight: 1.0
-        #h("a_AVBR[0].soma { syn_NC_AVBR_DB1_Generic_GJ_AVBR_to_DB1_elec_syn_15conns_A[0] = new AVBR_to_DB1_elec_syn_15conns(0.5) }")
+        h("a_AVBR[0].soma { syn_NC_AVBR_DB1_Generic_GJ_AVBR_to_DB1_elec_syn_15conns_A[0] = new AVBR_to_DB1_elec_syn_15conns(0.5) }")
         h("a_DB1[0].soma { syn_NC_AVBR_DB1_Generic_GJ_AVBR_to_DB1_elec_syn_15conns_B[0] = new AVBR_to_DB1_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_AVBR_DB1_Generic_GJ_AVBR_to_DB1_elec_syn_15conns_A[0].vpeer, a_DB1[0].soma.v(0.5)")
+        h("setpointer syn_NC_AVBR_DB1_Generic_GJ_AVBR_to_DB1_elec_syn_15conns_A[0].vpeer, a_DB1[0].soma.v(0.5)")
         h("setpointer syn_NC_AVBR_DB1_Generic_GJ_AVBR_to_DB1_elec_syn_15conns_B[0].vpeer, a_AVBR[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_AVBR_DB2_Generic_GJ
         print("Adding electrical projection: NC_AVBR_DB2_Generic_GJ from AVBR to DB2, with 1 connection(s)")
 
-        #h("objectvar syn_NC_AVBR_DB2_Generic_GJ_AVBR_to_DB2_elec_syn_3conns_A[1]")
+        h("objectvar syn_NC_AVBR_DB2_Generic_GJ_AVBR_to_DB2_elec_syn_3conns_A[1]")
         h("objectvar syn_NC_AVBR_DB2_Generic_GJ_AVBR_to_DB2_elec_syn_3conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_AVBR[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_DB2[0].soma], weight: 1.0
-        #h("a_AVBR[0].soma { syn_NC_AVBR_DB2_Generic_GJ_AVBR_to_DB2_elec_syn_3conns_A[0] = new AVBR_to_DB2_elec_syn_3conns(0.5) }")
+        h("a_AVBR[0].soma { syn_NC_AVBR_DB2_Generic_GJ_AVBR_to_DB2_elec_syn_3conns_A[0] = new AVBR_to_DB2_elec_syn_3conns(0.5) }")
         h("a_DB2[0].soma { syn_NC_AVBR_DB2_Generic_GJ_AVBR_to_DB2_elec_syn_3conns_B[0] = new AVBR_to_DB2_elec_syn_3conns(0.5) }")
-        #h("setpointer syn_NC_AVBR_DB2_Generic_GJ_AVBR_to_DB2_elec_syn_3conns_A[0].vpeer, a_DB2[0].soma.v(0.5)")
+        h("setpointer syn_NC_AVBR_DB2_Generic_GJ_AVBR_to_DB2_elec_syn_3conns_A[0].vpeer, a_DB2[0].soma.v(0.5)")
         h("setpointer syn_NC_AVBR_DB2_Generic_GJ_AVBR_to_DB2_elec_syn_3conns_B[0].vpeer, a_AVBR[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_AVBR_DB3_Generic_GJ
         print("Adding electrical projection: NC_AVBR_DB3_Generic_GJ from AVBR to DB3, with 1 connection(s)")
 
-        #h("objectvar syn_NC_AVBR_DB3_Generic_GJ_AVBR_to_DB3_elec_syn_2conns_A[1]")
+        h("objectvar syn_NC_AVBR_DB3_Generic_GJ_AVBR_to_DB3_elec_syn_2conns_A[1]")
         h("objectvar syn_NC_AVBR_DB3_Generic_GJ_AVBR_to_DB3_elec_syn_2conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_AVBR[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_DB3[0].soma], weight: 1.0
-        #h("a_AVBR[0].soma { syn_NC_AVBR_DB3_Generic_GJ_AVBR_to_DB3_elec_syn_2conns_A[0] = new AVBR_to_DB3_elec_syn_2conns(0.5) }")
+        h("a_AVBR[0].soma { syn_NC_AVBR_DB3_Generic_GJ_AVBR_to_DB3_elec_syn_2conns_A[0] = new AVBR_to_DB3_elec_syn_2conns(0.5) }")
         h("a_DB3[0].soma { syn_NC_AVBR_DB3_Generic_GJ_AVBR_to_DB3_elec_syn_2conns_B[0] = new AVBR_to_DB3_elec_syn_2conns(0.5) }")
-        #h("setpointer syn_NC_AVBR_DB3_Generic_GJ_AVBR_to_DB3_elec_syn_2conns_A[0].vpeer, a_DB3[0].soma.v(0.5)")
+        h("setpointer syn_NC_AVBR_DB3_Generic_GJ_AVBR_to_DB3_elec_syn_2conns_A[0].vpeer, a_DB3[0].soma.v(0.5)")
         h("setpointer syn_NC_AVBR_DB3_Generic_GJ_AVBR_to_DB3_elec_syn_2conns_B[0].vpeer, a_AVBR[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_AVBR_DB4_Generic_GJ
         print("Adding electrical projection: NC_AVBR_DB4_Generic_GJ from AVBR to DB4, with 1 connection(s)")
 
-        #h("objectvar syn_NC_AVBR_DB4_Generic_GJ_AVBR_to_DB4_elec_syn_5conns_A[1]")
+        h("objectvar syn_NC_AVBR_DB4_Generic_GJ_AVBR_to_DB4_elec_syn_5conns_A[1]")
         h("objectvar syn_NC_AVBR_DB4_Generic_GJ_AVBR_to_DB4_elec_syn_5conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_AVBR[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_DB4[0].soma], weight: 1.0
-        #h("a_AVBR[0].soma { syn_NC_AVBR_DB4_Generic_GJ_AVBR_to_DB4_elec_syn_5conns_A[0] = new AVBR_to_DB4_elec_syn_5conns(0.5) }")
+        h("a_AVBR[0].soma { syn_NC_AVBR_DB4_Generic_GJ_AVBR_to_DB4_elec_syn_5conns_A[0] = new AVBR_to_DB4_elec_syn_5conns(0.5) }")
         h("a_DB4[0].soma { syn_NC_AVBR_DB4_Generic_GJ_AVBR_to_DB4_elec_syn_5conns_B[0] = new AVBR_to_DB4_elec_syn_5conns(0.5) }")
-        #h("setpointer syn_NC_AVBR_DB4_Generic_GJ_AVBR_to_DB4_elec_syn_5conns_A[0].vpeer, a_DB4[0].soma.v(0.5)")
+        h("setpointer syn_NC_AVBR_DB4_Generic_GJ_AVBR_to_DB4_elec_syn_5conns_A[0].vpeer, a_DB4[0].soma.v(0.5)")
         h("setpointer syn_NC_AVBR_DB4_Generic_GJ_AVBR_to_DB4_elec_syn_5conns_B[0].vpeer, a_AVBR[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_AVBR_DB5_Generic_GJ
         print("Adding electrical projection: NC_AVBR_DB5_Generic_GJ from AVBR to DB5, with 1 connection(s)")
 
-        #h("objectvar syn_NC_AVBR_DB5_Generic_GJ_AVBR_to_DB5_elec_syn_4conns_A[1]")
+        h("objectvar syn_NC_AVBR_DB5_Generic_GJ_AVBR_to_DB5_elec_syn_4conns_A[1]")
         h("objectvar syn_NC_AVBR_DB5_Generic_GJ_AVBR_to_DB5_elec_syn_4conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_AVBR[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_DB5[0].soma], weight: 1.0
-        #h("a_AVBR[0].soma { syn_NC_AVBR_DB5_Generic_GJ_AVBR_to_DB5_elec_syn_4conns_A[0] = new AVBR_to_DB5_elec_syn_4conns(0.5) }")
+        h("a_AVBR[0].soma { syn_NC_AVBR_DB5_Generic_GJ_AVBR_to_DB5_elec_syn_4conns_A[0] = new AVBR_to_DB5_elec_syn_4conns(0.5) }")
         h("a_DB5[0].soma { syn_NC_AVBR_DB5_Generic_GJ_AVBR_to_DB5_elec_syn_4conns_B[0] = new AVBR_to_DB5_elec_syn_4conns(0.5) }")
-        #h("setpointer syn_NC_AVBR_DB5_Generic_GJ_AVBR_to_DB5_elec_syn_4conns_A[0].vpeer, a_DB5[0].soma.v(0.5)")
+        h("setpointer syn_NC_AVBR_DB5_Generic_GJ_AVBR_to_DB5_elec_syn_4conns_A[0].vpeer, a_DB5[0].soma.v(0.5)")
         h("setpointer syn_NC_AVBR_DB5_Generic_GJ_AVBR_to_DB5_elec_syn_4conns_B[0].vpeer, a_AVBR[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_AVBR_DB6_Generic_GJ
         print("Adding electrical projection: NC_AVBR_DB6_Generic_GJ from AVBR to DB6, with 1 connection(s)")
 
-        #h("objectvar syn_NC_AVBR_DB6_Generic_GJ_AVBR_to_DB6_elec_syn_3conns_A[1]")
+        h("objectvar syn_NC_AVBR_DB6_Generic_GJ_AVBR_to_DB6_elec_syn_3conns_A[1]")
         h("objectvar syn_NC_AVBR_DB6_Generic_GJ_AVBR_to_DB6_elec_syn_3conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_AVBR[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_DB6[0].soma], weight: 1.0
-        #h("a_AVBR[0].soma { syn_NC_AVBR_DB6_Generic_GJ_AVBR_to_DB6_elec_syn_3conns_A[0] = new AVBR_to_DB6_elec_syn_3conns(0.5) }")
+        h("a_AVBR[0].soma { syn_NC_AVBR_DB6_Generic_GJ_AVBR_to_DB6_elec_syn_3conns_A[0] = new AVBR_to_DB6_elec_syn_3conns(0.5) }")
         h("a_DB6[0].soma { syn_NC_AVBR_DB6_Generic_GJ_AVBR_to_DB6_elec_syn_3conns_B[0] = new AVBR_to_DB6_elec_syn_3conns(0.5) }")
-        #h("setpointer syn_NC_AVBR_DB6_Generic_GJ_AVBR_to_DB6_elec_syn_3conns_A[0].vpeer, a_DB6[0].soma.v(0.5)")
+        h("setpointer syn_NC_AVBR_DB6_Generic_GJ_AVBR_to_DB6_elec_syn_3conns_A[0].vpeer, a_DB6[0].soma.v(0.5)")
         h("setpointer syn_NC_AVBR_DB6_Generic_GJ_AVBR_to_DB6_elec_syn_3conns_B[0].vpeer, a_AVBR[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_AVBR_DB7_Generic_GJ
         print("Adding electrical projection: NC_AVBR_DB7_Generic_GJ from AVBR to DB7, with 1 connection(s)")
 
-        #h("objectvar syn_NC_AVBR_DB7_Generic_GJ_AVBR_to_DB7_elec_syn_3conns_A[1]")
+        h("objectvar syn_NC_AVBR_DB7_Generic_GJ_AVBR_to_DB7_elec_syn_3conns_A[1]")
         h("objectvar syn_NC_AVBR_DB7_Generic_GJ_AVBR_to_DB7_elec_syn_3conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_AVBR[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_DB7[0].soma], weight: 1.0
-        #h("a_AVBR[0].soma { syn_NC_AVBR_DB7_Generic_GJ_AVBR_to_DB7_elec_syn_3conns_A[0] = new AVBR_to_DB7_elec_syn_3conns(0.5) }")
+        h("a_AVBR[0].soma { syn_NC_AVBR_DB7_Generic_GJ_AVBR_to_DB7_elec_syn_3conns_A[0] = new AVBR_to_DB7_elec_syn_3conns(0.5) }")
         h("a_DB7[0].soma { syn_NC_AVBR_DB7_Generic_GJ_AVBR_to_DB7_elec_syn_3conns_B[0] = new AVBR_to_DB7_elec_syn_3conns(0.5) }")
-        #h("setpointer syn_NC_AVBR_DB7_Generic_GJ_AVBR_to_DB7_elec_syn_3conns_A[0].vpeer, a_DB7[0].soma.v(0.5)")
+        h("setpointer syn_NC_AVBR_DB7_Generic_GJ_AVBR_to_DB7_elec_syn_3conns_A[0].vpeer, a_DB7[0].soma.v(0.5)")
         h("setpointer syn_NC_AVBR_DB7_Generic_GJ_AVBR_to_DB7_elec_syn_3conns_B[0].vpeer, a_AVBR[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_DB1_AVBR_Generic_GJ
         print("Adding electrical projection: NC_DB1_AVBR_Generic_GJ from DB1 to AVBR, with 1 connection(s)")
 
-        #h("objectvar syn_NC_DB1_AVBR_Generic_GJ_DB1_to_AVBR_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_DB1_AVBR_Generic_GJ_DB1_to_AVBR_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_DB1_AVBR_Generic_GJ_DB1_to_AVBR_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_DB1[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_AVBR[0].soma], weight: 1.0
-        #h("a_DB1[0].soma { syn_NC_DB1_AVBR_Generic_GJ_DB1_to_AVBR_elec_syn_15conns_A[0] = new DB1_to_AVBR_elec_syn_15conns(0.5) }")
+        h("a_DB1[0].soma { syn_NC_DB1_AVBR_Generic_GJ_DB1_to_AVBR_elec_syn_15conns_A[0] = new DB1_to_AVBR_elec_syn_15conns(0.5) }")
         h("a_AVBR[0].soma { syn_NC_DB1_AVBR_Generic_GJ_DB1_to_AVBR_elec_syn_15conns_B[0] = new DB1_to_AVBR_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_DB1_AVBR_Generic_GJ_DB1_to_AVBR_elec_syn_15conns_A[0].vpeer, a_AVBR[0].soma.v(0.5)")
+        h("setpointer syn_NC_DB1_AVBR_Generic_GJ_DB1_to_AVBR_elec_syn_15conns_A[0].vpeer, a_AVBR[0].soma.v(0.5)")
         h("setpointer syn_NC_DB1_AVBR_Generic_GJ_DB1_to_AVBR_elec_syn_15conns_B[0].vpeer, a_DB1[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_DB1_DB2_Generic_GJ
         print("Adding electrical projection: NC_DB1_DB2_Generic_GJ from DB1 to DB2, with 1 connection(s)")
 
-        #h("objectvar syn_NC_DB1_DB2_Generic_GJ_DB1_to_DB2_elec_syn_5conns_A[1]")
+        h("objectvar syn_NC_DB1_DB2_Generic_GJ_DB1_to_DB2_elec_syn_5conns_A[1]")
         h("objectvar syn_NC_DB1_DB2_Generic_GJ_DB1_to_DB2_elec_syn_5conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_DB1[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_DB2[0].soma], weight: 1.0
-        #h("a_DB1[0].soma { syn_NC_DB1_DB2_Generic_GJ_DB1_to_DB2_elec_syn_5conns_A[0] = new DB1_to_DB2_elec_syn_5conns(0.5) }")
+        h("a_DB1[0].soma { syn_NC_DB1_DB2_Generic_GJ_DB1_to_DB2_elec_syn_5conns_A[0] = new DB1_to_DB2_elec_syn_5conns(0.5) }")
         h("a_DB2[0].soma { syn_NC_DB1_DB2_Generic_GJ_DB1_to_DB2_elec_syn_5conns_B[0] = new DB1_to_DB2_elec_syn_5conns(0.5) }")
-        #h("setpointer syn_NC_DB1_DB2_Generic_GJ_DB1_to_DB2_elec_syn_5conns_A[0].vpeer, a_DB2[0].soma.v(0.5)")
+        h("setpointer syn_NC_DB1_DB2_Generic_GJ_DB1_to_DB2_elec_syn_5conns_A[0].vpeer, a_DB2[0].soma.v(0.5)")
         h("setpointer syn_NC_DB1_DB2_Generic_GJ_DB1_to_DB2_elec_syn_5conns_B[0].vpeer, a_DB1[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_DB2_AVBL_Generic_GJ
         print("Adding electrical projection: NC_DB2_AVBL_Generic_GJ from DB2 to AVBL, with 1 connection(s)")
 
-        #h("objectvar syn_NC_DB2_AVBL_Generic_GJ_DB2_to_AVBL_elec_syn_4conns_A[1]")
+        h("objectvar syn_NC_DB2_AVBL_Generic_GJ_DB2_to_AVBL_elec_syn_4conns_A[1]")
         h("objectvar syn_NC_DB2_AVBL_Generic_GJ_DB2_to_AVBL_elec_syn_4conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_DB2[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_AVBL[0].soma], weight: 1.0
-        #h("a_DB2[0].soma { syn_NC_DB2_AVBL_Generic_GJ_DB2_to_AVBL_elec_syn_4conns_A[0] = new DB2_to_AVBL_elec_syn_4conns(0.5) }")
+        h("a_DB2[0].soma { syn_NC_DB2_AVBL_Generic_GJ_DB2_to_AVBL_elec_syn_4conns_A[0] = new DB2_to_AVBL_elec_syn_4conns(0.5) }")
         h("a_AVBL[0].soma { syn_NC_DB2_AVBL_Generic_GJ_DB2_to_AVBL_elec_syn_4conns_B[0] = new DB2_to_AVBL_elec_syn_4conns(0.5) }")
-        #h("setpointer syn_NC_DB2_AVBL_Generic_GJ_DB2_to_AVBL_elec_syn_4conns_A[0].vpeer, a_AVBL[0].soma.v(0.5)")
+        h("setpointer syn_NC_DB2_AVBL_Generic_GJ_DB2_to_AVBL_elec_syn_4conns_A[0].vpeer, a_AVBL[0].soma.v(0.5)")
         h("setpointer syn_NC_DB2_AVBL_Generic_GJ_DB2_to_AVBL_elec_syn_4conns_B[0].vpeer, a_DB2[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_DB2_AVBR_Generic_GJ
         print("Adding electrical projection: NC_DB2_AVBR_Generic_GJ from DB2 to AVBR, with 1 connection(s)")
 
-        #h("objectvar syn_NC_DB2_AVBR_Generic_GJ_DB2_to_AVBR_elec_syn_3conns_A[1]")
+        h("objectvar syn_NC_DB2_AVBR_Generic_GJ_DB2_to_AVBR_elec_syn_3conns_A[1]")
         h("objectvar syn_NC_DB2_AVBR_Generic_GJ_DB2_to_AVBR_elec_syn_3conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_DB2[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_AVBR[0].soma], weight: 1.0
-        #h("a_DB2[0].soma { syn_NC_DB2_AVBR_Generic_GJ_DB2_to_AVBR_elec_syn_3conns_A[0] = new DB2_to_AVBR_elec_syn_3conns(0.5) }")
+        h("a_DB2[0].soma { syn_NC_DB2_AVBR_Generic_GJ_DB2_to_AVBR_elec_syn_3conns_A[0] = new DB2_to_AVBR_elec_syn_3conns(0.5) }")
         h("a_AVBR[0].soma { syn_NC_DB2_AVBR_Generic_GJ_DB2_to_AVBR_elec_syn_3conns_B[0] = new DB2_to_AVBR_elec_syn_3conns(0.5) }")
-        #h("setpointer syn_NC_DB2_AVBR_Generic_GJ_DB2_to_AVBR_elec_syn_3conns_A[0].vpeer, a_AVBR[0].soma.v(0.5)")
+        h("setpointer syn_NC_DB2_AVBR_Generic_GJ_DB2_to_AVBR_elec_syn_3conns_A[0].vpeer, a_AVBR[0].soma.v(0.5)")
         h("setpointer syn_NC_DB2_AVBR_Generic_GJ_DB2_to_AVBR_elec_syn_3conns_B[0].vpeer, a_DB2[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_DB2_DB1_Generic_GJ
         print("Adding electrical projection: NC_DB2_DB1_Generic_GJ from DB2 to DB1, with 1 connection(s)")
 
-        #h("objectvar syn_NC_DB2_DB1_Generic_GJ_DB2_to_DB1_elec_syn_5conns_A[1]")
+        h("objectvar syn_NC_DB2_DB1_Generic_GJ_DB2_to_DB1_elec_syn_5conns_A[1]")
         h("objectvar syn_NC_DB2_DB1_Generic_GJ_DB2_to_DB1_elec_syn_5conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_DB2[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_DB1[0].soma], weight: 1.0
-        #h("a_DB2[0].soma { syn_NC_DB2_DB1_Generic_GJ_DB2_to_DB1_elec_syn_5conns_A[0] = new DB2_to_DB1_elec_syn_5conns(0.5) }")
+        h("a_DB2[0].soma { syn_NC_DB2_DB1_Generic_GJ_DB2_to_DB1_elec_syn_5conns_A[0] = new DB2_to_DB1_elec_syn_5conns(0.5) }")
         h("a_DB1[0].soma { syn_NC_DB2_DB1_Generic_GJ_DB2_to_DB1_elec_syn_5conns_B[0] = new DB2_to_DB1_elec_syn_5conns(0.5) }")
-        #h("setpointer syn_NC_DB2_DB1_Generic_GJ_DB2_to_DB1_elec_syn_5conns_A[0].vpeer, a_DB1[0].soma.v(0.5)")
+        h("setpointer syn_NC_DB2_DB1_Generic_GJ_DB2_to_DB1_elec_syn_5conns_A[0].vpeer, a_DB1[0].soma.v(0.5)")
         h("setpointer syn_NC_DB2_DB1_Generic_GJ_DB2_to_DB1_elec_syn_5conns_B[0].vpeer, a_DB2[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_DB2_DB3_Generic_GJ
         print("Adding electrical projection: NC_DB2_DB3_Generic_GJ from DB2 to DB3, with 1 connection(s)")
 
-        #h("objectvar syn_NC_DB2_DB3_Generic_GJ_DB2_to_DB3_elec_syn_14conns_A[1]")
+        h("objectvar syn_NC_DB2_DB3_Generic_GJ_DB2_to_DB3_elec_syn_14conns_A[1]")
         h("objectvar syn_NC_DB2_DB3_Generic_GJ_DB2_to_DB3_elec_syn_14conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_DB2[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_DB3[0].soma], weight: 1.0
-        #h("a_DB2[0].soma { syn_NC_DB2_DB3_Generic_GJ_DB2_to_DB3_elec_syn_14conns_A[0] = new DB2_to_DB3_elec_syn_14conns(0.5) }")
+        h("a_DB2[0].soma { syn_NC_DB2_DB3_Generic_GJ_DB2_to_DB3_elec_syn_14conns_A[0] = new DB2_to_DB3_elec_syn_14conns(0.5) }")
         h("a_DB3[0].soma { syn_NC_DB2_DB3_Generic_GJ_DB2_to_DB3_elec_syn_14conns_B[0] = new DB2_to_DB3_elec_syn_14conns(0.5) }")
-        #h("setpointer syn_NC_DB2_DB3_Generic_GJ_DB2_to_DB3_elec_syn_14conns_A[0].vpeer, a_DB3[0].soma.v(0.5)")
+        h("setpointer syn_NC_DB2_DB3_Generic_GJ_DB2_to_DB3_elec_syn_14conns_A[0].vpeer, a_DB3[0].soma.v(0.5)")
         h("setpointer syn_NC_DB2_DB3_Generic_GJ_DB2_to_DB3_elec_syn_14conns_B[0].vpeer, a_DB2[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_DB3_AVBL_Generic_GJ
         print("Adding electrical projection: NC_DB3_AVBL_Generic_GJ from DB3 to AVBL, with 1 connection(s)")
 
-        #h("objectvar syn_NC_DB3_AVBL_Generic_GJ_DB3_to_AVBL_elec_syn_9conns_A[1]")
+        h("objectvar syn_NC_DB3_AVBL_Generic_GJ_DB3_to_AVBL_elec_syn_9conns_A[1]")
         h("objectvar syn_NC_DB3_AVBL_Generic_GJ_DB3_to_AVBL_elec_syn_9conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_DB3[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_AVBL[0].soma], weight: 1.0
-        #h("a_DB3[0].soma { syn_NC_DB3_AVBL_Generic_GJ_DB3_to_AVBL_elec_syn_9conns_A[0] = new DB3_to_AVBL_elec_syn_9conns(0.5) }")
+        h("a_DB3[0].soma { syn_NC_DB3_AVBL_Generic_GJ_DB3_to_AVBL_elec_syn_9conns_A[0] = new DB3_to_AVBL_elec_syn_9conns(0.5) }")
         h("a_AVBL[0].soma { syn_NC_DB3_AVBL_Generic_GJ_DB3_to_AVBL_elec_syn_9conns_B[0] = new DB3_to_AVBL_elec_syn_9conns(0.5) }")
-        #h("setpointer syn_NC_DB3_AVBL_Generic_GJ_DB3_to_AVBL_elec_syn_9conns_A[0].vpeer, a_AVBL[0].soma.v(0.5)")
+        h("setpointer syn_NC_DB3_AVBL_Generic_GJ_DB3_to_AVBL_elec_syn_9conns_A[0].vpeer, a_AVBL[0].soma.v(0.5)")
         h("setpointer syn_NC_DB3_AVBL_Generic_GJ_DB3_to_AVBL_elec_syn_9conns_B[0].vpeer, a_DB3[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_DB3_AVBR_Generic_GJ
         print("Adding electrical projection: NC_DB3_AVBR_Generic_GJ from DB3 to AVBR, with 1 connection(s)")
 
-        #h("objectvar syn_NC_DB3_AVBR_Generic_GJ_DB3_to_AVBR_elec_syn_2conns_A[1]")
+        h("objectvar syn_NC_DB3_AVBR_Generic_GJ_DB3_to_AVBR_elec_syn_2conns_A[1]")
         h("objectvar syn_NC_DB3_AVBR_Generic_GJ_DB3_to_AVBR_elec_syn_2conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_DB3[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_AVBR[0].soma], weight: 1.0
-        #h("a_DB3[0].soma { syn_NC_DB3_AVBR_Generic_GJ_DB3_to_AVBR_elec_syn_2conns_A[0] = new DB3_to_AVBR_elec_syn_2conns(0.5) }")
+        h("a_DB3[0].soma { syn_NC_DB3_AVBR_Generic_GJ_DB3_to_AVBR_elec_syn_2conns_A[0] = new DB3_to_AVBR_elec_syn_2conns(0.5) }")
         h("a_AVBR[0].soma { syn_NC_DB3_AVBR_Generic_GJ_DB3_to_AVBR_elec_syn_2conns_B[0] = new DB3_to_AVBR_elec_syn_2conns(0.5) }")
-        #h("setpointer syn_NC_DB3_AVBR_Generic_GJ_DB3_to_AVBR_elec_syn_2conns_A[0].vpeer, a_AVBR[0].soma.v(0.5)")
+        h("setpointer syn_NC_DB3_AVBR_Generic_GJ_DB3_to_AVBR_elec_syn_2conns_A[0].vpeer, a_AVBR[0].soma.v(0.5)")
         h("setpointer syn_NC_DB3_AVBR_Generic_GJ_DB3_to_AVBR_elec_syn_2conns_B[0].vpeer, a_DB3[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_DB3_DB2_Generic_GJ
         print("Adding electrical projection: NC_DB3_DB2_Generic_GJ from DB3 to DB2, with 1 connection(s)")
 
-        #h("objectvar syn_NC_DB3_DB2_Generic_GJ_DB3_to_DB2_elec_syn_14conns_A[1]")
+        h("objectvar syn_NC_DB3_DB2_Generic_GJ_DB3_to_DB2_elec_syn_14conns_A[1]")
         h("objectvar syn_NC_DB3_DB2_Generic_GJ_DB3_to_DB2_elec_syn_14conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_DB3[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_DB2[0].soma], weight: 1.0
-        #h("a_DB3[0].soma { syn_NC_DB3_DB2_Generic_GJ_DB3_to_DB2_elec_syn_14conns_A[0] = new DB3_to_DB2_elec_syn_14conns(0.5) }")
+        h("a_DB3[0].soma { syn_NC_DB3_DB2_Generic_GJ_DB3_to_DB2_elec_syn_14conns_A[0] = new DB3_to_DB2_elec_syn_14conns(0.5) }")
         h("a_DB2[0].soma { syn_NC_DB3_DB2_Generic_GJ_DB3_to_DB2_elec_syn_14conns_B[0] = new DB3_to_DB2_elec_syn_14conns(0.5) }")
-        #h("setpointer syn_NC_DB3_DB2_Generic_GJ_DB3_to_DB2_elec_syn_14conns_A[0].vpeer, a_DB2[0].soma.v(0.5)")
+        h("setpointer syn_NC_DB3_DB2_Generic_GJ_DB3_to_DB2_elec_syn_14conns_A[0].vpeer, a_DB2[0].soma.v(0.5)")
         h("setpointer syn_NC_DB3_DB2_Generic_GJ_DB3_to_DB2_elec_syn_14conns_B[0].vpeer, a_DB3[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_DB3_DB4_Generic_GJ
         print("Adding electrical projection: NC_DB3_DB4_Generic_GJ from DB3 to DB4, with 1 connection(s)")
 
-        #h("objectvar syn_NC_DB3_DB4_Generic_GJ_DB3_to_DB4_elec_syn_1conns_A[1]")
+        h("objectvar syn_NC_DB3_DB4_Generic_GJ_DB3_to_DB4_elec_syn_1conns_A[1]")
         h("objectvar syn_NC_DB3_DB4_Generic_GJ_DB3_to_DB4_elec_syn_1conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_DB3[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_DB4[0].soma], weight: 1.0
-        #h("a_DB3[0].soma { syn_NC_DB3_DB4_Generic_GJ_DB3_to_DB4_elec_syn_1conns_A[0] = new DB3_to_DB4_elec_syn_1conns(0.5) }")
+        h("a_DB3[0].soma { syn_NC_DB3_DB4_Generic_GJ_DB3_to_DB4_elec_syn_1conns_A[0] = new DB3_to_DB4_elec_syn_1conns(0.5) }")
         h("a_DB4[0].soma { syn_NC_DB3_DB4_Generic_GJ_DB3_to_DB4_elec_syn_1conns_B[0] = new DB3_to_DB4_elec_syn_1conns(0.5) }")
-        #h("setpointer syn_NC_DB3_DB4_Generic_GJ_DB3_to_DB4_elec_syn_1conns_A[0].vpeer, a_DB4[0].soma.v(0.5)")
+        h("setpointer syn_NC_DB3_DB4_Generic_GJ_DB3_to_DB4_elec_syn_1conns_A[0].vpeer, a_DB4[0].soma.v(0.5)")
         h("setpointer syn_NC_DB3_DB4_Generic_GJ_DB3_to_DB4_elec_syn_1conns_B[0].vpeer, a_DB3[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_DB4_AVBL_Generic_GJ
         print("Adding electrical projection: NC_DB4_AVBL_Generic_GJ from DB4 to AVBL, with 1 connection(s)")
 
-        #h("objectvar syn_NC_DB4_AVBL_Generic_GJ_DB4_to_AVBL_elec_syn_4conns_A[1]")
+        h("objectvar syn_NC_DB4_AVBL_Generic_GJ_DB4_to_AVBL_elec_syn_4conns_A[1]")
         h("objectvar syn_NC_DB4_AVBL_Generic_GJ_DB4_to_AVBL_elec_syn_4conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_DB4[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_AVBL[0].soma], weight: 1.0
-        #h("a_DB4[0].soma { syn_NC_DB4_AVBL_Generic_GJ_DB4_to_AVBL_elec_syn_4conns_A[0] = new DB4_to_AVBL_elec_syn_4conns(0.5) }")
+        h("a_DB4[0].soma { syn_NC_DB4_AVBL_Generic_GJ_DB4_to_AVBL_elec_syn_4conns_A[0] = new DB4_to_AVBL_elec_syn_4conns(0.5) }")
         h("a_AVBL[0].soma { syn_NC_DB4_AVBL_Generic_GJ_DB4_to_AVBL_elec_syn_4conns_B[0] = new DB4_to_AVBL_elec_syn_4conns(0.5) }")
-        #h("setpointer syn_NC_DB4_AVBL_Generic_GJ_DB4_to_AVBL_elec_syn_4conns_A[0].vpeer, a_AVBL[0].soma.v(0.5)")
+        h("setpointer syn_NC_DB4_AVBL_Generic_GJ_DB4_to_AVBL_elec_syn_4conns_A[0].vpeer, a_AVBL[0].soma.v(0.5)")
         h("setpointer syn_NC_DB4_AVBL_Generic_GJ_DB4_to_AVBL_elec_syn_4conns_B[0].vpeer, a_DB4[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_DB4_AVBR_Generic_GJ
         print("Adding electrical projection: NC_DB4_AVBR_Generic_GJ from DB4 to AVBR, with 1 connection(s)")
 
-        #h("objectvar syn_NC_DB4_AVBR_Generic_GJ_DB4_to_AVBR_elec_syn_5conns_A[1]")
+        h("objectvar syn_NC_DB4_AVBR_Generic_GJ_DB4_to_AVBR_elec_syn_5conns_A[1]")
         h("objectvar syn_NC_DB4_AVBR_Generic_GJ_DB4_to_AVBR_elec_syn_5conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_DB4[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_AVBR[0].soma], weight: 1.0
-        #h("a_DB4[0].soma { syn_NC_DB4_AVBR_Generic_GJ_DB4_to_AVBR_elec_syn_5conns_A[0] = new DB4_to_AVBR_elec_syn_5conns(0.5) }")
+        h("a_DB4[0].soma { syn_NC_DB4_AVBR_Generic_GJ_DB4_to_AVBR_elec_syn_5conns_A[0] = new DB4_to_AVBR_elec_syn_5conns(0.5) }")
         h("a_AVBR[0].soma { syn_NC_DB4_AVBR_Generic_GJ_DB4_to_AVBR_elec_syn_5conns_B[0] = new DB4_to_AVBR_elec_syn_5conns(0.5) }")
-        #h("setpointer syn_NC_DB4_AVBR_Generic_GJ_DB4_to_AVBR_elec_syn_5conns_A[0].vpeer, a_AVBR[0].soma.v(0.5)")
+        h("setpointer syn_NC_DB4_AVBR_Generic_GJ_DB4_to_AVBR_elec_syn_5conns_A[0].vpeer, a_AVBR[0].soma.v(0.5)")
         h("setpointer syn_NC_DB4_AVBR_Generic_GJ_DB4_to_AVBR_elec_syn_5conns_B[0].vpeer, a_DB4[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_DB4_DB3_Generic_GJ
         print("Adding electrical projection: NC_DB4_DB3_Generic_GJ from DB4 to DB3, with 1 connection(s)")
 
-        #h("objectvar syn_NC_DB4_DB3_Generic_GJ_DB4_to_DB3_elec_syn_1conns_A[1]")
+        h("objectvar syn_NC_DB4_DB3_Generic_GJ_DB4_to_DB3_elec_syn_1conns_A[1]")
         h("objectvar syn_NC_DB4_DB3_Generic_GJ_DB4_to_DB3_elec_syn_1conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_DB4[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_DB3[0].soma], weight: 1.0
-        #h("a_DB4[0].soma { syn_NC_DB4_DB3_Generic_GJ_DB4_to_DB3_elec_syn_1conns_A[0] = new DB4_to_DB3_elec_syn_1conns(0.5) }")
+        h("a_DB4[0].soma { syn_NC_DB4_DB3_Generic_GJ_DB4_to_DB3_elec_syn_1conns_A[0] = new DB4_to_DB3_elec_syn_1conns(0.5) }")
         h("a_DB3[0].soma { syn_NC_DB4_DB3_Generic_GJ_DB4_to_DB3_elec_syn_1conns_B[0] = new DB4_to_DB3_elec_syn_1conns(0.5) }")
-        #h("setpointer syn_NC_DB4_DB3_Generic_GJ_DB4_to_DB3_elec_syn_1conns_A[0].vpeer, a_DB3[0].soma.v(0.5)")
+        h("setpointer syn_NC_DB4_DB3_Generic_GJ_DB4_to_DB3_elec_syn_1conns_A[0].vpeer, a_DB3[0].soma.v(0.5)")
         h("setpointer syn_NC_DB4_DB3_Generic_GJ_DB4_to_DB3_elec_syn_1conns_B[0].vpeer, a_DB4[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_DB4_DB5_Generic_GJ
         print("Adding electrical projection: NC_DB4_DB5_Generic_GJ from DB4 to DB5, with 1 connection(s)")
 
-        #h("objectvar syn_NC_DB4_DB5_Generic_GJ_DB4_to_DB5_elec_syn_5conns_A[1]")
+        h("objectvar syn_NC_DB4_DB5_Generic_GJ_DB4_to_DB5_elec_syn_5conns_A[1]")
         h("objectvar syn_NC_DB4_DB5_Generic_GJ_DB4_to_DB5_elec_syn_5conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_DB4[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_DB5[0].soma], weight: 1.0
-        #h("a_DB4[0].soma { syn_NC_DB4_DB5_Generic_GJ_DB4_to_DB5_elec_syn_5conns_A[0] = new DB4_to_DB5_elec_syn_5conns(0.5) }")
+        h("a_DB4[0].soma { syn_NC_DB4_DB5_Generic_GJ_DB4_to_DB5_elec_syn_5conns_A[0] = new DB4_to_DB5_elec_syn_5conns(0.5) }")
         h("a_DB5[0].soma { syn_NC_DB4_DB5_Generic_GJ_DB4_to_DB5_elec_syn_5conns_B[0] = new DB4_to_DB5_elec_syn_5conns(0.5) }")
-        #h("setpointer syn_NC_DB4_DB5_Generic_GJ_DB4_to_DB5_elec_syn_5conns_A[0].vpeer, a_DB5[0].soma.v(0.5)")
+        h("setpointer syn_NC_DB4_DB5_Generic_GJ_DB4_to_DB5_elec_syn_5conns_A[0].vpeer, a_DB5[0].soma.v(0.5)")
         h("setpointer syn_NC_DB4_DB5_Generic_GJ_DB4_to_DB5_elec_syn_5conns_B[0].vpeer, a_DB4[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_DB5_AVBL_Generic_GJ
         print("Adding electrical projection: NC_DB5_AVBL_Generic_GJ from DB5 to AVBL, with 1 connection(s)")
 
-        #h("objectvar syn_NC_DB5_AVBL_Generic_GJ_DB5_to_AVBL_elec_syn_3conns_A[1]")
+        h("objectvar syn_NC_DB5_AVBL_Generic_GJ_DB5_to_AVBL_elec_syn_3conns_A[1]")
         h("objectvar syn_NC_DB5_AVBL_Generic_GJ_DB5_to_AVBL_elec_syn_3conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_DB5[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_AVBL[0].soma], weight: 1.0
-        #h("a_DB5[0].soma { syn_NC_DB5_AVBL_Generic_GJ_DB5_to_AVBL_elec_syn_3conns_A[0] = new DB5_to_AVBL_elec_syn_3conns(0.5) }")
+        h("a_DB5[0].soma { syn_NC_DB5_AVBL_Generic_GJ_DB5_to_AVBL_elec_syn_3conns_A[0] = new DB5_to_AVBL_elec_syn_3conns(0.5) }")
         h("a_AVBL[0].soma { syn_NC_DB5_AVBL_Generic_GJ_DB5_to_AVBL_elec_syn_3conns_B[0] = new DB5_to_AVBL_elec_syn_3conns(0.5) }")
-        #h("setpointer syn_NC_DB5_AVBL_Generic_GJ_DB5_to_AVBL_elec_syn_3conns_A[0].vpeer, a_AVBL[0].soma.v(0.5)")
+        h("setpointer syn_NC_DB5_AVBL_Generic_GJ_DB5_to_AVBL_elec_syn_3conns_A[0].vpeer, a_AVBL[0].soma.v(0.5)")
         h("setpointer syn_NC_DB5_AVBL_Generic_GJ_DB5_to_AVBL_elec_syn_3conns_B[0].vpeer, a_DB5[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_DB5_AVBR_Generic_GJ
         print("Adding electrical projection: NC_DB5_AVBR_Generic_GJ from DB5 to AVBR, with 1 connection(s)")
 
-        #h("objectvar syn_NC_DB5_AVBR_Generic_GJ_DB5_to_AVBR_elec_syn_4conns_A[1]")
+        h("objectvar syn_NC_DB5_AVBR_Generic_GJ_DB5_to_AVBR_elec_syn_4conns_A[1]")
         h("objectvar syn_NC_DB5_AVBR_Generic_GJ_DB5_to_AVBR_elec_syn_4conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_DB5[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_AVBR[0].soma], weight: 1.0
-        #h("a_DB5[0].soma { syn_NC_DB5_AVBR_Generic_GJ_DB5_to_AVBR_elec_syn_4conns_A[0] = new DB5_to_AVBR_elec_syn_4conns(0.5) }")
+        h("a_DB5[0].soma { syn_NC_DB5_AVBR_Generic_GJ_DB5_to_AVBR_elec_syn_4conns_A[0] = new DB5_to_AVBR_elec_syn_4conns(0.5) }")
         h("a_AVBR[0].soma { syn_NC_DB5_AVBR_Generic_GJ_DB5_to_AVBR_elec_syn_4conns_B[0] = new DB5_to_AVBR_elec_syn_4conns(0.5) }")
-        #h("setpointer syn_NC_DB5_AVBR_Generic_GJ_DB5_to_AVBR_elec_syn_4conns_A[0].vpeer, a_AVBR[0].soma.v(0.5)")
+        h("setpointer syn_NC_DB5_AVBR_Generic_GJ_DB5_to_AVBR_elec_syn_4conns_A[0].vpeer, a_AVBR[0].soma.v(0.5)")
         h("setpointer syn_NC_DB5_AVBR_Generic_GJ_DB5_to_AVBR_elec_syn_4conns_B[0].vpeer, a_DB5[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_DB5_DB4_Generic_GJ
         print("Adding electrical projection: NC_DB5_DB4_Generic_GJ from DB5 to DB4, with 1 connection(s)")
 
-        #h("objectvar syn_NC_DB5_DB4_Generic_GJ_DB5_to_DB4_elec_syn_5conns_A[1]")
+        h("objectvar syn_NC_DB5_DB4_Generic_GJ_DB5_to_DB4_elec_syn_5conns_A[1]")
         h("objectvar syn_NC_DB5_DB4_Generic_GJ_DB5_to_DB4_elec_syn_5conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_DB5[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_DB4[0].soma], weight: 1.0
-        #h("a_DB5[0].soma { syn_NC_DB5_DB4_Generic_GJ_DB5_to_DB4_elec_syn_5conns_A[0] = new DB5_to_DB4_elec_syn_5conns(0.5) }")
+        h("a_DB5[0].soma { syn_NC_DB5_DB4_Generic_GJ_DB5_to_DB4_elec_syn_5conns_A[0] = new DB5_to_DB4_elec_syn_5conns(0.5) }")
         h("a_DB4[0].soma { syn_NC_DB5_DB4_Generic_GJ_DB5_to_DB4_elec_syn_5conns_B[0] = new DB5_to_DB4_elec_syn_5conns(0.5) }")
-        #h("setpointer syn_NC_DB5_DB4_Generic_GJ_DB5_to_DB4_elec_syn_5conns_A[0].vpeer, a_DB4[0].soma.v(0.5)")
+        h("setpointer syn_NC_DB5_DB4_Generic_GJ_DB5_to_DB4_elec_syn_5conns_A[0].vpeer, a_DB4[0].soma.v(0.5)")
         h("setpointer syn_NC_DB5_DB4_Generic_GJ_DB5_to_DB4_elec_syn_5conns_B[0].vpeer, a_DB5[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_DB5_DB6_Generic_GJ
         print("Adding electrical projection: NC_DB5_DB6_Generic_GJ from DB5 to DB6, with 1 connection(s)")
 
-        #h("objectvar syn_NC_DB5_DB6_Generic_GJ_DB5_to_DB6_elec_syn_5conns_A[1]")
+        h("objectvar syn_NC_DB5_DB6_Generic_GJ_DB5_to_DB6_elec_syn_5conns_A[1]")
         h("objectvar syn_NC_DB5_DB6_Generic_GJ_DB5_to_DB6_elec_syn_5conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_DB5[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_DB6[0].soma], weight: 1.0
-        #h("a_DB5[0].soma { syn_NC_DB5_DB6_Generic_GJ_DB5_to_DB6_elec_syn_5conns_A[0] = new DB5_to_DB6_elec_syn_5conns(0.5) }")
+        h("a_DB5[0].soma { syn_NC_DB5_DB6_Generic_GJ_DB5_to_DB6_elec_syn_5conns_A[0] = new DB5_to_DB6_elec_syn_5conns(0.5) }")
         h("a_DB6[0].soma { syn_NC_DB5_DB6_Generic_GJ_DB5_to_DB6_elec_syn_5conns_B[0] = new DB5_to_DB6_elec_syn_5conns(0.5) }")
-        #h("setpointer syn_NC_DB5_DB6_Generic_GJ_DB5_to_DB6_elec_syn_5conns_A[0].vpeer, a_DB6[0].soma.v(0.5)")
+        h("setpointer syn_NC_DB5_DB6_Generic_GJ_DB5_to_DB6_elec_syn_5conns_A[0].vpeer, a_DB6[0].soma.v(0.5)")
         h("setpointer syn_NC_DB5_DB6_Generic_GJ_DB5_to_DB6_elec_syn_5conns_B[0].vpeer, a_DB5[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_DB6_AVBL_Generic_GJ
         print("Adding electrical projection: NC_DB6_AVBL_Generic_GJ from DB6 to AVBL, with 1 connection(s)")
 
-        #h("objectvar syn_NC_DB6_AVBL_Generic_GJ_DB6_to_AVBL_elec_syn_3conns_A[1]")
+        h("objectvar syn_NC_DB6_AVBL_Generic_GJ_DB6_to_AVBL_elec_syn_3conns_A[1]")
         h("objectvar syn_NC_DB6_AVBL_Generic_GJ_DB6_to_AVBL_elec_syn_3conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_DB6[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_AVBL[0].soma], weight: 1.0
-        #h("a_DB6[0].soma { syn_NC_DB6_AVBL_Generic_GJ_DB6_to_AVBL_elec_syn_3conns_A[0] = new DB6_to_AVBL_elec_syn_3conns(0.5) }")
+        h("a_DB6[0].soma { syn_NC_DB6_AVBL_Generic_GJ_DB6_to_AVBL_elec_syn_3conns_A[0] = new DB6_to_AVBL_elec_syn_3conns(0.5) }")
         h("a_AVBL[0].soma { syn_NC_DB6_AVBL_Generic_GJ_DB6_to_AVBL_elec_syn_3conns_B[0] = new DB6_to_AVBL_elec_syn_3conns(0.5) }")
-        #h("setpointer syn_NC_DB6_AVBL_Generic_GJ_DB6_to_AVBL_elec_syn_3conns_A[0].vpeer, a_AVBL[0].soma.v(0.5)")
+        h("setpointer syn_NC_DB6_AVBL_Generic_GJ_DB6_to_AVBL_elec_syn_3conns_A[0].vpeer, a_AVBL[0].soma.v(0.5)")
         h("setpointer syn_NC_DB6_AVBL_Generic_GJ_DB6_to_AVBL_elec_syn_3conns_B[0].vpeer, a_DB6[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_DB6_AVBR_Generic_GJ
         print("Adding electrical projection: NC_DB6_AVBR_Generic_GJ from DB6 to AVBR, with 1 connection(s)")
 
-        #h("objectvar syn_NC_DB6_AVBR_Generic_GJ_DB6_to_AVBR_elec_syn_4conns_A[1]")
+        h("objectvar syn_NC_DB6_AVBR_Generic_GJ_DB6_to_AVBR_elec_syn_4conns_A[1]")
         h("objectvar syn_NC_DB6_AVBR_Generic_GJ_DB6_to_AVBR_elec_syn_4conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_DB6[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_AVBR[0].soma], weight: 1.0
-        #h("a_DB6[0].soma { syn_NC_DB6_AVBR_Generic_GJ_DB6_to_AVBR_elec_syn_4conns_A[0] = new DB6_to_AVBR_elec_syn_4conns(0.5) }")
+        h("a_DB6[0].soma { syn_NC_DB6_AVBR_Generic_GJ_DB6_to_AVBR_elec_syn_4conns_A[0] = new DB6_to_AVBR_elec_syn_4conns(0.5) }")
         h("a_AVBR[0].soma { syn_NC_DB6_AVBR_Generic_GJ_DB6_to_AVBR_elec_syn_4conns_B[0] = new DB6_to_AVBR_elec_syn_4conns(0.5) }")
-        #h("setpointer syn_NC_DB6_AVBR_Generic_GJ_DB6_to_AVBR_elec_syn_4conns_A[0].vpeer, a_AVBR[0].soma.v(0.5)")
+        h("setpointer syn_NC_DB6_AVBR_Generic_GJ_DB6_to_AVBR_elec_syn_4conns_A[0].vpeer, a_AVBR[0].soma.v(0.5)")
         h("setpointer syn_NC_DB6_AVBR_Generic_GJ_DB6_to_AVBR_elec_syn_4conns_B[0].vpeer, a_DB6[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_DB6_DB5_Generic_GJ
         print("Adding electrical projection: NC_DB6_DB5_Generic_GJ from DB6 to DB5, with 1 connection(s)")
 
-        #h("objectvar syn_NC_DB6_DB5_Generic_GJ_DB6_to_DB5_elec_syn_5conns_A[1]")
+        h("objectvar syn_NC_DB6_DB5_Generic_GJ_DB6_to_DB5_elec_syn_5conns_A[1]")
         h("objectvar syn_NC_DB6_DB5_Generic_GJ_DB6_to_DB5_elec_syn_5conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_DB6[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_DB5[0].soma], weight: 1.0
-        #h("a_DB6[0].soma { syn_NC_DB6_DB5_Generic_GJ_DB6_to_DB5_elec_syn_5conns_A[0] = new DB6_to_DB5_elec_syn_5conns(0.5) }")
+        h("a_DB6[0].soma { syn_NC_DB6_DB5_Generic_GJ_DB6_to_DB5_elec_syn_5conns_A[0] = new DB6_to_DB5_elec_syn_5conns(0.5) }")
         h("a_DB5[0].soma { syn_NC_DB6_DB5_Generic_GJ_DB6_to_DB5_elec_syn_5conns_B[0] = new DB6_to_DB5_elec_syn_5conns(0.5) }")
-        #h("setpointer syn_NC_DB6_DB5_Generic_GJ_DB6_to_DB5_elec_syn_5conns_A[0].vpeer, a_DB5[0].soma.v(0.5)")
+        h("setpointer syn_NC_DB6_DB5_Generic_GJ_DB6_to_DB5_elec_syn_5conns_A[0].vpeer, a_DB5[0].soma.v(0.5)")
         h("setpointer syn_NC_DB6_DB5_Generic_GJ_DB6_to_DB5_elec_syn_5conns_B[0].vpeer, a_DB6[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_DB6_DB7_Generic_GJ
         print("Adding electrical projection: NC_DB6_DB7_Generic_GJ from DB6 to DB7, with 1 connection(s)")
 
-        #h("objectvar syn_NC_DB6_DB7_Generic_GJ_DB6_to_DB7_elec_syn_5conns_A[1]")
+        h("objectvar syn_NC_DB6_DB7_Generic_GJ_DB6_to_DB7_elec_syn_5conns_A[1]")
         h("objectvar syn_NC_DB6_DB7_Generic_GJ_DB6_to_DB7_elec_syn_5conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_DB6[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_DB7[0].soma], weight: 1.0
-        #h("a_DB6[0].soma { syn_NC_DB6_DB7_Generic_GJ_DB6_to_DB7_elec_syn_5conns_A[0] = new DB6_to_DB7_elec_syn_5conns(0.5) }")
+        h("a_DB6[0].soma { syn_NC_DB6_DB7_Generic_GJ_DB6_to_DB7_elec_syn_5conns_A[0] = new DB6_to_DB7_elec_syn_5conns(0.5) }")
         h("a_DB7[0].soma { syn_NC_DB6_DB7_Generic_GJ_DB6_to_DB7_elec_syn_5conns_B[0] = new DB6_to_DB7_elec_syn_5conns(0.5) }")
-        #h("setpointer syn_NC_DB6_DB7_Generic_GJ_DB6_to_DB7_elec_syn_5conns_A[0].vpeer, a_DB7[0].soma.v(0.5)")
+        h("setpointer syn_NC_DB6_DB7_Generic_GJ_DB6_to_DB7_elec_syn_5conns_A[0].vpeer, a_DB7[0].soma.v(0.5)")
         h("setpointer syn_NC_DB6_DB7_Generic_GJ_DB6_to_DB7_elec_syn_5conns_B[0].vpeer, a_DB6[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_DB7_AVBL_Generic_GJ
         print("Adding electrical projection: NC_DB7_AVBL_Generic_GJ from DB7 to AVBL, with 1 connection(s)")
 
-        #h("objectvar syn_NC_DB7_AVBL_Generic_GJ_DB7_to_AVBL_elec_syn_13conns_A[1]")
+        h("objectvar syn_NC_DB7_AVBL_Generic_GJ_DB7_to_AVBL_elec_syn_13conns_A[1]")
         h("objectvar syn_NC_DB7_AVBL_Generic_GJ_DB7_to_AVBL_elec_syn_13conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_DB7[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_AVBL[0].soma], weight: 1.0
-        #h("a_DB7[0].soma { syn_NC_DB7_AVBL_Generic_GJ_DB7_to_AVBL_elec_syn_13conns_A[0] = new DB7_to_AVBL_elec_syn_13conns(0.5) }")
+        h("a_DB7[0].soma { syn_NC_DB7_AVBL_Generic_GJ_DB7_to_AVBL_elec_syn_13conns_A[0] = new DB7_to_AVBL_elec_syn_13conns(0.5) }")
         h("a_AVBL[0].soma { syn_NC_DB7_AVBL_Generic_GJ_DB7_to_AVBL_elec_syn_13conns_B[0] = new DB7_to_AVBL_elec_syn_13conns(0.5) }")
-        #h("setpointer syn_NC_DB7_AVBL_Generic_GJ_DB7_to_AVBL_elec_syn_13conns_A[0].vpeer, a_AVBL[0].soma.v(0.5)")
+        h("setpointer syn_NC_DB7_AVBL_Generic_GJ_DB7_to_AVBL_elec_syn_13conns_A[0].vpeer, a_AVBL[0].soma.v(0.5)")
         h("setpointer syn_NC_DB7_AVBL_Generic_GJ_DB7_to_AVBL_elec_syn_13conns_B[0].vpeer, a_DB7[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_DB7_AVBR_Generic_GJ
         print("Adding electrical projection: NC_DB7_AVBR_Generic_GJ from DB7 to AVBR, with 1 connection(s)")
 
-        #h("objectvar syn_NC_DB7_AVBR_Generic_GJ_DB7_to_AVBR_elec_syn_3conns_A[1]")
+        h("objectvar syn_NC_DB7_AVBR_Generic_GJ_DB7_to_AVBR_elec_syn_3conns_A[1]")
         h("objectvar syn_NC_DB7_AVBR_Generic_GJ_DB7_to_AVBR_elec_syn_3conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_DB7[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_AVBR[0].soma], weight: 1.0
-        #h("a_DB7[0].soma { syn_NC_DB7_AVBR_Generic_GJ_DB7_to_AVBR_elec_syn_3conns_A[0] = new DB7_to_AVBR_elec_syn_3conns(0.5) }")
+        h("a_DB7[0].soma { syn_NC_DB7_AVBR_Generic_GJ_DB7_to_AVBR_elec_syn_3conns_A[0] = new DB7_to_AVBR_elec_syn_3conns(0.5) }")
         h("a_AVBR[0].soma { syn_NC_DB7_AVBR_Generic_GJ_DB7_to_AVBR_elec_syn_3conns_B[0] = new DB7_to_AVBR_elec_syn_3conns(0.5) }")
-        #h("setpointer syn_NC_DB7_AVBR_Generic_GJ_DB7_to_AVBR_elec_syn_3conns_A[0].vpeer, a_AVBR[0].soma.v(0.5)")
+        h("setpointer syn_NC_DB7_AVBR_Generic_GJ_DB7_to_AVBR_elec_syn_3conns_A[0].vpeer, a_AVBR[0].soma.v(0.5)")
         h("setpointer syn_NC_DB7_AVBR_Generic_GJ_DB7_to_AVBR_elec_syn_3conns_B[0].vpeer, a_DB7[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_DB7_DB6_Generic_GJ
         print("Adding electrical projection: NC_DB7_DB6_Generic_GJ from DB7 to DB6, with 1 connection(s)")
 
-        #h("objectvar syn_NC_DB7_DB6_Generic_GJ_DB7_to_DB6_elec_syn_5conns_A[1]")
+        h("objectvar syn_NC_DB7_DB6_Generic_GJ_DB7_to_DB6_elec_syn_5conns_A[1]")
         h("objectvar syn_NC_DB7_DB6_Generic_GJ_DB7_to_DB6_elec_syn_5conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_DB7[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_DB6[0].soma], weight: 1.0
-        #h("a_DB7[0].soma { syn_NC_DB7_DB6_Generic_GJ_DB7_to_DB6_elec_syn_5conns_A[0] = new DB7_to_DB6_elec_syn_5conns(0.5) }")
+        h("a_DB7[0].soma { syn_NC_DB7_DB6_Generic_GJ_DB7_to_DB6_elec_syn_5conns_A[0] = new DB7_to_DB6_elec_syn_5conns(0.5) }")
         h("a_DB6[0].soma { syn_NC_DB7_DB6_Generic_GJ_DB7_to_DB6_elec_syn_5conns_B[0] = new DB7_to_DB6_elec_syn_5conns(0.5) }")
-        #h("setpointer syn_NC_DB7_DB6_Generic_GJ_DB7_to_DB6_elec_syn_5conns_A[0].vpeer, a_DB6[0].soma.v(0.5)")
+        h("setpointer syn_NC_DB7_DB6_Generic_GJ_DB7_to_DB6_elec_syn_5conns_A[0].vpeer, a_DB6[0].soma.v(0.5)")
         h("setpointer syn_NC_DB7_DB6_Generic_GJ_DB7_to_DB6_elec_syn_5conns_B[0].vpeer, a_DB7[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL01_MDL02_Generic_GJ
         print("Adding electrical projection: NC_MDL01_MDL02_Generic_GJ from MDL01 to MDL02, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL01_MDL02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL01_MDL02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL01_MDL02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL01[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL02[0].soma], weight: 1.0
-        #h("a_MDL01[0].soma { syn_NC_MDL01_MDL02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL01[0].soma { syn_NC_MDL01_MDL02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL02[0].soma { syn_NC_MDL01_MDL02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL01_MDL02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL02[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL01_MDL02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL02[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL01_MDL02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL01[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL01_MDL03_Generic_GJ
         print("Adding electrical projection: NC_MDL01_MDL03_Generic_GJ from MDL01 to MDL03, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL01_MDL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL01_MDL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL01_MDL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL01[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL03[0].soma], weight: 1.0
-        #h("a_MDL01[0].soma { syn_NC_MDL01_MDL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL01[0].soma { syn_NC_MDL01_MDL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL03[0].soma { syn_NC_MDL01_MDL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL01_MDL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL03[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL01_MDL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL03[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL01_MDL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL01[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL02_MDL01_Generic_GJ
         print("Adding electrical projection: NC_MDL02_MDL01_Generic_GJ from MDL02 to MDL01, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL02_MDL01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL02_MDL01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL02_MDL01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL02[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL01[0].soma], weight: 1.0
-        #h("a_MDL02[0].soma { syn_NC_MDL02_MDL01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL02[0].soma { syn_NC_MDL02_MDL01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL01[0].soma { syn_NC_MDL02_MDL01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL02_MDL01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL01[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL02_MDL01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL01[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL02_MDL01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL02[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL02_MDL03_Generic_GJ
         print("Adding electrical projection: NC_MDL02_MDL03_Generic_GJ from MDL02 to MDL03, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL02_MDL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL02_MDL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL02_MDL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL02[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL03[0].soma], weight: 1.0
-        #h("a_MDL02[0].soma { syn_NC_MDL02_MDL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL02[0].soma { syn_NC_MDL02_MDL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL03[0].soma { syn_NC_MDL02_MDL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL02_MDL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL03[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL02_MDL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL03[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL02_MDL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL02[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL03_MDL01_Generic_GJ
         print("Adding electrical projection: NC_MDL03_MDL01_Generic_GJ from MDL03 to MDL01, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL03_MDL01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL03_MDL01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL03_MDL01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL03[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL01[0].soma], weight: 1.0
-        #h("a_MDL03[0].soma { syn_NC_MDL03_MDL01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL03[0].soma { syn_NC_MDL03_MDL01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL01[0].soma { syn_NC_MDL03_MDL01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL03_MDL01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL01[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL03_MDL01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL01[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL03_MDL01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL03[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL03_MDL02_Generic_GJ
         print("Adding electrical projection: NC_MDL03_MDL02_Generic_GJ from MDL03 to MDL02, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL03_MDL02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL03_MDL02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL03_MDL02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL03[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL02[0].soma], weight: 1.0
-        #h("a_MDL03[0].soma { syn_NC_MDL03_MDL02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL03[0].soma { syn_NC_MDL03_MDL02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL02[0].soma { syn_NC_MDL03_MDL02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL03_MDL02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL02[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL03_MDL02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL02[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL03_MDL02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL03[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL03_MDL04_Generic_GJ
         print("Adding electrical projection: NC_MDL03_MDL04_Generic_GJ from MDL03 to MDL04, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL03_MDL04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL03_MDL04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL03_MDL04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL03[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL04[0].soma], weight: 1.0
-        #h("a_MDL03[0].soma { syn_NC_MDL03_MDL04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL03[0].soma { syn_NC_MDL03_MDL04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL04[0].soma { syn_NC_MDL03_MDL04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL03_MDL04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL04[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL03_MDL04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL04[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL03_MDL04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL03[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL04_MDL03_Generic_GJ
         print("Adding electrical projection: NC_MDL04_MDL03_Generic_GJ from MDL04 to MDL03, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL04_MDL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL04_MDL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL04_MDL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL04[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL03[0].soma], weight: 1.0
-        #h("a_MDL04[0].soma { syn_NC_MDL04_MDL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL04[0].soma { syn_NC_MDL04_MDL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL03[0].soma { syn_NC_MDL04_MDL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL04_MDL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL03[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL04_MDL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL03[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL04_MDL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL04[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL04_MDL05_Generic_GJ
         print("Adding electrical projection: NC_MDL04_MDL05_Generic_GJ from MDL04 to MDL05, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL04_MDL05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL04_MDL05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL04_MDL05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL04[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL05[0].soma], weight: 1.0
-        #h("a_MDL04[0].soma { syn_NC_MDL04_MDL05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL04[0].soma { syn_NC_MDL04_MDL05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL05[0].soma { syn_NC_MDL04_MDL05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL04_MDL05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL05[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL04_MDL05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL05[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL04_MDL05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL04[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL05_MDL04_Generic_GJ
         print("Adding electrical projection: NC_MDL05_MDL04_Generic_GJ from MDL05 to MDL04, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL05_MDL04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL05_MDL04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL05_MDL04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL05[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL04[0].soma], weight: 1.0
-        #h("a_MDL05[0].soma { syn_NC_MDL05_MDL04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL05[0].soma { syn_NC_MDL05_MDL04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL04[0].soma { syn_NC_MDL05_MDL04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL05_MDL04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL04[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL05_MDL04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL04[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL05_MDL04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL05[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL05_MDL06_Generic_GJ
         print("Adding electrical projection: NC_MDL05_MDL06_Generic_GJ from MDL05 to MDL06, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL05_MDL06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL05_MDL06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL05_MDL06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL05[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL06[0].soma], weight: 1.0
-        #h("a_MDL05[0].soma { syn_NC_MDL05_MDL06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL05[0].soma { syn_NC_MDL05_MDL06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL06[0].soma { syn_NC_MDL05_MDL06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL05_MDL06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL06[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL05_MDL06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL06[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL05_MDL06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL05[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL06_MDL05_Generic_GJ
         print("Adding electrical projection: NC_MDL06_MDL05_Generic_GJ from MDL06 to MDL05, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL06_MDL05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL06_MDL05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL06_MDL05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL06[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL05[0].soma], weight: 1.0
-        #h("a_MDL06[0].soma { syn_NC_MDL06_MDL05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL06[0].soma { syn_NC_MDL06_MDL05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL05[0].soma { syn_NC_MDL06_MDL05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL06_MDL05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL05[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL06_MDL05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL05[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL06_MDL05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL06[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL06_MDL07_Generic_GJ
         print("Adding electrical projection: NC_MDL06_MDL07_Generic_GJ from MDL06 to MDL07, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL06_MDL07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL06_MDL07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL06_MDL07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL06[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL07[0].soma], weight: 1.0
-        #h("a_MDL06[0].soma { syn_NC_MDL06_MDL07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL06[0].soma { syn_NC_MDL06_MDL07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL07[0].soma { syn_NC_MDL06_MDL07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL06_MDL07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL07[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL06_MDL07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL07[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL06_MDL07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL06[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL07_MDL06_Generic_GJ
         print("Adding electrical projection: NC_MDL07_MDL06_Generic_GJ from MDL07 to MDL06, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL07_MDL06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL07_MDL06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL07_MDL06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL07[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL06[0].soma], weight: 1.0
-        #h("a_MDL07[0].soma { syn_NC_MDL07_MDL06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL07[0].soma { syn_NC_MDL07_MDL06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL06[0].soma { syn_NC_MDL07_MDL06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL07_MDL06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL06[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL07_MDL06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL06[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL07_MDL06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL07[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL07_MDL08_Generic_GJ
         print("Adding electrical projection: NC_MDL07_MDL08_Generic_GJ from MDL07 to MDL08, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL07_MDL08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL07_MDL08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL07_MDL08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL07[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL08[0].soma], weight: 1.0
-        #h("a_MDL07[0].soma { syn_NC_MDL07_MDL08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL07[0].soma { syn_NC_MDL07_MDL08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL08[0].soma { syn_NC_MDL07_MDL08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL07_MDL08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL08[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL07_MDL08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL08[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL07_MDL08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL07[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL08_MDL07_Generic_GJ
         print("Adding electrical projection: NC_MDL08_MDL07_Generic_GJ from MDL08 to MDL07, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL08_MDL07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL08_MDL07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL08_MDL07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL08[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL07[0].soma], weight: 1.0
-        #h("a_MDL08[0].soma { syn_NC_MDL08_MDL07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL08[0].soma { syn_NC_MDL08_MDL07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL07[0].soma { syn_NC_MDL08_MDL07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL08_MDL07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL07[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL08_MDL07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL07[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL08_MDL07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL08[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL08_MDL09_Generic_GJ
         print("Adding electrical projection: NC_MDL08_MDL09_Generic_GJ from MDL08 to MDL09, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL08_MDL09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL08_MDL09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL08_MDL09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL08[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL09[0].soma], weight: 1.0
-        #h("a_MDL08[0].soma { syn_NC_MDL08_MDL09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL08[0].soma { syn_NC_MDL08_MDL09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL09[0].soma { syn_NC_MDL08_MDL09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL08_MDL09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL09[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL08_MDL09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL09[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL08_MDL09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL08[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL09_MDL08_Generic_GJ
         print("Adding electrical projection: NC_MDL09_MDL08_Generic_GJ from MDL09 to MDL08, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL09_MDL08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL09_MDL08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL09_MDL08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL09[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL08[0].soma], weight: 1.0
-        #h("a_MDL09[0].soma { syn_NC_MDL09_MDL08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL09[0].soma { syn_NC_MDL09_MDL08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL08[0].soma { syn_NC_MDL09_MDL08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL09_MDL08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL08[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL09_MDL08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL08[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL09_MDL08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL09[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL09_MDL10_Generic_GJ
         print("Adding electrical projection: NC_MDL09_MDL10_Generic_GJ from MDL09 to MDL10, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL09_MDL10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL09_MDL10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL09_MDL10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL09[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL10[0].soma], weight: 1.0
-        #h("a_MDL09[0].soma { syn_NC_MDL09_MDL10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL09[0].soma { syn_NC_MDL09_MDL10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL10[0].soma { syn_NC_MDL09_MDL10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL09_MDL10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL10[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL09_MDL10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL10[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL09_MDL10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL09[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL10_MDL09_Generic_GJ
         print("Adding electrical projection: NC_MDL10_MDL09_Generic_GJ from MDL10 to MDL09, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL10_MDL09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL10_MDL09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL10_MDL09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL10[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL09[0].soma], weight: 1.0
-        #h("a_MDL10[0].soma { syn_NC_MDL10_MDL09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL10[0].soma { syn_NC_MDL10_MDL09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL09[0].soma { syn_NC_MDL10_MDL09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL10_MDL09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL09[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL10_MDL09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL09[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL10_MDL09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL10[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL10_MDL11_Generic_GJ
         print("Adding electrical projection: NC_MDL10_MDL11_Generic_GJ from MDL10 to MDL11, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL10_MDL11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL10_MDL11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL10_MDL11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL10[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL11[0].soma], weight: 1.0
-        #h("a_MDL10[0].soma { syn_NC_MDL10_MDL11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL10[0].soma { syn_NC_MDL10_MDL11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL11[0].soma { syn_NC_MDL10_MDL11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL10_MDL11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL11[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL10_MDL11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL11[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL10_MDL11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL10[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL11_MDL10_Generic_GJ
         print("Adding electrical projection: NC_MDL11_MDL10_Generic_GJ from MDL11 to MDL10, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL11_MDL10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL11_MDL10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL11_MDL10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL11[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL10[0].soma], weight: 1.0
-        #h("a_MDL11[0].soma { syn_NC_MDL11_MDL10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL11[0].soma { syn_NC_MDL11_MDL10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL10[0].soma { syn_NC_MDL11_MDL10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL11_MDL10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL10[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL11_MDL10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL10[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL11_MDL10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL11[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL11_MDL12_Generic_GJ
         print("Adding electrical projection: NC_MDL11_MDL12_Generic_GJ from MDL11 to MDL12, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL11_MDL12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL11_MDL12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL11_MDL12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL11[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL12[0].soma], weight: 1.0
-        #h("a_MDL11[0].soma { syn_NC_MDL11_MDL12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL11[0].soma { syn_NC_MDL11_MDL12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL12[0].soma { syn_NC_MDL11_MDL12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL11_MDL12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL12[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL11_MDL12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL12[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL11_MDL12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL11[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL12_MDL11_Generic_GJ
         print("Adding electrical projection: NC_MDL12_MDL11_Generic_GJ from MDL12 to MDL11, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL12_MDL11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL12_MDL11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL12_MDL11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL12[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL11[0].soma], weight: 1.0
-        #h("a_MDL12[0].soma { syn_NC_MDL12_MDL11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL12[0].soma { syn_NC_MDL12_MDL11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL11[0].soma { syn_NC_MDL12_MDL11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL12_MDL11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL11[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL12_MDL11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL11[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL12_MDL11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL12[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL12_MDL13_Generic_GJ
         print("Adding electrical projection: NC_MDL12_MDL13_Generic_GJ from MDL12 to MDL13, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL12_MDL13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL12_MDL13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL12_MDL13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL12[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL13[0].soma], weight: 1.0
-        #h("a_MDL12[0].soma { syn_NC_MDL12_MDL13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL12[0].soma { syn_NC_MDL12_MDL13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL13[0].soma { syn_NC_MDL12_MDL13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL12_MDL13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL13[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL12_MDL13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL13[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL12_MDL13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL12[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL13_MDL12_Generic_GJ
         print("Adding electrical projection: NC_MDL13_MDL12_Generic_GJ from MDL13 to MDL12, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL13_MDL12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL13_MDL12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL13_MDL12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL13[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL12[0].soma], weight: 1.0
-        #h("a_MDL13[0].soma { syn_NC_MDL13_MDL12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL13[0].soma { syn_NC_MDL13_MDL12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL12[0].soma { syn_NC_MDL13_MDL12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL13_MDL12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL12[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL13_MDL12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL12[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL13_MDL12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL13[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL13_MDL14_Generic_GJ
         print("Adding electrical projection: NC_MDL13_MDL14_Generic_GJ from MDL13 to MDL14, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL13_MDL14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL13_MDL14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL13_MDL14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL13[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL14[0].soma], weight: 1.0
-        #h("a_MDL13[0].soma { syn_NC_MDL13_MDL14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL13[0].soma { syn_NC_MDL13_MDL14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL14[0].soma { syn_NC_MDL13_MDL14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL13_MDL14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL14[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL13_MDL14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL14[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL13_MDL14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL13[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL14_MDL13_Generic_GJ
         print("Adding electrical projection: NC_MDL14_MDL13_Generic_GJ from MDL14 to MDL13, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL14_MDL13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL14_MDL13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL14_MDL13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL14[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL13[0].soma], weight: 1.0
-        #h("a_MDL14[0].soma { syn_NC_MDL14_MDL13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL14[0].soma { syn_NC_MDL14_MDL13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL13[0].soma { syn_NC_MDL14_MDL13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL14_MDL13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL13[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL14_MDL13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL13[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL14_MDL13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL14[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL14_MDL15_Generic_GJ
         print("Adding electrical projection: NC_MDL14_MDL15_Generic_GJ from MDL14 to MDL15, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL14_MDL15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL14_MDL15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL14_MDL15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL14[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL15[0].soma], weight: 1.0
-        #h("a_MDL14[0].soma { syn_NC_MDL14_MDL15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL14[0].soma { syn_NC_MDL14_MDL15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL15[0].soma { syn_NC_MDL14_MDL15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL14_MDL15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL15[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL14_MDL15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL15[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL14_MDL15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL14[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL15_MDL14_Generic_GJ
         print("Adding electrical projection: NC_MDL15_MDL14_Generic_GJ from MDL15 to MDL14, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL15_MDL14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL15_MDL14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL15_MDL14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL15[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL14[0].soma], weight: 1.0
-        #h("a_MDL15[0].soma { syn_NC_MDL15_MDL14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL15[0].soma { syn_NC_MDL15_MDL14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL14[0].soma { syn_NC_MDL15_MDL14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL15_MDL14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL14[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL15_MDL14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL14[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL15_MDL14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL15[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL15_MDL16_Generic_GJ
         print("Adding electrical projection: NC_MDL15_MDL16_Generic_GJ from MDL15 to MDL16, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL15_MDL16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL15_MDL16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL15_MDL16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL15[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL16[0].soma], weight: 1.0
-        #h("a_MDL15[0].soma { syn_NC_MDL15_MDL16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL15[0].soma { syn_NC_MDL15_MDL16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL16[0].soma { syn_NC_MDL15_MDL16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL15_MDL16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL16[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL15_MDL16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL16[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL15_MDL16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL15[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL16_MDL15_Generic_GJ
         print("Adding electrical projection: NC_MDL16_MDL15_Generic_GJ from MDL16 to MDL15, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL16_MDL15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL16_MDL15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL16_MDL15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL16[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL15[0].soma], weight: 1.0
-        #h("a_MDL16[0].soma { syn_NC_MDL16_MDL15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL16[0].soma { syn_NC_MDL16_MDL15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL15[0].soma { syn_NC_MDL16_MDL15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL16_MDL15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL15[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL16_MDL15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL15[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL16_MDL15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL16[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL16_MDL17_Generic_GJ
         print("Adding electrical projection: NC_MDL16_MDL17_Generic_GJ from MDL16 to MDL17, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL16_MDL17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL16_MDL17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL16_MDL17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL16[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL17[0].soma], weight: 1.0
-        #h("a_MDL16[0].soma { syn_NC_MDL16_MDL17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL16[0].soma { syn_NC_MDL16_MDL17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL17[0].soma { syn_NC_MDL16_MDL17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL16_MDL17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL17[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL16_MDL17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL17[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL16_MDL17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL16[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL17_MDL16_Generic_GJ
         print("Adding electrical projection: NC_MDL17_MDL16_Generic_GJ from MDL17 to MDL16, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL17_MDL16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL17_MDL16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL17_MDL16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL17[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL16[0].soma], weight: 1.0
-        #h("a_MDL17[0].soma { syn_NC_MDL17_MDL16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL17[0].soma { syn_NC_MDL17_MDL16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL16[0].soma { syn_NC_MDL17_MDL16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL17_MDL16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL16[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL17_MDL16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL16[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL17_MDL16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL17[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL17_MDL18_Generic_GJ
         print("Adding electrical projection: NC_MDL17_MDL18_Generic_GJ from MDL17 to MDL18, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL17_MDL18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL17_MDL18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL17_MDL18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL17[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL18[0].soma], weight: 1.0
-        #h("a_MDL17[0].soma { syn_NC_MDL17_MDL18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL17[0].soma { syn_NC_MDL17_MDL18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL18[0].soma { syn_NC_MDL17_MDL18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL17_MDL18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL18[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL17_MDL18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL18[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL17_MDL18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL17[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL18_MDL17_Generic_GJ
         print("Adding electrical projection: NC_MDL18_MDL17_Generic_GJ from MDL18 to MDL17, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL18_MDL17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL18_MDL17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL18_MDL17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL18[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL17[0].soma], weight: 1.0
-        #h("a_MDL18[0].soma { syn_NC_MDL18_MDL17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL18[0].soma { syn_NC_MDL18_MDL17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL17[0].soma { syn_NC_MDL18_MDL17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL18_MDL17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL17[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL18_MDL17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL17[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL18_MDL17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL18[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL18_MDL19_Generic_GJ
         print("Adding electrical projection: NC_MDL18_MDL19_Generic_GJ from MDL18 to MDL19, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL18_MDL19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL18_MDL19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL18_MDL19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL18[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL19[0].soma], weight: 1.0
-        #h("a_MDL18[0].soma { syn_NC_MDL18_MDL19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL18[0].soma { syn_NC_MDL18_MDL19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL19[0].soma { syn_NC_MDL18_MDL19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL18_MDL19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL19[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL18_MDL19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL19[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL18_MDL19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL18[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL19_MDL18_Generic_GJ
         print("Adding electrical projection: NC_MDL19_MDL18_Generic_GJ from MDL19 to MDL18, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL19_MDL18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL19_MDL18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL19_MDL18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL19[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL18[0].soma], weight: 1.0
-        #h("a_MDL19[0].soma { syn_NC_MDL19_MDL18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL19[0].soma { syn_NC_MDL19_MDL18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL18[0].soma { syn_NC_MDL19_MDL18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL19_MDL18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL18[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL19_MDL18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL18[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL19_MDL18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL19[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL19_MDL20_Generic_GJ
         print("Adding electrical projection: NC_MDL19_MDL20_Generic_GJ from MDL19 to MDL20, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL19_MDL20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL19_MDL20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL19_MDL20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL19[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL20[0].soma], weight: 1.0
-        #h("a_MDL19[0].soma { syn_NC_MDL19_MDL20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL19[0].soma { syn_NC_MDL19_MDL20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL20[0].soma { syn_NC_MDL19_MDL20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL19_MDL20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL20[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL19_MDL20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL20[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL19_MDL20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL19[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL20_MDL19_Generic_GJ
         print("Adding electrical projection: NC_MDL20_MDL19_Generic_GJ from MDL20 to MDL19, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL20_MDL19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL20_MDL19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL20_MDL19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL20[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL19[0].soma], weight: 1.0
-        #h("a_MDL20[0].soma { syn_NC_MDL20_MDL19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL20[0].soma { syn_NC_MDL20_MDL19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL19[0].soma { syn_NC_MDL20_MDL19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL20_MDL19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL19[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL20_MDL19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL19[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL20_MDL19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL20[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL20_MDL21_Generic_GJ
         print("Adding electrical projection: NC_MDL20_MDL21_Generic_GJ from MDL20 to MDL21, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL20_MDL21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL20_MDL21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL20_MDL21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL20[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL21[0].soma], weight: 1.0
-        #h("a_MDL20[0].soma { syn_NC_MDL20_MDL21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL20[0].soma { syn_NC_MDL20_MDL21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL21[0].soma { syn_NC_MDL20_MDL21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL20_MDL21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL21[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL20_MDL21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL21[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL20_MDL21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL20[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL21_MDL20_Generic_GJ
         print("Adding electrical projection: NC_MDL21_MDL20_Generic_GJ from MDL21 to MDL20, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL21_MDL20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL21_MDL20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL21_MDL20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL21[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL20[0].soma], weight: 1.0
-        #h("a_MDL21[0].soma { syn_NC_MDL21_MDL20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL21[0].soma { syn_NC_MDL21_MDL20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL20[0].soma { syn_NC_MDL21_MDL20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL21_MDL20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL20[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL21_MDL20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL20[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL21_MDL20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL21[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL21_MDL22_Generic_GJ
         print("Adding electrical projection: NC_MDL21_MDL22_Generic_GJ from MDL21 to MDL22, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL21_MDL22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL21_MDL22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL21_MDL22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL21[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL22[0].soma], weight: 1.0
-        #h("a_MDL21[0].soma { syn_NC_MDL21_MDL22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL21[0].soma { syn_NC_MDL21_MDL22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL22[0].soma { syn_NC_MDL21_MDL22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL21_MDL22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL22[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL21_MDL22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL22[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL21_MDL22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL21[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL22_MDL21_Generic_GJ
         print("Adding electrical projection: NC_MDL22_MDL21_Generic_GJ from MDL22 to MDL21, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL22_MDL21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL22_MDL21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL22_MDL21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL22[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL21[0].soma], weight: 1.0
-        #h("a_MDL22[0].soma { syn_NC_MDL22_MDL21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL22[0].soma { syn_NC_MDL22_MDL21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL21[0].soma { syn_NC_MDL22_MDL21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL22_MDL21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL21[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL22_MDL21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL21[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL22_MDL21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL22[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL22_MDL23_Generic_GJ
         print("Adding electrical projection: NC_MDL22_MDL23_Generic_GJ from MDL22 to MDL23, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL22_MDL23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL22_MDL23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL22_MDL23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL22[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL23[0].soma], weight: 1.0
-        #h("a_MDL22[0].soma { syn_NC_MDL22_MDL23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL22[0].soma { syn_NC_MDL22_MDL23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL23[0].soma { syn_NC_MDL22_MDL23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL22_MDL23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL23[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL22_MDL23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL23[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL22_MDL23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL22[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL23_MDL22_Generic_GJ
         print("Adding electrical projection: NC_MDL23_MDL22_Generic_GJ from MDL23 to MDL22, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL23_MDL22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL23_MDL22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL23_MDL22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL23[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL22[0].soma], weight: 1.0
-        #h("a_MDL23[0].soma { syn_NC_MDL23_MDL22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL23[0].soma { syn_NC_MDL23_MDL22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL22[0].soma { syn_NC_MDL23_MDL22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL23_MDL22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL22[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL23_MDL22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL22[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL23_MDL22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL23[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL23_MDL24_Generic_GJ
         print("Adding electrical projection: NC_MDL23_MDL24_Generic_GJ from MDL23 to MDL24, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL23_MDL24_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL23_MDL24_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL23_MDL24_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL23[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL24[0].soma], weight: 1.0
-        #h("a_MDL23[0].soma { syn_NC_MDL23_MDL24_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL23[0].soma { syn_NC_MDL23_MDL24_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL24[0].soma { syn_NC_MDL23_MDL24_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL23_MDL24_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL24[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL23_MDL24_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL24[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL23_MDL24_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL23[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDL24_MDL23_Generic_GJ
         print("Adding electrical projection: NC_MDL24_MDL23_Generic_GJ from MDL24 to MDL23, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDL24_MDL23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDL24_MDL23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDL24_MDL23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDL24[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDL23[0].soma], weight: 1.0
-        #h("a_MDL24[0].soma { syn_NC_MDL24_MDL23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDL24[0].soma { syn_NC_MDL24_MDL23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDL23[0].soma { syn_NC_MDL24_MDL23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDL24_MDL23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL23[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDL24_MDL23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDL23[0].soma.v(0.5)")
         h("setpointer syn_NC_MDL24_MDL23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDL24[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR01_MDR02_Generic_GJ
         print("Adding electrical projection: NC_MDR01_MDR02_Generic_GJ from MDR01 to MDR02, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR01_MDR02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR01_MDR02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR01_MDR02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR01[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR02[0].soma], weight: 1.0
-        #h("a_MDR01[0].soma { syn_NC_MDR01_MDR02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR01[0].soma { syn_NC_MDR01_MDR02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR02[0].soma { syn_NC_MDR01_MDR02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR01_MDR02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR02[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR01_MDR02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR02[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR01_MDR02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR01[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR01_MDR03_Generic_GJ
         print("Adding electrical projection: NC_MDR01_MDR03_Generic_GJ from MDR01 to MDR03, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR01_MDR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR01_MDR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR01_MDR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR01[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR03[0].soma], weight: 1.0
-        #h("a_MDR01[0].soma { syn_NC_MDR01_MDR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR01[0].soma { syn_NC_MDR01_MDR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR03[0].soma { syn_NC_MDR01_MDR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR01_MDR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR03[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR01_MDR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR03[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR01_MDR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR01[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR02_MDR01_Generic_GJ
         print("Adding electrical projection: NC_MDR02_MDR01_Generic_GJ from MDR02 to MDR01, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR02_MDR01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR02_MDR01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR02_MDR01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR02[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR01[0].soma], weight: 1.0
-        #h("a_MDR02[0].soma { syn_NC_MDR02_MDR01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR02[0].soma { syn_NC_MDR02_MDR01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR01[0].soma { syn_NC_MDR02_MDR01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR02_MDR01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR01[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR02_MDR01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR01[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR02_MDR01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR02[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR02_MDR03_Generic_GJ
         print("Adding electrical projection: NC_MDR02_MDR03_Generic_GJ from MDR02 to MDR03, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR02_MDR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR02_MDR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR02_MDR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR02[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR03[0].soma], weight: 1.0
-        #h("a_MDR02[0].soma { syn_NC_MDR02_MDR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR02[0].soma { syn_NC_MDR02_MDR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR03[0].soma { syn_NC_MDR02_MDR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR02_MDR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR03[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR02_MDR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR03[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR02_MDR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR02[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR03_MDR01_Generic_GJ
         print("Adding electrical projection: NC_MDR03_MDR01_Generic_GJ from MDR03 to MDR01, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR03_MDR01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR03_MDR01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR03_MDR01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR03[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR01[0].soma], weight: 1.0
-        #h("a_MDR03[0].soma { syn_NC_MDR03_MDR01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR03[0].soma { syn_NC_MDR03_MDR01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR01[0].soma { syn_NC_MDR03_MDR01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR03_MDR01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR01[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR03_MDR01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR01[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR03_MDR01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR03[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR03_MDR02_Generic_GJ
         print("Adding electrical projection: NC_MDR03_MDR02_Generic_GJ from MDR03 to MDR02, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR03_MDR02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR03_MDR02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR03_MDR02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR03[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR02[0].soma], weight: 1.0
-        #h("a_MDR03[0].soma { syn_NC_MDR03_MDR02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR03[0].soma { syn_NC_MDR03_MDR02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR02[0].soma { syn_NC_MDR03_MDR02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR03_MDR02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR02[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR03_MDR02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR02[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR03_MDR02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR03[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR03_MDR04_Generic_GJ
         print("Adding electrical projection: NC_MDR03_MDR04_Generic_GJ from MDR03 to MDR04, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR03_MDR04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR03_MDR04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR03_MDR04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR03[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR04[0].soma], weight: 1.0
-        #h("a_MDR03[0].soma { syn_NC_MDR03_MDR04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR03[0].soma { syn_NC_MDR03_MDR04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR04[0].soma { syn_NC_MDR03_MDR04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR03_MDR04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR04[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR03_MDR04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR04[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR03_MDR04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR03[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR04_MDR03_Generic_GJ
         print("Adding electrical projection: NC_MDR04_MDR03_Generic_GJ from MDR04 to MDR03, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR04_MDR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR04_MDR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR04_MDR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR04[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR03[0].soma], weight: 1.0
-        #h("a_MDR04[0].soma { syn_NC_MDR04_MDR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR04[0].soma { syn_NC_MDR04_MDR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR03[0].soma { syn_NC_MDR04_MDR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR04_MDR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR03[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR04_MDR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR03[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR04_MDR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR04[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR04_MDR05_Generic_GJ
         print("Adding electrical projection: NC_MDR04_MDR05_Generic_GJ from MDR04 to MDR05, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR04_MDR05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR04_MDR05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR04_MDR05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR04[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR05[0].soma], weight: 1.0
-        #h("a_MDR04[0].soma { syn_NC_MDR04_MDR05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR04[0].soma { syn_NC_MDR04_MDR05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR05[0].soma { syn_NC_MDR04_MDR05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR04_MDR05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR05[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR04_MDR05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR05[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR04_MDR05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR04[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR05_MDR04_Generic_GJ
         print("Adding electrical projection: NC_MDR05_MDR04_Generic_GJ from MDR05 to MDR04, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR05_MDR04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR05_MDR04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR05_MDR04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR05[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR04[0].soma], weight: 1.0
-        #h("a_MDR05[0].soma { syn_NC_MDR05_MDR04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR05[0].soma { syn_NC_MDR05_MDR04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR04[0].soma { syn_NC_MDR05_MDR04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR05_MDR04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR04[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR05_MDR04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR04[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR05_MDR04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR05[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR05_MDR06_Generic_GJ
         print("Adding electrical projection: NC_MDR05_MDR06_Generic_GJ from MDR05 to MDR06, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR05_MDR06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR05_MDR06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR05_MDR06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR05[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR06[0].soma], weight: 1.0
-        #h("a_MDR05[0].soma { syn_NC_MDR05_MDR06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR05[0].soma { syn_NC_MDR05_MDR06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR06[0].soma { syn_NC_MDR05_MDR06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR05_MDR06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR06[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR05_MDR06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR06[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR05_MDR06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR05[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR06_MDR05_Generic_GJ
         print("Adding electrical projection: NC_MDR06_MDR05_Generic_GJ from MDR06 to MDR05, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR06_MDR05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR06_MDR05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR06_MDR05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR06[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR05[0].soma], weight: 1.0
-        #h("a_MDR06[0].soma { syn_NC_MDR06_MDR05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR06[0].soma { syn_NC_MDR06_MDR05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR05[0].soma { syn_NC_MDR06_MDR05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR06_MDR05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR05[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR06_MDR05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR05[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR06_MDR05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR06[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR06_MDR07_Generic_GJ
         print("Adding electrical projection: NC_MDR06_MDR07_Generic_GJ from MDR06 to MDR07, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR06_MDR07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR06_MDR07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR06_MDR07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR06[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR07[0].soma], weight: 1.0
-        #h("a_MDR06[0].soma { syn_NC_MDR06_MDR07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR06[0].soma { syn_NC_MDR06_MDR07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR07[0].soma { syn_NC_MDR06_MDR07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR06_MDR07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR07[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR06_MDR07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR07[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR06_MDR07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR06[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR07_MDR06_Generic_GJ
         print("Adding electrical projection: NC_MDR07_MDR06_Generic_GJ from MDR07 to MDR06, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR07_MDR06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR07_MDR06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR07_MDR06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR07[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR06[0].soma], weight: 1.0
-        #h("a_MDR07[0].soma { syn_NC_MDR07_MDR06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR07[0].soma { syn_NC_MDR07_MDR06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR06[0].soma { syn_NC_MDR07_MDR06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR07_MDR06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR06[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR07_MDR06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR06[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR07_MDR06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR07[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR07_MDR08_Generic_GJ
         print("Adding electrical projection: NC_MDR07_MDR08_Generic_GJ from MDR07 to MDR08, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR07_MDR08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR07_MDR08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR07_MDR08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR07[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR08[0].soma], weight: 1.0
-        #h("a_MDR07[0].soma { syn_NC_MDR07_MDR08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR07[0].soma { syn_NC_MDR07_MDR08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR08[0].soma { syn_NC_MDR07_MDR08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR07_MDR08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR08[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR07_MDR08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR08[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR07_MDR08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR07[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR08_MDR07_Generic_GJ
         print("Adding electrical projection: NC_MDR08_MDR07_Generic_GJ from MDR08 to MDR07, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR08_MDR07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR08_MDR07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR08_MDR07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR08[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR07[0].soma], weight: 1.0
-        #h("a_MDR08[0].soma { syn_NC_MDR08_MDR07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR08[0].soma { syn_NC_MDR08_MDR07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR07[0].soma { syn_NC_MDR08_MDR07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR08_MDR07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR07[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR08_MDR07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR07[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR08_MDR07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR08[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR08_MDR09_Generic_GJ
         print("Adding electrical projection: NC_MDR08_MDR09_Generic_GJ from MDR08 to MDR09, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR08_MDR09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR08_MDR09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR08_MDR09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR08[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR09[0].soma], weight: 1.0
-        #h("a_MDR08[0].soma { syn_NC_MDR08_MDR09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR08[0].soma { syn_NC_MDR08_MDR09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR09[0].soma { syn_NC_MDR08_MDR09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR08_MDR09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR09[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR08_MDR09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR09[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR08_MDR09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR08[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR09_MDR08_Generic_GJ
         print("Adding electrical projection: NC_MDR09_MDR08_Generic_GJ from MDR09 to MDR08, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR09_MDR08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR09_MDR08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR09_MDR08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR09[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR08[0].soma], weight: 1.0
-        #h("a_MDR09[0].soma { syn_NC_MDR09_MDR08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR09[0].soma { syn_NC_MDR09_MDR08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR08[0].soma { syn_NC_MDR09_MDR08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR09_MDR08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR08[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR09_MDR08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR08[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR09_MDR08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR09[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR09_MDR10_Generic_GJ
         print("Adding electrical projection: NC_MDR09_MDR10_Generic_GJ from MDR09 to MDR10, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR09_MDR10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR09_MDR10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR09_MDR10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR09[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR10[0].soma], weight: 1.0
-        #h("a_MDR09[0].soma { syn_NC_MDR09_MDR10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR09[0].soma { syn_NC_MDR09_MDR10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR10[0].soma { syn_NC_MDR09_MDR10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR09_MDR10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR10[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR09_MDR10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR10[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR09_MDR10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR09[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR10_MDR09_Generic_GJ
         print("Adding electrical projection: NC_MDR10_MDR09_Generic_GJ from MDR10 to MDR09, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR10_MDR09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR10_MDR09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR10_MDR09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR10[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR09[0].soma], weight: 1.0
-        #h("a_MDR10[0].soma { syn_NC_MDR10_MDR09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR10[0].soma { syn_NC_MDR10_MDR09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR09[0].soma { syn_NC_MDR10_MDR09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR10_MDR09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR09[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR10_MDR09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR09[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR10_MDR09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR10[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR10_MDR11_Generic_GJ
         print("Adding electrical projection: NC_MDR10_MDR11_Generic_GJ from MDR10 to MDR11, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR10_MDR11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR10_MDR11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR10_MDR11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR10[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR11[0].soma], weight: 1.0
-        #h("a_MDR10[0].soma { syn_NC_MDR10_MDR11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR10[0].soma { syn_NC_MDR10_MDR11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR11[0].soma { syn_NC_MDR10_MDR11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR10_MDR11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR11[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR10_MDR11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR11[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR10_MDR11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR10[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR11_MDR10_Generic_GJ
         print("Adding electrical projection: NC_MDR11_MDR10_Generic_GJ from MDR11 to MDR10, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR11_MDR10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR11_MDR10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR11_MDR10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR11[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR10[0].soma], weight: 1.0
-        #h("a_MDR11[0].soma { syn_NC_MDR11_MDR10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR11[0].soma { syn_NC_MDR11_MDR10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR10[0].soma { syn_NC_MDR11_MDR10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR11_MDR10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR10[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR11_MDR10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR10[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR11_MDR10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR11[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR11_MDR12_Generic_GJ
         print("Adding electrical projection: NC_MDR11_MDR12_Generic_GJ from MDR11 to MDR12, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR11_MDR12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR11_MDR12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR11_MDR12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR11[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR12[0].soma], weight: 1.0
-        #h("a_MDR11[0].soma { syn_NC_MDR11_MDR12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR11[0].soma { syn_NC_MDR11_MDR12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR12[0].soma { syn_NC_MDR11_MDR12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR11_MDR12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR12[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR11_MDR12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR12[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR11_MDR12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR11[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR12_MDR11_Generic_GJ
         print("Adding electrical projection: NC_MDR12_MDR11_Generic_GJ from MDR12 to MDR11, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR12_MDR11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR12_MDR11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR12_MDR11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR12[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR11[0].soma], weight: 1.0
-        #h("a_MDR12[0].soma { syn_NC_MDR12_MDR11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR12[0].soma { syn_NC_MDR12_MDR11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR11[0].soma { syn_NC_MDR12_MDR11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR12_MDR11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR11[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR12_MDR11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR11[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR12_MDR11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR12[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR12_MDR13_Generic_GJ
         print("Adding electrical projection: NC_MDR12_MDR13_Generic_GJ from MDR12 to MDR13, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR12_MDR13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR12_MDR13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR12_MDR13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR12[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR13[0].soma], weight: 1.0
-        #h("a_MDR12[0].soma { syn_NC_MDR12_MDR13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR12[0].soma { syn_NC_MDR12_MDR13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR13[0].soma { syn_NC_MDR12_MDR13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR12_MDR13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR13[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR12_MDR13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR13[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR12_MDR13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR12[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR13_MDR12_Generic_GJ
         print("Adding electrical projection: NC_MDR13_MDR12_Generic_GJ from MDR13 to MDR12, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR13_MDR12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR13_MDR12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR13_MDR12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR13[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR12[0].soma], weight: 1.0
-        #h("a_MDR13[0].soma { syn_NC_MDR13_MDR12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR13[0].soma { syn_NC_MDR13_MDR12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR12[0].soma { syn_NC_MDR13_MDR12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR13_MDR12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR12[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR13_MDR12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR12[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR13_MDR12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR13[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR13_MDR14_Generic_GJ
         print("Adding electrical projection: NC_MDR13_MDR14_Generic_GJ from MDR13 to MDR14, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR13_MDR14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR13_MDR14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR13_MDR14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR13[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR14[0].soma], weight: 1.0
-        #h("a_MDR13[0].soma { syn_NC_MDR13_MDR14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR13[0].soma { syn_NC_MDR13_MDR14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR14[0].soma { syn_NC_MDR13_MDR14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR13_MDR14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR14[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR13_MDR14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR14[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR13_MDR14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR13[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR14_MDR13_Generic_GJ
         print("Adding electrical projection: NC_MDR14_MDR13_Generic_GJ from MDR14 to MDR13, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR14_MDR13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR14_MDR13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR14_MDR13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR14[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR13[0].soma], weight: 1.0
-        #h("a_MDR14[0].soma { syn_NC_MDR14_MDR13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR14[0].soma { syn_NC_MDR14_MDR13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR13[0].soma { syn_NC_MDR14_MDR13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR14_MDR13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR13[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR14_MDR13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR13[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR14_MDR13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR14[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR14_MDR15_Generic_GJ
         print("Adding electrical projection: NC_MDR14_MDR15_Generic_GJ from MDR14 to MDR15, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR14_MDR15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR14_MDR15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR14_MDR15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR14[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR15[0].soma], weight: 1.0
-        #h("a_MDR14[0].soma { syn_NC_MDR14_MDR15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR14[0].soma { syn_NC_MDR14_MDR15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR15[0].soma { syn_NC_MDR14_MDR15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR14_MDR15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR15[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR14_MDR15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR15[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR14_MDR15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR14[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR15_MDR14_Generic_GJ
         print("Adding electrical projection: NC_MDR15_MDR14_Generic_GJ from MDR15 to MDR14, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR15_MDR14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR15_MDR14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR15_MDR14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR15[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR14[0].soma], weight: 1.0
-        #h("a_MDR15[0].soma { syn_NC_MDR15_MDR14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR15[0].soma { syn_NC_MDR15_MDR14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR14[0].soma { syn_NC_MDR15_MDR14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR15_MDR14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR14[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR15_MDR14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR14[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR15_MDR14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR15[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR15_MDR16_Generic_GJ
         print("Adding electrical projection: NC_MDR15_MDR16_Generic_GJ from MDR15 to MDR16, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR15_MDR16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR15_MDR16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR15_MDR16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR15[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR16[0].soma], weight: 1.0
-        #h("a_MDR15[0].soma { syn_NC_MDR15_MDR16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR15[0].soma { syn_NC_MDR15_MDR16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR16[0].soma { syn_NC_MDR15_MDR16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR15_MDR16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR16[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR15_MDR16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR16[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR15_MDR16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR15[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR16_MDR15_Generic_GJ
         print("Adding electrical projection: NC_MDR16_MDR15_Generic_GJ from MDR16 to MDR15, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR16_MDR15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR16_MDR15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR16_MDR15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR16[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR15[0].soma], weight: 1.0
-        #h("a_MDR16[0].soma { syn_NC_MDR16_MDR15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR16[0].soma { syn_NC_MDR16_MDR15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR15[0].soma { syn_NC_MDR16_MDR15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR16_MDR15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR15[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR16_MDR15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR15[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR16_MDR15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR16[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR16_MDR17_Generic_GJ
         print("Adding electrical projection: NC_MDR16_MDR17_Generic_GJ from MDR16 to MDR17, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR16_MDR17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR16_MDR17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR16_MDR17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR16[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR17[0].soma], weight: 1.0
-        #h("a_MDR16[0].soma { syn_NC_MDR16_MDR17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR16[0].soma { syn_NC_MDR16_MDR17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR17[0].soma { syn_NC_MDR16_MDR17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR16_MDR17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR17[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR16_MDR17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR17[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR16_MDR17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR16[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR17_MDR16_Generic_GJ
         print("Adding electrical projection: NC_MDR17_MDR16_Generic_GJ from MDR17 to MDR16, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR17_MDR16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR17_MDR16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR17_MDR16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR17[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR16[0].soma], weight: 1.0
-        #h("a_MDR17[0].soma { syn_NC_MDR17_MDR16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR17[0].soma { syn_NC_MDR17_MDR16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR16[0].soma { syn_NC_MDR17_MDR16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR17_MDR16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR16[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR17_MDR16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR16[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR17_MDR16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR17[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR17_MDR18_Generic_GJ
         print("Adding electrical projection: NC_MDR17_MDR18_Generic_GJ from MDR17 to MDR18, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR17_MDR18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR17_MDR18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR17_MDR18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR17[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR18[0].soma], weight: 1.0
-        #h("a_MDR17[0].soma { syn_NC_MDR17_MDR18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR17[0].soma { syn_NC_MDR17_MDR18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR18[0].soma { syn_NC_MDR17_MDR18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR17_MDR18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR18[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR17_MDR18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR18[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR17_MDR18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR17[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR18_MDR17_Generic_GJ
         print("Adding electrical projection: NC_MDR18_MDR17_Generic_GJ from MDR18 to MDR17, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR18_MDR17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR18_MDR17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR18_MDR17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR18[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR17[0].soma], weight: 1.0
-        #h("a_MDR18[0].soma { syn_NC_MDR18_MDR17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR18[0].soma { syn_NC_MDR18_MDR17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR17[0].soma { syn_NC_MDR18_MDR17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR18_MDR17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR17[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR18_MDR17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR17[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR18_MDR17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR18[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR18_MDR19_Generic_GJ
         print("Adding electrical projection: NC_MDR18_MDR19_Generic_GJ from MDR18 to MDR19, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR18_MDR19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR18_MDR19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR18_MDR19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR18[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR19[0].soma], weight: 1.0
-        #h("a_MDR18[0].soma { syn_NC_MDR18_MDR19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR18[0].soma { syn_NC_MDR18_MDR19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR19[0].soma { syn_NC_MDR18_MDR19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR18_MDR19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR19[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR18_MDR19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR19[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR18_MDR19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR18[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR19_MDR18_Generic_GJ
         print("Adding electrical projection: NC_MDR19_MDR18_Generic_GJ from MDR19 to MDR18, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR19_MDR18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR19_MDR18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR19_MDR18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR19[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR18[0].soma], weight: 1.0
-        #h("a_MDR19[0].soma { syn_NC_MDR19_MDR18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR19[0].soma { syn_NC_MDR19_MDR18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR18[0].soma { syn_NC_MDR19_MDR18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR19_MDR18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR18[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR19_MDR18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR18[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR19_MDR18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR19[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR19_MDR20_Generic_GJ
         print("Adding electrical projection: NC_MDR19_MDR20_Generic_GJ from MDR19 to MDR20, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR19_MDR20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR19_MDR20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR19_MDR20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR19[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR20[0].soma], weight: 1.0
-        #h("a_MDR19[0].soma { syn_NC_MDR19_MDR20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR19[0].soma { syn_NC_MDR19_MDR20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR20[0].soma { syn_NC_MDR19_MDR20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR19_MDR20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR20[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR19_MDR20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR20[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR19_MDR20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR19[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR20_MDR19_Generic_GJ
         print("Adding electrical projection: NC_MDR20_MDR19_Generic_GJ from MDR20 to MDR19, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR20_MDR19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR20_MDR19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR20_MDR19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR20[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR19[0].soma], weight: 1.0
-        #h("a_MDR20[0].soma { syn_NC_MDR20_MDR19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR20[0].soma { syn_NC_MDR20_MDR19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR19[0].soma { syn_NC_MDR20_MDR19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR20_MDR19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR19[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR20_MDR19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR19[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR20_MDR19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR20[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR20_MDR21_Generic_GJ
         print("Adding electrical projection: NC_MDR20_MDR21_Generic_GJ from MDR20 to MDR21, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR20_MDR21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR20_MDR21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR20_MDR21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR20[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR21[0].soma], weight: 1.0
-        #h("a_MDR20[0].soma { syn_NC_MDR20_MDR21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR20[0].soma { syn_NC_MDR20_MDR21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR21[0].soma { syn_NC_MDR20_MDR21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR20_MDR21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR21[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR20_MDR21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR21[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR20_MDR21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR20[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR21_MDR20_Generic_GJ
         print("Adding electrical projection: NC_MDR21_MDR20_Generic_GJ from MDR21 to MDR20, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR21_MDR20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR21_MDR20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR21_MDR20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR21[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR20[0].soma], weight: 1.0
-        #h("a_MDR21[0].soma { syn_NC_MDR21_MDR20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR21[0].soma { syn_NC_MDR21_MDR20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR20[0].soma { syn_NC_MDR21_MDR20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR21_MDR20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR20[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR21_MDR20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR20[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR21_MDR20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR21[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR21_MDR22_Generic_GJ
         print("Adding electrical projection: NC_MDR21_MDR22_Generic_GJ from MDR21 to MDR22, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR21_MDR22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR21_MDR22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR21_MDR22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR21[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR22[0].soma], weight: 1.0
-        #h("a_MDR21[0].soma { syn_NC_MDR21_MDR22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR21[0].soma { syn_NC_MDR21_MDR22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR22[0].soma { syn_NC_MDR21_MDR22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR21_MDR22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR22[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR21_MDR22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR22[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR21_MDR22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR21[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR22_MDR21_Generic_GJ
         print("Adding electrical projection: NC_MDR22_MDR21_Generic_GJ from MDR22 to MDR21, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR22_MDR21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR22_MDR21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR22_MDR21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR22[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR21[0].soma], weight: 1.0
-        #h("a_MDR22[0].soma { syn_NC_MDR22_MDR21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR22[0].soma { syn_NC_MDR22_MDR21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR21[0].soma { syn_NC_MDR22_MDR21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR22_MDR21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR21[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR22_MDR21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR21[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR22_MDR21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR22[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR22_MDR23_Generic_GJ
         print("Adding electrical projection: NC_MDR22_MDR23_Generic_GJ from MDR22 to MDR23, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR22_MDR23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR22_MDR23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR22_MDR23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR22[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR23[0].soma], weight: 1.0
-        #h("a_MDR22[0].soma { syn_NC_MDR22_MDR23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR22[0].soma { syn_NC_MDR22_MDR23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR23[0].soma { syn_NC_MDR22_MDR23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR22_MDR23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR23[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR22_MDR23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR23[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR22_MDR23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR22[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR23_MDR22_Generic_GJ
         print("Adding electrical projection: NC_MDR23_MDR22_Generic_GJ from MDR23 to MDR22, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR23_MDR22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR23_MDR22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR23_MDR22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR23[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR22[0].soma], weight: 1.0
-        #h("a_MDR23[0].soma { syn_NC_MDR23_MDR22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR23[0].soma { syn_NC_MDR23_MDR22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR22[0].soma { syn_NC_MDR23_MDR22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR23_MDR22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR22[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR23_MDR22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR22[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR23_MDR22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR23[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR23_MDR24_Generic_GJ
         print("Adding electrical projection: NC_MDR23_MDR24_Generic_GJ from MDR23 to MDR24, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR23_MDR24_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR23_MDR24_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR23_MDR24_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR23[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR24[0].soma], weight: 1.0
-        #h("a_MDR23[0].soma { syn_NC_MDR23_MDR24_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR23[0].soma { syn_NC_MDR23_MDR24_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR24[0].soma { syn_NC_MDR23_MDR24_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR23_MDR24_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR24[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR23_MDR24_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR24[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR23_MDR24_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR23[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MDR24_MDR23_Generic_GJ
         print("Adding electrical projection: NC_MDR24_MDR23_Generic_GJ from MDR24 to MDR23, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MDR24_MDR23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MDR24_MDR23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MDR24_MDR23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MDR24[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MDR23[0].soma], weight: 1.0
-        #h("a_MDR24[0].soma { syn_NC_MDR24_MDR23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MDR24[0].soma { syn_NC_MDR24_MDR23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MDR23[0].soma { syn_NC_MDR24_MDR23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MDR24_MDR23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR23[0].soma.v(0.5)")
+        h("setpointer syn_NC_MDR24_MDR23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MDR23[0].soma.v(0.5)")
         h("setpointer syn_NC_MDR24_MDR23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MDR24[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL01_MVL02_Generic_GJ
         print("Adding electrical projection: NC_MVL01_MVL02_Generic_GJ from MVL01 to MVL02, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL01_MVL02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL01_MVL02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL01_MVL02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL01[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL02[0].soma], weight: 1.0
-        #h("a_MVL01[0].soma { syn_NC_MVL01_MVL02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL01[0].soma { syn_NC_MVL01_MVL02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL02[0].soma { syn_NC_MVL01_MVL02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL01_MVL02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL02[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL01_MVL02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL02[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL01_MVL02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL01[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL01_MVL03_Generic_GJ
         print("Adding electrical projection: NC_MVL01_MVL03_Generic_GJ from MVL01 to MVL03, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL01_MVL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL01_MVL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL01_MVL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL01[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL03[0].soma], weight: 1.0
-        #h("a_MVL01[0].soma { syn_NC_MVL01_MVL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL01[0].soma { syn_NC_MVL01_MVL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL03[0].soma { syn_NC_MVL01_MVL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL01_MVL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL03[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL01_MVL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL03[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL01_MVL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL01[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL02_MVL01_Generic_GJ
         print("Adding electrical projection: NC_MVL02_MVL01_Generic_GJ from MVL02 to MVL01, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL02_MVL01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL02_MVL01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL02_MVL01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL02[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL01[0].soma], weight: 1.0
-        #h("a_MVL02[0].soma { syn_NC_MVL02_MVL01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL02[0].soma { syn_NC_MVL02_MVL01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL01[0].soma { syn_NC_MVL02_MVL01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL02_MVL01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL01[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL02_MVL01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL01[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL02_MVL01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL02[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL02_MVL03_Generic_GJ
         print("Adding electrical projection: NC_MVL02_MVL03_Generic_GJ from MVL02 to MVL03, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL02_MVL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL02_MVL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL02_MVL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL02[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL03[0].soma], weight: 1.0
-        #h("a_MVL02[0].soma { syn_NC_MVL02_MVL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL02[0].soma { syn_NC_MVL02_MVL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL03[0].soma { syn_NC_MVL02_MVL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL02_MVL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL03[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL02_MVL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL03[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL02_MVL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL02[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL03_MVL01_Generic_GJ
         print("Adding electrical projection: NC_MVL03_MVL01_Generic_GJ from MVL03 to MVL01, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL03_MVL01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL03_MVL01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL03_MVL01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL03[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL01[0].soma], weight: 1.0
-        #h("a_MVL03[0].soma { syn_NC_MVL03_MVL01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL03[0].soma { syn_NC_MVL03_MVL01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL01[0].soma { syn_NC_MVL03_MVL01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL03_MVL01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL01[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL03_MVL01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL01[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL03_MVL01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL03[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL03_MVL02_Generic_GJ
         print("Adding electrical projection: NC_MVL03_MVL02_Generic_GJ from MVL03 to MVL02, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL03_MVL02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL03_MVL02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL03_MVL02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL03[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL02[0].soma], weight: 1.0
-        #h("a_MVL03[0].soma { syn_NC_MVL03_MVL02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL03[0].soma { syn_NC_MVL03_MVL02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL02[0].soma { syn_NC_MVL03_MVL02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL03_MVL02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL02[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL03_MVL02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL02[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL03_MVL02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL03[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL03_MVL04_Generic_GJ
         print("Adding electrical projection: NC_MVL03_MVL04_Generic_GJ from MVL03 to MVL04, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL03_MVL04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL03_MVL04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL03_MVL04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL03[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL04[0].soma], weight: 1.0
-        #h("a_MVL03[0].soma { syn_NC_MVL03_MVL04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL03[0].soma { syn_NC_MVL03_MVL04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL04[0].soma { syn_NC_MVL03_MVL04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL03_MVL04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL04[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL03_MVL04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL04[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL03_MVL04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL03[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL04_MVL03_Generic_GJ
         print("Adding electrical projection: NC_MVL04_MVL03_Generic_GJ from MVL04 to MVL03, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL04_MVL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL04_MVL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL04_MVL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL04[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL03[0].soma], weight: 1.0
-        #h("a_MVL04[0].soma { syn_NC_MVL04_MVL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL04[0].soma { syn_NC_MVL04_MVL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL03[0].soma { syn_NC_MVL04_MVL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL04_MVL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL03[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL04_MVL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL03[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL04_MVL03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL04[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL04_MVL05_Generic_GJ
         print("Adding electrical projection: NC_MVL04_MVL05_Generic_GJ from MVL04 to MVL05, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL04_MVL05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL04_MVL05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL04_MVL05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL04[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL05[0].soma], weight: 1.0
-        #h("a_MVL04[0].soma { syn_NC_MVL04_MVL05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL04[0].soma { syn_NC_MVL04_MVL05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL05[0].soma { syn_NC_MVL04_MVL05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL04_MVL05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL05[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL04_MVL05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL05[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL04_MVL05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL04[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL05_MVL04_Generic_GJ
         print("Adding electrical projection: NC_MVL05_MVL04_Generic_GJ from MVL05 to MVL04, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL05_MVL04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL05_MVL04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL05_MVL04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL05[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL04[0].soma], weight: 1.0
-        #h("a_MVL05[0].soma { syn_NC_MVL05_MVL04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL05[0].soma { syn_NC_MVL05_MVL04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL04[0].soma { syn_NC_MVL05_MVL04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL05_MVL04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL04[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL05_MVL04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL04[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL05_MVL04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL05[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL05_MVL06_Generic_GJ
         print("Adding electrical projection: NC_MVL05_MVL06_Generic_GJ from MVL05 to MVL06, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL05_MVL06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL05_MVL06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL05_MVL06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL05[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL06[0].soma], weight: 1.0
-        #h("a_MVL05[0].soma { syn_NC_MVL05_MVL06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL05[0].soma { syn_NC_MVL05_MVL06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL06[0].soma { syn_NC_MVL05_MVL06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL05_MVL06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL06[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL05_MVL06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL06[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL05_MVL06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL05[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL06_MVL05_Generic_GJ
         print("Adding electrical projection: NC_MVL06_MVL05_Generic_GJ from MVL06 to MVL05, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL06_MVL05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL06_MVL05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL06_MVL05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL06[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL05[0].soma], weight: 1.0
-        #h("a_MVL06[0].soma { syn_NC_MVL06_MVL05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL06[0].soma { syn_NC_MVL06_MVL05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL05[0].soma { syn_NC_MVL06_MVL05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL06_MVL05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL05[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL06_MVL05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL05[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL06_MVL05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL06[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL06_MVL07_Generic_GJ
         print("Adding electrical projection: NC_MVL06_MVL07_Generic_GJ from MVL06 to MVL07, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL06_MVL07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL06_MVL07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL06_MVL07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL06[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL07[0].soma], weight: 1.0
-        #h("a_MVL06[0].soma { syn_NC_MVL06_MVL07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL06[0].soma { syn_NC_MVL06_MVL07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL07[0].soma { syn_NC_MVL06_MVL07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL06_MVL07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL07[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL06_MVL07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL07[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL06_MVL07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL06[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL07_MVL06_Generic_GJ
         print("Adding electrical projection: NC_MVL07_MVL06_Generic_GJ from MVL07 to MVL06, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL07_MVL06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL07_MVL06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL07_MVL06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL07[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL06[0].soma], weight: 1.0
-        #h("a_MVL07[0].soma { syn_NC_MVL07_MVL06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL07[0].soma { syn_NC_MVL07_MVL06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL06[0].soma { syn_NC_MVL07_MVL06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL07_MVL06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL06[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL07_MVL06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL06[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL07_MVL06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL07[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL07_MVL08_Generic_GJ
         print("Adding electrical projection: NC_MVL07_MVL08_Generic_GJ from MVL07 to MVL08, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL07_MVL08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL07_MVL08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL07_MVL08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL07[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL08[0].soma], weight: 1.0
-        #h("a_MVL07[0].soma { syn_NC_MVL07_MVL08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL07[0].soma { syn_NC_MVL07_MVL08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL08[0].soma { syn_NC_MVL07_MVL08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL07_MVL08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL08[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL07_MVL08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL08[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL07_MVL08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL07[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL08_MVL07_Generic_GJ
         print("Adding electrical projection: NC_MVL08_MVL07_Generic_GJ from MVL08 to MVL07, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL08_MVL07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL08_MVL07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL08_MVL07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL08[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL07[0].soma], weight: 1.0
-        #h("a_MVL08[0].soma { syn_NC_MVL08_MVL07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL08[0].soma { syn_NC_MVL08_MVL07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL07[0].soma { syn_NC_MVL08_MVL07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL08_MVL07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL07[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL08_MVL07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL07[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL08_MVL07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL08[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL08_MVL09_Generic_GJ
         print("Adding electrical projection: NC_MVL08_MVL09_Generic_GJ from MVL08 to MVL09, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL08_MVL09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL08_MVL09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL08_MVL09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL08[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL09[0].soma], weight: 1.0
-        #h("a_MVL08[0].soma { syn_NC_MVL08_MVL09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL08[0].soma { syn_NC_MVL08_MVL09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL09[0].soma { syn_NC_MVL08_MVL09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL08_MVL09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL09[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL08_MVL09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL09[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL08_MVL09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL08[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL09_MVL08_Generic_GJ
         print("Adding electrical projection: NC_MVL09_MVL08_Generic_GJ from MVL09 to MVL08, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL09_MVL08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL09_MVL08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL09_MVL08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL09[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL08[0].soma], weight: 1.0
-        #h("a_MVL09[0].soma { syn_NC_MVL09_MVL08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL09[0].soma { syn_NC_MVL09_MVL08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL08[0].soma { syn_NC_MVL09_MVL08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL09_MVL08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL08[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL09_MVL08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL08[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL09_MVL08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL09[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL09_MVL10_Generic_GJ
         print("Adding electrical projection: NC_MVL09_MVL10_Generic_GJ from MVL09 to MVL10, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL09_MVL10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL09_MVL10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL09_MVL10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL09[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL10[0].soma], weight: 1.0
-        #h("a_MVL09[0].soma { syn_NC_MVL09_MVL10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL09[0].soma { syn_NC_MVL09_MVL10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL10[0].soma { syn_NC_MVL09_MVL10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL09_MVL10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL10[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL09_MVL10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL10[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL09_MVL10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL09[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL09_MVR08_Generic_GJ
         print("Adding electrical projection: NC_MVL09_MVR08_Generic_GJ from MVL09 to MVR08, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL09_MVR08_Generic_GJ_muscle_to_muscle_elec_syn_2conns_A[1]")
+        h("objectvar syn_NC_MVL09_MVR08_Generic_GJ_muscle_to_muscle_elec_syn_2conns_A[1]")
         h("objectvar syn_NC_MVL09_MVR08_Generic_GJ_muscle_to_muscle_elec_syn_2conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL09[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR08[0].soma], weight: 1.0
-        #h("a_MVL09[0].soma { syn_NC_MVL09_MVR08_Generic_GJ_muscle_to_muscle_elec_syn_2conns_A[0] = new muscle_to_muscle_elec_syn_2conns(0.5) }")
+        h("a_MVL09[0].soma { syn_NC_MVL09_MVR08_Generic_GJ_muscle_to_muscle_elec_syn_2conns_A[0] = new muscle_to_muscle_elec_syn_2conns(0.5) }")
         h("a_MVR08[0].soma { syn_NC_MVL09_MVR08_Generic_GJ_muscle_to_muscle_elec_syn_2conns_B[0] = new muscle_to_muscle_elec_syn_2conns(0.5) }")
-        #h("setpointer syn_NC_MVL09_MVR08_Generic_GJ_muscle_to_muscle_elec_syn_2conns_A[0].vpeer, a_MVR08[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL09_MVR08_Generic_GJ_muscle_to_muscle_elec_syn_2conns_A[0].vpeer, a_MVR08[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL09_MVR08_Generic_GJ_muscle_to_muscle_elec_syn_2conns_B[0].vpeer, a_MVL09[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL10_MVL09_Generic_GJ
         print("Adding electrical projection: NC_MVL10_MVL09_Generic_GJ from MVL10 to MVL09, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL10_MVL09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL10_MVL09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL10_MVL09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL10[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL09[0].soma], weight: 1.0
-        #h("a_MVL10[0].soma { syn_NC_MVL10_MVL09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL10[0].soma { syn_NC_MVL10_MVL09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL09[0].soma { syn_NC_MVL10_MVL09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL10_MVL09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL09[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL10_MVL09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL09[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL10_MVL09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL10[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL10_MVL11_Generic_GJ
         print("Adding electrical projection: NC_MVL10_MVL11_Generic_GJ from MVL10 to MVL11, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL10_MVL11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL10_MVL11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL10_MVL11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL10[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL11[0].soma], weight: 1.0
-        #h("a_MVL10[0].soma { syn_NC_MVL10_MVL11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL10[0].soma { syn_NC_MVL10_MVL11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL11[0].soma { syn_NC_MVL10_MVL11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL10_MVL11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL11[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL10_MVL11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL11[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL10_MVL11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL10[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL11_MVL10_Generic_GJ
         print("Adding electrical projection: NC_MVL11_MVL10_Generic_GJ from MVL11 to MVL10, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL11_MVL10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL11_MVL10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL11_MVL10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL11[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL10[0].soma], weight: 1.0
-        #h("a_MVL11[0].soma { syn_NC_MVL11_MVL10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL11[0].soma { syn_NC_MVL11_MVL10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL10[0].soma { syn_NC_MVL11_MVL10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL11_MVL10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL10[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL11_MVL10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL10[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL11_MVL10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL11[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL11_MVL12_Generic_GJ
         print("Adding electrical projection: NC_MVL11_MVL12_Generic_GJ from MVL11 to MVL12, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL11_MVL12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL11_MVL12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL11_MVL12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL11[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL12[0].soma], weight: 1.0
-        #h("a_MVL11[0].soma { syn_NC_MVL11_MVL12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL11[0].soma { syn_NC_MVL11_MVL12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL12[0].soma { syn_NC_MVL11_MVL12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL11_MVL12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL12[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL11_MVL12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL12[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL11_MVL12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL11[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL12_MVL11_Generic_GJ
         print("Adding electrical projection: NC_MVL12_MVL11_Generic_GJ from MVL12 to MVL11, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL12_MVL11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL12_MVL11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL12_MVL11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL12[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL11[0].soma], weight: 1.0
-        #h("a_MVL12[0].soma { syn_NC_MVL12_MVL11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL12[0].soma { syn_NC_MVL12_MVL11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL11[0].soma { syn_NC_MVL12_MVL11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL12_MVL11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL11[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL12_MVL11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL11[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL12_MVL11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL12[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL12_MVL13_Generic_GJ
         print("Adding electrical projection: NC_MVL12_MVL13_Generic_GJ from MVL12 to MVL13, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL12_MVL13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL12_MVL13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL12_MVL13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL12[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL13[0].soma], weight: 1.0
-        #h("a_MVL12[0].soma { syn_NC_MVL12_MVL13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL12[0].soma { syn_NC_MVL12_MVL13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL13[0].soma { syn_NC_MVL12_MVL13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL12_MVL13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL13[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL12_MVL13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL13[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL12_MVL13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL12[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL13_MVL12_Generic_GJ
         print("Adding electrical projection: NC_MVL13_MVL12_Generic_GJ from MVL13 to MVL12, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL13_MVL12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL13_MVL12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL13_MVL12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL13[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL12[0].soma], weight: 1.0
-        #h("a_MVL13[0].soma { syn_NC_MVL13_MVL12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL13[0].soma { syn_NC_MVL13_MVL12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL12[0].soma { syn_NC_MVL13_MVL12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL13_MVL12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL12[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL13_MVL12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL12[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL13_MVL12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL13[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL13_MVL14_Generic_GJ
         print("Adding electrical projection: NC_MVL13_MVL14_Generic_GJ from MVL13 to MVL14, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL13_MVL14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL13_MVL14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL13_MVL14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL13[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL14[0].soma], weight: 1.0
-        #h("a_MVL13[0].soma { syn_NC_MVL13_MVL14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL13[0].soma { syn_NC_MVL13_MVL14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL14[0].soma { syn_NC_MVL13_MVL14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL13_MVL14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL14[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL13_MVL14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL14[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL13_MVL14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL13[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL14_MVL13_Generic_GJ
         print("Adding electrical projection: NC_MVL14_MVL13_Generic_GJ from MVL14 to MVL13, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL14_MVL13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL14_MVL13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL14_MVL13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL14[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL13[0].soma], weight: 1.0
-        #h("a_MVL14[0].soma { syn_NC_MVL14_MVL13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL14[0].soma { syn_NC_MVL14_MVL13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL13[0].soma { syn_NC_MVL14_MVL13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL14_MVL13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL13[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL14_MVL13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL13[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL14_MVL13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL14[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL14_MVL15_Generic_GJ
         print("Adding electrical projection: NC_MVL14_MVL15_Generic_GJ from MVL14 to MVL15, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL14_MVL15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL14_MVL15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL14_MVL15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL14[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL15[0].soma], weight: 1.0
-        #h("a_MVL14[0].soma { syn_NC_MVL14_MVL15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL14[0].soma { syn_NC_MVL14_MVL15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL15[0].soma { syn_NC_MVL14_MVL15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL14_MVL15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL15[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL14_MVL15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL15[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL14_MVL15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL14[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL15_MVL14_Generic_GJ
         print("Adding electrical projection: NC_MVL15_MVL14_Generic_GJ from MVL15 to MVL14, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL15_MVL14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL15_MVL14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL15_MVL14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL15[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL14[0].soma], weight: 1.0
-        #h("a_MVL15[0].soma { syn_NC_MVL15_MVL14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL15[0].soma { syn_NC_MVL15_MVL14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL14[0].soma { syn_NC_MVL15_MVL14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL15_MVL14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL14[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL15_MVL14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL14[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL15_MVL14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL15[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL15_MVL16_Generic_GJ
         print("Adding electrical projection: NC_MVL15_MVL16_Generic_GJ from MVL15 to MVL16, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL15_MVL16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL15_MVL16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL15_MVL16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL15[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL16[0].soma], weight: 1.0
-        #h("a_MVL15[0].soma { syn_NC_MVL15_MVL16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL15[0].soma { syn_NC_MVL15_MVL16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL16[0].soma { syn_NC_MVL15_MVL16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL15_MVL16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL16[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL15_MVL16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL16[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL15_MVL16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL15[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL16_MVL15_Generic_GJ
         print("Adding electrical projection: NC_MVL16_MVL15_Generic_GJ from MVL16 to MVL15, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL16_MVL15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL16_MVL15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL16_MVL15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL16[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL15[0].soma], weight: 1.0
-        #h("a_MVL16[0].soma { syn_NC_MVL16_MVL15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL16[0].soma { syn_NC_MVL16_MVL15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL15[0].soma { syn_NC_MVL16_MVL15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL16_MVL15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL15[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL16_MVL15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL15[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL16_MVL15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL16[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL16_MVL17_Generic_GJ
         print("Adding electrical projection: NC_MVL16_MVL17_Generic_GJ from MVL16 to MVL17, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL16_MVL17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL16_MVL17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL16_MVL17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL16[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL17[0].soma], weight: 1.0
-        #h("a_MVL16[0].soma { syn_NC_MVL16_MVL17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL16[0].soma { syn_NC_MVL16_MVL17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL17[0].soma { syn_NC_MVL16_MVL17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL16_MVL17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL17[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL16_MVL17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL17[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL16_MVL17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL16[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL17_MVL16_Generic_GJ
         print("Adding electrical projection: NC_MVL17_MVL16_Generic_GJ from MVL17 to MVL16, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL17_MVL16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL17_MVL16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL17_MVL16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL17[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL16[0].soma], weight: 1.0
-        #h("a_MVL17[0].soma { syn_NC_MVL17_MVL16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL17[0].soma { syn_NC_MVL17_MVL16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL16[0].soma { syn_NC_MVL17_MVL16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL17_MVL16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL16[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL17_MVL16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL16[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL17_MVL16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL17[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL17_MVL18_Generic_GJ
         print("Adding electrical projection: NC_MVL17_MVL18_Generic_GJ from MVL17 to MVL18, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL17_MVL18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL17_MVL18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL17_MVL18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL17[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL18[0].soma], weight: 1.0
-        #h("a_MVL17[0].soma { syn_NC_MVL17_MVL18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL17[0].soma { syn_NC_MVL17_MVL18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL18[0].soma { syn_NC_MVL17_MVL18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL17_MVL18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL18[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL17_MVL18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL18[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL17_MVL18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL17[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL18_MVL17_Generic_GJ
         print("Adding electrical projection: NC_MVL18_MVL17_Generic_GJ from MVL18 to MVL17, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL18_MVL17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL18_MVL17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL18_MVL17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL18[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL17[0].soma], weight: 1.0
-        #h("a_MVL18[0].soma { syn_NC_MVL18_MVL17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL18[0].soma { syn_NC_MVL18_MVL17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL17[0].soma { syn_NC_MVL18_MVL17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL18_MVL17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL17[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL18_MVL17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL17[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL18_MVL17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL18[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL18_MVL19_Generic_GJ
         print("Adding electrical projection: NC_MVL18_MVL19_Generic_GJ from MVL18 to MVL19, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL18_MVL19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL18_MVL19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL18_MVL19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL18[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL19[0].soma], weight: 1.0
-        #h("a_MVL18[0].soma { syn_NC_MVL18_MVL19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL18[0].soma { syn_NC_MVL18_MVL19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL19[0].soma { syn_NC_MVL18_MVL19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL18_MVL19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL19[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL18_MVL19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL19[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL18_MVL19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL18[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL19_MVL18_Generic_GJ
         print("Adding electrical projection: NC_MVL19_MVL18_Generic_GJ from MVL19 to MVL18, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL19_MVL18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL19_MVL18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL19_MVL18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL19[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL18[0].soma], weight: 1.0
-        #h("a_MVL19[0].soma { syn_NC_MVL19_MVL18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL19[0].soma { syn_NC_MVL19_MVL18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL18[0].soma { syn_NC_MVL19_MVL18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL19_MVL18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL18[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL19_MVL18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL18[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL19_MVL18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL19[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL19_MVL20_Generic_GJ
         print("Adding electrical projection: NC_MVL19_MVL20_Generic_GJ from MVL19 to MVL20, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL19_MVL20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL19_MVL20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL19_MVL20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL19[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL20[0].soma], weight: 1.0
-        #h("a_MVL19[0].soma { syn_NC_MVL19_MVL20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL19[0].soma { syn_NC_MVL19_MVL20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL20[0].soma { syn_NC_MVL19_MVL20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL19_MVL20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL20[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL19_MVL20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL20[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL19_MVL20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL19[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL20_MVL19_Generic_GJ
         print("Adding electrical projection: NC_MVL20_MVL19_Generic_GJ from MVL20 to MVL19, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL20_MVL19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL20_MVL19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL20_MVL19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL20[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL19[0].soma], weight: 1.0
-        #h("a_MVL20[0].soma { syn_NC_MVL20_MVL19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL20[0].soma { syn_NC_MVL20_MVL19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL19[0].soma { syn_NC_MVL20_MVL19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL20_MVL19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL19[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL20_MVL19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL19[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL20_MVL19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL20[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL20_MVL21_Generic_GJ
         print("Adding electrical projection: NC_MVL20_MVL21_Generic_GJ from MVL20 to MVL21, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL20_MVL21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL20_MVL21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL20_MVL21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL20[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL21[0].soma], weight: 1.0
-        #h("a_MVL20[0].soma { syn_NC_MVL20_MVL21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL20[0].soma { syn_NC_MVL20_MVL21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL21[0].soma { syn_NC_MVL20_MVL21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL20_MVL21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL21[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL20_MVL21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL21[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL20_MVL21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL20[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL21_MVL20_Generic_GJ
         print("Adding electrical projection: NC_MVL21_MVL20_Generic_GJ from MVL21 to MVL20, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL21_MVL20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL21_MVL20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL21_MVL20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL21[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL20[0].soma], weight: 1.0
-        #h("a_MVL21[0].soma { syn_NC_MVL21_MVL20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL21[0].soma { syn_NC_MVL21_MVL20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL20[0].soma { syn_NC_MVL21_MVL20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL21_MVL20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL20[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL21_MVL20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL20[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL21_MVL20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL21[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL21_MVL22_Generic_GJ
         print("Adding electrical projection: NC_MVL21_MVL22_Generic_GJ from MVL21 to MVL22, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL21_MVL22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL21_MVL22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL21_MVL22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL21[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL22[0].soma], weight: 1.0
-        #h("a_MVL21[0].soma { syn_NC_MVL21_MVL22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL21[0].soma { syn_NC_MVL21_MVL22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL22[0].soma { syn_NC_MVL21_MVL22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL21_MVL22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL22[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL21_MVL22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL22[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL21_MVL22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL21[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL22_MVL21_Generic_GJ
         print("Adding electrical projection: NC_MVL22_MVL21_Generic_GJ from MVL22 to MVL21, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL22_MVL21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL22_MVL21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL22_MVL21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL22[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL21[0].soma], weight: 1.0
-        #h("a_MVL22[0].soma { syn_NC_MVL22_MVL21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL22[0].soma { syn_NC_MVL22_MVL21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL21[0].soma { syn_NC_MVL22_MVL21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL22_MVL21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL21[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL22_MVL21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL21[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL22_MVL21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL22[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL22_MVL23_Generic_GJ
         print("Adding electrical projection: NC_MVL22_MVL23_Generic_GJ from MVL22 to MVL23, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL22_MVL23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL22_MVL23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL22_MVL23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL22[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL23[0].soma], weight: 1.0
-        #h("a_MVL22[0].soma { syn_NC_MVL22_MVL23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL22[0].soma { syn_NC_MVL22_MVL23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL23[0].soma { syn_NC_MVL22_MVL23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL22_MVL23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL23[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL22_MVL23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL23[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL22_MVL23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL22[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVL23_MVL22_Generic_GJ
         print("Adding electrical projection: NC_MVL23_MVL22_Generic_GJ from MVL23 to MVL22, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVL23_MVL22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVL23_MVL22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVL23_MVL22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVL23[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL22[0].soma], weight: 1.0
-        #h("a_MVL23[0].soma { syn_NC_MVL23_MVL22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVL23[0].soma { syn_NC_MVL23_MVL22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVL22[0].soma { syn_NC_MVL23_MVL22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVL23_MVL22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL22[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVL23_MVL22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVL22[0].soma.v(0.5)")
         h("setpointer syn_NC_MVL23_MVL22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVL23[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR01_MVR02_Generic_GJ
         print("Adding electrical projection: NC_MVR01_MVR02_Generic_GJ from MVR01 to MVR02, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR01_MVR02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR01_MVR02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR01_MVR02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR01[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR02[0].soma], weight: 1.0
-        #h("a_MVR01[0].soma { syn_NC_MVR01_MVR02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR01[0].soma { syn_NC_MVR01_MVR02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR02[0].soma { syn_NC_MVR01_MVR02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR01_MVR02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR02[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR01_MVR02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR02[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR01_MVR02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR01[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR01_MVR03_Generic_GJ
         print("Adding electrical projection: NC_MVR01_MVR03_Generic_GJ from MVR01 to MVR03, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR01_MVR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR01_MVR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR01_MVR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR01[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR03[0].soma], weight: 1.0
-        #h("a_MVR01[0].soma { syn_NC_MVR01_MVR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR01[0].soma { syn_NC_MVR01_MVR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR03[0].soma { syn_NC_MVR01_MVR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR01_MVR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR03[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR01_MVR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR03[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR01_MVR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR01[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR02_MVR01_Generic_GJ
         print("Adding electrical projection: NC_MVR02_MVR01_Generic_GJ from MVR02 to MVR01, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR02_MVR01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR02_MVR01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR02_MVR01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR02[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR01[0].soma], weight: 1.0
-        #h("a_MVR02[0].soma { syn_NC_MVR02_MVR01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR02[0].soma { syn_NC_MVR02_MVR01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR01[0].soma { syn_NC_MVR02_MVR01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR02_MVR01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR01[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR02_MVR01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR01[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR02_MVR01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR02[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR02_MVR03_Generic_GJ
         print("Adding electrical projection: NC_MVR02_MVR03_Generic_GJ from MVR02 to MVR03, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR02_MVR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR02_MVR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR02_MVR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR02[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR03[0].soma], weight: 1.0
-        #h("a_MVR02[0].soma { syn_NC_MVR02_MVR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR02[0].soma { syn_NC_MVR02_MVR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR03[0].soma { syn_NC_MVR02_MVR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR02_MVR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR03[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR02_MVR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR03[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR02_MVR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR02[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR03_MVR01_Generic_GJ
         print("Adding electrical projection: NC_MVR03_MVR01_Generic_GJ from MVR03 to MVR01, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR03_MVR01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR03_MVR01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR03_MVR01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR03[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR01[0].soma], weight: 1.0
-        #h("a_MVR03[0].soma { syn_NC_MVR03_MVR01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR03[0].soma { syn_NC_MVR03_MVR01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR01[0].soma { syn_NC_MVR03_MVR01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR03_MVR01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR01[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR03_MVR01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR01[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR03_MVR01_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR03[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR03_MVR02_Generic_GJ
         print("Adding electrical projection: NC_MVR03_MVR02_Generic_GJ from MVR03 to MVR02, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR03_MVR02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR03_MVR02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR03_MVR02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR03[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR02[0].soma], weight: 1.0
-        #h("a_MVR03[0].soma { syn_NC_MVR03_MVR02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR03[0].soma { syn_NC_MVR03_MVR02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR02[0].soma { syn_NC_MVR03_MVR02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR03_MVR02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR02[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR03_MVR02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR02[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR03_MVR02_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR03[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR03_MVR04_Generic_GJ
         print("Adding electrical projection: NC_MVR03_MVR04_Generic_GJ from MVR03 to MVR04, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR03_MVR04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR03_MVR04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR03_MVR04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR03[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR04[0].soma], weight: 1.0
-        #h("a_MVR03[0].soma { syn_NC_MVR03_MVR04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR03[0].soma { syn_NC_MVR03_MVR04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR04[0].soma { syn_NC_MVR03_MVR04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR03_MVR04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR04[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR03_MVR04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR04[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR03_MVR04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR03[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR04_MVR03_Generic_GJ
         print("Adding electrical projection: NC_MVR04_MVR03_Generic_GJ from MVR04 to MVR03, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR04_MVR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR04_MVR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR04_MVR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR04[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR03[0].soma], weight: 1.0
-        #h("a_MVR04[0].soma { syn_NC_MVR04_MVR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR04[0].soma { syn_NC_MVR04_MVR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR03[0].soma { syn_NC_MVR04_MVR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR04_MVR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR03[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR04_MVR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR03[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR04_MVR03_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR04[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR04_MVR05_Generic_GJ
         print("Adding electrical projection: NC_MVR04_MVR05_Generic_GJ from MVR04 to MVR05, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR04_MVR05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR04_MVR05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR04_MVR05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR04[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR05[0].soma], weight: 1.0
-        #h("a_MVR04[0].soma { syn_NC_MVR04_MVR05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR04[0].soma { syn_NC_MVR04_MVR05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR05[0].soma { syn_NC_MVR04_MVR05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR04_MVR05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR05[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR04_MVR05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR05[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR04_MVR05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR04[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR05_MVR04_Generic_GJ
         print("Adding electrical projection: NC_MVR05_MVR04_Generic_GJ from MVR05 to MVR04, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR05_MVR04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR05_MVR04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR05_MVR04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR05[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR04[0].soma], weight: 1.0
-        #h("a_MVR05[0].soma { syn_NC_MVR05_MVR04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR05[0].soma { syn_NC_MVR05_MVR04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR04[0].soma { syn_NC_MVR05_MVR04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR05_MVR04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR04[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR05_MVR04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR04[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR05_MVR04_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR05[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR05_MVR06_Generic_GJ
         print("Adding electrical projection: NC_MVR05_MVR06_Generic_GJ from MVR05 to MVR06, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR05_MVR06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR05_MVR06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR05_MVR06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR05[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR06[0].soma], weight: 1.0
-        #h("a_MVR05[0].soma { syn_NC_MVR05_MVR06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR05[0].soma { syn_NC_MVR05_MVR06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR06[0].soma { syn_NC_MVR05_MVR06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR05_MVR06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR06[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR05_MVR06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR06[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR05_MVR06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR05[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR06_MVR05_Generic_GJ
         print("Adding electrical projection: NC_MVR06_MVR05_Generic_GJ from MVR06 to MVR05, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR06_MVR05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR06_MVR05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR06_MVR05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR06[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR05[0].soma], weight: 1.0
-        #h("a_MVR06[0].soma { syn_NC_MVR06_MVR05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR06[0].soma { syn_NC_MVR06_MVR05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR05[0].soma { syn_NC_MVR06_MVR05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR06_MVR05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR05[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR06_MVR05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR05[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR06_MVR05_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR06[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR06_MVR07_Generic_GJ
         print("Adding electrical projection: NC_MVR06_MVR07_Generic_GJ from MVR06 to MVR07, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR06_MVR07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR06_MVR07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR06_MVR07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR06[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR07[0].soma], weight: 1.0
-        #h("a_MVR06[0].soma { syn_NC_MVR06_MVR07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR06[0].soma { syn_NC_MVR06_MVR07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR07[0].soma { syn_NC_MVR06_MVR07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR06_MVR07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR07[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR06_MVR07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR07[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR06_MVR07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR06[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR07_MVR06_Generic_GJ
         print("Adding electrical projection: NC_MVR07_MVR06_Generic_GJ from MVR07 to MVR06, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR07_MVR06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR07_MVR06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR07_MVR06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR07[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR06[0].soma], weight: 1.0
-        #h("a_MVR07[0].soma { syn_NC_MVR07_MVR06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR07[0].soma { syn_NC_MVR07_MVR06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR06[0].soma { syn_NC_MVR07_MVR06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR07_MVR06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR06[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR07_MVR06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR06[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR07_MVR06_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR07[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR07_MVR08_Generic_GJ
         print("Adding electrical projection: NC_MVR07_MVR08_Generic_GJ from MVR07 to MVR08, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR07_MVR08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR07_MVR08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR07_MVR08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR07[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR08[0].soma], weight: 1.0
-        #h("a_MVR07[0].soma { syn_NC_MVR07_MVR08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR07[0].soma { syn_NC_MVR07_MVR08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR08[0].soma { syn_NC_MVR07_MVR08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR07_MVR08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR08[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR07_MVR08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR08[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR07_MVR08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR07[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR08_MVL09_Generic_GJ
         print("Adding electrical projection: NC_MVR08_MVL09_Generic_GJ from MVR08 to MVL09, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR08_MVL09_Generic_GJ_muscle_to_muscle_elec_syn_2conns_A[1]")
+        h("objectvar syn_NC_MVR08_MVL09_Generic_GJ_muscle_to_muscle_elec_syn_2conns_A[1]")
         h("objectvar syn_NC_MVR08_MVL09_Generic_GJ_muscle_to_muscle_elec_syn_2conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR08[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVL09[0].soma], weight: 1.0
-        #h("a_MVR08[0].soma { syn_NC_MVR08_MVL09_Generic_GJ_muscle_to_muscle_elec_syn_2conns_A[0] = new muscle_to_muscle_elec_syn_2conns(0.5) }")
+        h("a_MVR08[0].soma { syn_NC_MVR08_MVL09_Generic_GJ_muscle_to_muscle_elec_syn_2conns_A[0] = new muscle_to_muscle_elec_syn_2conns(0.5) }")
         h("a_MVL09[0].soma { syn_NC_MVR08_MVL09_Generic_GJ_muscle_to_muscle_elec_syn_2conns_B[0] = new muscle_to_muscle_elec_syn_2conns(0.5) }")
-        #h("setpointer syn_NC_MVR08_MVL09_Generic_GJ_muscle_to_muscle_elec_syn_2conns_A[0].vpeer, a_MVL09[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR08_MVL09_Generic_GJ_muscle_to_muscle_elec_syn_2conns_A[0].vpeer, a_MVL09[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR08_MVL09_Generic_GJ_muscle_to_muscle_elec_syn_2conns_B[0].vpeer, a_MVR08[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR08_MVR07_Generic_GJ
         print("Adding electrical projection: NC_MVR08_MVR07_Generic_GJ from MVR08 to MVR07, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR08_MVR07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR08_MVR07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR08_MVR07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR08[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR07[0].soma], weight: 1.0
-        #h("a_MVR08[0].soma { syn_NC_MVR08_MVR07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR08[0].soma { syn_NC_MVR08_MVR07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR07[0].soma { syn_NC_MVR08_MVR07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR08_MVR07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR07[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR08_MVR07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR07[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR08_MVR07_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR08[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR08_MVR09_Generic_GJ
         print("Adding electrical projection: NC_MVR08_MVR09_Generic_GJ from MVR08 to MVR09, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR08_MVR09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR08_MVR09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR08_MVR09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR08[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR09[0].soma], weight: 1.0
-        #h("a_MVR08[0].soma { syn_NC_MVR08_MVR09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR08[0].soma { syn_NC_MVR08_MVR09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR09[0].soma { syn_NC_MVR08_MVR09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR08_MVR09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR09[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR08_MVR09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR09[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR08_MVR09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR08[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR09_MVR08_Generic_GJ
         print("Adding electrical projection: NC_MVR09_MVR08_Generic_GJ from MVR09 to MVR08, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR09_MVR08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR09_MVR08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR09_MVR08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR09[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR08[0].soma], weight: 1.0
-        #h("a_MVR09[0].soma { syn_NC_MVR09_MVR08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR09[0].soma { syn_NC_MVR09_MVR08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR08[0].soma { syn_NC_MVR09_MVR08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR09_MVR08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR08[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR09_MVR08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR08[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR09_MVR08_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR09[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR09_MVR10_Generic_GJ
         print("Adding electrical projection: NC_MVR09_MVR10_Generic_GJ from MVR09 to MVR10, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR09_MVR10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR09_MVR10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR09_MVR10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR09[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR10[0].soma], weight: 1.0
-        #h("a_MVR09[0].soma { syn_NC_MVR09_MVR10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR09[0].soma { syn_NC_MVR09_MVR10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR10[0].soma { syn_NC_MVR09_MVR10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR09_MVR10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR10[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR09_MVR10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR10[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR09_MVR10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR09[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR10_MVR09_Generic_GJ
         print("Adding electrical projection: NC_MVR10_MVR09_Generic_GJ from MVR10 to MVR09, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR10_MVR09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR10_MVR09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR10_MVR09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR10[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR09[0].soma], weight: 1.0
-        #h("a_MVR10[0].soma { syn_NC_MVR10_MVR09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR10[0].soma { syn_NC_MVR10_MVR09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR09[0].soma { syn_NC_MVR10_MVR09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR10_MVR09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR09[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR10_MVR09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR09[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR10_MVR09_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR10[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR10_MVR11_Generic_GJ
         print("Adding electrical projection: NC_MVR10_MVR11_Generic_GJ from MVR10 to MVR11, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR10_MVR11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR10_MVR11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR10_MVR11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR10[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR11[0].soma], weight: 1.0
-        #h("a_MVR10[0].soma { syn_NC_MVR10_MVR11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR10[0].soma { syn_NC_MVR10_MVR11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR11[0].soma { syn_NC_MVR10_MVR11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR10_MVR11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR11[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR10_MVR11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR11[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR10_MVR11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR10[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR11_MVR10_Generic_GJ
         print("Adding electrical projection: NC_MVR11_MVR10_Generic_GJ from MVR11 to MVR10, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR11_MVR10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR11_MVR10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR11_MVR10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR11[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR10[0].soma], weight: 1.0
-        #h("a_MVR11[0].soma { syn_NC_MVR11_MVR10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR11[0].soma { syn_NC_MVR11_MVR10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR10[0].soma { syn_NC_MVR11_MVR10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR11_MVR10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR10[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR11_MVR10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR10[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR11_MVR10_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR11[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR11_MVR12_Generic_GJ
         print("Adding electrical projection: NC_MVR11_MVR12_Generic_GJ from MVR11 to MVR12, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR11_MVR12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR11_MVR12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR11_MVR12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR11[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR12[0].soma], weight: 1.0
-        #h("a_MVR11[0].soma { syn_NC_MVR11_MVR12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR11[0].soma { syn_NC_MVR11_MVR12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR12[0].soma { syn_NC_MVR11_MVR12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR11_MVR12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR12[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR11_MVR12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR12[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR11_MVR12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR11[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR12_MVR11_Generic_GJ
         print("Adding electrical projection: NC_MVR12_MVR11_Generic_GJ from MVR12 to MVR11, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR12_MVR11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR12_MVR11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR12_MVR11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR12[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR11[0].soma], weight: 1.0
-        #h("a_MVR12[0].soma { syn_NC_MVR12_MVR11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR12[0].soma { syn_NC_MVR12_MVR11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR11[0].soma { syn_NC_MVR12_MVR11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR12_MVR11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR11[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR12_MVR11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR11[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR12_MVR11_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR12[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR12_MVR13_Generic_GJ
         print("Adding electrical projection: NC_MVR12_MVR13_Generic_GJ from MVR12 to MVR13, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR12_MVR13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR12_MVR13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR12_MVR13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR12[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR13[0].soma], weight: 1.0
-        #h("a_MVR12[0].soma { syn_NC_MVR12_MVR13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR12[0].soma { syn_NC_MVR12_MVR13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR13[0].soma { syn_NC_MVR12_MVR13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR12_MVR13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR13[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR12_MVR13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR13[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR12_MVR13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR12[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR13_MVR12_Generic_GJ
         print("Adding electrical projection: NC_MVR13_MVR12_Generic_GJ from MVR13 to MVR12, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR13_MVR12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR13_MVR12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR13_MVR12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR13[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR12[0].soma], weight: 1.0
-        #h("a_MVR13[0].soma { syn_NC_MVR13_MVR12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR13[0].soma { syn_NC_MVR13_MVR12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR12[0].soma { syn_NC_MVR13_MVR12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR13_MVR12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR12[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR13_MVR12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR12[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR13_MVR12_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR13[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR13_MVR14_Generic_GJ
         print("Adding electrical projection: NC_MVR13_MVR14_Generic_GJ from MVR13 to MVR14, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR13_MVR14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR13_MVR14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR13_MVR14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR13[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR14[0].soma], weight: 1.0
-        #h("a_MVR13[0].soma { syn_NC_MVR13_MVR14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR13[0].soma { syn_NC_MVR13_MVR14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR14[0].soma { syn_NC_MVR13_MVR14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR13_MVR14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR14[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR13_MVR14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR14[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR13_MVR14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR13[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR14_MVR13_Generic_GJ
         print("Adding electrical projection: NC_MVR14_MVR13_Generic_GJ from MVR14 to MVR13, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR14_MVR13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR14_MVR13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR14_MVR13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR14[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR13[0].soma], weight: 1.0
-        #h("a_MVR14[0].soma { syn_NC_MVR14_MVR13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR14[0].soma { syn_NC_MVR14_MVR13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR13[0].soma { syn_NC_MVR14_MVR13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR14_MVR13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR13[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR14_MVR13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR13[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR14_MVR13_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR14[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR14_MVR15_Generic_GJ
         print("Adding electrical projection: NC_MVR14_MVR15_Generic_GJ from MVR14 to MVR15, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR14_MVR15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR14_MVR15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR14_MVR15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR14[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR15[0].soma], weight: 1.0
-        #h("a_MVR14[0].soma { syn_NC_MVR14_MVR15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR14[0].soma { syn_NC_MVR14_MVR15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR15[0].soma { syn_NC_MVR14_MVR15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR14_MVR15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR15[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR14_MVR15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR15[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR14_MVR15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR14[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR15_MVR14_Generic_GJ
         print("Adding electrical projection: NC_MVR15_MVR14_Generic_GJ from MVR15 to MVR14, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR15_MVR14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR15_MVR14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR15_MVR14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR15[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR14[0].soma], weight: 1.0
-        #h("a_MVR15[0].soma { syn_NC_MVR15_MVR14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR15[0].soma { syn_NC_MVR15_MVR14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR14[0].soma { syn_NC_MVR15_MVR14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR15_MVR14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR14[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR15_MVR14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR14[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR15_MVR14_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR15[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR15_MVR16_Generic_GJ
         print("Adding electrical projection: NC_MVR15_MVR16_Generic_GJ from MVR15 to MVR16, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR15_MVR16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR15_MVR16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR15_MVR16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR15[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR16[0].soma], weight: 1.0
-        #h("a_MVR15[0].soma { syn_NC_MVR15_MVR16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR15[0].soma { syn_NC_MVR15_MVR16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR16[0].soma { syn_NC_MVR15_MVR16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR15_MVR16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR16[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR15_MVR16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR16[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR15_MVR16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR15[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR16_MVR15_Generic_GJ
         print("Adding electrical projection: NC_MVR16_MVR15_Generic_GJ from MVR16 to MVR15, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR16_MVR15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR16_MVR15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR16_MVR15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR16[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR15[0].soma], weight: 1.0
-        #h("a_MVR16[0].soma { syn_NC_MVR16_MVR15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR16[0].soma { syn_NC_MVR16_MVR15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR15[0].soma { syn_NC_MVR16_MVR15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR16_MVR15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR15[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR16_MVR15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR15[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR16_MVR15_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR16[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR16_MVR17_Generic_GJ
         print("Adding electrical projection: NC_MVR16_MVR17_Generic_GJ from MVR16 to MVR17, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR16_MVR17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR16_MVR17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR16_MVR17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR16[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR17[0].soma], weight: 1.0
-        #h("a_MVR16[0].soma { syn_NC_MVR16_MVR17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR16[0].soma { syn_NC_MVR16_MVR17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR17[0].soma { syn_NC_MVR16_MVR17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR16_MVR17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR17[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR16_MVR17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR17[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR16_MVR17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR16[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR17_MVR16_Generic_GJ
         print("Adding electrical projection: NC_MVR17_MVR16_Generic_GJ from MVR17 to MVR16, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR17_MVR16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR17_MVR16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR17_MVR16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR17[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR16[0].soma], weight: 1.0
-        #h("a_MVR17[0].soma { syn_NC_MVR17_MVR16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR17[0].soma { syn_NC_MVR17_MVR16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR16[0].soma { syn_NC_MVR17_MVR16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR17_MVR16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR16[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR17_MVR16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR16[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR17_MVR16_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR17[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR17_MVR18_Generic_GJ
         print("Adding electrical projection: NC_MVR17_MVR18_Generic_GJ from MVR17 to MVR18, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR17_MVR18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR17_MVR18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR17_MVR18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR17[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR18[0].soma], weight: 1.0
-        #h("a_MVR17[0].soma { syn_NC_MVR17_MVR18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR17[0].soma { syn_NC_MVR17_MVR18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR18[0].soma { syn_NC_MVR17_MVR18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR17_MVR18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR18[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR17_MVR18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR18[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR17_MVR18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR17[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR18_MVR17_Generic_GJ
         print("Adding electrical projection: NC_MVR18_MVR17_Generic_GJ from MVR18 to MVR17, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR18_MVR17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR18_MVR17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR18_MVR17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR18[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR17[0].soma], weight: 1.0
-        #h("a_MVR18[0].soma { syn_NC_MVR18_MVR17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR18[0].soma { syn_NC_MVR18_MVR17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR17[0].soma { syn_NC_MVR18_MVR17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR18_MVR17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR17[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR18_MVR17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR17[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR18_MVR17_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR18[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR18_MVR19_Generic_GJ
         print("Adding electrical projection: NC_MVR18_MVR19_Generic_GJ from MVR18 to MVR19, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR18_MVR19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR18_MVR19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR18_MVR19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR18[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR19[0].soma], weight: 1.0
-        #h("a_MVR18[0].soma { syn_NC_MVR18_MVR19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR18[0].soma { syn_NC_MVR18_MVR19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR19[0].soma { syn_NC_MVR18_MVR19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR18_MVR19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR19[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR18_MVR19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR19[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR18_MVR19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR18[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR19_MVR18_Generic_GJ
         print("Adding electrical projection: NC_MVR19_MVR18_Generic_GJ from MVR19 to MVR18, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR19_MVR18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR19_MVR18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR19_MVR18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR19[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR18[0].soma], weight: 1.0
-        #h("a_MVR19[0].soma { syn_NC_MVR19_MVR18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR19[0].soma { syn_NC_MVR19_MVR18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR18[0].soma { syn_NC_MVR19_MVR18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR19_MVR18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR18[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR19_MVR18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR18[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR19_MVR18_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR19[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR19_MVR20_Generic_GJ
         print("Adding electrical projection: NC_MVR19_MVR20_Generic_GJ from MVR19 to MVR20, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR19_MVR20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR19_MVR20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR19_MVR20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR19[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR20[0].soma], weight: 1.0
-        #h("a_MVR19[0].soma { syn_NC_MVR19_MVR20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR19[0].soma { syn_NC_MVR19_MVR20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR20[0].soma { syn_NC_MVR19_MVR20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR19_MVR20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR20[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR19_MVR20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR20[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR19_MVR20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR19[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR20_MVR19_Generic_GJ
         print("Adding electrical projection: NC_MVR20_MVR19_Generic_GJ from MVR20 to MVR19, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR20_MVR19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR20_MVR19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR20_MVR19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR20[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR19[0].soma], weight: 1.0
-        #h("a_MVR20[0].soma { syn_NC_MVR20_MVR19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR20[0].soma { syn_NC_MVR20_MVR19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR19[0].soma { syn_NC_MVR20_MVR19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR20_MVR19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR19[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR20_MVR19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR19[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR20_MVR19_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR20[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR20_MVR21_Generic_GJ
         print("Adding electrical projection: NC_MVR20_MVR21_Generic_GJ from MVR20 to MVR21, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR20_MVR21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR20_MVR21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR20_MVR21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR20[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR21[0].soma], weight: 1.0
-        #h("a_MVR20[0].soma { syn_NC_MVR20_MVR21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR20[0].soma { syn_NC_MVR20_MVR21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR21[0].soma { syn_NC_MVR20_MVR21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR20_MVR21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR21[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR20_MVR21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR21[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR20_MVR21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR20[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR21_MVR20_Generic_GJ
         print("Adding electrical projection: NC_MVR21_MVR20_Generic_GJ from MVR21 to MVR20, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR21_MVR20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR21_MVR20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR21_MVR20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR21[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR20[0].soma], weight: 1.0
-        #h("a_MVR21[0].soma { syn_NC_MVR21_MVR20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR21[0].soma { syn_NC_MVR21_MVR20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR20[0].soma { syn_NC_MVR21_MVR20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR21_MVR20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR20[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR21_MVR20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR20[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR21_MVR20_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR21[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR21_MVR22_Generic_GJ
         print("Adding electrical projection: NC_MVR21_MVR22_Generic_GJ from MVR21 to MVR22, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR21_MVR22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR21_MVR22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR21_MVR22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR21[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR22[0].soma], weight: 1.0
-        #h("a_MVR21[0].soma { syn_NC_MVR21_MVR22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR21[0].soma { syn_NC_MVR21_MVR22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR22[0].soma { syn_NC_MVR21_MVR22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR21_MVR22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR22[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR21_MVR22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR22[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR21_MVR22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR21[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR22_MVR21_Generic_GJ
         print("Adding electrical projection: NC_MVR22_MVR21_Generic_GJ from MVR22 to MVR21, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR22_MVR21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR22_MVR21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR22_MVR21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR22[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR21[0].soma], weight: 1.0
-        #h("a_MVR22[0].soma { syn_NC_MVR22_MVR21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR22[0].soma { syn_NC_MVR22_MVR21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR21[0].soma { syn_NC_MVR22_MVR21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR22_MVR21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR21[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR22_MVR21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR21[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR22_MVR21_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR22[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR22_MVR23_Generic_GJ
         print("Adding electrical projection: NC_MVR22_MVR23_Generic_GJ from MVR22 to MVR23, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR22_MVR23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR22_MVR23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR22_MVR23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR22[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR23[0].soma], weight: 1.0
-        #h("a_MVR22[0].soma { syn_NC_MVR22_MVR23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR22[0].soma { syn_NC_MVR22_MVR23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR23[0].soma { syn_NC_MVR22_MVR23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR22_MVR23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR23[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR22_MVR23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR23[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR22_MVR23_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR22[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_MVR23_MVR22_Generic_GJ
         print("Adding electrical projection: NC_MVR23_MVR22_Generic_GJ from MVR23 to MVR22, with 1 connection(s)")
 
-        #h("objectvar syn_NC_MVR23_MVR22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
+        h("objectvar syn_NC_MVR23_MVR22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[1]")
         h("objectvar syn_NC_MVR23_MVR22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_MVR23[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_MVR22[0].soma], weight: 1.0
-        #h("a_MVR23[0].soma { syn_NC_MVR23_MVR22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
+        h("a_MVR23[0].soma { syn_NC_MVR23_MVR22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
         h("a_MVR22[0].soma { syn_NC_MVR23_MVR22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0] = new muscle_to_muscle_elec_syn_15conns(0.5) }")
-        #h("setpointer syn_NC_MVR23_MVR22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR22[0].soma.v(0.5)")
+        h("setpointer syn_NC_MVR23_MVR22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_A[0].vpeer, a_MVR22[0].soma.v(0.5)")
         h("setpointer syn_NC_MVR23_MVR22_Generic_GJ_muscle_to_muscle_elec_syn_15conns_B[0].vpeer, a_MVR23[0].soma.v(0.5)")
 
         # ######################   Continuous Projection: NC_AVBL_AVBR_Acetylcholine
@@ -7645,7 +7645,7 @@ class NeuronSimulation():
         num_points = len(py_v_time)  # Simulation may have been stopped before tstop...
 
         for i in range(num_points):
-            f_time_f2.write('%f'% py_v_time[i])  # Save in SI units...+ '\n')
+            f_time_f2.write('%f'% py_v_time[i])  # Save in SI units...
         f_time_f2.close()
         print("Saved data to: time.dat")
 
@@ -7664,7 +7664,7 @@ class NeuronSimulation():
         num_points = len(py_v_time)  # Simulation may have been stopped before tstop...
 
         for i in range(num_points):
-            f_neurons_activity_f2.write('%e\t'% py_v_time[i]  + '%e\t'%(py_v_AVBL_v_neurons_activity[i])  + '%e\t'%(py_v_AVBR_v_neurons_activity[i])  + '%e\t'%(py_v_DB1_v_neurons_activity[i])  + '%e\t'%(py_v_DB2_v_neurons_activity[i])  + '%e\t'%(py_v_DB3_v_neurons_activity[i])  + '%e\t'%(py_v_DB4_v_neurons_activity[i])  + '%e\t'%(py_v_DB5_v_neurons_activity[i])  + '%e\t'%(py_v_DB6_v_neurons_activity[i])  + '%e\t'%(py_v_DB7_v_neurons_activity[i]) + '\n')
+            f_neurons_activity_f2.write('%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t\n' % (py_v_time[i], py_v_AVBL_v_neurons_activity[i], py_v_AVBR_v_neurons_activity[i], py_v_DB1_v_neurons_activity[i], py_v_DB2_v_neurons_activity[i], py_v_DB3_v_neurons_activity[i], py_v_DB4_v_neurons_activity[i], py_v_DB5_v_neurons_activity[i], py_v_DB6_v_neurons_activity[i], py_v_DB7_v_neurons_activity[i], ))
         f_neurons_activity_f2.close()
         print("Saved data to: c302_C2_AVB_DB.activity.dat")
 
@@ -7769,7 +7769,7 @@ class NeuronSimulation():
         num_points = len(py_v_time)  # Simulation may have been stopped before tstop...
 
         for i in range(num_points):
-            f_muscles_v_f2.write('%e\t'% py_v_time[i]  + '%e\t'%(py_v_MDR01_v_muscles_v[i])  + '%e\t'%(py_v_MDR02_v_muscles_v[i])  + '%e\t'%(py_v_MDR03_v_muscles_v[i])  + '%e\t'%(py_v_MDR04_v_muscles_v[i])  + '%e\t'%(py_v_MDR05_v_muscles_v[i])  + '%e\t'%(py_v_MDR06_v_muscles_v[i])  + '%e\t'%(py_v_MDR07_v_muscles_v[i])  + '%e\t'%(py_v_MDR08_v_muscles_v[i])  + '%e\t'%(py_v_MDR09_v_muscles_v[i])  + '%e\t'%(py_v_MDR10_v_muscles_v[i])  + '%e\t'%(py_v_MDR11_v_muscles_v[i])  + '%e\t'%(py_v_MDR12_v_muscles_v[i])  + '%e\t'%(py_v_MDR13_v_muscles_v[i])  + '%e\t'%(py_v_MDR14_v_muscles_v[i])  + '%e\t'%(py_v_MDR15_v_muscles_v[i])  + '%e\t'%(py_v_MDR16_v_muscles_v[i])  + '%e\t'%(py_v_MDR17_v_muscles_v[i])  + '%e\t'%(py_v_MDR18_v_muscles_v[i])  + '%e\t'%(py_v_MDR19_v_muscles_v[i])  + '%e\t'%(py_v_MDR20_v_muscles_v[i])  + '%e\t'%(py_v_MDR21_v_muscles_v[i])  + '%e\t'%(py_v_MDR22_v_muscles_v[i])  + '%e\t'%(py_v_MDR23_v_muscles_v[i])  + '%e\t'%(py_v_MDR24_v_muscles_v[i])  + '%e\t'%(py_v_MVR01_v_muscles_v[i])  + '%e\t'%(py_v_MVR02_v_muscles_v[i])  + '%e\t'%(py_v_MVR03_v_muscles_v[i])  + '%e\t'%(py_v_MVR04_v_muscles_v[i])  + '%e\t'%(py_v_MVR05_v_muscles_v[i])  + '%e\t'%(py_v_MVR06_v_muscles_v[i])  + '%e\t'%(py_v_MVR07_v_muscles_v[i])  + '%e\t'%(py_v_MVR08_v_muscles_v[i])  + '%e\t'%(py_v_MVR09_v_muscles_v[i])  + '%e\t'%(py_v_MVR10_v_muscles_v[i])  + '%e\t'%(py_v_MVR11_v_muscles_v[i])  + '%e\t'%(py_v_MVR12_v_muscles_v[i])  + '%e\t'%(py_v_MVR13_v_muscles_v[i])  + '%e\t'%(py_v_MVR14_v_muscles_v[i])  + '%e\t'%(py_v_MVR15_v_muscles_v[i])  + '%e\t'%(py_v_MVR16_v_muscles_v[i])  + '%e\t'%(py_v_MVR17_v_muscles_v[i])  + '%e\t'%(py_v_MVR18_v_muscles_v[i])  + '%e\t'%(py_v_MVR19_v_muscles_v[i])  + '%e\t'%(py_v_MVR20_v_muscles_v[i])  + '%e\t'%(py_v_MVR21_v_muscles_v[i])  + '%e\t'%(py_v_MVR22_v_muscles_v[i])  + '%e\t'%(py_v_MVR23_v_muscles_v[i])  + '%e\t'%(py_v_MVL01_v_muscles_v[i])  + '%e\t'%(py_v_MVL02_v_muscles_v[i])  + '%e\t'%(py_v_MVL03_v_muscles_v[i])  + '%e\t'%(py_v_MVL04_v_muscles_v[i])  + '%e\t'%(py_v_MVL05_v_muscles_v[i])  + '%e\t'%(py_v_MVL06_v_muscles_v[i])  + '%e\t'%(py_v_MVL07_v_muscles_v[i])  + '%e\t'%(py_v_MVL08_v_muscles_v[i])  + '%e\t'%(py_v_MVL09_v_muscles_v[i])  + '%e\t'%(py_v_MVL10_v_muscles_v[i])  + '%e\t'%(py_v_MVL11_v_muscles_v[i])  + '%e\t'%(py_v_MVL12_v_muscles_v[i])  + '%e\t'%(py_v_MVL13_v_muscles_v[i])  + '%e\t'%(py_v_MVL14_v_muscles_v[i])  + '%e\t'%(py_v_MVL15_v_muscles_v[i])  + '%e\t'%(py_v_MVL16_v_muscles_v[i])  + '%e\t'%(py_v_MVL17_v_muscles_v[i])  + '%e\t'%(py_v_MVL18_v_muscles_v[i])  + '%e\t'%(py_v_MVL19_v_muscles_v[i])  + '%e\t'%(py_v_MVL20_v_muscles_v[i])  + '%e\t'%(py_v_MVL21_v_muscles_v[i])  + '%e\t'%(py_v_MVL22_v_muscles_v[i])  + '%e\t'%(py_v_MVL23_v_muscles_v[i])  + '%e\t'%(py_v_MVL24_v_muscles_v[i])  + '%e\t'%(py_v_MDL01_v_muscles_v[i])  + '%e\t'%(py_v_MDL02_v_muscles_v[i])  + '%e\t'%(py_v_MDL03_v_muscles_v[i])  + '%e\t'%(py_v_MDL04_v_muscles_v[i])  + '%e\t'%(py_v_MDL05_v_muscles_v[i])  + '%e\t'%(py_v_MDL06_v_muscles_v[i])  + '%e\t'%(py_v_MDL07_v_muscles_v[i])  + '%e\t'%(py_v_MDL08_v_muscles_v[i])  + '%e\t'%(py_v_MDL09_v_muscles_v[i])  + '%e\t'%(py_v_MDL10_v_muscles_v[i])  + '%e\t'%(py_v_MDL11_v_muscles_v[i])  + '%e\t'%(py_v_MDL12_v_muscles_v[i])  + '%e\t'%(py_v_MDL13_v_muscles_v[i])  + '%e\t'%(py_v_MDL14_v_muscles_v[i])  + '%e\t'%(py_v_MDL15_v_muscles_v[i])  + '%e\t'%(py_v_MDL16_v_muscles_v[i])  + '%e\t'%(py_v_MDL17_v_muscles_v[i])  + '%e\t'%(py_v_MDL18_v_muscles_v[i])  + '%e\t'%(py_v_MDL19_v_muscles_v[i])  + '%e\t'%(py_v_MDL20_v_muscles_v[i])  + '%e\t'%(py_v_MDL21_v_muscles_v[i])  + '%e\t'%(py_v_MDL22_v_muscles_v[i])  + '%e\t'%(py_v_MDL23_v_muscles_v[i])  + '%e\t'%(py_v_MDL24_v_muscles_v[i]) + '\n')
+            f_muscles_v_f2.write('%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t\n' % (py_v_time[i], py_v_MDR01_v_muscles_v[i], py_v_MDR02_v_muscles_v[i], py_v_MDR03_v_muscles_v[i], py_v_MDR04_v_muscles_v[i], py_v_MDR05_v_muscles_v[i], py_v_MDR06_v_muscles_v[i], py_v_MDR07_v_muscles_v[i], py_v_MDR08_v_muscles_v[i], py_v_MDR09_v_muscles_v[i], py_v_MDR10_v_muscles_v[i], py_v_MDR11_v_muscles_v[i], py_v_MDR12_v_muscles_v[i], py_v_MDR13_v_muscles_v[i], py_v_MDR14_v_muscles_v[i], py_v_MDR15_v_muscles_v[i], py_v_MDR16_v_muscles_v[i], py_v_MDR17_v_muscles_v[i], py_v_MDR18_v_muscles_v[i], py_v_MDR19_v_muscles_v[i], py_v_MDR20_v_muscles_v[i], py_v_MDR21_v_muscles_v[i], py_v_MDR22_v_muscles_v[i], py_v_MDR23_v_muscles_v[i], py_v_MDR24_v_muscles_v[i], py_v_MVR01_v_muscles_v[i], py_v_MVR02_v_muscles_v[i], py_v_MVR03_v_muscles_v[i], py_v_MVR04_v_muscles_v[i], py_v_MVR05_v_muscles_v[i], py_v_MVR06_v_muscles_v[i], py_v_MVR07_v_muscles_v[i], py_v_MVR08_v_muscles_v[i], py_v_MVR09_v_muscles_v[i], py_v_MVR10_v_muscles_v[i], py_v_MVR11_v_muscles_v[i], py_v_MVR12_v_muscles_v[i], py_v_MVR13_v_muscles_v[i], py_v_MVR14_v_muscles_v[i], py_v_MVR15_v_muscles_v[i], py_v_MVR16_v_muscles_v[i], py_v_MVR17_v_muscles_v[i], py_v_MVR18_v_muscles_v[i], py_v_MVR19_v_muscles_v[i], py_v_MVR20_v_muscles_v[i], py_v_MVR21_v_muscles_v[i], py_v_MVR22_v_muscles_v[i], py_v_MVR23_v_muscles_v[i], py_v_MVL01_v_muscles_v[i], py_v_MVL02_v_muscles_v[i], py_v_MVL03_v_muscles_v[i], py_v_MVL04_v_muscles_v[i], py_v_MVL05_v_muscles_v[i], py_v_MVL06_v_muscles_v[i], py_v_MVL07_v_muscles_v[i], py_v_MVL08_v_muscles_v[i], py_v_MVL09_v_muscles_v[i], py_v_MVL10_v_muscles_v[i], py_v_MVL11_v_muscles_v[i], py_v_MVL12_v_muscles_v[i], py_v_MVL13_v_muscles_v[i], py_v_MVL14_v_muscles_v[i], py_v_MVL15_v_muscles_v[i], py_v_MVL16_v_muscles_v[i], py_v_MVL17_v_muscles_v[i], py_v_MVL18_v_muscles_v[i], py_v_MVL19_v_muscles_v[i], py_v_MVL20_v_muscles_v[i], py_v_MVL21_v_muscles_v[i], py_v_MVL22_v_muscles_v[i], py_v_MVL23_v_muscles_v[i], py_v_MVL24_v_muscles_v[i], py_v_MDL01_v_muscles_v[i], py_v_MDL02_v_muscles_v[i], py_v_MDL03_v_muscles_v[i], py_v_MDL04_v_muscles_v[i], py_v_MDL05_v_muscles_v[i], py_v_MDL06_v_muscles_v[i], py_v_MDL07_v_muscles_v[i], py_v_MDL08_v_muscles_v[i], py_v_MDL09_v_muscles_v[i], py_v_MDL10_v_muscles_v[i], py_v_MDL11_v_muscles_v[i], py_v_MDL12_v_muscles_v[i], py_v_MDL13_v_muscles_v[i], py_v_MDL14_v_muscles_v[i], py_v_MDL15_v_muscles_v[i], py_v_MDL16_v_muscles_v[i], py_v_MDL17_v_muscles_v[i], py_v_MDL18_v_muscles_v[i], py_v_MDL19_v_muscles_v[i], py_v_MDL20_v_muscles_v[i], py_v_MDL21_v_muscles_v[i], py_v_MDL22_v_muscles_v[i], py_v_MDL23_v_muscles_v[i], py_v_MDL24_v_muscles_v[i], ))
         f_muscles_v_f2.close()
         print("Saved data to: c302_C2_AVB_DB.muscles.dat")
 
@@ -7874,7 +7874,7 @@ class NeuronSimulation():
         num_points = len(py_v_time)  # Simulation may have been stopped before tstop...
 
         for i in range(num_points):
-            f_muscles_activity_f2.write('%e\t'% py_v_time[i]  + '%e\t'%(py_v_MDR01_v_muscles_activity[i])  + '%e\t'%(py_v_MDR02_v_muscles_activity[i])  + '%e\t'%(py_v_MDR03_v_muscles_activity[i])  + '%e\t'%(py_v_MDR04_v_muscles_activity[i])  + '%e\t'%(py_v_MDR05_v_muscles_activity[i])  + '%e\t'%(py_v_MDR06_v_muscles_activity[i])  + '%e\t'%(py_v_MDR07_v_muscles_activity[i])  + '%e\t'%(py_v_MDR08_v_muscles_activity[i])  + '%e\t'%(py_v_MDR09_v_muscles_activity[i])  + '%e\t'%(py_v_MDR10_v_muscles_activity[i])  + '%e\t'%(py_v_MDR11_v_muscles_activity[i])  + '%e\t'%(py_v_MDR12_v_muscles_activity[i])  + '%e\t'%(py_v_MDR13_v_muscles_activity[i])  + '%e\t'%(py_v_MDR14_v_muscles_activity[i])  + '%e\t'%(py_v_MDR15_v_muscles_activity[i])  + '%e\t'%(py_v_MDR16_v_muscles_activity[i])  + '%e\t'%(py_v_MDR17_v_muscles_activity[i])  + '%e\t'%(py_v_MDR18_v_muscles_activity[i])  + '%e\t'%(py_v_MDR19_v_muscles_activity[i])  + '%e\t'%(py_v_MDR20_v_muscles_activity[i])  + '%e\t'%(py_v_MDR21_v_muscles_activity[i])  + '%e\t'%(py_v_MDR22_v_muscles_activity[i])  + '%e\t'%(py_v_MDR23_v_muscles_activity[i])  + '%e\t'%(py_v_MDR24_v_muscles_activity[i])  + '%e\t'%(py_v_MVR01_v_muscles_activity[i])  + '%e\t'%(py_v_MVR02_v_muscles_activity[i])  + '%e\t'%(py_v_MVR03_v_muscles_activity[i])  + '%e\t'%(py_v_MVR04_v_muscles_activity[i])  + '%e\t'%(py_v_MVR05_v_muscles_activity[i])  + '%e\t'%(py_v_MVR06_v_muscles_activity[i])  + '%e\t'%(py_v_MVR07_v_muscles_activity[i])  + '%e\t'%(py_v_MVR08_v_muscles_activity[i])  + '%e\t'%(py_v_MVR09_v_muscles_activity[i])  + '%e\t'%(py_v_MVR10_v_muscles_activity[i])  + '%e\t'%(py_v_MVR11_v_muscles_activity[i])  + '%e\t'%(py_v_MVR12_v_muscles_activity[i])  + '%e\t'%(py_v_MVR13_v_muscles_activity[i])  + '%e\t'%(py_v_MVR14_v_muscles_activity[i])  + '%e\t'%(py_v_MVR15_v_muscles_activity[i])  + '%e\t'%(py_v_MVR16_v_muscles_activity[i])  + '%e\t'%(py_v_MVR17_v_muscles_activity[i])  + '%e\t'%(py_v_MVR18_v_muscles_activity[i])  + '%e\t'%(py_v_MVR19_v_muscles_activity[i])  + '%e\t'%(py_v_MVR20_v_muscles_activity[i])  + '%e\t'%(py_v_MVR21_v_muscles_activity[i])  + '%e\t'%(py_v_MVR22_v_muscles_activity[i])  + '%e\t'%(py_v_MVR23_v_muscles_activity[i])  + '%e\t'%(py_v_MVL01_v_muscles_activity[i])  + '%e\t'%(py_v_MVL02_v_muscles_activity[i])  + '%e\t'%(py_v_MVL03_v_muscles_activity[i])  + '%e\t'%(py_v_MVL04_v_muscles_activity[i])  + '%e\t'%(py_v_MVL05_v_muscles_activity[i])  + '%e\t'%(py_v_MVL06_v_muscles_activity[i])  + '%e\t'%(py_v_MVL07_v_muscles_activity[i])  + '%e\t'%(py_v_MVL08_v_muscles_activity[i])  + '%e\t'%(py_v_MVL09_v_muscles_activity[i])  + '%e\t'%(py_v_MVL10_v_muscles_activity[i])  + '%e\t'%(py_v_MVL11_v_muscles_activity[i])  + '%e\t'%(py_v_MVL12_v_muscles_activity[i])  + '%e\t'%(py_v_MVL13_v_muscles_activity[i])  + '%e\t'%(py_v_MVL14_v_muscles_activity[i])  + '%e\t'%(py_v_MVL15_v_muscles_activity[i])  + '%e\t'%(py_v_MVL16_v_muscles_activity[i])  + '%e\t'%(py_v_MVL17_v_muscles_activity[i])  + '%e\t'%(py_v_MVL18_v_muscles_activity[i])  + '%e\t'%(py_v_MVL19_v_muscles_activity[i])  + '%e\t'%(py_v_MVL20_v_muscles_activity[i])  + '%e\t'%(py_v_MVL21_v_muscles_activity[i])  + '%e\t'%(py_v_MVL22_v_muscles_activity[i])  + '%e\t'%(py_v_MVL23_v_muscles_activity[i])  + '%e\t'%(py_v_MVL24_v_muscles_activity[i])  + '%e\t'%(py_v_MDL01_v_muscles_activity[i])  + '%e\t'%(py_v_MDL02_v_muscles_activity[i])  + '%e\t'%(py_v_MDL03_v_muscles_activity[i])  + '%e\t'%(py_v_MDL04_v_muscles_activity[i])  + '%e\t'%(py_v_MDL05_v_muscles_activity[i])  + '%e\t'%(py_v_MDL06_v_muscles_activity[i])  + '%e\t'%(py_v_MDL07_v_muscles_activity[i])  + '%e\t'%(py_v_MDL08_v_muscles_activity[i])  + '%e\t'%(py_v_MDL09_v_muscles_activity[i])  + '%e\t'%(py_v_MDL10_v_muscles_activity[i])  + '%e\t'%(py_v_MDL11_v_muscles_activity[i])  + '%e\t'%(py_v_MDL12_v_muscles_activity[i])  + '%e\t'%(py_v_MDL13_v_muscles_activity[i])  + '%e\t'%(py_v_MDL14_v_muscles_activity[i])  + '%e\t'%(py_v_MDL15_v_muscles_activity[i])  + '%e\t'%(py_v_MDL16_v_muscles_activity[i])  + '%e\t'%(py_v_MDL17_v_muscles_activity[i])  + '%e\t'%(py_v_MDL18_v_muscles_activity[i])  + '%e\t'%(py_v_MDL19_v_muscles_activity[i])  + '%e\t'%(py_v_MDL20_v_muscles_activity[i])  + '%e\t'%(py_v_MDL21_v_muscles_activity[i])  + '%e\t'%(py_v_MDL22_v_muscles_activity[i])  + '%e\t'%(py_v_MDL23_v_muscles_activity[i])  + '%e\t'%(py_v_MDL24_v_muscles_activity[i]) + '\n')
+            f_muscles_activity_f2.write('%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t\n' % (py_v_time[i], py_v_MDR01_v_muscles_activity[i], py_v_MDR02_v_muscles_activity[i], py_v_MDR03_v_muscles_activity[i], py_v_MDR04_v_muscles_activity[i], py_v_MDR05_v_muscles_activity[i], py_v_MDR06_v_muscles_activity[i], py_v_MDR07_v_muscles_activity[i], py_v_MDR08_v_muscles_activity[i], py_v_MDR09_v_muscles_activity[i], py_v_MDR10_v_muscles_activity[i], py_v_MDR11_v_muscles_activity[i], py_v_MDR12_v_muscles_activity[i], py_v_MDR13_v_muscles_activity[i], py_v_MDR14_v_muscles_activity[i], py_v_MDR15_v_muscles_activity[i], py_v_MDR16_v_muscles_activity[i], py_v_MDR17_v_muscles_activity[i], py_v_MDR18_v_muscles_activity[i], py_v_MDR19_v_muscles_activity[i], py_v_MDR20_v_muscles_activity[i], py_v_MDR21_v_muscles_activity[i], py_v_MDR22_v_muscles_activity[i], py_v_MDR23_v_muscles_activity[i], py_v_MDR24_v_muscles_activity[i], py_v_MVR01_v_muscles_activity[i], py_v_MVR02_v_muscles_activity[i], py_v_MVR03_v_muscles_activity[i], py_v_MVR04_v_muscles_activity[i], py_v_MVR05_v_muscles_activity[i], py_v_MVR06_v_muscles_activity[i], py_v_MVR07_v_muscles_activity[i], py_v_MVR08_v_muscles_activity[i], py_v_MVR09_v_muscles_activity[i], py_v_MVR10_v_muscles_activity[i], py_v_MVR11_v_muscles_activity[i], py_v_MVR12_v_muscles_activity[i], py_v_MVR13_v_muscles_activity[i], py_v_MVR14_v_muscles_activity[i], py_v_MVR15_v_muscles_activity[i], py_v_MVR16_v_muscles_activity[i], py_v_MVR17_v_muscles_activity[i], py_v_MVR18_v_muscles_activity[i], py_v_MVR19_v_muscles_activity[i], py_v_MVR20_v_muscles_activity[i], py_v_MVR21_v_muscles_activity[i], py_v_MVR22_v_muscles_activity[i], py_v_MVR23_v_muscles_activity[i], py_v_MVL01_v_muscles_activity[i], py_v_MVL02_v_muscles_activity[i], py_v_MVL03_v_muscles_activity[i], py_v_MVL04_v_muscles_activity[i], py_v_MVL05_v_muscles_activity[i], py_v_MVL06_v_muscles_activity[i], py_v_MVL07_v_muscles_activity[i], py_v_MVL08_v_muscles_activity[i], py_v_MVL09_v_muscles_activity[i], py_v_MVL10_v_muscles_activity[i], py_v_MVL11_v_muscles_activity[i], py_v_MVL12_v_muscles_activity[i], py_v_MVL13_v_muscles_activity[i], py_v_MVL14_v_muscles_activity[i], py_v_MVL15_v_muscles_activity[i], py_v_MVL16_v_muscles_activity[i], py_v_MVL17_v_muscles_activity[i], py_v_MVL18_v_muscles_activity[i], py_v_MVL19_v_muscles_activity[i], py_v_MVL20_v_muscles_activity[i], py_v_MVL21_v_muscles_activity[i], py_v_MVL22_v_muscles_activity[i], py_v_MVL23_v_muscles_activity[i], py_v_MVL24_v_muscles_activity[i], py_v_MDL01_v_muscles_activity[i], py_v_MDL02_v_muscles_activity[i], py_v_MDL03_v_muscles_activity[i], py_v_MDL04_v_muscles_activity[i], py_v_MDL05_v_muscles_activity[i], py_v_MDL06_v_muscles_activity[i], py_v_MDL07_v_muscles_activity[i], py_v_MDL08_v_muscles_activity[i], py_v_MDL09_v_muscles_activity[i], py_v_MDL10_v_muscles_activity[i], py_v_MDL11_v_muscles_activity[i], py_v_MDL12_v_muscles_activity[i], py_v_MDL13_v_muscles_activity[i], py_v_MDL14_v_muscles_activity[i], py_v_MDL15_v_muscles_activity[i], py_v_MDL16_v_muscles_activity[i], py_v_MDL17_v_muscles_activity[i], py_v_MDL18_v_muscles_activity[i], py_v_MDL19_v_muscles_activity[i], py_v_MDL20_v_muscles_activity[i], py_v_MDL21_v_muscles_activity[i], py_v_MDL22_v_muscles_activity[i], py_v_MDL23_v_muscles_activity[i], py_v_MDL24_v_muscles_activity[i], ))
         f_muscles_activity_f2.close()
         print("Saved data to: c302_C2_AVB_DB.muscles.activity.dat")
 
@@ -7893,7 +7893,7 @@ class NeuronSimulation():
         num_points = len(py_v_time)  # Simulation may have been stopped before tstop...
 
         for i in range(num_points):
-            f_neurons_v_f2.write('%e\t'% py_v_time[i]  + '%e\t'%(py_v_AVBL_v_neurons_v[i])  + '%e\t'%(py_v_AVBR_v_neurons_v[i])  + '%e\t'%(py_v_DB1_v_neurons_v[i])  + '%e\t'%(py_v_DB2_v_neurons_v[i])  + '%e\t'%(py_v_DB3_v_neurons_v[i])  + '%e\t'%(py_v_DB4_v_neurons_v[i])  + '%e\t'%(py_v_DB5_v_neurons_v[i])  + '%e\t'%(py_v_DB6_v_neurons_v[i])  + '%e\t'%(py_v_DB7_v_neurons_v[i]) + '\n')
+            f_neurons_v_f2.write('%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t\n' % (py_v_time[i], py_v_AVBL_v_neurons_v[i], py_v_AVBR_v_neurons_v[i], py_v_DB1_v_neurons_v[i], py_v_DB2_v_neurons_v[i], py_v_DB3_v_neurons_v[i], py_v_DB4_v_neurons_v[i], py_v_DB5_v_neurons_v[i], py_v_DB6_v_neurons_v[i], py_v_DB7_v_neurons_v[i], ))
         f_neurons_v_f2.close()
         print("Saved data to: c302_C2_AVB_DB.dat")
 
@@ -7908,7 +7908,7 @@ class NeuronSimulation():
 
 if __name__ == '__main__':
 
-    ns = NeuronSimulation(tstop=2000, dt=0.05, seed=123456789)
+    ns = NeuronSimulation(tstop=5000, dt=0.05, seed=123456789)
 
     ns.run()
 

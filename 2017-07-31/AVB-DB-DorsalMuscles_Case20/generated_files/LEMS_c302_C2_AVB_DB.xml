@@ -223,7 +223,7 @@ Parameters and setting used to generate this network:
         BioParameter: AVBR_to_DB3_elec_syn_mu = 3.26237409358 mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB6_to_AVBL_elec_syn_mu = -36.2192802886 mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB7_to_MDL22_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB3_to_MDL13_exc_syn_conductance = 0.03 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB3_to_MDL13_exc_syn_conductance = 0.06 nS (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB4_to_MDL13_exc_syn_conductance = 0.03 nS (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB6_to_MDL21_exc_syn_conductance = 0.12 nS (SRC: Add with param_overrides, certainty 0)
         BioParameter: AVBL_to_DB5_elec_syn_sigma = 0.536933455728 per_mV (SRC: Add with param_overrides, certainty 0)

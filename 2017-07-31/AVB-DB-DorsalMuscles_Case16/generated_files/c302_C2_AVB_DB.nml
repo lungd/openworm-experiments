@@ -63,7 +63,7 @@ Parameters and setting used to generate this network:
         BioParameter: neuron_to_neuron_elec_syn_weight = 1 (SRC: BlindGuess, certainty 0.1)
         BioParameter: neuron_to_neuron_elec_syn_gbase = 0.01252 nS (SRC: BlindGuess, certainty 0.1)
         BioParameter: neuron_to_muscle_elec_syn_gbase = 0.00152 nS (SRC: BlindGuess, certainty 0.1)
-        BioParameter: muscle_to_muscle_elec_syn_gbase = 0 nS (SRC: BlindGuess, certainty 0.1)
+        BioParameter: muscle_to_muscle_elec_syn_gbase = 0.0005 nS (SRC: Set with param_overrides, certainty 0)
         BioParameter: neuron_to_motor_delayed_elec_syn_weight = 1 (SRC: BlindGuess, certainty 0.1)
         BioParameter: neuron_to_motor_delayed_elec_syn_gbase = 0.01252 nS (SRC: BlindGuess, certainty 0.1)
         BioParameter: neuron_to_motor_delayed_elec_syn_sigma = 0.4 (SRC: BlindGuess, certainty 0.1)
@@ -90,8 +90,8 @@ Parameters and setting used to generate this network:
         BioParameter: DB1_to_MDR09_exc_syn_conductance = 0.10 nS (SRC: BlindGuess, certainty 0.1)
         BioParameter: DB2_to_MDL09_exc_syn_conductance = 0.10 nS (SRC: BlindGuess, certainty 0.1)
         BioParameter: DB2_to_MDL10_exc_syn_conductance = 0.06 nS (SRC: Set with param_overrides, certainty 0)
-        BioParameter: DB2_to_MDL11_exc_syn_conductance = 0.03 nS (SRC: Set with param_overrides, certainty 0)
-        BioParameter: DB2_to_MDL12_exc_syn_conductance = 0.10 nS (SRC: BlindGuess, certainty 0.1)
+        BioParameter: DB2_to_MDL11_exc_syn_conductance = 0.035 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DB2_to_MDL12_exc_syn_conductance = 0.115 nS (SRC: Set with param_overrides, certainty 0)
         BioParameter: DB2_to_MDR09_exc_syn_conductance = 0.10 nS (SRC: BlindGuess, certainty 0.1)
         BioParameter: DB2_to_MDR10_exc_syn_conductance = 0.10 nS (SRC: BlindGuess, certainty 0.1)
         BioParameter: DB2_to_MDR11_exc_syn_conductance = 0.10 nS (SRC: BlindGuess, certainty 0.1)
@@ -131,7 +131,7 @@ Parameters and setting used to generate this network:
         BioParameter: DB2_to_MDR09_exc_syn_k = 1.205per_ms (SRC: BlindGuess, certainty 0.1)
         BioParameter: DB2_to_MDR10_exc_syn_k = 1.205per_ms (SRC: BlindGuess, certainty 0.1)
         BioParameter: DB2_to_MDR11_exc_syn_k = 1.205per_ms (SRC: BlindGuess, certainty 0.1)
-        BioParameter: DB3_to_MDL11_exc_syn_conductance = 0.01 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB3_to_MDL11_exc_syn_conductance = 0.015 nS (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB5_to_AVBL_elec_syn_sigma = 0.536933455728 per_mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: AVBR_to_DB2_elec_syn_mu = -62.000341191 mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: AVBL_to_DB6_elec_syn_gbase = 0.003531188064628 nS (SRC: Add with param_overrides, certainty 0)
@@ -141,7 +141,7 @@ Parameters and setting used to generate this network:
         BioParameter: DB6_to_MDL19_exc_syn_conductance = 0.06 nS (SRC: Add with param_overrides, certainty 0)
         BioParameter: AVBR_to_DB7_elec_syn_sigma = 0.206916730813 per_mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB5_to_AVBR_elec_syn_mu = 3.8543086696 mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB5_to_MDL18_exc_syn_conductance = 0.08 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB5_to_MDL18_exc_syn_conductance = 0.115 nS (SRC: Add with param_overrides, certainty 0)
         BioParameter: AVBL_to_DB5_elec_syn_mu = -56.5883926767 mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB7_to_AVBR_elec_syn_sigma = 0.206916730813 per_mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB2_to_AVBL_elec_syn_mu = -31.0977828928 mV (SRC: Add with param_overrides, certainty 0)
@@ -271,8 +271,8 @@ Parameters and setting used to generate this network:
     <delayedGapJunction id="DB7_to_AVBL_elec_syn_13conns" weight="1" conductance="0.0310939587543nS" sigma="0.533655913612 per_mV" mu="-44.2515469934 mV" />
     <delayedGapJunction id="DB7_to_AVBR_elec_syn_3conns" weight="1" conductance="0.0107418249547nS" sigma="0.206916730813 per_mV" mu="0.0896939109345 mV" />
     <gapJunction id="DB7_to_DB6_elec_syn_5conns" conductance="0.1126nS"/>
-    <gapJunction id="muscle_to_muscle_elec_syn_15conns" conductance="0.0nS"/>
-    <gapJunction id="muscle_to_muscle_elec_syn_2conns" conductance="0.0nS"/>
+    <gapJunction id="muscle_to_muscle_elec_syn_15conns" conductance="0.0075nS"/>
+    <gapJunction id="muscle_to_muscle_elec_syn_2conns" conductance="0.001nS"/>
     <silentSynapse id="silent"/>
     <gradedSynapse id="neuron_to_neuron_exc_syn_6conns" conductance="2.94nS" delta="5 mV" Vth="00 mV" k="0.5per_ms" erev="-10 mV"/>
     <gradedSynapse id="neuron_to_neuron_exc_syn_2conns" conductance="0.98nS" delta="5 mV" Vth="00 mV" k="0.5per_ms" erev="-10 mV"/>
@@ -285,12 +285,12 @@ Parameters and setting used to generate this network:
     <gradedSynapse id="DB1_to_MDR09_exc_syn_2conns" conductance="0.2nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <gradedSynapse id="DB2_to_MDL09_exc_syn_2conns" conductance="0.2nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <gradedSynapse id="DB2_to_MDL10_exc_syn_4conns" conductance="0.24nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
-    <gradedSynapse id="DB2_to_MDL11_exc_syn_5conns" conductance="0.15nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
-    <gradedSynapse id="DB2_to_MDL12_exc_syn_1conns" conductance="0.1nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB2_to_MDL11_exc_syn_5conns" conductance="0.175nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB2_to_MDL12_exc_syn_1conns" conductance="0.115nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <gradedSynapse id="DB2_to_MDR09_exc_syn_1conns" conductance="0.1nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <gradedSynapse id="DB2_to_MDR10_exc_syn_6conns" conductance="0.6nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <gradedSynapse id="DB2_to_MDR11_exc_syn_8conns" conductance="0.8nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
-    <gradedSynapse id="DB3_to_MDL11_exc_syn_6conns" conductance="0.06nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB3_to_MDL11_exc_syn_6conns" conductance="0.09nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <gradedSynapse id="DB3_to_MDL13_exc_syn_3conns" conductance="0.09nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <gradedSynapse id="DB3_to_MDL14_exc_syn_1conns" conductance="0.04nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <gradedSynapse id="neuron_to_muscle_exc_syn_2conns" conductance="0.2nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
@@ -303,7 +303,7 @@ Parameters and setting used to generate this network:
     <gradedSynapse id="neuron_to_muscle_exc_syn_5conns" conductance="0.5nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <gradedSynapse id="DB5_to_MDL16_exc_syn_2conns" conductance="0.08nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <gradedSynapse id="DB5_to_MDL17_exc_syn_2conns" conductance="0.18nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
-    <gradedSynapse id="DB5_to_MDL18_exc_syn_2conns" conductance="0.16nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB5_to_MDL18_exc_syn_2conns" conductance="0.23nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <gradedSynapse id="DB5_to_MDL19_exc_syn_2conns" conductance="0.1nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <gradedSynapse id="DB6_to_MDL19_exc_syn_2conns" conductance="0.12nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <gradedSynapse id="DB6_to_MDL20_exc_syn_2conns" conductance="0.28nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
@@ -357,8 +357,8 @@ Parameters and setting used to generate this network:
         </biophysicalProperties>
     </cell>
     <pulseGenerator id="offset_current" delay="0 ms" duration="2000 ms" amplitude="0pA"/>
-    <pulseGenerator id="stim_AVBL_1" delay="50ms" duration="9900ms" amplitude="15pA"/>
-    <pulseGenerator id="stim_AVBR_1" delay="50ms" duration="9900ms" amplitude="15pA"/>
+    <pulseGenerator id="stim_AVBL_1" delay="50ms" duration="1900ms" amplitude="15pA"/>
+    <pulseGenerator id="stim_AVBR_1" delay="50ms" duration="1900ms" amplitude="15pA"/>
     <network id="c302_C2_AVB_DB">
         <population id="AVBL" component="GenericNeuronCell" type="populationList">
             <instance id="0">

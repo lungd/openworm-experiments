@@ -167,7 +167,7 @@ Parameters and setting used to generate this network:
         BioParameter: DB3_to_AVBL_elec_syn_sigma = 0.231454305083 per_mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB4_to_MDL16_exc_syn_conductance = 0.050 nS (SRC: Add with param_overrides, certainty 0)
         BioParameter: AVBR_to_DB4_elec_syn_gbase = 0.00323478587936 nS (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB7_to_MDL24_exc_syn_conductance = 0.210 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB7_to_MDL24_exc_syn_conductance = 0.215 nS (SRC: Add with param_overrides, certainty 0)
         BioParameter: AVBR_to_DB6_elec_syn_sigma = 0.228433033088 per_mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB1_to_AVBR_elec_syn_mu = -63.6900218048 mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: AVBR_to_DB2_elec_syn_sigma = 0.387039254237 per_mV (SRC: Add with param_overrides, certainty 0)
@@ -310,7 +310,7 @@ Parameters and setting used to generate this network:
     <gradedSynapse id="DB6_to_MDL21_exc_syn_2conns" conductance="0.24nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <gradedSynapse id="DB7_to_MDL22_exc_syn_2conns" conductance="0.44nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <gradedSynapse id="DB7_to_MDL23_exc_syn_2conns" conductance="0.43nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
-    <gradedSynapse id="DB7_to_MDL24_exc_syn_2conns" conductance="0.42nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB7_to_MDL24_exc_syn_2conns" conductance="0.43nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <cell id="GenericMuscleCell">
         <morphology id="morphology_GenericMuscleCell">
             <segment id="0" name="soma">

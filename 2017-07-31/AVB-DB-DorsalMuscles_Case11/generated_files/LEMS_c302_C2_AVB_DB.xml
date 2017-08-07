@@ -93,7 +93,7 @@ Parameters and setting used to generate this network:
         BioParameter: DB2_to_MDL09_exc_syn_conductance = 0.10 nS (SRC: BlindGuess, certainty 0.1)
         BioParameter: DB2_to_MDL10_exc_syn_conductance = 0.06 nS (SRC: Set with param_overrides, certainty 0)
         BioParameter: DB2_to_MDL11_exc_syn_conductance = 0.035 nS (SRC: Set with param_overrides, certainty 0)
-        BioParameter: DB2_to_MDL12_exc_syn_conductance = 0.10 nS (SRC: BlindGuess, certainty 0.1)
+        BioParameter: DB2_to_MDL12_exc_syn_conductance = 0.115 nS (SRC: Set with param_overrides, certainty 0)
         BioParameter: DB2_to_MDR09_exc_syn_conductance = 0.10 nS (SRC: BlindGuess, certainty 0.1)
         BioParameter: DB2_to_MDR10_exc_syn_conductance = 0.10 nS (SRC: BlindGuess, certainty 0.1)
         BioParameter: DB2_to_MDR11_exc_syn_conductance = 0.10 nS (SRC: BlindGuess, certainty 0.1)

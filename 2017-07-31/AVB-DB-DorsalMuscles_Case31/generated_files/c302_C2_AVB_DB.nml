@@ -138,7 +138,7 @@ Parameters and setting used to generate this network:
         BioParameter: AVBL_to_DB3_elec_syn_sigma = 0.231454305083 per_mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: AVBR_to_DB7_elec_syn_gbase = 0.00358060831824 nS (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB2_to_AVBL_elec_syn_sigma = 0.241179861414 per_mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB6_to_MDL19_exc_syn_conductance = 0.06 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB6_to_MDL19_exc_syn_conductance = 0.078 nS (SRC: Add with param_overrides, certainty 0)
         BioParameter: AVBR_to_DB7_elec_syn_sigma = 0.206916730813 per_mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB5_to_AVBR_elec_syn_mu = 3.8543086696 mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB5_to_MDL18_exc_syn_conductance = 0.12 nS (SRC: Add with param_overrides, certainty 0)
@@ -167,12 +167,12 @@ Parameters and setting used to generate this network:
         BioParameter: DB3_to_AVBL_elec_syn_sigma = 0.231454305083 per_mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB4_to_MDL16_exc_syn_conductance = 0.05 nS (SRC: Add with param_overrides, certainty 0)
         BioParameter: AVBR_to_DB4_elec_syn_gbase = 0.00323478587936 nS (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB7_to_MDL24_exc_syn_conductance = 0.235 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB7_to_MDL24_exc_syn_conductance = 0.232 nS (SRC: Add with param_overrides, certainty 0)
         BioParameter: AVBR_to_DB6_elec_syn_sigma = 0.228433033088 per_mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB1_to_AVBR_elec_syn_mu = -63.6900218048 mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: AVBR_to_DB2_elec_syn_sigma = 0.387039254237 per_mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: AVBL_to_DB5_elec_syn_gbase = 0.0226278917969 nS (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB7_to_MDL23_exc_syn_conductance = 0.24 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB7_to_MDL23_exc_syn_conductance = 0.23 nS (SRC: Add with param_overrides, certainty 0)
         BioParameter: AVBL_to_DB2_elec_syn_gbase = 0.0266242196109 nS (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB7_to_AVBL_elec_syn_gbase = 0.0023918429811 nS (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB7_to_AVBL_elec_syn_mu = -44.2515469934 mV (SRC: Add with param_overrides, certainty 0)
@@ -183,7 +183,7 @@ Parameters and setting used to generate this network:
         BioParameter: DB6_to_AVBR_elec_syn_mu = -5.18875443492 mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: AVBR_to_DB3_elec_syn_gbase = 0.0198249804082 nS (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB4_to_AVBL_elec_syn_sigma = 0.01 per_mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB6_to_MDL20_exc_syn_conductance = 0.13 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB6_to_MDL20_exc_syn_conductance = 0.126 nS (SRC: Add with param_overrides, certainty 0)
         BioParameter: AVBR_to_DB5_elec_syn_gbase = 0.00873708830367 nS (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB2_to_AVBR_elec_syn_gbase = 0.06252 nS (SRC: Add with param_overrides, certainty 0)
         BioParameter: AVBL_to_DB4_elec_syn_mu = -66.2111522665 mV (SRC: Add with param_overrides, certainty 0)
@@ -213,17 +213,17 @@ Parameters and setting used to generate this network:
         BioParameter: DB4_to_AVBL_elec_syn_gbase = 0.0558234324607 nS (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB6_to_AVBR_elec_syn_sigma = 0.228433033088 per_mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: AVBL_to_DB4_elec_syn_gbase = 0.0558234324607 nS (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB3_to_MDL14_exc_syn_conductance = 0.145 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB3_to_MDL14_exc_syn_conductance = 0.155 nS (SRC: Add with param_overrides, certainty 0)
         BioParameter: AVBR_to_DB1_elec_syn_sigma = 0.38891335924 per_mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB2_to_AVBR_elec_syn_mu = -62.000341191 mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB5_to_AVBL_elec_syn_gbase = 0.0226278917969 nS (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB3_to_AVBR_elec_syn_sigma = 0.01 per_mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: AVBR_to_DB3_elec_syn_mu = 3.26237409358 mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB6_to_AVBL_elec_syn_mu = -36.2192802886 mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB7_to_MDL22_exc_syn_conductance = 0.235 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB7_to_MDL22_exc_syn_conductance = 0.230 nS (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB3_to_MDL13_exc_syn_conductance = 0.09 nS (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB4_to_MDL13_exc_syn_conductance = 0.04 nS (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB6_to_MDL21_exc_syn_conductance = 0.135 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB6_to_MDL21_exc_syn_conductance = 0.132 nS (SRC: Add with param_overrides, certainty 0)
         BioParameter: AVBL_to_DB5_elec_syn_sigma = 0.536933455728 per_mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB1_to_AVBR_elec_syn_sigma = 0.38891335924 per_mV (SRC: Add with param_overrides, certainty 0)
 
@@ -292,7 +292,7 @@ Parameters and setting used to generate this network:
     <gradedSynapse id="DB2_to_MDR11_exc_syn_8conns" conductance="0.8nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <gradedSynapse id="DB3_to_MDL11_exc_syn_6conns" conductance="0.09nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <gradedSynapse id="DB3_to_MDL13_exc_syn_3conns" conductance="0.27nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
-    <gradedSynapse id="DB3_to_MDL14_exc_syn_1conns" conductance="0.145nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB3_to_MDL14_exc_syn_1conns" conductance="0.155nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <gradedSynapse id="neuron_to_muscle_exc_syn_2conns" conductance="0.2nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <gradedSynapse id="neuron_to_muscle_exc_syn_13conns" conductance="1.3nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <gradedSynapse id="DB4_to_MDL13_exc_syn_4conns" conductance="0.16nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
@@ -305,12 +305,12 @@ Parameters and setting used to generate this network:
     <gradedSynapse id="DB5_to_MDL17_exc_syn_2conns" conductance="0.24nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <gradedSynapse id="DB5_to_MDL18_exc_syn_2conns" conductance="0.24nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <gradedSynapse id="DB5_to_MDL19_exc_syn_2conns" conductance="0.13nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
-    <gradedSynapse id="DB6_to_MDL19_exc_syn_2conns" conductance="0.12nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
-    <gradedSynapse id="DB6_to_MDL20_exc_syn_2conns" conductance="0.26nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
-    <gradedSynapse id="DB6_to_MDL21_exc_syn_2conns" conductance="0.27nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
-    <gradedSynapse id="DB7_to_MDL22_exc_syn_2conns" conductance="0.47nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
-    <gradedSynapse id="DB7_to_MDL23_exc_syn_2conns" conductance="0.48nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
-    <gradedSynapse id="DB7_to_MDL24_exc_syn_2conns" conductance="0.47nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB6_to_MDL19_exc_syn_2conns" conductance="0.156nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB6_to_MDL20_exc_syn_2conns" conductance="0.252nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB6_to_MDL21_exc_syn_2conns" conductance="0.264nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB7_to_MDL22_exc_syn_2conns" conductance="0.46nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB7_to_MDL23_exc_syn_2conns" conductance="0.46nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB7_to_MDL24_exc_syn_2conns" conductance="0.464nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <cell id="GenericMuscleCell">
         <morphology id="morphology_GenericMuscleCell">
             <segment id="0" name="soma">

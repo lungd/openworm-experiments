@@ -141,7 +141,7 @@ Parameters and setting used to generate this network:
         BioParameter: DB6_to_MDL19_exc_syn_conductance = 0.06 nS (SRC: Add with param_overrides, certainty 0)
         BioParameter: AVBR_to_DB7_elec_syn_sigma = 0.206916730813 per_mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB5_to_AVBR_elec_syn_mu = 3.8543086696 mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB5_to_MDL18_exc_syn_conductance = 0.08 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB5_to_MDL18_exc_syn_conductance = 0.085 nS (SRC: Add with param_overrides, certainty 0)
         BioParameter: AVBL_to_DB5_elec_syn_mu = -56.5883926767 mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB7_to_AVBR_elec_syn_sigma = 0.206916730813 per_mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB2_to_AVBL_elec_syn_mu = -31.0977828928 mV (SRC: Add with param_overrides, certainty 0)
@@ -303,7 +303,7 @@ Parameters and setting used to generate this network:
     <gradedSynapse id="neuron_to_muscle_exc_syn_5conns" conductance="0.5nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <gradedSynapse id="DB5_to_MDL16_exc_syn_2conns" conductance="0.08nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <gradedSynapse id="DB5_to_MDL17_exc_syn_2conns" conductance="0.18nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
-    <gradedSynapse id="DB5_to_MDL18_exc_syn_2conns" conductance="0.16nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB5_to_MDL18_exc_syn_2conns" conductance="0.17nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <gradedSynapse id="DB5_to_MDL19_exc_syn_2conns" conductance="0.1nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <gradedSynapse id="DB6_to_MDL19_exc_syn_2conns" conductance="0.12nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <gradedSynapse id="DB6_to_MDL20_exc_syn_2conns" conductance="0.28nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>

@@ -259,17 +259,17 @@ Parameters and setting used to generate this network:
         </biophysicalProperties>
     </cell>
     <pulseGenerator id="offset_current" delay="0 ms" duration="2000 ms" amplitude="0pA"/>
-    <pulseGenerator id="stim_AS1_1" delay="50ms" duration="7900ms" amplitude="15pA"/>
-    <pulseGenerator id="stim_AS2_1" delay="50ms" duration="7900ms" amplitude="15pA"/>
-    <pulseGenerator id="stim_AS3_1" delay="50ms" duration="7900ms" amplitude="15pA"/>
-    <pulseGenerator id="stim_AS4_1" delay="50ms" duration="7900ms" amplitude="15pA"/>
-    <pulseGenerator id="stim_AS5_1" delay="50ms" duration="7900ms" amplitude="15pA"/>
-    <pulseGenerator id="stim_AS6_1" delay="50ms" duration="7900ms" amplitude="15pA"/>
-    <pulseGenerator id="stim_AS7_1" delay="50ms" duration="7900ms" amplitude="15pA"/>
-    <pulseGenerator id="stim_AS8_1" delay="50ms" duration="7900ms" amplitude="15pA"/>
-    <pulseGenerator id="stim_AS9_1" delay="50ms" duration="7900ms" amplitude="15pA"/>
-    <pulseGenerator id="stim_AS10_1" delay="50ms" duration="7900ms" amplitude="15pA"/>
-    <pulseGenerator id="stim_AS11_1" delay="50ms" duration="7900ms" amplitude="15pA"/>
+    <pulseGenerator id="stim_AS1_1" delay="50ms" duration="1900ms" amplitude="15pA"/>
+    <pulseGenerator id="stim_AS2_1" delay="50ms" duration="1900ms" amplitude="15pA"/>
+    <pulseGenerator id="stim_AS3_1" delay="50ms" duration="1900ms" amplitude="15pA"/>
+    <pulseGenerator id="stim_AS4_1" delay="50ms" duration="1900ms" amplitude="15pA"/>
+    <pulseGenerator id="stim_AS5_1" delay="50ms" duration="1900ms" amplitude="15pA"/>
+    <pulseGenerator id="stim_AS6_1" delay="50ms" duration="1900ms" amplitude="15pA"/>
+    <pulseGenerator id="stim_AS7_1" delay="50ms" duration="1900ms" amplitude="15pA"/>
+    <pulseGenerator id="stim_AS8_1" delay="50ms" duration="1900ms" amplitude="15pA"/>
+    <pulseGenerator id="stim_AS9_1" delay="50ms" duration="1900ms" amplitude="15pA"/>
+    <pulseGenerator id="stim_AS10_1" delay="50ms" duration="1900ms" amplitude="15pA"/>
+    <pulseGenerator id="stim_AS11_1" delay="50ms" duration="1900ms" amplitude="15pA"/>
     <network id="c302_C2_AS_DA_DB">
         <population id="AS1" component="GenericNeuronCell" type="populationList">
             <property tag="OpenWormBackerAssignedName" value="Kottbusser Tor"/>

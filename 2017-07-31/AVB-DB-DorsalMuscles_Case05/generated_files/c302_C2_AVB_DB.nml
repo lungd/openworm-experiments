@@ -84,13 +84,13 @@ Parameters and setting used to generate this network:
         BioParameter: DB6_to_DB7_elec_syn_gbase = 0.02252 nS (SRC: BlindGuess, certainty 0.1)
         BioParameter: DB7_to_DB6_elec_syn_gbase = 0.02252 nS (SRC: BlindGuess, certainty 0.1)
         BioParameter: DB1_to_MDL06_exc_syn_conductance = 0.10 nS (SRC: BlindGuess, certainty 0.1)
-        BioParameter: DB1_to_MDL08_exc_syn_conductance = 0.10 nS (SRC: BlindGuess, certainty 0.1)
-        BioParameter: DB1_to_MDL09_exc_syn_conductance = 0.10 nS (SRC: BlindGuess, certainty 0.1)
+        BioParameter: DB1_to_MDL08_exc_syn_conductance = 0.07 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DB1_to_MDL09_exc_syn_conductance = 0.008 nS (SRC: Set with param_overrides, certainty 0)
         BioParameter: DB1_to_MDR08_exc_syn_conductance = 0.10 nS (SRC: BlindGuess, certainty 0.1)
         BioParameter: DB1_to_MDR09_exc_syn_conductance = 0.10 nS (SRC: BlindGuess, certainty 0.1)
         BioParameter: DB2_to_MDL09_exc_syn_conductance = 0.10 nS (SRC: BlindGuess, certainty 0.1)
-        BioParameter: DB2_to_MDL10_exc_syn_conductance = 0.10 nS (SRC: BlindGuess, certainty 0.1)
-        BioParameter: DB2_to_MDL11_exc_syn_conductance = 0.10 nS (SRC: BlindGuess, certainty 0.1)
+        BioParameter: DB2_to_MDL10_exc_syn_conductance = 0.06 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DB2_to_MDL11_exc_syn_conductance = 0.03 nS (SRC: Set with param_overrides, certainty 0)
         BioParameter: DB2_to_MDL12_exc_syn_conductance = 0.10 nS (SRC: BlindGuess, certainty 0.1)
         BioParameter: DB2_to_MDR09_exc_syn_conductance = 0.10 nS (SRC: BlindGuess, certainty 0.1)
         BioParameter: DB2_to_MDR10_exc_syn_conductance = 0.10 nS (SRC: BlindGuess, certainty 0.1)
@@ -131,84 +131,101 @@ Parameters and setting used to generate this network:
         BioParameter: DB2_to_MDR09_exc_syn_k = 1.205per_ms (SRC: BlindGuess, certainty 0.1)
         BioParameter: DB2_to_MDR10_exc_syn_k = 1.205per_ms (SRC: BlindGuess, certainty 0.1)
         BioParameter: DB2_to_MDR11_exc_syn_k = 1.205per_ms (SRC: BlindGuess, certainty 0.1)
-        BioParameter: AVBL_to_DB2_elec_syn_mu = -31.0977828928 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB3_to_MDL11_exc_syn_conductance = 0.01 nS (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB5_to_AVBL_elec_syn_sigma = 0.536933455728 per_mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: AVBL_to_DB7_elec_syn_mu = -64.2515469934 mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB1_to_AVBR_elec_syn_gbase = 0.0591172383742 nS (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB3_to_AVBR_elec_syn_mu = 3.26237409358 mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: AVBR_to_DB2_elec_syn_mu = -62.000341191 mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB3_to_AVBL_elec_syn_sigma = 0.231454305083 per_mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: AVBL_to_DB6_elec_syn_gbase = 0.000531188064628 nS (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB3_to_AVBR_elec_syn_gbase = 0.0198249804082 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBL_to_DB6_elec_syn_gbase = 0.003531188064628 nS (SRC: Add with param_overrides, certainty 0)
         BioParameter: AVBL_to_DB3_elec_syn_sigma = 0.231454305083 per_mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB6_to_AVBL_elec_syn_sigma = 0.540309304721 per_mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB4_to_AVBR_elec_syn_gbase = 0.00323478587936 nS (SRC: Add with param_overrides, certainty 0)
-        BioParameter: AVBL_to_DB3_elec_syn_mu = -36.332917764 mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: AVBR_to_DB1_elec_syn_gbase = 0.0591172383742 nS (SRC: Add with param_overrides, certainty 0)
-        BioParameter: AVBR_to_DB4_elec_syn_gbase = 0.00323478587936 nS (SRC: Add with param_overrides, certainty 0)
-        BioParameter: AVBR_to_DB7_elec_syn_gbase = 0.00258060831824 nS (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB7_to_AVBR_elec_syn_gbase = 0.00258060831824 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBR_to_DB7_elec_syn_gbase = 0.00358060831824 nS (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB2_to_AVBL_elec_syn_sigma = 0.241179861414 per_mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: AVBR_to_DB6_elec_syn_sigma = 0.128433033088 per_mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: AVBR_to_DB7_elec_syn_sigma = 0.386916730813 per_mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: AVBR_to_DB5_elec_syn_sigma = 0.664607583389 per_mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB7_to_AVBL_elec_syn_sigma = 0.733655913612 per_mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB4_to_AVBL_elec_syn_gbase = 0.0558234324607 nS (SRC: Add with param_overrides, certainty 0)
-        BioParameter: AVBL_to_DB7_elec_syn_sigma = 0.733655913612 per_mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB2_to_AVBR_elec_syn_gbase = 0.06252 nS (SRC: Add with param_overrides, certainty 0)
-        BioParameter: AVBR_to_DB2_elec_syn_sigma = 0.387039254237 per_mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB2_to_AVBL_elec_syn_gbase = 0.0266242196109 nS (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB5_to_AVBR_elec_syn_gbase = 0.00873708830367 nS (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB7_to_AVBR_elec_syn_sigma = 0.386916730813 per_mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: AVBL_to_DB5_elec_syn_gbase = 0.0226278917969 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB6_to_MDL19_exc_syn_conductance = 0.06 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBR_to_DB7_elec_syn_sigma = 0.206916730813 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB5_to_AVBR_elec_syn_mu = 3.8543086696 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB5_to_MDL18_exc_syn_conductance = 0.08 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBL_to_DB5_elec_syn_mu = -56.5883926767 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB7_to_AVBR_elec_syn_sigma = 0.206916730813 per_mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB2_to_AVBL_elec_syn_mu = -31.0977828928 mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: AVBL_to_DB4_elec_syn_gbase = 0.0558234324607 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBL_to_DB7_elec_syn_sigma = 0.533655913612 per_mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: AVBL_to_DB4_elec_syn_sigma = 0.01 per_mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: AVBR_to_DB7_elec_syn_mu = 0.0896939109345 mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB1_to_AVBR_elec_syn_mu = -63.6900218048 mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: AVBR_to_DB1_elec_syn_sigma = 0.38891335924 per_mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB2_to_AVBR_elec_syn_sigma = 0.387039254237 per_mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: AVBL_to_DB2_elec_syn_gbase = 0.0266242196109 nS (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB2_to_AVBR_elec_syn_mu = -62.000341191 mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB7_to_AVBL_elec_syn_gbase = 0.0223918429811 nS (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB5_to_AVBL_elec_syn_gbase = 0.0226278917969 nS (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB3_to_AVBR_elec_syn_sigma = 0.01 per_mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB7_to_AVBL_elec_syn_mu = -64.2515469934 mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB5_to_AVBR_elec_syn_mu = 3.8543086696 mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB5_to_AVBR_elec_syn_sigma = 0.664607583389 per_mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: AVBL_to_DB6_elec_syn_sigma = 0.540309304721 per_mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB5_to_AVBL_elec_syn_mu = -56.5883926767 mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: AVBR_to_DB6_elec_syn_mu = -5.18875443492 mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB6_to_AVBL_elec_syn_gbase = 0.000531188064628 nS (SRC: Add with param_overrides, certainty 0)
-        BioParameter: AVBR_to_DB3_elec_syn_mu = 3.26237409358 mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: AVBR_to_DB3_elec_syn_sigma = 0.01 per_mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB6_to_AVBL_elec_syn_mu = -26.2192802886 mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: AVBL_to_DB2_elec_syn_sigma = 0.241179861414 per_mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB3_to_AVBL_elec_syn_gbase = 0.00279017483257 nS (SRC: Add with param_overrides, certainty 0)
-        BioParameter: AVBR_to_DB6_elec_syn_gbase = 0.0124771000141 nS (SRC: Add with param_overrides, certainty 0)
-        BioParameter: AVBL_to_DB5_elec_syn_mu = -56.5883926767 mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB6_to_AVBR_elec_syn_sigma = 0.128433033088 per_mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: AVBL_to_DB7_elec_syn_gbase = 0.0223918429811 nS (SRC: Add with param_overrides, certainty 0)
-        BioParameter: AVBR_to_DB3_elec_syn_gbase = 0.0198249804082 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB5_to_MDL17_exc_syn_conductance = 0.09 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBR_to_DB5_elec_syn_sigma = 0.664607583389 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBL_to_DB7_elec_syn_gbase = 0.0043918429811 nS (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB6_to_AVBR_elec_syn_gbase = 0.0124771000141 nS (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB4_to_AVBL_elec_syn_sigma = 0.01 per_mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB7_to_AVBR_elec_syn_mu = 0.0896939109345 mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB4_to_AVBL_elec_syn_mu = -66.2111522665 mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB3_to_AVBL_elec_syn_mu = -36.332917764 mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: AVBR_to_DB5_elec_syn_gbase = 0.00873708830367 nS (SRC: Add with param_overrides, certainty 0)
-        BioParameter: AVBR_to_DB1_elec_syn_mu = -63.6900218048 mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: AVBL_to_DB3_elec_syn_gbase = 0.00279017483257 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB4_to_MDL15_exc_syn_conductance = 0.022 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBL_to_DB2_elec_syn_mu = -31.0977828928 mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB4_to_AVBR_elec_syn_sigma = 0.618755178492 per_mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: AVBR_to_DB4_elec_syn_sigma = 0.618755178492 per_mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB4_to_AVBR_elec_syn_mu = 3.03764690731 mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: AVBL_to_DB5_elec_syn_sigma = 0.536933455728 per_mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB6_to_AVBR_elec_syn_mu = -5.18875443492 mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: AVBR_to_DB2_elec_syn_gbase = 0.06252 nS (SRC: Add with param_overrides, certainty 0)
         BioParameter: AVBR_to_DB4_elec_syn_mu = 3.03764690731 mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB1_to_AVBR_elec_syn_sigma = 0.38891335924 per_mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: AVBL_to_DB6_elec_syn_mu = -26.2192802886 mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: AVBR_to_DB5_elec_syn_mu = 3.8543086696 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBL_to_DB6_elec_syn_mu = -36.2192802886 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBL_to_DB3_elec_syn_gbase = 0.00279017483257 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB3_to_AVBL_elec_syn_sigma = 0.231454305083 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB4_to_MDL16_exc_syn_conductance = 0.021 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBR_to_DB4_elec_syn_gbase = 0.00323478587936 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB7_to_MDL24_exc_syn_conductance = 0.16 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBR_to_DB6_elec_syn_sigma = 0.228433033088 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB1_to_AVBR_elec_syn_mu = -63.6900218048 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBR_to_DB2_elec_syn_sigma = 0.387039254237 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBL_to_DB5_elec_syn_gbase = 0.0226278917969 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB7_to_MDL23_exc_syn_conductance = 0.18 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBL_to_DB2_elec_syn_gbase = 0.0266242196109 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB7_to_AVBL_elec_syn_gbase = 0.0023918429811 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB7_to_AVBL_elec_syn_mu = -44.2515469934 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB5_to_AVBR_elec_syn_sigma = 0.664607583389 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBL_to_DB6_elec_syn_sigma = 0.640309304721 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB6_to_AVBL_elec_syn_gbase = 0.003531188064628 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBL_to_DB2_elec_syn_sigma = 0.241179861414 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB6_to_AVBR_elec_syn_mu = -5.18875443492 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBR_to_DB3_elec_syn_gbase = 0.0198249804082 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB4_to_AVBL_elec_syn_sigma = 0.01 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB6_to_MDL20_exc_syn_conductance = 0.14 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBR_to_DB5_elec_syn_gbase = 0.00873708830367 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB2_to_AVBR_elec_syn_gbase = 0.06252 nS (SRC: Add with param_overrides, certainty 0)
         BioParameter: AVBL_to_DB4_elec_syn_mu = -66.2111522665 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB3_to_AVBR_elec_syn_mu = 3.26237409358 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB4_to_AVBR_elec_syn_gbase = 0.00323478587936 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBR_to_DB1_elec_syn_gbase = 0.0591172383742 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB5_to_MDL19_exc_syn_conductance = 0.05 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB7_to_AVBL_elec_syn_sigma = 0.533655913612 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB7_to_AVBR_elec_syn_gbase = 0.00358060831824 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB3_to_AVBR_elec_syn_gbase = 0.0198249804082 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB6_to_AVBL_elec_syn_sigma = 0.640309304721 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB2_to_AVBR_elec_syn_sigma = 0.387039254237 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBR_to_DB3_elec_syn_sigma = 0.01 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBR_to_DB6_elec_syn_gbase = 0.0124771000141 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB2_to_AVBL_elec_syn_gbase = 0.0266242196109 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB5_to_AVBR_elec_syn_gbase = 0.00873708830367 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB7_to_AVBR_elec_syn_mu = 0.0896939109345 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB4_to_AVBL_elec_syn_mu = -66.2111522665 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB4_to_MDL14_exc_syn_conductance = 0.04 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBR_to_DB1_elec_syn_mu = -63.6900218048 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBR_to_DB5_elec_syn_mu = 3.8543086696 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBL_to_DB7_elec_syn_mu = -44.2515469934 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB1_to_AVBR_elec_syn_gbase = 0.0591172383742 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB3_to_AVBL_elec_syn_mu = -36.332917764 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBL_to_DB3_elec_syn_mu = -36.332917764 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB5_to_MDL16_exc_syn_conductance = 0.04 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB4_to_AVBL_elec_syn_gbase = 0.0558234324607 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB6_to_AVBR_elec_syn_sigma = 0.228433033088 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBL_to_DB4_elec_syn_gbase = 0.0558234324607 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB3_to_MDL14_exc_syn_conductance = 0.04 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBR_to_DB1_elec_syn_sigma = 0.38891335924 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB2_to_AVBR_elec_syn_mu = -62.000341191 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB5_to_AVBL_elec_syn_gbase = 0.0226278917969 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB3_to_AVBR_elec_syn_sigma = 0.01 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBR_to_DB3_elec_syn_mu = 3.26237409358 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB6_to_AVBL_elec_syn_mu = -36.2192802886 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB7_to_MDL22_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB3_to_MDL13_exc_syn_conductance = 0.03 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB4_to_MDL13_exc_syn_conductance = 0.03 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB6_to_MDL21_exc_syn_conductance = 0.12 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBL_to_DB5_elec_syn_sigma = 0.536933455728 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB1_to_AVBR_elec_syn_sigma = 0.38891335924 per_mV (SRC: Add with param_overrides, certainty 0)
 
 </notes>
     <include href="cell_C.xml"></include>
@@ -220,15 +237,15 @@ Parameters and setting used to generate this network:
     <delayedGapJunction id="AVBL_to_DB3_elec_syn_9conns" weight="1" conductance="0.0251115734931nS" sigma="0.231454305083 per_mV" mu="-36.332917764 mV" />
     <delayedGapJunction id="AVBL_to_DB4_elec_syn_4conns" weight="1" conductance="0.223293729843nS" sigma="0.01 per_mV" mu="-66.2111522665 mV" />
     <delayedGapJunction id="AVBL_to_DB5_elec_syn_3conns" weight="1" conductance="0.0678836753907nS" sigma="0.536933455728 per_mV" mu="-56.5883926767 mV" />
-    <delayedGapJunction id="AVBL_to_DB6_elec_syn_4conns" weight="1" conductance="0.00212475225851nS" sigma="0.540309304721 per_mV" mu="-26.2192802886 mV" />
-    <delayedGapJunction id="AVBL_to_DB7_elec_syn_13conns" weight="1" conductance="0.291093958754nS" sigma="0.733655913612 per_mV" mu="-64.2515469934 mV" />
+    <delayedGapJunction id="AVBL_to_DB6_elec_syn_4conns" weight="1" conductance="0.0141247522585nS" sigma="0.640309304721 per_mV" mu="-36.2192802886 mV" />
+    <delayedGapJunction id="AVBL_to_DB7_elec_syn_13conns" weight="1" conductance="0.0570939587543nS" sigma="0.533655913612 per_mV" mu="-44.2515469934 mV" />
     <delayedGapJunction id="AVBR_to_DB1_elec_syn_15conns" weight="1" conductance="0.886758575613nS" sigma="0.38891335924 per_mV" mu="-63.6900218048 mV" />
     <delayedGapJunction id="AVBR_to_DB2_elec_syn_3conns" weight="1" conductance="0.18756nS" sigma="0.387039254237 per_mV" mu="-62.000341191 mV" />
     <delayedGapJunction id="AVBR_to_DB3_elec_syn_2conns" weight="1" conductance="0.0396499608164nS" sigma="0.01 per_mV" mu="3.26237409358 mV" />
     <delayedGapJunction id="AVBR_to_DB4_elec_syn_5conns" weight="1" conductance="0.0161739293968nS" sigma="0.618755178492 per_mV" mu="3.03764690731 mV" />
     <delayedGapJunction id="AVBR_to_DB5_elec_syn_4conns" weight="1" conductance="0.0349483532147nS" sigma="0.664607583389 per_mV" mu="3.8543086696 mV" />
-    <delayedGapJunction id="AVBR_to_DB6_elec_syn_3conns" weight="1" conductance="0.0374313000423nS" sigma="0.128433033088 per_mV" mu="-5.18875443492 mV" />
-    <delayedGapJunction id="AVBR_to_DB7_elec_syn_3conns" weight="1" conductance="0.00774182495472nS" sigma="0.386916730813 per_mV" mu="0.0896939109345 mV" />
+    <delayedGapJunction id="AVBR_to_DB6_elec_syn_3conns" weight="1" conductance="0.0374313000423nS" sigma="0.228433033088 per_mV" mu="-5.18875443492 mV" />
+    <delayedGapJunction id="AVBR_to_DB7_elec_syn_3conns" weight="1" conductance="0.0107418249547nS" sigma="0.206916730813 per_mV" mu="0.0896939109345 mV" />
     <delayedGapJunction id="DB1_to_AVBR_elec_syn_15conns" weight="1" conductance="0.886758575613nS" sigma="0.38891335924 per_mV" mu="-63.6900218048 mV" />
     <gapJunction id="DB1_to_DB2_elec_syn_5conns" conductance="0.1126nS"/>
     <delayedGapJunction id="DB2_to_AVBL_elec_syn_4conns" weight="1" conductance="0.106496878444nS" sigma="0.241179861414 per_mV" mu="-31.0977828928 mV" />
@@ -247,12 +264,12 @@ Parameters and setting used to generate this network:
     <delayedGapJunction id="DB5_to_AVBR_elec_syn_4conns" weight="1" conductance="0.0349483532147nS" sigma="0.664607583389 per_mV" mu="3.8543086696 mV" />
     <gapJunction id="DB5_to_DB4_elec_syn_5conns" conductance="0.1126nS"/>
     <gapJunction id="DB5_to_DB6_elec_syn_5conns" conductance="0.1126nS"/>
-    <delayedGapJunction id="DB6_to_AVBL_elec_syn_3conns" weight="1" conductance="0.00159356419388nS" sigma="0.540309304721 per_mV" mu="-26.2192802886 mV" />
-    <delayedGapJunction id="DB6_to_AVBR_elec_syn_4conns" weight="1" conductance="0.0499084000564nS" sigma="0.128433033088 per_mV" mu="-5.18875443492 mV" />
+    <delayedGapJunction id="DB6_to_AVBL_elec_syn_3conns" weight="1" conductance="0.0105935641939nS" sigma="0.640309304721 per_mV" mu="-36.2192802886 mV" />
+    <delayedGapJunction id="DB6_to_AVBR_elec_syn_4conns" weight="1" conductance="0.0499084000564nS" sigma="0.228433033088 per_mV" mu="-5.18875443492 mV" />
     <gapJunction id="DB6_to_DB5_elec_syn_5conns" conductance="0.1126nS"/>
     <gapJunction id="DB6_to_DB7_elec_syn_5conns" conductance="0.1126nS"/>
-    <delayedGapJunction id="DB7_to_AVBL_elec_syn_13conns" weight="1" conductance="0.291093958754nS" sigma="0.733655913612 per_mV" mu="-64.2515469934 mV" />
-    <delayedGapJunction id="DB7_to_AVBR_elec_syn_3conns" weight="1" conductance="0.00774182495472nS" sigma="0.386916730813 per_mV" mu="0.0896939109345 mV" />
+    <delayedGapJunction id="DB7_to_AVBL_elec_syn_13conns" weight="1" conductance="0.0310939587543nS" sigma="0.533655913612 per_mV" mu="-44.2515469934 mV" />
+    <delayedGapJunction id="DB7_to_AVBR_elec_syn_3conns" weight="1" conductance="0.0107418249547nS" sigma="0.206916730813 per_mV" mu="0.0896939109345 mV" />
     <gapJunction id="DB7_to_DB6_elec_syn_5conns" conductance="0.1126nS"/>
     <gapJunction id="muscle_to_muscle_elec_syn_15conns" conductance="0.0nS"/>
     <gapJunction id="muscle_to_muscle_elec_syn_2conns" conductance="0.0nS"/>
@@ -262,23 +279,38 @@ Parameters and setting used to generate this network:
     <gradedSynapse id="neuron_to_neuron_exc_syn_1conns" conductance="0.49nS" delta="5 mV" Vth="00 mV" k="0.5per_ms" erev="-10 mV"/>
     <gradedSynapse id="neuron_to_muscle_exc_syn_1conns" conductance="0.1nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <gradedSynapse id="DB1_to_MDL06_exc_syn_3conns" conductance="0.3nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
-    <gradedSynapse id="DB1_to_MDL08_exc_syn_3conns" conductance="0.3nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
-    <gradedSynapse id="DB1_to_MDL09_exc_syn_6conns" conductance="0.6nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB1_to_MDL08_exc_syn_3conns" conductance="0.21nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB1_to_MDL09_exc_syn_6conns" conductance="0.048nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <gradedSynapse id="DB1_to_MDR08_exc_syn_6conns" conductance="0.6nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <gradedSynapse id="DB1_to_MDR09_exc_syn_2conns" conductance="0.2nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <gradedSynapse id="DB2_to_MDL09_exc_syn_2conns" conductance="0.2nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
-    <gradedSynapse id="DB2_to_MDL10_exc_syn_4conns" conductance="0.4nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
-    <gradedSynapse id="DB2_to_MDL11_exc_syn_5conns" conductance="0.5nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB2_to_MDL10_exc_syn_4conns" conductance="0.24nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB2_to_MDL11_exc_syn_5conns" conductance="0.15nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <gradedSynapse id="DB2_to_MDL12_exc_syn_1conns" conductance="0.1nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <gradedSynapse id="DB2_to_MDR09_exc_syn_1conns" conductance="0.1nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <gradedSynapse id="DB2_to_MDR10_exc_syn_6conns" conductance="0.6nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <gradedSynapse id="DB2_to_MDR11_exc_syn_8conns" conductance="0.8nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
-    <gradedSynapse id="neuron_to_muscle_exc_syn_6conns" conductance="0.6nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
-    <gradedSynapse id="neuron_to_muscle_exc_syn_3conns" conductance="0.3nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB3_to_MDL11_exc_syn_6conns" conductance="0.06nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB3_to_MDL13_exc_syn_3conns" conductance="0.09nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB3_to_MDL14_exc_syn_1conns" conductance="0.04nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <gradedSynapse id="neuron_to_muscle_exc_syn_2conns" conductance="0.2nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <gradedSynapse id="neuron_to_muscle_exc_syn_13conns" conductance="1.3nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
-    <gradedSynapse id="neuron_to_muscle_exc_syn_4conns" conductance="0.4nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB4_to_MDL13_exc_syn_4conns" conductance="0.12nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB4_to_MDL14_exc_syn_1conns" conductance="0.04nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB4_to_MDL15_exc_syn_3conns" conductance="0.066nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB4_to_MDL16_exc_syn_3conns" conductance="0.063nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="neuron_to_muscle_exc_syn_3conns" conductance="0.3nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <gradedSynapse id="neuron_to_muscle_exc_syn_5conns" conductance="0.5nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB5_to_MDL16_exc_syn_2conns" conductance="0.08nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB5_to_MDL17_exc_syn_2conns" conductance="0.18nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB5_to_MDL18_exc_syn_2conns" conductance="0.16nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB5_to_MDL19_exc_syn_2conns" conductance="0.1nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB6_to_MDL19_exc_syn_2conns" conductance="0.12nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB6_to_MDL20_exc_syn_2conns" conductance="0.28nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB6_to_MDL21_exc_syn_2conns" conductance="0.24nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB7_to_MDL22_exc_syn_2conns" conductance="0.4nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB7_to_MDL23_exc_syn_2conns" conductance="0.36nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB7_to_MDL24_exc_syn_2conns" conductance="0.32nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <cell id="GenericMuscleCell">
         <morphology id="morphology_GenericMuscleCell">
             <segment id="0" name="soma">
@@ -1588,16 +1620,16 @@ Parameters and setting used to generate this network:
             <continuousConnectionInstance id="0" preCell="../DB2/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR11/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="DB2_to_MDR11_exc_syn_8conns"/>
         </continuousProjection>
         <continuousProjection id="NC_DB3_MDL11_Acetylcholine" presynapticPopulation="DB3" postsynapticPopulation="MDL11">
-            <continuousConnectionInstance id="0" preCell="../DB3/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL11/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_6conns"/>
+            <continuousConnectionInstance id="0" preCell="../DB3/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL11/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="DB3_to_MDL11_exc_syn_6conns"/>
         </continuousProjection>
         <continuousProjection id="NC_DB3_MDL12_Acetylcholine" presynapticPopulation="DB3" postsynapticPopulation="MDL12">
             <continuousConnectionInstance id="0" preCell="../DB3/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL12/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_1conns"/>
         </continuousProjection>
         <continuousProjection id="NC_DB3_MDL13_Acetylcholine" presynapticPopulation="DB3" postsynapticPopulation="MDL13">
-            <continuousConnectionInstance id="0" preCell="../DB3/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL13/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+            <continuousConnectionInstance id="0" preCell="../DB3/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL13/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="DB3_to_MDL13_exc_syn_3conns"/>
         </continuousProjection>
         <continuousProjection id="NC_DB3_MDL14_Acetylcholine" presynapticPopulation="DB3" postsynapticPopulation="MDL14">
-            <continuousConnectionInstance id="0" preCell="../DB3/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL14/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_1conns"/>
+            <continuousConnectionInstance id="0" preCell="../DB3/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL14/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="DB3_to_MDL14_exc_syn_1conns"/>
         </continuousProjection>
         <continuousProjection id="NC_DB3_MDR11_Acetylcholine" presynapticPopulation="DB3" postsynapticPopulation="MDR11">
             <continuousConnectionInstance id="0" preCell="../DB3/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR11/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
@@ -1609,16 +1641,16 @@ Parameters and setting used to generate this network:
             <continuousConnectionInstance id="0" preCell="../DB3/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR13/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_1conns"/>
         </continuousProjection>
         <continuousProjection id="NC_DB4_MDL13_Acetylcholine" presynapticPopulation="DB4" postsynapticPopulation="MDL13">
-            <continuousConnectionInstance id="0" preCell="../DB4/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL13/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_4conns"/>
+            <continuousConnectionInstance id="0" preCell="../DB4/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL13/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="DB4_to_MDL13_exc_syn_4conns"/>
         </continuousProjection>
         <continuousProjection id="NC_DB4_MDL14_Acetylcholine" presynapticPopulation="DB4" postsynapticPopulation="MDL14">
-            <continuousConnectionInstance id="0" preCell="../DB4/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL14/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_1conns"/>
+            <continuousConnectionInstance id="0" preCell="../DB4/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL14/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="DB4_to_MDL14_exc_syn_1conns"/>
         </continuousProjection>
         <continuousProjection id="NC_DB4_MDL15_Acetylcholine" presynapticPopulation="DB4" postsynapticPopulation="MDL15">
-            <continuousConnectionInstance id="0" preCell="../DB4/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL15/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+            <continuousConnectionInstance id="0" preCell="../DB4/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL15/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="DB4_to_MDL15_exc_syn_3conns"/>
         </continuousProjection>
         <continuousProjection id="NC_DB4_MDL16_Acetylcholine" presynapticPopulation="DB4" postsynapticPopulation="MDL16">
-            <continuousConnectionInstance id="0" preCell="../DB4/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL16/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+            <continuousConnectionInstance id="0" preCell="../DB4/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL16/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="DB4_to_MDL16_exc_syn_3conns"/>
         </continuousProjection>
         <continuousProjection id="NC_DB4_MDR13_Acetylcholine" presynapticPopulation="DB4" postsynapticPopulation="MDR13">
             <continuousConnectionInstance id="0" preCell="../DB4/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR13/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
@@ -1639,16 +1671,16 @@ Parameters and setting used to generate this network:
             <continuousConnectionInstance id="0" preCell="../DB5/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL15/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
         </continuousProjection>
         <continuousProjection id="NC_DB5_MDL16_Acetylcholine" presynapticPopulation="DB5" postsynapticPopulation="MDL16">
-            <continuousConnectionInstance id="0" preCell="../DB5/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL16/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+            <continuousConnectionInstance id="0" preCell="../DB5/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL16/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="DB5_to_MDL16_exc_syn_2conns"/>
         </continuousProjection>
         <continuousProjection id="NC_DB5_MDL17_Acetylcholine" presynapticPopulation="DB5" postsynapticPopulation="MDL17">
-            <continuousConnectionInstance id="0" preCell="../DB5/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL17/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+            <continuousConnectionInstance id="0" preCell="../DB5/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL17/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="DB5_to_MDL17_exc_syn_2conns"/>
         </continuousProjection>
         <continuousProjection id="NC_DB5_MDL18_Acetylcholine" presynapticPopulation="DB5" postsynapticPopulation="MDL18">
-            <continuousConnectionInstance id="0" preCell="../DB5/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL18/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+            <continuousConnectionInstance id="0" preCell="../DB5/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL18/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="DB5_to_MDL18_exc_syn_2conns"/>
         </continuousProjection>
         <continuousProjection id="NC_DB5_MDL19_Acetylcholine" presynapticPopulation="DB5" postsynapticPopulation="MDL19">
-            <continuousConnectionInstance id="0" preCell="../DB5/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL19/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+            <continuousConnectionInstance id="0" preCell="../DB5/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL19/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="DB5_to_MDL19_exc_syn_2conns"/>
         </continuousProjection>
         <continuousProjection id="NC_DB5_MDR14_Acetylcholine" presynapticPopulation="DB5" postsynapticPopulation="MDR14">
             <continuousConnectionInstance id="0" preCell="../DB5/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR14/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
@@ -1678,13 +1710,13 @@ Parameters and setting used to generate this network:
             <continuousConnectionInstance id="0" preCell="../DB6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL18/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
         </continuousProjection>
         <continuousProjection id="NC_DB6_MDL19_Acetylcholine" presynapticPopulation="DB6" postsynapticPopulation="MDL19">
-            <continuousConnectionInstance id="0" preCell="../DB6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL19/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+            <continuousConnectionInstance id="0" preCell="../DB6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL19/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="DB6_to_MDL19_exc_syn_2conns"/>
         </continuousProjection>
         <continuousProjection id="NC_DB6_MDL20_Acetylcholine" presynapticPopulation="DB6" postsynapticPopulation="MDL20">
-            <continuousConnectionInstance id="0" preCell="../DB6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL20/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+            <continuousConnectionInstance id="0" preCell="../DB6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL20/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="DB6_to_MDL20_exc_syn_2conns"/>
         </continuousProjection>
         <continuousProjection id="NC_DB6_MDL21_Acetylcholine" presynapticPopulation="DB6" postsynapticPopulation="MDL21">
-            <continuousConnectionInstance id="0" preCell="../DB6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL21/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+            <continuousConnectionInstance id="0" preCell="../DB6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL21/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="DB6_to_MDL21_exc_syn_2conns"/>
         </continuousProjection>
         <continuousProjection id="NC_DB6_MDR16_Acetylcholine" presynapticPopulation="DB6" postsynapticPopulation="MDR16">
             <continuousConnectionInstance id="0" preCell="../DB6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR16/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
@@ -1714,13 +1746,13 @@ Parameters and setting used to generate this network:
             <continuousConnectionInstance id="0" preCell="../DB7/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL21/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
         </continuousProjection>
         <continuousProjection id="NC_DB7_MDL22_Acetylcholine" presynapticPopulation="DB7" postsynapticPopulation="MDL22">
-            <continuousConnectionInstance id="0" preCell="../DB7/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL22/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+            <continuousConnectionInstance id="0" preCell="../DB7/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL22/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="DB7_to_MDL22_exc_syn_2conns"/>
         </continuousProjection>
         <continuousProjection id="NC_DB7_MDL23_Acetylcholine" presynapticPopulation="DB7" postsynapticPopulation="MDL23">
-            <continuousConnectionInstance id="0" preCell="../DB7/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL23/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+            <continuousConnectionInstance id="0" preCell="../DB7/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL23/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="DB7_to_MDL23_exc_syn_2conns"/>
         </continuousProjection>
         <continuousProjection id="NC_DB7_MDL24_Acetylcholine" presynapticPopulation="DB7" postsynapticPopulation="MDL24">
-            <continuousConnectionInstance id="0" preCell="../DB7/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL24/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+            <continuousConnectionInstance id="0" preCell="../DB7/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL24/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="DB7_to_MDL24_exc_syn_2conns"/>
         </continuousProjection>
         <continuousProjection id="NC_DB7_MDR19_Acetylcholine" presynapticPopulation="DB7" postsynapticPopulation="MDR19">
             <continuousConnectionInstance id="0" preCell="../DB7/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR19/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>

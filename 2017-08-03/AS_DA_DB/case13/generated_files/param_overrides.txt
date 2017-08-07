@@ -1,0 +1,55 @@
+config_param_overrides = {
+    "conn_number_override": {}, 
+    "conn_polarity_override": {
+        "DB7-AS10": "inh", 
+        "DB4-AS6": "inh", 
+        "DB5-AS7": "inh", 
+        "DB1-AS2": "inh", 
+        "DB1-AS1": "inh", 
+        "DB1-AS4": "inh", 
+        "DB5-AS8": "inh", 
+        "DB7-AS11": "inh", 
+        "DB3-AS5": "inh", 
+        "DB3-AS4": "inh", 
+        "DB6-AS8": "inh", 
+        "DB6-AS9": "inh", 
+        "DB2-AS3": "inh"
+    }, 
+    "conns_to_include": [
+        "AS*-DA*", 
+        "DA*-DB*", 
+        "DB*-AS*", 
+        "AVA*-DA*", 
+        "AVB*-DB*", 
+        "AVB*-DB*_GJ", 
+        "DA*-muscles", 
+        "DB*-muscles", 
+        "muscles-muscles"
+    ], 
+    "input": [
+        [
+            "AVAL", 
+            "50ms", 
+            "1900ms", 
+            "5pA"
+        ], 
+        [
+            "AVAR", 
+            "50ms", 
+            "1900ms", 
+            "5pA"
+        ], 
+        [
+            "AVBL", 
+            "50ms", 
+            "1900ms", 
+            "15pA"
+        ], 
+        [
+            "AVBR", 
+            "50ms", 
+            "1900ms", 
+            "15pA"
+        ]
+    ]
+},

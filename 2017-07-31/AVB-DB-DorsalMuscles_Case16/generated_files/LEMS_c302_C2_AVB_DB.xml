@@ -65,7 +65,7 @@ Parameters and setting used to generate this network:
         BioParameter: neuron_to_neuron_elec_syn_weight = 1 (SRC: BlindGuess, certainty 0.1)
         BioParameter: neuron_to_neuron_elec_syn_gbase = 0.01252 nS (SRC: BlindGuess, certainty 0.1)
         BioParameter: neuron_to_muscle_elec_syn_gbase = 0.00152 nS (SRC: BlindGuess, certainty 0.1)
-        BioParameter: muscle_to_muscle_elec_syn_gbase = 0 nS (SRC: BlindGuess, certainty 0.1)
+        BioParameter: muscle_to_muscle_elec_syn_gbase = 0.0005 nS (SRC: Set with param_overrides, certainty 0)
         BioParameter: neuron_to_motor_delayed_elec_syn_weight = 1 (SRC: BlindGuess, certainty 0.1)
         BioParameter: neuron_to_motor_delayed_elec_syn_gbase = 0.01252 nS (SRC: BlindGuess, certainty 0.1)
         BioParameter: neuron_to_motor_delayed_elec_syn_sigma = 0.4 (SRC: BlindGuess, certainty 0.1)
@@ -92,8 +92,8 @@ Parameters and setting used to generate this network:
         BioParameter: DB1_to_MDR09_exc_syn_conductance = 0.10 nS (SRC: BlindGuess, certainty 0.1)
         BioParameter: DB2_to_MDL09_exc_syn_conductance = 0.10 nS (SRC: BlindGuess, certainty 0.1)
         BioParameter: DB2_to_MDL10_exc_syn_conductance = 0.06 nS (SRC: Set with param_overrides, certainty 0)
-        BioParameter: DB2_to_MDL11_exc_syn_conductance = 0.03 nS (SRC: Set with param_overrides, certainty 0)
-        BioParameter: DB2_to_MDL12_exc_syn_conductance = 0.10 nS (SRC: BlindGuess, certainty 0.1)
+        BioParameter: DB2_to_MDL11_exc_syn_conductance = 0.035 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DB2_to_MDL12_exc_syn_conductance = 0.115 nS (SRC: Set with param_overrides, certainty 0)
         BioParameter: DB2_to_MDR09_exc_syn_conductance = 0.10 nS (SRC: BlindGuess, certainty 0.1)
         BioParameter: DB2_to_MDR10_exc_syn_conductance = 0.10 nS (SRC: BlindGuess, certainty 0.1)
         BioParameter: DB2_to_MDR11_exc_syn_conductance = 0.10 nS (SRC: BlindGuess, certainty 0.1)
@@ -133,7 +133,7 @@ Parameters and setting used to generate this network:
         BioParameter: DB2_to_MDR09_exc_syn_k = 1.205per_ms (SRC: BlindGuess, certainty 0.1)
         BioParameter: DB2_to_MDR10_exc_syn_k = 1.205per_ms (SRC: BlindGuess, certainty 0.1)
         BioParameter: DB2_to_MDR11_exc_syn_k = 1.205per_ms (SRC: BlindGuess, certainty 0.1)
-        BioParameter: DB3_to_MDL11_exc_syn_conductance = 0.01 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB3_to_MDL11_exc_syn_conductance = 0.015 nS (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB5_to_AVBL_elec_syn_sigma = 0.536933455728 per_mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: AVBR_to_DB2_elec_syn_mu = -62.000341191 mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: AVBL_to_DB6_elec_syn_gbase = 0.003531188064628 nS (SRC: Add with param_overrides, certainty 0)
@@ -143,7 +143,7 @@ Parameters and setting used to generate this network:
         BioParameter: DB6_to_MDL19_exc_syn_conductance = 0.06 nS (SRC: Add with param_overrides, certainty 0)
         BioParameter: AVBR_to_DB7_elec_syn_sigma = 0.206916730813 per_mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB5_to_AVBR_elec_syn_mu = 3.8543086696 mV (SRC: Add with param_overrides, certainty 0)
-        BioParameter: DB5_to_MDL18_exc_syn_conductance = 0.08 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB5_to_MDL18_exc_syn_conductance = 0.115 nS (SRC: Add with param_overrides, certainty 0)
         BioParameter: AVBL_to_DB5_elec_syn_mu = -56.5883926767 mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB7_to_AVBR_elec_syn_sigma = 0.206916730813 per_mV (SRC: Add with param_overrides, certainty 0)
         BioParameter: DB2_to_AVBL_elec_syn_mu = -31.0977828928 mV (SRC: Add with param_overrides, certainty 0)
@@ -251,9 +251,9 @@ Parameters and setting used to generate this network:
     <!-- End of NeuroML2 content -->
     
 
-    <Simulation id="sim_c302_C2_AVB_DB" length="10000ms" step="0.05ms" target="c302_C2_AVB_DB">
+    <Simulation id="sim_c302_C2_AVB_DB" length="2000ms" step="0.05ms" target="c302_C2_AVB_DB">
 
-        <Display id="neurons" title="c302_C2_AVB_DB: Membrane potential of a number of neurons" timeScale="1ms" xmin="-1000.0" xmax="11000.0" ymin="-60" ymax="25">
+        <Display id="neurons" title="c302_C2_AVB_DB: Membrane potential of a number of neurons" timeScale="1ms" xmin="-200.0" xmax="2200.0" ymin="-60" ymax="25">
             
             <Line id="AVBL" quantity="AVBL/0/GenericNeuronCell/v" scale="1mV" color="#f87100" timeScale="1ms" />
             <Line id="AVBR" quantity="AVBR/0/GenericNeuronCell/v" scale="1mV" color="#ac15c4" timeScale="1ms" />
@@ -267,7 +267,7 @@ Parameters and setting used to generate this network:
             
         </Display>
       
-        <Display id="muscles" title="c302_C2_AVB_DB: Membrane potential of a number of muscles" timeScale="1ms" xmin="-1000.0" xmax="11000.0" ymin="-60" ymax="25">
+        <Display id="muscles" title="c302_C2_AVB_DB: Membrane potential of a number of muscles" timeScale="1ms" xmin="-200.0" xmax="2200.0" ymin="-60" ymax="25">
             
             <Line id="MDR01" quantity="MDR01/0/GenericMuscleCell/v" scale="1mV" color="#cf2d27" timeScale="1ms" />
             <Line id="MDR02" quantity="MDR02/0/GenericMuscleCell/v" scale="1mV" color="#006359" timeScale="1ms" />
@@ -367,7 +367,7 @@ Parameters and setting used to generate this network:
 
         </Display>
       
-        <Display id="activity_neurons" title="c302_C2_AVB_DB: Activity of a number of neurons" timeScale="1ms" xmin="-1000.0" xmax="11000.0" ymin="-0.1" ymax="1.1">
+        <Display id="activity_neurons" title="c302_C2_AVB_DB: Activity of a number of neurons" timeScale="1ms" xmin="-200.0" xmax="2200.0" ymin="-0.1" ymax="1.1">
             
             <Line id="AVBL" quantity="AVBL/0/GenericNeuronCell/caConc" scale="1" color="#eaf195" timeScale="1ms" />
             <Line id="AVBR" quantity="AVBR/0/GenericNeuronCell/caConc" scale="1" color="#3c00ca" timeScale="1ms" />
@@ -381,7 +381,7 @@ Parameters and setting used to generate this network:
 
         </Display>
       
-        <Display id="activity_muscles" title="c302_C2_AVB_DB: Activity of a number of muscles" timeScale="1ms" xmin="-1000.0" xmax="11000.0" ymin="-0.1" ymax="1.1">
+        <Display id="activity_muscles" title="c302_C2_AVB_DB: Activity of a number of muscles" timeScale="1ms" xmin="-200.0" xmax="2200.0" ymin="-0.1" ymax="1.1">
             
             <Line id="MDR01" quantity="MDR01/0/GenericMuscleCell/caConc" scale="1" color="#f527d6" timeScale="1ms" />
             <Line id="MDR02" quantity="MDR02/0/GenericMuscleCell/caConc" scale="1" color="#57d17a" timeScale="1ms" />
