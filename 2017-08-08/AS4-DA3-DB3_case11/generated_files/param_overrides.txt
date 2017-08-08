@@ -1,0 +1,17 @@
+config_param_overrides = {
+    "conn_number_override": {}, 
+    "conn_polarity_override": {}, 
+    "conns_to_include": [], 
+    "input": [
+        [
+            "AS4", 
+            "50ms", 
+            "1900ms", 
+            "15.0pA"
+        ]
+    ]
+},
+param_overrides = {
+    "neuron_to_neuron_inh_syn_conductance": "7.2 nS", 
+    "neuron_to_neuron_exc_syn_conductance": "4.2 nS"
+},
