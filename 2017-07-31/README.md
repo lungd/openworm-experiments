@@ -1,3 +1,37 @@
+![network](avb-db-muscles_3.jpeg)
+
+# Network:
+
+### Neural Circuit:
+
+- Command neurons: AVBL, AVBR
+- Motor neurons: DB1, DB2, DB3, DB4, DB5, DB6, DB7
+- Muscles: All
+
+### Connections:
+
+- Gap-junctions:
+    - AVBL - AVBR
+    - DB1 - DB2, DB2 - DB3, ..., DB6 - DB7
+    - muscle - muscle 
+- Delayed gap-junctions:
+    - AVB(L/R) - DB(1-7) (no connection between AVBL - DB1)
+- Chemical synapses:
+    - AVBL - AVBR, AVBR - AVBL
+    - AVBR - DB4
+    - AVBR - MVL16
+    - DB - muscle
+
+
+### Simulation Setup:
+
+- duration: see experiment
+- dt: 0.05
+- Injected current:
+    - Target: AVB(L/R)
+    - Current: 15 pA
+    - Time: 50 ms <= t < (duration - 100) ms
+
 # Description
 
 In these experiments we were hand-tuning the conductance of excitatory synapses between DB motor neurons and muscle cells (only dorsal left).

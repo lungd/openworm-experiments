@@ -1,3 +1,24 @@
+<img src="AS-DA-DB_all_conns.jpeg" width="380"><img src="AS-DA-DB_subset_conns.jpeg" width="380">
+
+# Network:
+
+### Neural Circuit:
+
+- Command neurons: AVA, AVB
+- Motor neurons: AS, DA, DB
+- Muscles: All
+
+### Connections:
+
+See experiment
+
+### Simulation Setup:
+
+- duration: see experiment
+- dt: 0.05
+- Injected current: see experiment
+
+
 # Description
 
 In these experiments we wanted to recreate Figure 6 (A2) of *"A ventral nerve cord CPG may underlie locomotion in C. elegans"* (Olivares et al.)

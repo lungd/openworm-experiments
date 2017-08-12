@@ -1,3 +1,25 @@
+<img src="AS4-DA3-DB3_subset1_conns.jpeg" width="380"><img src="AS4-DA3-DB3_subset2_conns.jpeg" width="380">
+
+# Network:
+
+### Neural Circuit:
+
+- Command neurons: AVA, AVB
+- Motor neurons: AS4, DA3, DB3
+- Muscles: All
+
+### Connections:
+
+See experiment
+
+### Simulation Setup:
+
+- duration: 500 ms
+- dt: 0.05
+- Injected current: see experiment
+
+
+
 # Description
 
 Continued from experiments [2017-08-07](../2017-08-07/).
