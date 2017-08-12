@@ -1,3 +1,15 @@
+# Description
+
+Continued from experiments [2017-08-07](../2017-08-07/).
+
+In these experiments we only included AVA, AVB, AS4, DA3, and DB3.
+
+In case03 we got similar oscillation to the work of Olivares et al. (*"A ventral nerve cord CPG may underlie locomotion in C. elegans"*) but only without any input to AVB.  
+Then we tried to get oscillatory behavior in the presence of injected current into AVB what we achieved in case18 but in that experiment we saw a dampened oscillation.
+
+
+# Result of experiments
+
 | Id | Neurons (membrane) | Neurons (membrane) | Muscles (membrane) | Muscles (membrane) | Neurons (activity) | Neurons (activity) | Muscles (activity) | Muscles (activity) |
 | :---         |     :---:      |     :---:     |     :---:     |     :---:     |     :---:     |     :---:     |     :---:     |     :---:     |
 | [case23](AS4-DA3-DB3_case23) | ![AS4-DA3-DB3_case23/generated_files/figures/neurons_C2_AS4_DA3_DB3.png](AS4-DA3-DB3_case23/generated_files/figures/neurons_C2_AS4_DA3_DB3.png "AS4-DA3-DB3_case23/generated_files/figures/neurons_C2_AS4_DA3_DB3") | ![AS4-DA3-DB3_case23/generated_files/figures/traces_neuron_AS4_DA3_DB3_C2.png](AS4-DA3-DB3_case23/generated_files/figures/traces_neuron_AS4_DA3_DB3_C2.png "AS4-DA3-DB3_case23/generated_files/figures/traces_neuron_AS4_DA3_DB3_C2") | ![AS4-DA3-DB3_case23/generated_files/figures/muscles_C2_AS4_DA3_DB3.png](AS4-DA3-DB3_case23/generated_files/figures/muscles_C2_AS4_DA3_DB3.png "AS4-DA3-DB3_case23/generated_files/figures/muscles_C2_AS4_DA3_DB3") | ![AS4-DA3-DB3_case23/generated_files/figures/traces_muscles_AS4_DA3_DB3_C2.png](AS4-DA3-DB3_case23/generated_files/figures/traces_muscles_AS4_DA3_DB3_C2.png "AS4-DA3-DB3_case23/generated_files/figures/traces_muscles_AS4_DA3_DB3_C2") | ![AS4-DA3-DB3_case23/generated_files/figures/neuron_activity_C2_AS4_DA3_DB3.png](AS4-DA3-DB3_case23/generated_files/figures/neuron_activity_C2_AS4_DA3_DB3.png "AS4-DA3-DB3_case23/generated_files/figures/neuron_activity_C2_AS4_DA3_DB3") | ![AS4-DA3-DB3_case23/generated_files/figures/traces_neuron_activity_AS4_DA3_DB3_C2.png](AS4-DA3-DB3_case23/generated_files/figures/traces_neuron_activity_AS4_DA3_DB3_C2.png "AS4-DA3-DB3_case23/generated_files/figures/traces_neuron_activity_AS4_DA3_DB3_C2") | ![AS4-DA3-DB3_case23/generated_files/figures/muscle_activity_C2_AS4_DA3_DB3.png](AS4-DA3-DB3_case23/generated_files/figures/muscle_activity_C2_AS4_DA3_DB3.png "AS4-DA3-DB3_case23/generated_files/figures/muscle_activity_C2_AS4_DA3_DB3") | ![AS4-DA3-DB3_case23/generated_files/figures/traces_muscles_activity_AS4_DA3_DB3_C2.png](AS4-DA3-DB3_case23/generated_files/figures/traces_muscles_activity_AS4_DA3_DB3_C2.png "AS4-DA3-DB3_case23/generated_files/figures/traces_muscles_activity_AS4_DA3_DB3_C2") |

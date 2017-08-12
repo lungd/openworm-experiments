@@ -1,3 +1,14 @@
+# Description
+
+Continued from experiments [2017-07-31](../2017-07-31/).
+
+In these experiments we fine-tuned the conductance of DB-muscle (dorsal left) excitatory synapses while making use of the 'delayed' GJs between AVB and DB neurons.
+
+The result of e.g. case34, or case36 (different conductance for muscle-muscle GJs) is still not perfect yet - posterior muscles don't receive as much synaptic input as anterior muscles, resulting into different spike frequencies.
+
+
+# Result of experiments
+
 | Id | Neurons (membrane) | Neurons (membrane) | Muscles (membrane) | Muscles (membrane) | Neurons (activity) | Neurons (activity) | Muscles (activity) | Muscles (activity) |
 | :---         |     :---:      |     :---:     |     :---:     |     :---:     |     :---:     |     :---:     |     :---:     |     :---:     |
 | [Case38](AVB-DB-DorsalMuscles_Case38) | ![AVB-DB-DorsalMuscles_Case38/generated_files/figures/neurons_C2_AVB_DB.png](AVB-DB-DorsalMuscles_Case38/generated_files/figures/neurons_C2_AVB_DB.png "AVB-DB-DorsalMuscles_Case38/generated_files/figures/neurons_C2_AVB_DB") | ![AVB-DB-DorsalMuscles_Case38/generated_files/figures/traces_neuron_AVB_DB_C2.png](AVB-DB-DorsalMuscles_Case38/generated_files/figures/traces_neuron_AVB_DB_C2.png "AVB-DB-DorsalMuscles_Case38/generated_files/figures/traces_neuron_AVB_DB_C2") | ![AVB-DB-DorsalMuscles_Case38/generated_files/figures/muscles_C2_AVB_DB.png](AVB-DB-DorsalMuscles_Case38/generated_files/figures/muscles_C2_AVB_DB.png "AVB-DB-DorsalMuscles_Case38/generated_files/figures/muscles_C2_AVB_DB") | ![AVB-DB-DorsalMuscles_Case38/generated_files/figures/traces_muscles_AVB_DB_C2.png](AVB-DB-DorsalMuscles_Case38/generated_files/figures/traces_muscles_AVB_DB_C2.png "AVB-DB-DorsalMuscles_Case38/generated_files/figures/traces_muscles_AVB_DB_C2") | ![AVB-DB-DorsalMuscles_Case38/generated_files/figures/neuron_activity_C2_AVB_DB.png](AVB-DB-DorsalMuscles_Case38/generated_files/figures/neuron_activity_C2_AVB_DB.png "AVB-DB-DorsalMuscles_Case38/generated_files/figures/neuron_activity_C2_AVB_DB") | ![AVB-DB-DorsalMuscles_Case38/generated_files/figures/traces_neuron_activity_AVB_DB_C2.png](AVB-DB-DorsalMuscles_Case38/generated_files/figures/traces_neuron_activity_AVB_DB_C2.png "AVB-DB-DorsalMuscles_Case38/generated_files/figures/traces_neuron_activity_AVB_DB_C2") | ![AVB-DB-DorsalMuscles_Case38/generated_files/figures/muscle_activity_C2_AVB_DB.png](AVB-DB-DorsalMuscles_Case38/generated_files/figures/muscle_activity_C2_AVB_DB.png "AVB-DB-DorsalMuscles_Case38/generated_files/figures/muscle_activity_C2_AVB_DB") | ![AVB-DB-DorsalMuscles_Case38/generated_files/figures/traces_muscles_activity_AVB_DB_C2.png](AVB-DB-DorsalMuscles_Case38/generated_files/figures/traces_muscles_activity_AVB_DB_C2.png "AVB-DB-DorsalMuscles_Case38/generated_files/figures/traces_muscles_activity_AVB_DB_C2") |

@@ -1,3 +1,13 @@
+# Description
+
+Continued from experiments [2017-08-03/AS_DA_DB](../2017-08-03/AS_DA_DB/).
+
+We played with the current injected into AVB/AVA/AS and with the conductance of excitatory and inhibitory synapses.
+
+No oscillatory behavior yet.
+
+# Result of experiments
+
 | Id | Neurons (membrane) | Neurons (membrane) | Muscles (membrane) | Muscles (membrane) | Neurons (activity) | Neurons (activity) | Muscles (activity) | Muscles (activity) |
 | :---         |     :---:      |     :---:     |     :---:     |     :---:     |     :---:     |     :---:     |     :---:     |     :---:     |
 | [case19](AS-DA-DB_case19) | ![AS-DA-DB_case19/generated_files/figures/neurons_C2_AS_DA_DB.png](AS-DA-DB_case19/generated_files/figures/neurons_C2_AS_DA_DB.png "AS-DA-DB_case19/generated_files/figures/neurons_C2_AS_DA_DB") | ![AS-DA-DB_case19/generated_files/figures/traces_neuron_AS_DA_DB_C2.png](AS-DA-DB_case19/generated_files/figures/traces_neuron_AS_DA_DB_C2.png "AS-DA-DB_case19/generated_files/figures/traces_neuron_AS_DA_DB_C2") | ![AS-DA-DB_case19/generated_files/figures/muscles_C2_AS_DA_DB.png](AS-DA-DB_case19/generated_files/figures/muscles_C2_AS_DA_DB.png "AS-DA-DB_case19/generated_files/figures/muscles_C2_AS_DA_DB") | ![AS-DA-DB_case19/generated_files/figures/traces_muscles_AS_DA_DB_C2.png](AS-DA-DB_case19/generated_files/figures/traces_muscles_AS_DA_DB_C2.png "AS-DA-DB_case19/generated_files/figures/traces_muscles_AS_DA_DB_C2") | ![AS-DA-DB_case19/generated_files/figures/neuron_activity_C2_AS_DA_DB.png](AS-DA-DB_case19/generated_files/figures/neuron_activity_C2_AS_DA_DB.png "AS-DA-DB_case19/generated_files/figures/neuron_activity_C2_AS_DA_DB") | ![AS-DA-DB_case19/generated_files/figures/traces_neuron_activity_AS_DA_DB_C2.png](AS-DA-DB_case19/generated_files/figures/traces_neuron_activity_AS_DA_DB_C2.png "AS-DA-DB_case19/generated_files/figures/traces_neuron_activity_AS_DA_DB_C2") | ![AS-DA-DB_case19/generated_files/figures/muscle_activity_C2_AS_DA_DB.png](AS-DA-DB_case19/generated_files/figures/muscle_activity_C2_AS_DA_DB.png "AS-DA-DB_case19/generated_files/figures/muscle_activity_C2_AS_DA_DB") | ![AS-DA-DB_case19/generated_files/figures/traces_muscles_activity_AS_DA_DB_C2.png](AS-DA-DB_case19/generated_files/figures/traces_muscles_activity_AS_DA_DB_C2.png "AS-DA-DB_case19/generated_files/figures/traces_muscles_activity_AS_DA_DB_C2") |
