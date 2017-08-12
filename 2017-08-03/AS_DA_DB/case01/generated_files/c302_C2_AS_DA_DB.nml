@@ -71,18 +71,6 @@ Parameters and setting used to generate this network:
         BioParameter: unphysiological_offset_current = 0pA (SRC: Testing TapWithdrawal, certainty 0)
         BioParameter: unphysiological_offset_current_del = 0 ms (SRC: Testing TapWithdrawal, certainty 0)
         BioParameter: unphysiological_offset_current_dur = 2000 ms (SRC: Testing TapWithdrawal, certainty 0)
-        BioParameter: DB1_to_DB2_elec_syn_gbase = 0.02252 nS (SRC: BlindGuess, certainty 0.1)
-        BioParameter: DB2_to_DB1_elec_syn_gbase = 0.02252 nS (SRC: BlindGuess, certainty 0.1)
-        BioParameter: DB2_to_DB3_elec_syn_gbase = 0.02252 nS (SRC: BlindGuess, certainty 0.1)
-        BioParameter: DB3_to_DB2_elec_syn_gbase = 0.02252 nS (SRC: BlindGuess, certainty 0.1)
-        BioParameter: DB3_to_DB4_elec_syn_gbase = 0.02252 nS (SRC: BlindGuess, certainty 0.1)
-        BioParameter: DB4_to_DB3_elec_syn_gbase = 0.02252 nS (SRC: BlindGuess, certainty 0.1)
-        BioParameter: DB4_to_DB5_elec_syn_gbase = 0.02252 nS (SRC: BlindGuess, certainty 0.1)
-        BioParameter: DB5_to_DB4_elec_syn_gbase = 0.02252 nS (SRC: BlindGuess, certainty 0.1)
-        BioParameter: DB5_to_DB6_elec_syn_gbase = 0.02252 nS (SRC: BlindGuess, certainty 0.1)
-        BioParameter: DB6_to_DB5_elec_syn_gbase = 0.02252 nS (SRC: BlindGuess, certainty 0.1)
-        BioParameter: DB6_to_DB7_elec_syn_gbase = 0.02252 nS (SRC: BlindGuess, certainty 0.1)
-        BioParameter: DB7_to_DB6_elec_syn_gbase = 0.02252 nS (SRC: BlindGuess, certainty 0.1)
         BioParameter: DB1_to_MDL06_exc_syn_conductance = 0.10 nS (SRC: BlindGuess, certainty 0.1)
         BioParameter: DB1_to_MDL08_exc_syn_conductance = 0.10 nS (SRC: BlindGuess, certainty 0.1)
         BioParameter: DB1_to_MDL09_exc_syn_conductance = 0.10 nS (SRC: BlindGuess, certainty 0.1)
@@ -151,18 +139,7 @@ Parameters and setting used to generate this network:
     <gapJunction id="neuron_to_neuron_elec_syn_17conns" conductance="0.21284nS"/>
     <gapJunction id="neuron_to_neuron_elec_syn_13conns" conductance="0.16276nS"/>
     <gapJunction id="neuron_to_neuron_elec_syn_15conns" conductance="0.1878nS"/>
-    <gapJunction id="DB1_to_DB2_elec_syn_5conns" conductance="0.1126nS"/>
-    <gapJunction id="DB2_to_DB1_elec_syn_5conns" conductance="0.1126nS"/>
-    <gapJunction id="DB2_to_DB3_elec_syn_14conns" conductance="0.31528nS"/>
-    <gapJunction id="DB3_to_DB2_elec_syn_14conns" conductance="0.31528nS"/>
-    <gapJunction id="DB3_to_DB4_elec_syn_1conns" conductance="0.02252nS"/>
-    <gapJunction id="DB4_to_DB3_elec_syn_1conns" conductance="0.02252nS"/>
-    <gapJunction id="DB4_to_DB5_elec_syn_5conns" conductance="0.1126nS"/>
-    <gapJunction id="DB5_to_DB4_elec_syn_5conns" conductance="0.1126nS"/>
-    <gapJunction id="DB5_to_DB6_elec_syn_5conns" conductance="0.1126nS"/>
-    <gapJunction id="DB6_to_DB5_elec_syn_5conns" conductance="0.1126nS"/>
-    <gapJunction id="DB6_to_DB7_elec_syn_5conns" conductance="0.1126nS"/>
-    <gapJunction id="DB7_to_DB6_elec_syn_5conns" conductance="0.1126nS"/>
+    <gapJunction id="neuron_to_neuron_elec_syn_14conns" conductance="0.17528nS"/>
     <gapJunction id="muscle_to_muscle_elec_syn_15conns" conductance="0.0nS"/>
     <gapJunction id="muscle_to_muscle_elec_syn_2conns" conductance="0.0nS"/>
     <silentSynapse id="silent"/>
@@ -1158,7 +1135,7 @@ Parameters and setting used to generate this network:
             <electricalConnectionInstance id="0" preCell="../DB1/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../AVBR/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_15conns"/>
         </electricalProjection>
         <electricalProjection id="NC_DB1_DB2_Generic_GJ" presynapticPopulation="DB1" postsynapticPopulation="DB2">
-            <electricalConnectionInstance id="0" preCell="../DB1/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB2/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="DB1_to_DB2_elec_syn_5conns"/>
+            <electricalConnectionInstance id="0" preCell="../DB1/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB2/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_5conns"/>
         </electricalProjection>
         <electricalProjection id="NC_DB2_AVBL_Generic_GJ" presynapticPopulation="DB2" postsynapticPopulation="AVBL">
             <electricalConnectionInstance id="0" preCell="../DB2/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../AVBL/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_4conns"/>
@@ -1167,10 +1144,10 @@ Parameters and setting used to generate this network:
             <electricalConnectionInstance id="0" preCell="../DB2/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../AVBR/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_3conns"/>
         </electricalProjection>
         <electricalProjection id="NC_DB2_DB1_Generic_GJ" presynapticPopulation="DB2" postsynapticPopulation="DB1">
-            <electricalConnectionInstance id="0" preCell="../DB2/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB1/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="DB2_to_DB1_elec_syn_5conns"/>
+            <electricalConnectionInstance id="0" preCell="../DB2/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB1/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_5conns"/>
         </electricalProjection>
         <electricalProjection id="NC_DB2_DB3_Generic_GJ" presynapticPopulation="DB2" postsynapticPopulation="DB3">
-            <electricalConnectionInstance id="0" preCell="../DB2/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB3/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="DB2_to_DB3_elec_syn_14conns"/>
+            <electricalConnectionInstance id="0" preCell="../DB2/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB3/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_14conns"/>
         </electricalProjection>
         <electricalProjection id="NC_DB3_AVBL_Generic_GJ" presynapticPopulation="DB3" postsynapticPopulation="AVBL">
             <electricalConnectionInstance id="0" preCell="../DB3/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../AVBL/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_9conns"/>
@@ -1179,10 +1156,10 @@ Parameters and setting used to generate this network:
             <electricalConnectionInstance id="0" preCell="../DB3/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../AVBR/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_2conns"/>
         </electricalProjection>
         <electricalProjection id="NC_DB3_DB2_Generic_GJ" presynapticPopulation="DB3" postsynapticPopulation="DB2">
-            <electricalConnectionInstance id="0" preCell="../DB3/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB2/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="DB3_to_DB2_elec_syn_14conns"/>
+            <electricalConnectionInstance id="0" preCell="../DB3/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB2/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_14conns"/>
         </electricalProjection>
         <electricalProjection id="NC_DB3_DB4_Generic_GJ" presynapticPopulation="DB3" postsynapticPopulation="DB4">
-            <electricalConnectionInstance id="0" preCell="../DB3/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB4/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="DB3_to_DB4_elec_syn_1conns"/>
+            <electricalConnectionInstance id="0" preCell="../DB3/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB4/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_1conns"/>
         </electricalProjection>
         <electricalProjection id="NC_DB4_AVBL_Generic_GJ" presynapticPopulation="DB4" postsynapticPopulation="AVBL">
             <electricalConnectionInstance id="0" preCell="../DB4/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../AVBL/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_4conns"/>
@@ -1191,10 +1168,10 @@ Parameters and setting used to generate this network:
             <electricalConnectionInstance id="0" preCell="../DB4/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../AVBR/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_5conns"/>
         </electricalProjection>
         <electricalProjection id="NC_DB4_DB3_Generic_GJ" presynapticPopulation="DB4" postsynapticPopulation="DB3">
-            <electricalConnectionInstance id="0" preCell="../DB4/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB3/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="DB4_to_DB3_elec_syn_1conns"/>
+            <electricalConnectionInstance id="0" preCell="../DB4/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB3/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_1conns"/>
         </electricalProjection>
         <electricalProjection id="NC_DB4_DB5_Generic_GJ" presynapticPopulation="DB4" postsynapticPopulation="DB5">
-            <electricalConnectionInstance id="0" preCell="../DB4/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB5/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="DB4_to_DB5_elec_syn_5conns"/>
+            <electricalConnectionInstance id="0" preCell="../DB4/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB5/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_5conns"/>
         </electricalProjection>
         <electricalProjection id="NC_DB5_AVBL_Generic_GJ" presynapticPopulation="DB5" postsynapticPopulation="AVBL">
             <electricalConnectionInstance id="0" preCell="../DB5/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../AVBL/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_3conns"/>
@@ -1203,10 +1180,10 @@ Parameters and setting used to generate this network:
             <electricalConnectionInstance id="0" preCell="../DB5/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../AVBR/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_4conns"/>
         </electricalProjection>
         <electricalProjection id="NC_DB5_DB4_Generic_GJ" presynapticPopulation="DB5" postsynapticPopulation="DB4">
-            <electricalConnectionInstance id="0" preCell="../DB5/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB4/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="DB5_to_DB4_elec_syn_5conns"/>
+            <electricalConnectionInstance id="0" preCell="../DB5/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB4/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_5conns"/>
         </electricalProjection>
         <electricalProjection id="NC_DB5_DB6_Generic_GJ" presynapticPopulation="DB5" postsynapticPopulation="DB6">
-            <electricalConnectionInstance id="0" preCell="../DB5/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB6/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="DB5_to_DB6_elec_syn_5conns"/>
+            <electricalConnectionInstance id="0" preCell="../DB5/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB6/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_5conns"/>
         </electricalProjection>
         <electricalProjection id="NC_DB6_AVBL_Generic_GJ" presynapticPopulation="DB6" postsynapticPopulation="AVBL">
             <electricalConnectionInstance id="0" preCell="../DB6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../AVBL/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_3conns"/>
@@ -1215,10 +1192,10 @@ Parameters and setting used to generate this network:
             <electricalConnectionInstance id="0" preCell="../DB6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../AVBR/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_4conns"/>
         </electricalProjection>
         <electricalProjection id="NC_DB6_DB5_Generic_GJ" presynapticPopulation="DB6" postsynapticPopulation="DB5">
-            <electricalConnectionInstance id="0" preCell="../DB6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB5/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="DB6_to_DB5_elec_syn_5conns"/>
+            <electricalConnectionInstance id="0" preCell="../DB6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB5/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_5conns"/>
         </electricalProjection>
         <electricalProjection id="NC_DB6_DB7_Generic_GJ" presynapticPopulation="DB6" postsynapticPopulation="DB7">
-            <electricalConnectionInstance id="0" preCell="../DB6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB7/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="DB6_to_DB7_elec_syn_5conns"/>
+            <electricalConnectionInstance id="0" preCell="../DB6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB7/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_5conns"/>
         </electricalProjection>
         <electricalProjection id="NC_DB7_AVBL_Generic_GJ" presynapticPopulation="DB7" postsynapticPopulation="AVBL">
             <electricalConnectionInstance id="0" preCell="../DB7/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../AVBL/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_13conns"/>
@@ -1227,7 +1204,7 @@ Parameters and setting used to generate this network:
             <electricalConnectionInstance id="0" preCell="../DB7/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../AVBR/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_3conns"/>
         </electricalProjection>
         <electricalProjection id="NC_DB7_DB6_Generic_GJ" presynapticPopulation="DB7" postsynapticPopulation="DB6">
-            <electricalConnectionInstance id="0" preCell="../DB7/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB6/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="DB7_to_DB6_elec_syn_5conns"/>
+            <electricalConnectionInstance id="0" preCell="../DB7/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB6/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_5conns"/>
         </electricalProjection>
         <electricalProjection id="NC_DB7_AS10_Generic_GJ" presynapticPopulation="DB7" postsynapticPopulation="AS10">
             <electricalConnectionInstance id="0" preCell="../DB7/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../AS10/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_1conns"/>

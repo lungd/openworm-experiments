@@ -1,18 +1,15 @@
 # Override default parameters with:
 ## Connections to include:
-- AVA*-AVB*
-- AVB*-AVA*
-- AVA*-AVB*_GJ
-- AVB*-AVA*_GJ
-- AS*-DA*
-- DA*-DB*
-- DB*-AS*
-- AVA*-DA*
-- AVB*-DB*
-- AVB*-DB*_GJ
-- DA*-muscles
-- DB*-muscles
-- muscles-muscles
+- AVA.-AVB.+
+- AVB.-AVA.+
+- AS\d+-DA.+
+- DA\d+-DB.+
+- DB\d+-AS.+
+- AVA.-DA.+
+- ^AVB.-DB\d+$
+- DA\d+-M(D|V)(L|R).+
+- DB\d+-M(D|V)(L|R).+
+- M(D|V)(L|R)\d+-M(D|V)(L|R).+
 
 ## Change polarity of connections:
 - DB7-AS10: inh

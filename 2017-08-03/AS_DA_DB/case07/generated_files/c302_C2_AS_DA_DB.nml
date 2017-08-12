@@ -6,7 +6,7 @@ Parameters and setting used to generate this network:
     Data reader:                    UpdatedSpreadsheetDataReader
     Cells:                          ['AVBL', 'AVBR', 'AVAL', 'AVAR', 'AS1', 'AS2', 'AS3', 'AS4', 'AS5', 'AS6', 'AS7', 'AS8', 'AS9', 'AS10', 'AS11', 'DA1', 'DA2', 'DA3', 'DA4', 'DA5', 'DA6', 'DA7', 'DA8', 'DA9', 'DB1', 'DB2', 'DB3', 'DB4', 'DB5', 'DB6', 'DB7']
     Cell stimulated:                []
-    Connection:                     ['AS*-DA*', 'DA*-DB*', 'DB*-AS*', 'AVA*-DA*', 'AVB*-DB*', 'DA*-muscles', 'DB*-muscles', 'muscles-muscles']
+    Connection:                     ['AS\\d+-DA.+', 'DA\\d+-DB.+', 'DB\\d+-AS.+', 'AVA.-DA.+', 'AVB.-DB.+', 'DA\\d+-M(D|V)(L|R).+', 'DB\\d+-M(D|V)(L|R).+', 'M(D|V)(L|R)\\d+-M(D|V)(L|R).+']
     Connection numbers overridden:  {}
     Connection numbers scaled:      None
     Connection polarities override: {'DB6-AS9': 'inh', 'DB6-AS8': 'inh', 'DB3-AS5': 'inh', 'DB4-AS6': 'inh', 'DB3-AS4': 'inh', 'DB5-AS7': 'inh', 'DB1-AS2': 'inh', 'DB1-AS1': 'inh', 'DB1-AS4': 'inh', 'DB7-AS11': 'inh', 'DB7-AS10': 'inh', 'DB2-AS3': 'inh', 'DB5-AS8': 'inh'}
@@ -71,18 +71,6 @@ Parameters and setting used to generate this network:
         BioParameter: unphysiological_offset_current = 0pA (SRC: Testing TapWithdrawal, certainty 0)
         BioParameter: unphysiological_offset_current_del = 0 ms (SRC: Testing TapWithdrawal, certainty 0)
         BioParameter: unphysiological_offset_current_dur = 2000 ms (SRC: Testing TapWithdrawal, certainty 0)
-        BioParameter: DB1_to_DB2_elec_syn_gbase = 0.02252 nS (SRC: BlindGuess, certainty 0.1)
-        BioParameter: DB2_to_DB1_elec_syn_gbase = 0.02252 nS (SRC: BlindGuess, certainty 0.1)
-        BioParameter: DB2_to_DB3_elec_syn_gbase = 0.02252 nS (SRC: BlindGuess, certainty 0.1)
-        BioParameter: DB3_to_DB2_elec_syn_gbase = 0.02252 nS (SRC: BlindGuess, certainty 0.1)
-        BioParameter: DB3_to_DB4_elec_syn_gbase = 0.02252 nS (SRC: BlindGuess, certainty 0.1)
-        BioParameter: DB4_to_DB3_elec_syn_gbase = 0.02252 nS (SRC: BlindGuess, certainty 0.1)
-        BioParameter: DB4_to_DB5_elec_syn_gbase = 0.02252 nS (SRC: BlindGuess, certainty 0.1)
-        BioParameter: DB5_to_DB4_elec_syn_gbase = 0.02252 nS (SRC: BlindGuess, certainty 0.1)
-        BioParameter: DB5_to_DB6_elec_syn_gbase = 0.02252 nS (SRC: BlindGuess, certainty 0.1)
-        BioParameter: DB6_to_DB5_elec_syn_gbase = 0.02252 nS (SRC: BlindGuess, certainty 0.1)
-        BioParameter: DB6_to_DB7_elec_syn_gbase = 0.02252 nS (SRC: BlindGuess, certainty 0.1)
-        BioParameter: DB7_to_DB6_elec_syn_gbase = 0.02252 nS (SRC: BlindGuess, certainty 0.1)
         BioParameter: DB1_to_MDL06_exc_syn_conductance = 0.10 nS (SRC: BlindGuess, certainty 0.1)
         BioParameter: DB1_to_MDL08_exc_syn_conductance = 0.10 nS (SRC: BlindGuess, certainty 0.1)
         BioParameter: DB1_to_MDL09_exc_syn_conductance = 0.10 nS (SRC: BlindGuess, certainty 0.1)
@@ -137,6 +125,64 @@ Parameters and setting used to generate this network:
     <include href="custom_muscle_components.xml"></include>
     <include href="custom_synapses.xml"></include>
     <fixedFactorConcentrationModel id="CaPool" ion="ca" restingConc="0 mM" decayConstant="13.811870945509265 ms" rho="0.000238919 mol_per_m_per_A_per_s"/>
+    <gapJunction id="neuron_to_neuron_elec_syn_2conns" conductance="0.02504nS"/>
+    <gapJunction id="neuron_to_neuron_elec_syn_7conns" conductance="0.08764nS"/>
+    <gapJunction id="neuron_to_neuron_elec_syn_6conns" conductance="0.07512nS"/>
+    <gapJunction id="neuron_to_neuron_elec_syn_4conns" conductance="0.05008nS"/>
+    <gapJunction id="neuron_to_neuron_elec_syn_10conns" conductance="0.1252nS"/>
+    <gapJunction id="neuron_to_neuron_elec_syn_8conns" conductance="0.10016nS"/>
+    <gapJunction id="neuron_to_neuron_elec_syn_1conns" conductance="0.01252nS"/>
+    <gapJunction id="neuron_to_neuron_elec_syn_9conns" conductance="0.11268nS"/>
+    <gapJunction id="neuron_to_neuron_elec_syn_3conns" conductance="0.03756nS"/>
+    <gapJunction id="neuron_to_neuron_elec_syn_5conns" conductance="0.0626nS"/>
+    <gapJunction id="neuron_to_neuron_elec_syn_13conns" conductance="0.16276nS"/>
+    <gapJunction id="neuron_to_neuron_elec_syn_15conns" conductance="0.1878nS"/>
+    <gapJunction id="muscle_to_muscle_elec_syn_15conns" conductance="0.0nS"/>
+    <gapJunction id="muscle_to_muscle_elec_syn_2conns" conductance="0.0nS"/>
+    <silentSynapse id="silent"/>
+    <gradedSynapse id="neuron_to_neuron_exc_syn_6conns" conductance="2.94nS" delta="5 mV" Vth="00 mV" k="0.5per_ms" erev="-10 mV"/>
+    <gradedSynapse id="neuron_to_neuron_exc_syn_10conns" conductance="4.9nS" delta="5 mV" Vth="00 mV" k="0.5per_ms" erev="-10 mV"/>
+    <gradedSynapse id="neuron_to_neuron_exc_syn_12conns" conductance="5.88nS" delta="5 mV" Vth="00 mV" k="0.5per_ms" erev="-10 mV"/>
+    <gradedSynapse id="neuron_to_neuron_exc_syn_14conns" conductance="6.86nS" delta="5 mV" Vth="00 mV" k="0.5per_ms" erev="-10 mV"/>
+    <gradedSynapse id="neuron_to_neuron_exc_syn_4conns" conductance="1.96nS" delta="5 mV" Vth="00 mV" k="0.5per_ms" erev="-10 mV"/>
+    <gradedSynapse id="neuron_to_neuron_exc_syn_5conns" conductance="2.45nS" delta="5 mV" Vth="00 mV" k="0.5per_ms" erev="-10 mV"/>
+    <gradedSynapse id="neuron_to_neuron_exc_syn_3conns" conductance="1.47nS" delta="5 mV" Vth="00 mV" k="0.5per_ms" erev="-10 mV"/>
+    <gradedSynapse id="neuron_to_neuron_exc_syn_2conns" conductance="0.98nS" delta="5 mV" Vth="00 mV" k="0.5per_ms" erev="-10 mV"/>
+    <gradedSynapse id="neuron_to_neuron_exc_syn_9conns" conductance="4.41nS" delta="5 mV" Vth="00 mV" k="0.5per_ms" erev="-10 mV"/>
+    <gradedSynapse id="neuron_to_neuron_exc_syn_8conns" conductance="3.92nS" delta="5 mV" Vth="00 mV" k="0.5per_ms" erev="-10 mV"/>
+    <gradedSynapse id="neuron_to_neuron_exc_syn_20conns" conductance="9.8nS" delta="5 mV" Vth="00 mV" k="0.5per_ms" erev="-10 mV"/>
+    <gradedSynapse id="neuron_to_neuron_exc_syn_1conns" conductance="0.49nS" delta="5 mV" Vth="00 mV" k="0.5per_ms" erev="-10 mV"/>
+    <gradedSynapse id="neuron_to_neuron_inh_syn_28conns" conductance="8.12nS" delta="5 mV" Vth="0 mV" k="0.015per_ms" erev="-70 mV"/>
+    <gradedSynapse id="neuron_to_neuron_inh_syn_4conns" conductance="1.16nS" delta="5 mV" Vth="0 mV" k="0.015per_ms" erev="-70 mV"/>
+    <gradedSynapse id="neuron_to_neuron_inh_syn_3conns" conductance="0.87nS" delta="5 mV" Vth="0 mV" k="0.015per_ms" erev="-70 mV"/>
+    <gradedSynapse id="neuron_to_neuron_inh_syn_2conns" conductance="0.58nS" delta="5 mV" Vth="0 mV" k="0.015per_ms" erev="-70 mV"/>
+    <gradedSynapse id="neuron_to_neuron_inh_syn_1conns" conductance="0.29nS" delta="5 mV" Vth="0 mV" k="0.015per_ms" erev="-70 mV"/>
+    <gradedSynapse id="neuron_to_muscle_exc_syn_9conns" conductance="0.9nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="neuron_to_muscle_exc_syn_8conns" conductance="0.8nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="neuron_to_muscle_exc_syn_3conns" conductance="0.3nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="neuron_to_muscle_exc_syn_1conns" conductance="0.1nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="neuron_to_muscle_exc_syn_5conns" conductance="0.5nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="neuron_to_muscle_exc_syn_4conns" conductance="0.4nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="neuron_to_muscle_exc_syn_2conns" conductance="0.2nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="neuron_to_muscle_exc_syn_6conns" conductance="0.6nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="neuron_to_muscle_exc_syn_7conns" conductance="0.7nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="neuron_to_muscle_exc_syn_17conns" conductance="1.7nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="neuron_to_muscle_exc_syn_12conns" conductance="1.2nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="neuron_to_muscle_exc_syn_14conns" conductance="1.4nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="neuron_to_muscle_exc_syn_10conns" conductance="1.0nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB1_to_MDL06_exc_syn_3conns" conductance="0.3nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB1_to_MDL08_exc_syn_3conns" conductance="0.3nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB1_to_MDL09_exc_syn_6conns" conductance="0.6nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB1_to_MDR08_exc_syn_6conns" conductance="0.6nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB1_to_MDR09_exc_syn_2conns" conductance="0.2nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB2_to_MDL09_exc_syn_2conns" conductance="0.2nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB2_to_MDL10_exc_syn_4conns" conductance="0.4nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB2_to_MDL11_exc_syn_5conns" conductance="0.5nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB2_to_MDL12_exc_syn_1conns" conductance="0.1nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB2_to_MDR09_exc_syn_1conns" conductance="0.1nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB2_to_MDR10_exc_syn_6conns" conductance="0.6nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="DB2_to_MDR11_exc_syn_8conns" conductance="0.8nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
+    <gradedSynapse id="neuron_to_muscle_exc_syn_13conns" conductance="1.3nS" delta="19 mV" Vth="27 mV" k="1.205per_ms" erev="37 mV"/>
     <cell id="GenericMuscleCell">
         <morphology id="morphology_GenericMuscleCell">
             <segment id="0" name="soma">
@@ -832,6 +878,1251 @@ Parameters and setting used to generate this network:
                 <location x="80." y="420." z="-80."/>
             </instance>
         </population>
+        <electricalProjection id="NC_AVAL_DA1_Generic_GJ" presynapticPopulation="AVAL" postsynapticPopulation="DA1">
+            <electricalConnectionInstance id="0" preCell="../AVAL/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA1/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_2conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_AVAL_DA2_Generic_GJ" presynapticPopulation="AVAL" postsynapticPopulation="DA2">
+            <electricalConnectionInstance id="0" preCell="../AVAL/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA2/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_7conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_AVAL_DA3_Generic_GJ" presynapticPopulation="AVAL" postsynapticPopulation="DA3">
+            <electricalConnectionInstance id="0" preCell="../AVAL/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA3/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_6conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_AVAL_DA4_Generic_GJ" presynapticPopulation="AVAL" postsynapticPopulation="DA4">
+            <electricalConnectionInstance id="0" preCell="../AVAL/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA4/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_2conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_AVAL_DA5_Generic_GJ" presynapticPopulation="AVAL" postsynapticPopulation="DA5">
+            <electricalConnectionInstance id="0" preCell="../AVAL/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA5/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_2conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_AVAL_DA6_Generic_GJ" presynapticPopulation="AVAL" postsynapticPopulation="DA6">
+            <electricalConnectionInstance id="0" preCell="../AVAL/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA6/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_4conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_AVAL_DA7_Generic_GJ" presynapticPopulation="AVAL" postsynapticPopulation="DA7">
+            <electricalConnectionInstance id="0" preCell="../AVAL/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA7/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_10conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_AVAL_DA8_Generic_GJ" presynapticPopulation="AVAL" postsynapticPopulation="DA8">
+            <electricalConnectionInstance id="0" preCell="../AVAL/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA8/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_8conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_AVAL_DA9_Generic_GJ" presynapticPopulation="AVAL" postsynapticPopulation="DA9">
+            <electricalConnectionInstance id="0" preCell="../AVAL/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA9/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_1conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_AVAR_DA1_Generic_GJ" presynapticPopulation="AVAR" postsynapticPopulation="DA1">
+            <electricalConnectionInstance id="0" preCell="../AVAR/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA1/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_9conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_AVAR_DA2_Generic_GJ" presynapticPopulation="AVAR" postsynapticPopulation="DA2">
+            <electricalConnectionInstance id="0" preCell="../AVAR/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA2/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_3conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_AVAR_DA3_Generic_GJ" presynapticPopulation="AVAR" postsynapticPopulation="DA3">
+            <electricalConnectionInstance id="0" preCell="../AVAR/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA3/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_7conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_AVAR_DA4_Generic_GJ" presynapticPopulation="AVAR" postsynapticPopulation="DA4">
+            <electricalConnectionInstance id="0" preCell="../AVAR/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA4/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_2conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_AVAR_DA5_Generic_GJ" presynapticPopulation="AVAR" postsynapticPopulation="DA5">
+            <electricalConnectionInstance id="0" preCell="../AVAR/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA5/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_5conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_AVAR_DA6_Generic_GJ" presynapticPopulation="AVAR" postsynapticPopulation="DA6">
+            <electricalConnectionInstance id="0" preCell="../AVAR/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA6/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_4conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_AVAR_DA8_Generic_GJ" presynapticPopulation="AVAR" postsynapticPopulation="DA8">
+            <electricalConnectionInstance id="0" preCell="../AVAR/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA8/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_5conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_AVAR_DA9_Generic_GJ" presynapticPopulation="AVAR" postsynapticPopulation="DA9">
+            <electricalConnectionInstance id="0" preCell="../AVAR/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA9/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_4conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_AVBL_DB2_Generic_GJ" presynapticPopulation="AVBL" postsynapticPopulation="DB2">
+            <electricalConnectionInstance id="0" preCell="../AVBL/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB2/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_4conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_AVBL_DB3_Generic_GJ" presynapticPopulation="AVBL" postsynapticPopulation="DB3">
+            <electricalConnectionInstance id="0" preCell="../AVBL/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB3/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_9conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_AVBL_DB4_Generic_GJ" presynapticPopulation="AVBL" postsynapticPopulation="DB4">
+            <electricalConnectionInstance id="0" preCell="../AVBL/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB4/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_4conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_AVBL_DB5_Generic_GJ" presynapticPopulation="AVBL" postsynapticPopulation="DB5">
+            <electricalConnectionInstance id="0" preCell="../AVBL/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB5/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_3conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_AVBL_DB6_Generic_GJ" presynapticPopulation="AVBL" postsynapticPopulation="DB6">
+            <electricalConnectionInstance id="0" preCell="../AVBL/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB6/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_4conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_AVBL_DB7_Generic_GJ" presynapticPopulation="AVBL" postsynapticPopulation="DB7">
+            <electricalConnectionInstance id="0" preCell="../AVBL/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB7/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_13conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_AVBR_DB1_Generic_GJ" presynapticPopulation="AVBR" postsynapticPopulation="DB1">
+            <electricalConnectionInstance id="0" preCell="../AVBR/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB1/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_AVBR_DB2_Generic_GJ" presynapticPopulation="AVBR" postsynapticPopulation="DB2">
+            <electricalConnectionInstance id="0" preCell="../AVBR/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB2/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_3conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_AVBR_DB3_Generic_GJ" presynapticPopulation="AVBR" postsynapticPopulation="DB3">
+            <electricalConnectionInstance id="0" preCell="../AVBR/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB3/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_2conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_AVBR_DB4_Generic_GJ" presynapticPopulation="AVBR" postsynapticPopulation="DB4">
+            <electricalConnectionInstance id="0" preCell="../AVBR/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB4/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_5conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_AVBR_DB5_Generic_GJ" presynapticPopulation="AVBR" postsynapticPopulation="DB5">
+            <electricalConnectionInstance id="0" preCell="../AVBR/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB5/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_4conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_AVBR_DB6_Generic_GJ" presynapticPopulation="AVBR" postsynapticPopulation="DB6">
+            <electricalConnectionInstance id="0" preCell="../AVBR/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB6/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_3conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_AVBR_DB7_Generic_GJ" presynapticPopulation="AVBR" postsynapticPopulation="DB7">
+            <electricalConnectionInstance id="0" preCell="../AVBR/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB7/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_3conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_DB7_AS10_Generic_GJ" presynapticPopulation="DB7" postsynapticPopulation="AS10">
+            <electricalConnectionInstance id="0" preCell="../DB7/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../AS10/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_1conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_AS2_DA2_Generic_GJ" presynapticPopulation="AS2" postsynapticPopulation="DA2">
+            <electricalConnectionInstance id="0" preCell="../AS2/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA2/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_2conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_AS4_DA2_Generic_GJ" presynapticPopulation="AS4" postsynapticPopulation="DA2">
+            <electricalConnectionInstance id="0" preCell="../AS4/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA2/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_1conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_AS4_DA3_Generic_GJ" presynapticPopulation="AS4" postsynapticPopulation="DA3">
+            <electricalConnectionInstance id="0" preCell="../AS4/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA3/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_4conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_AS6_DA5_Generic_GJ" presynapticPopulation="AS6" postsynapticPopulation="DA5">
+            <electricalConnectionInstance id="0" preCell="../AS6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA5/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_5conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_AS10_DA7_Generic_GJ" presynapticPopulation="AS10" postsynapticPopulation="DA7">
+            <electricalConnectionInstance id="0" preCell="../AS10/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA7/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_1conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_AS10_DA9_Generic_GJ" presynapticPopulation="AS10" postsynapticPopulation="DA9">
+            <electricalConnectionInstance id="0" preCell="../AS10/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA9/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_1conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_AS11_DA8_Generic_GJ" presynapticPopulation="AS11" postsynapticPopulation="DA8">
+            <electricalConnectionInstance id="0" preCell="../AS11/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA8/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" synapse="neuron_to_neuron_elec_syn_1conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL01_MDL02_Generic_GJ" presynapticPopulation="MDL01" postsynapticPopulation="MDL02">
+            <electricalConnectionInstance id="0" preCell="../MDL01/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL02/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL01_MDL03_Generic_GJ" presynapticPopulation="MDL01" postsynapticPopulation="MDL03">
+            <electricalConnectionInstance id="0" preCell="../MDL01/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL03/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL02_MDL01_Generic_GJ" presynapticPopulation="MDL02" postsynapticPopulation="MDL01">
+            <electricalConnectionInstance id="0" preCell="../MDL02/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL01/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL02_MDL03_Generic_GJ" presynapticPopulation="MDL02" postsynapticPopulation="MDL03">
+            <electricalConnectionInstance id="0" preCell="../MDL02/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL03/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL03_MDL01_Generic_GJ" presynapticPopulation="MDL03" postsynapticPopulation="MDL01">
+            <electricalConnectionInstance id="0" preCell="../MDL03/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL01/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL03_MDL02_Generic_GJ" presynapticPopulation="MDL03" postsynapticPopulation="MDL02">
+            <electricalConnectionInstance id="0" preCell="../MDL03/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL02/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL03_MDL04_Generic_GJ" presynapticPopulation="MDL03" postsynapticPopulation="MDL04">
+            <electricalConnectionInstance id="0" preCell="../MDL03/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL04/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL04_MDL03_Generic_GJ" presynapticPopulation="MDL04" postsynapticPopulation="MDL03">
+            <electricalConnectionInstance id="0" preCell="../MDL04/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL03/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL04_MDL05_Generic_GJ" presynapticPopulation="MDL04" postsynapticPopulation="MDL05">
+            <electricalConnectionInstance id="0" preCell="../MDL04/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL05/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL05_MDL04_Generic_GJ" presynapticPopulation="MDL05" postsynapticPopulation="MDL04">
+            <electricalConnectionInstance id="0" preCell="../MDL05/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL04/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL05_MDL06_Generic_GJ" presynapticPopulation="MDL05" postsynapticPopulation="MDL06">
+            <electricalConnectionInstance id="0" preCell="../MDL05/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL06/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL06_MDL05_Generic_GJ" presynapticPopulation="MDL06" postsynapticPopulation="MDL05">
+            <electricalConnectionInstance id="0" preCell="../MDL06/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL05/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL06_MDL07_Generic_GJ" presynapticPopulation="MDL06" postsynapticPopulation="MDL07">
+            <electricalConnectionInstance id="0" preCell="../MDL06/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL07/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL07_MDL06_Generic_GJ" presynapticPopulation="MDL07" postsynapticPopulation="MDL06">
+            <electricalConnectionInstance id="0" preCell="../MDL07/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL06/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL07_MDL08_Generic_GJ" presynapticPopulation="MDL07" postsynapticPopulation="MDL08">
+            <electricalConnectionInstance id="0" preCell="../MDL07/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL08/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL08_MDL07_Generic_GJ" presynapticPopulation="MDL08" postsynapticPopulation="MDL07">
+            <electricalConnectionInstance id="0" preCell="../MDL08/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL07/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL08_MDL09_Generic_GJ" presynapticPopulation="MDL08" postsynapticPopulation="MDL09">
+            <electricalConnectionInstance id="0" preCell="../MDL08/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL09/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL09_MDL08_Generic_GJ" presynapticPopulation="MDL09" postsynapticPopulation="MDL08">
+            <electricalConnectionInstance id="0" preCell="../MDL09/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL08/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL09_MDL10_Generic_GJ" presynapticPopulation="MDL09" postsynapticPopulation="MDL10">
+            <electricalConnectionInstance id="0" preCell="../MDL09/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL10/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL10_MDL09_Generic_GJ" presynapticPopulation="MDL10" postsynapticPopulation="MDL09">
+            <electricalConnectionInstance id="0" preCell="../MDL10/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL09/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL10_MDL11_Generic_GJ" presynapticPopulation="MDL10" postsynapticPopulation="MDL11">
+            <electricalConnectionInstance id="0" preCell="../MDL10/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL11/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL11_MDL10_Generic_GJ" presynapticPopulation="MDL11" postsynapticPopulation="MDL10">
+            <electricalConnectionInstance id="0" preCell="../MDL11/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL10/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL11_MDL12_Generic_GJ" presynapticPopulation="MDL11" postsynapticPopulation="MDL12">
+            <electricalConnectionInstance id="0" preCell="../MDL11/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL12/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL12_MDL11_Generic_GJ" presynapticPopulation="MDL12" postsynapticPopulation="MDL11">
+            <electricalConnectionInstance id="0" preCell="../MDL12/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL11/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL12_MDL13_Generic_GJ" presynapticPopulation="MDL12" postsynapticPopulation="MDL13">
+            <electricalConnectionInstance id="0" preCell="../MDL12/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL13/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL13_MDL12_Generic_GJ" presynapticPopulation="MDL13" postsynapticPopulation="MDL12">
+            <electricalConnectionInstance id="0" preCell="../MDL13/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL12/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL13_MDL14_Generic_GJ" presynapticPopulation="MDL13" postsynapticPopulation="MDL14">
+            <electricalConnectionInstance id="0" preCell="../MDL13/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL14/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL14_MDL13_Generic_GJ" presynapticPopulation="MDL14" postsynapticPopulation="MDL13">
+            <electricalConnectionInstance id="0" preCell="../MDL14/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL13/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL14_MDL15_Generic_GJ" presynapticPopulation="MDL14" postsynapticPopulation="MDL15">
+            <electricalConnectionInstance id="0" preCell="../MDL14/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL15/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL15_MDL14_Generic_GJ" presynapticPopulation="MDL15" postsynapticPopulation="MDL14">
+            <electricalConnectionInstance id="0" preCell="../MDL15/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL14/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL15_MDL16_Generic_GJ" presynapticPopulation="MDL15" postsynapticPopulation="MDL16">
+            <electricalConnectionInstance id="0" preCell="../MDL15/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL16/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL16_MDL15_Generic_GJ" presynapticPopulation="MDL16" postsynapticPopulation="MDL15">
+            <electricalConnectionInstance id="0" preCell="../MDL16/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL15/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL16_MDL17_Generic_GJ" presynapticPopulation="MDL16" postsynapticPopulation="MDL17">
+            <electricalConnectionInstance id="0" preCell="../MDL16/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL17/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL17_MDL16_Generic_GJ" presynapticPopulation="MDL17" postsynapticPopulation="MDL16">
+            <electricalConnectionInstance id="0" preCell="../MDL17/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL16/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL17_MDL18_Generic_GJ" presynapticPopulation="MDL17" postsynapticPopulation="MDL18">
+            <electricalConnectionInstance id="0" preCell="../MDL17/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL18/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL18_MDL17_Generic_GJ" presynapticPopulation="MDL18" postsynapticPopulation="MDL17">
+            <electricalConnectionInstance id="0" preCell="../MDL18/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL17/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL18_MDL19_Generic_GJ" presynapticPopulation="MDL18" postsynapticPopulation="MDL19">
+            <electricalConnectionInstance id="0" preCell="../MDL18/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL19/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL19_MDL18_Generic_GJ" presynapticPopulation="MDL19" postsynapticPopulation="MDL18">
+            <electricalConnectionInstance id="0" preCell="../MDL19/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL18/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL19_MDL20_Generic_GJ" presynapticPopulation="MDL19" postsynapticPopulation="MDL20">
+            <electricalConnectionInstance id="0" preCell="../MDL19/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL20/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL20_MDL19_Generic_GJ" presynapticPopulation="MDL20" postsynapticPopulation="MDL19">
+            <electricalConnectionInstance id="0" preCell="../MDL20/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL19/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL20_MDL21_Generic_GJ" presynapticPopulation="MDL20" postsynapticPopulation="MDL21">
+            <electricalConnectionInstance id="0" preCell="../MDL20/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL21/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL21_MDL20_Generic_GJ" presynapticPopulation="MDL21" postsynapticPopulation="MDL20">
+            <electricalConnectionInstance id="0" preCell="../MDL21/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL20/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL21_MDL22_Generic_GJ" presynapticPopulation="MDL21" postsynapticPopulation="MDL22">
+            <electricalConnectionInstance id="0" preCell="../MDL21/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL22/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL22_MDL21_Generic_GJ" presynapticPopulation="MDL22" postsynapticPopulation="MDL21">
+            <electricalConnectionInstance id="0" preCell="../MDL22/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL21/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL22_MDL23_Generic_GJ" presynapticPopulation="MDL22" postsynapticPopulation="MDL23">
+            <electricalConnectionInstance id="0" preCell="../MDL22/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL23/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL23_MDL22_Generic_GJ" presynapticPopulation="MDL23" postsynapticPopulation="MDL22">
+            <electricalConnectionInstance id="0" preCell="../MDL23/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL22/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL23_MDL24_Generic_GJ" presynapticPopulation="MDL23" postsynapticPopulation="MDL24">
+            <electricalConnectionInstance id="0" preCell="../MDL23/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL24/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDL24_MDL23_Generic_GJ" presynapticPopulation="MDL24" postsynapticPopulation="MDL23">
+            <electricalConnectionInstance id="0" preCell="../MDL24/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL23/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR01_MDR02_Generic_GJ" presynapticPopulation="MDR01" postsynapticPopulation="MDR02">
+            <electricalConnectionInstance id="0" preCell="../MDR01/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR02/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR01_MDR03_Generic_GJ" presynapticPopulation="MDR01" postsynapticPopulation="MDR03">
+            <electricalConnectionInstance id="0" preCell="../MDR01/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR03/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR02_MDR01_Generic_GJ" presynapticPopulation="MDR02" postsynapticPopulation="MDR01">
+            <electricalConnectionInstance id="0" preCell="../MDR02/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR01/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR02_MDR03_Generic_GJ" presynapticPopulation="MDR02" postsynapticPopulation="MDR03">
+            <electricalConnectionInstance id="0" preCell="../MDR02/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR03/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR03_MDR01_Generic_GJ" presynapticPopulation="MDR03" postsynapticPopulation="MDR01">
+            <electricalConnectionInstance id="0" preCell="../MDR03/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR01/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR03_MDR02_Generic_GJ" presynapticPopulation="MDR03" postsynapticPopulation="MDR02">
+            <electricalConnectionInstance id="0" preCell="../MDR03/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR02/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR03_MDR04_Generic_GJ" presynapticPopulation="MDR03" postsynapticPopulation="MDR04">
+            <electricalConnectionInstance id="0" preCell="../MDR03/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR04/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR04_MDR03_Generic_GJ" presynapticPopulation="MDR04" postsynapticPopulation="MDR03">
+            <electricalConnectionInstance id="0" preCell="../MDR04/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR03/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR04_MDR05_Generic_GJ" presynapticPopulation="MDR04" postsynapticPopulation="MDR05">
+            <electricalConnectionInstance id="0" preCell="../MDR04/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR05/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR05_MDR04_Generic_GJ" presynapticPopulation="MDR05" postsynapticPopulation="MDR04">
+            <electricalConnectionInstance id="0" preCell="../MDR05/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR04/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR05_MDR06_Generic_GJ" presynapticPopulation="MDR05" postsynapticPopulation="MDR06">
+            <electricalConnectionInstance id="0" preCell="../MDR05/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR06/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR06_MDR05_Generic_GJ" presynapticPopulation="MDR06" postsynapticPopulation="MDR05">
+            <electricalConnectionInstance id="0" preCell="../MDR06/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR05/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR06_MDR07_Generic_GJ" presynapticPopulation="MDR06" postsynapticPopulation="MDR07">
+            <electricalConnectionInstance id="0" preCell="../MDR06/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR07/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR07_MDR06_Generic_GJ" presynapticPopulation="MDR07" postsynapticPopulation="MDR06">
+            <electricalConnectionInstance id="0" preCell="../MDR07/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR06/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR07_MDR08_Generic_GJ" presynapticPopulation="MDR07" postsynapticPopulation="MDR08">
+            <electricalConnectionInstance id="0" preCell="../MDR07/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR08/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR08_MDR07_Generic_GJ" presynapticPopulation="MDR08" postsynapticPopulation="MDR07">
+            <electricalConnectionInstance id="0" preCell="../MDR08/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR07/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR08_MDR09_Generic_GJ" presynapticPopulation="MDR08" postsynapticPopulation="MDR09">
+            <electricalConnectionInstance id="0" preCell="../MDR08/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR09/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR09_MDR08_Generic_GJ" presynapticPopulation="MDR09" postsynapticPopulation="MDR08">
+            <electricalConnectionInstance id="0" preCell="../MDR09/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR08/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR09_MDR10_Generic_GJ" presynapticPopulation="MDR09" postsynapticPopulation="MDR10">
+            <electricalConnectionInstance id="0" preCell="../MDR09/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR10/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR10_MDR09_Generic_GJ" presynapticPopulation="MDR10" postsynapticPopulation="MDR09">
+            <electricalConnectionInstance id="0" preCell="../MDR10/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR09/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR10_MDR11_Generic_GJ" presynapticPopulation="MDR10" postsynapticPopulation="MDR11">
+            <electricalConnectionInstance id="0" preCell="../MDR10/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR11/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR11_MDR10_Generic_GJ" presynapticPopulation="MDR11" postsynapticPopulation="MDR10">
+            <electricalConnectionInstance id="0" preCell="../MDR11/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR10/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR11_MDR12_Generic_GJ" presynapticPopulation="MDR11" postsynapticPopulation="MDR12">
+            <electricalConnectionInstance id="0" preCell="../MDR11/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR12/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR12_MDR11_Generic_GJ" presynapticPopulation="MDR12" postsynapticPopulation="MDR11">
+            <electricalConnectionInstance id="0" preCell="../MDR12/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR11/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR12_MDR13_Generic_GJ" presynapticPopulation="MDR12" postsynapticPopulation="MDR13">
+            <electricalConnectionInstance id="0" preCell="../MDR12/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR13/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR13_MDR12_Generic_GJ" presynapticPopulation="MDR13" postsynapticPopulation="MDR12">
+            <electricalConnectionInstance id="0" preCell="../MDR13/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR12/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR13_MDR14_Generic_GJ" presynapticPopulation="MDR13" postsynapticPopulation="MDR14">
+            <electricalConnectionInstance id="0" preCell="../MDR13/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR14/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR14_MDR13_Generic_GJ" presynapticPopulation="MDR14" postsynapticPopulation="MDR13">
+            <electricalConnectionInstance id="0" preCell="../MDR14/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR13/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR14_MDR15_Generic_GJ" presynapticPopulation="MDR14" postsynapticPopulation="MDR15">
+            <electricalConnectionInstance id="0" preCell="../MDR14/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR15/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR15_MDR14_Generic_GJ" presynapticPopulation="MDR15" postsynapticPopulation="MDR14">
+            <electricalConnectionInstance id="0" preCell="../MDR15/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR14/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR15_MDR16_Generic_GJ" presynapticPopulation="MDR15" postsynapticPopulation="MDR16">
+            <electricalConnectionInstance id="0" preCell="../MDR15/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR16/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR16_MDR15_Generic_GJ" presynapticPopulation="MDR16" postsynapticPopulation="MDR15">
+            <electricalConnectionInstance id="0" preCell="../MDR16/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR15/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR16_MDR17_Generic_GJ" presynapticPopulation="MDR16" postsynapticPopulation="MDR17">
+            <electricalConnectionInstance id="0" preCell="../MDR16/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR17/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR17_MDR16_Generic_GJ" presynapticPopulation="MDR17" postsynapticPopulation="MDR16">
+            <electricalConnectionInstance id="0" preCell="../MDR17/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR16/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR17_MDR18_Generic_GJ" presynapticPopulation="MDR17" postsynapticPopulation="MDR18">
+            <electricalConnectionInstance id="0" preCell="../MDR17/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR18/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR18_MDR17_Generic_GJ" presynapticPopulation="MDR18" postsynapticPopulation="MDR17">
+            <electricalConnectionInstance id="0" preCell="../MDR18/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR17/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR18_MDR19_Generic_GJ" presynapticPopulation="MDR18" postsynapticPopulation="MDR19">
+            <electricalConnectionInstance id="0" preCell="../MDR18/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR19/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR19_MDR18_Generic_GJ" presynapticPopulation="MDR19" postsynapticPopulation="MDR18">
+            <electricalConnectionInstance id="0" preCell="../MDR19/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR18/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR19_MDR20_Generic_GJ" presynapticPopulation="MDR19" postsynapticPopulation="MDR20">
+            <electricalConnectionInstance id="0" preCell="../MDR19/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR20/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR20_MDR19_Generic_GJ" presynapticPopulation="MDR20" postsynapticPopulation="MDR19">
+            <electricalConnectionInstance id="0" preCell="../MDR20/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR19/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR20_MDR21_Generic_GJ" presynapticPopulation="MDR20" postsynapticPopulation="MDR21">
+            <electricalConnectionInstance id="0" preCell="../MDR20/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR21/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR21_MDR20_Generic_GJ" presynapticPopulation="MDR21" postsynapticPopulation="MDR20">
+            <electricalConnectionInstance id="0" preCell="../MDR21/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR20/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR21_MDR22_Generic_GJ" presynapticPopulation="MDR21" postsynapticPopulation="MDR22">
+            <electricalConnectionInstance id="0" preCell="../MDR21/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR22/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR22_MDR21_Generic_GJ" presynapticPopulation="MDR22" postsynapticPopulation="MDR21">
+            <electricalConnectionInstance id="0" preCell="../MDR22/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR21/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR22_MDR23_Generic_GJ" presynapticPopulation="MDR22" postsynapticPopulation="MDR23">
+            <electricalConnectionInstance id="0" preCell="../MDR22/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR23/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR23_MDR22_Generic_GJ" presynapticPopulation="MDR23" postsynapticPopulation="MDR22">
+            <electricalConnectionInstance id="0" preCell="../MDR23/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR22/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR23_MDR24_Generic_GJ" presynapticPopulation="MDR23" postsynapticPopulation="MDR24">
+            <electricalConnectionInstance id="0" preCell="../MDR23/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR24/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MDR24_MDR23_Generic_GJ" presynapticPopulation="MDR24" postsynapticPopulation="MDR23">
+            <electricalConnectionInstance id="0" preCell="../MDR24/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR23/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL01_MVL02_Generic_GJ" presynapticPopulation="MVL01" postsynapticPopulation="MVL02">
+            <electricalConnectionInstance id="0" preCell="../MVL01/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL02/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL01_MVL03_Generic_GJ" presynapticPopulation="MVL01" postsynapticPopulation="MVL03">
+            <electricalConnectionInstance id="0" preCell="../MVL01/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL03/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL02_MVL01_Generic_GJ" presynapticPopulation="MVL02" postsynapticPopulation="MVL01">
+            <electricalConnectionInstance id="0" preCell="../MVL02/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL01/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL02_MVL03_Generic_GJ" presynapticPopulation="MVL02" postsynapticPopulation="MVL03">
+            <electricalConnectionInstance id="0" preCell="../MVL02/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL03/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL03_MVL01_Generic_GJ" presynapticPopulation="MVL03" postsynapticPopulation="MVL01">
+            <electricalConnectionInstance id="0" preCell="../MVL03/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL01/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL03_MVL02_Generic_GJ" presynapticPopulation="MVL03" postsynapticPopulation="MVL02">
+            <electricalConnectionInstance id="0" preCell="../MVL03/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL02/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL03_MVL04_Generic_GJ" presynapticPopulation="MVL03" postsynapticPopulation="MVL04">
+            <electricalConnectionInstance id="0" preCell="../MVL03/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL04/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL04_MVL03_Generic_GJ" presynapticPopulation="MVL04" postsynapticPopulation="MVL03">
+            <electricalConnectionInstance id="0" preCell="../MVL04/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL03/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL04_MVL05_Generic_GJ" presynapticPopulation="MVL04" postsynapticPopulation="MVL05">
+            <electricalConnectionInstance id="0" preCell="../MVL04/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL05/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL05_MVL04_Generic_GJ" presynapticPopulation="MVL05" postsynapticPopulation="MVL04">
+            <electricalConnectionInstance id="0" preCell="../MVL05/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL04/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL05_MVL06_Generic_GJ" presynapticPopulation="MVL05" postsynapticPopulation="MVL06">
+            <electricalConnectionInstance id="0" preCell="../MVL05/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL06/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL06_MVL05_Generic_GJ" presynapticPopulation="MVL06" postsynapticPopulation="MVL05">
+            <electricalConnectionInstance id="0" preCell="../MVL06/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL05/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL06_MVL07_Generic_GJ" presynapticPopulation="MVL06" postsynapticPopulation="MVL07">
+            <electricalConnectionInstance id="0" preCell="../MVL06/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL07/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL07_MVL06_Generic_GJ" presynapticPopulation="MVL07" postsynapticPopulation="MVL06">
+            <electricalConnectionInstance id="0" preCell="../MVL07/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL06/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL07_MVL08_Generic_GJ" presynapticPopulation="MVL07" postsynapticPopulation="MVL08">
+            <electricalConnectionInstance id="0" preCell="../MVL07/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL08/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL08_MVL07_Generic_GJ" presynapticPopulation="MVL08" postsynapticPopulation="MVL07">
+            <electricalConnectionInstance id="0" preCell="../MVL08/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL07/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL08_MVL09_Generic_GJ" presynapticPopulation="MVL08" postsynapticPopulation="MVL09">
+            <electricalConnectionInstance id="0" preCell="../MVL08/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL09/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL09_MVL08_Generic_GJ" presynapticPopulation="MVL09" postsynapticPopulation="MVL08">
+            <electricalConnectionInstance id="0" preCell="../MVL09/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL08/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL09_MVL10_Generic_GJ" presynapticPopulation="MVL09" postsynapticPopulation="MVL10">
+            <electricalConnectionInstance id="0" preCell="../MVL09/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL10/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL09_MVR08_Generic_GJ" presynapticPopulation="MVL09" postsynapticPopulation="MVR08">
+            <electricalConnectionInstance id="0" preCell="../MVL09/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR08/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_2conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL10_MVL09_Generic_GJ" presynapticPopulation="MVL10" postsynapticPopulation="MVL09">
+            <electricalConnectionInstance id="0" preCell="../MVL10/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL09/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL10_MVL11_Generic_GJ" presynapticPopulation="MVL10" postsynapticPopulation="MVL11">
+            <electricalConnectionInstance id="0" preCell="../MVL10/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL11/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL11_MVL10_Generic_GJ" presynapticPopulation="MVL11" postsynapticPopulation="MVL10">
+            <electricalConnectionInstance id="0" preCell="../MVL11/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL10/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL11_MVL12_Generic_GJ" presynapticPopulation="MVL11" postsynapticPopulation="MVL12">
+            <electricalConnectionInstance id="0" preCell="../MVL11/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL12/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL12_MVL11_Generic_GJ" presynapticPopulation="MVL12" postsynapticPopulation="MVL11">
+            <electricalConnectionInstance id="0" preCell="../MVL12/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL11/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL12_MVL13_Generic_GJ" presynapticPopulation="MVL12" postsynapticPopulation="MVL13">
+            <electricalConnectionInstance id="0" preCell="../MVL12/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL13/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL13_MVL12_Generic_GJ" presynapticPopulation="MVL13" postsynapticPopulation="MVL12">
+            <electricalConnectionInstance id="0" preCell="../MVL13/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL12/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL13_MVL14_Generic_GJ" presynapticPopulation="MVL13" postsynapticPopulation="MVL14">
+            <electricalConnectionInstance id="0" preCell="../MVL13/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL14/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL14_MVL13_Generic_GJ" presynapticPopulation="MVL14" postsynapticPopulation="MVL13">
+            <electricalConnectionInstance id="0" preCell="../MVL14/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL13/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL14_MVL15_Generic_GJ" presynapticPopulation="MVL14" postsynapticPopulation="MVL15">
+            <electricalConnectionInstance id="0" preCell="../MVL14/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL15/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL15_MVL14_Generic_GJ" presynapticPopulation="MVL15" postsynapticPopulation="MVL14">
+            <electricalConnectionInstance id="0" preCell="../MVL15/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL14/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL15_MVL16_Generic_GJ" presynapticPopulation="MVL15" postsynapticPopulation="MVL16">
+            <electricalConnectionInstance id="0" preCell="../MVL15/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL16/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL16_MVL15_Generic_GJ" presynapticPopulation="MVL16" postsynapticPopulation="MVL15">
+            <electricalConnectionInstance id="0" preCell="../MVL16/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL15/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL16_MVL17_Generic_GJ" presynapticPopulation="MVL16" postsynapticPopulation="MVL17">
+            <electricalConnectionInstance id="0" preCell="../MVL16/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL17/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL17_MVL16_Generic_GJ" presynapticPopulation="MVL17" postsynapticPopulation="MVL16">
+            <electricalConnectionInstance id="0" preCell="../MVL17/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL16/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL17_MVL18_Generic_GJ" presynapticPopulation="MVL17" postsynapticPopulation="MVL18">
+            <electricalConnectionInstance id="0" preCell="../MVL17/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL18/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL18_MVL17_Generic_GJ" presynapticPopulation="MVL18" postsynapticPopulation="MVL17">
+            <electricalConnectionInstance id="0" preCell="../MVL18/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL17/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL18_MVL19_Generic_GJ" presynapticPopulation="MVL18" postsynapticPopulation="MVL19">
+            <electricalConnectionInstance id="0" preCell="../MVL18/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL19/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL19_MVL18_Generic_GJ" presynapticPopulation="MVL19" postsynapticPopulation="MVL18">
+            <electricalConnectionInstance id="0" preCell="../MVL19/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL18/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL19_MVL20_Generic_GJ" presynapticPopulation="MVL19" postsynapticPopulation="MVL20">
+            <electricalConnectionInstance id="0" preCell="../MVL19/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL20/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL20_MVL19_Generic_GJ" presynapticPopulation="MVL20" postsynapticPopulation="MVL19">
+            <electricalConnectionInstance id="0" preCell="../MVL20/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL19/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL20_MVL21_Generic_GJ" presynapticPopulation="MVL20" postsynapticPopulation="MVL21">
+            <electricalConnectionInstance id="0" preCell="../MVL20/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL21/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL21_MVL20_Generic_GJ" presynapticPopulation="MVL21" postsynapticPopulation="MVL20">
+            <electricalConnectionInstance id="0" preCell="../MVL21/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL20/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL21_MVL22_Generic_GJ" presynapticPopulation="MVL21" postsynapticPopulation="MVL22">
+            <electricalConnectionInstance id="0" preCell="../MVL21/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL22/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL22_MVL21_Generic_GJ" presynapticPopulation="MVL22" postsynapticPopulation="MVL21">
+            <electricalConnectionInstance id="0" preCell="../MVL22/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL21/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL22_MVL23_Generic_GJ" presynapticPopulation="MVL22" postsynapticPopulation="MVL23">
+            <electricalConnectionInstance id="0" preCell="../MVL22/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL23/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVL23_MVL22_Generic_GJ" presynapticPopulation="MVL23" postsynapticPopulation="MVL22">
+            <electricalConnectionInstance id="0" preCell="../MVL23/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL22/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR01_MVR02_Generic_GJ" presynapticPopulation="MVR01" postsynapticPopulation="MVR02">
+            <electricalConnectionInstance id="0" preCell="../MVR01/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR02/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR01_MVR03_Generic_GJ" presynapticPopulation="MVR01" postsynapticPopulation="MVR03">
+            <electricalConnectionInstance id="0" preCell="../MVR01/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR03/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR02_MVR01_Generic_GJ" presynapticPopulation="MVR02" postsynapticPopulation="MVR01">
+            <electricalConnectionInstance id="0" preCell="../MVR02/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR01/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR02_MVR03_Generic_GJ" presynapticPopulation="MVR02" postsynapticPopulation="MVR03">
+            <electricalConnectionInstance id="0" preCell="../MVR02/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR03/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR03_MVR01_Generic_GJ" presynapticPopulation="MVR03" postsynapticPopulation="MVR01">
+            <electricalConnectionInstance id="0" preCell="../MVR03/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR01/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR03_MVR02_Generic_GJ" presynapticPopulation="MVR03" postsynapticPopulation="MVR02">
+            <electricalConnectionInstance id="0" preCell="../MVR03/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR02/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR03_MVR04_Generic_GJ" presynapticPopulation="MVR03" postsynapticPopulation="MVR04">
+            <electricalConnectionInstance id="0" preCell="../MVR03/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR04/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR04_MVR03_Generic_GJ" presynapticPopulation="MVR04" postsynapticPopulation="MVR03">
+            <electricalConnectionInstance id="0" preCell="../MVR04/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR03/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR04_MVR05_Generic_GJ" presynapticPopulation="MVR04" postsynapticPopulation="MVR05">
+            <electricalConnectionInstance id="0" preCell="../MVR04/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR05/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR05_MVR04_Generic_GJ" presynapticPopulation="MVR05" postsynapticPopulation="MVR04">
+            <electricalConnectionInstance id="0" preCell="../MVR05/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR04/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR05_MVR06_Generic_GJ" presynapticPopulation="MVR05" postsynapticPopulation="MVR06">
+            <electricalConnectionInstance id="0" preCell="../MVR05/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR06/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR06_MVR05_Generic_GJ" presynapticPopulation="MVR06" postsynapticPopulation="MVR05">
+            <electricalConnectionInstance id="0" preCell="../MVR06/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR05/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR06_MVR07_Generic_GJ" presynapticPopulation="MVR06" postsynapticPopulation="MVR07">
+            <electricalConnectionInstance id="0" preCell="../MVR06/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR07/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR07_MVR06_Generic_GJ" presynapticPopulation="MVR07" postsynapticPopulation="MVR06">
+            <electricalConnectionInstance id="0" preCell="../MVR07/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR06/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR07_MVR08_Generic_GJ" presynapticPopulation="MVR07" postsynapticPopulation="MVR08">
+            <electricalConnectionInstance id="0" preCell="../MVR07/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR08/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR08_MVL09_Generic_GJ" presynapticPopulation="MVR08" postsynapticPopulation="MVL09">
+            <electricalConnectionInstance id="0" preCell="../MVR08/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVL09/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_2conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR08_MVR07_Generic_GJ" presynapticPopulation="MVR08" postsynapticPopulation="MVR07">
+            <electricalConnectionInstance id="0" preCell="../MVR08/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR07/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR08_MVR09_Generic_GJ" presynapticPopulation="MVR08" postsynapticPopulation="MVR09">
+            <electricalConnectionInstance id="0" preCell="../MVR08/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR09/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR09_MVR08_Generic_GJ" presynapticPopulation="MVR09" postsynapticPopulation="MVR08">
+            <electricalConnectionInstance id="0" preCell="../MVR09/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR08/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR09_MVR10_Generic_GJ" presynapticPopulation="MVR09" postsynapticPopulation="MVR10">
+            <electricalConnectionInstance id="0" preCell="../MVR09/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR10/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR10_MVR09_Generic_GJ" presynapticPopulation="MVR10" postsynapticPopulation="MVR09">
+            <electricalConnectionInstance id="0" preCell="../MVR10/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR09/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR10_MVR11_Generic_GJ" presynapticPopulation="MVR10" postsynapticPopulation="MVR11">
+            <electricalConnectionInstance id="0" preCell="../MVR10/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR11/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR11_MVR10_Generic_GJ" presynapticPopulation="MVR11" postsynapticPopulation="MVR10">
+            <electricalConnectionInstance id="0" preCell="../MVR11/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR10/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR11_MVR12_Generic_GJ" presynapticPopulation="MVR11" postsynapticPopulation="MVR12">
+            <electricalConnectionInstance id="0" preCell="../MVR11/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR12/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR12_MVR11_Generic_GJ" presynapticPopulation="MVR12" postsynapticPopulation="MVR11">
+            <electricalConnectionInstance id="0" preCell="../MVR12/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR11/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR12_MVR13_Generic_GJ" presynapticPopulation="MVR12" postsynapticPopulation="MVR13">
+            <electricalConnectionInstance id="0" preCell="../MVR12/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR13/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR13_MVR12_Generic_GJ" presynapticPopulation="MVR13" postsynapticPopulation="MVR12">
+            <electricalConnectionInstance id="0" preCell="../MVR13/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR12/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR13_MVR14_Generic_GJ" presynapticPopulation="MVR13" postsynapticPopulation="MVR14">
+            <electricalConnectionInstance id="0" preCell="../MVR13/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR14/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR14_MVR13_Generic_GJ" presynapticPopulation="MVR14" postsynapticPopulation="MVR13">
+            <electricalConnectionInstance id="0" preCell="../MVR14/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR13/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR14_MVR15_Generic_GJ" presynapticPopulation="MVR14" postsynapticPopulation="MVR15">
+            <electricalConnectionInstance id="0" preCell="../MVR14/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR15/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR15_MVR14_Generic_GJ" presynapticPopulation="MVR15" postsynapticPopulation="MVR14">
+            <electricalConnectionInstance id="0" preCell="../MVR15/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR14/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR15_MVR16_Generic_GJ" presynapticPopulation="MVR15" postsynapticPopulation="MVR16">
+            <electricalConnectionInstance id="0" preCell="../MVR15/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR16/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR16_MVR15_Generic_GJ" presynapticPopulation="MVR16" postsynapticPopulation="MVR15">
+            <electricalConnectionInstance id="0" preCell="../MVR16/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR15/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR16_MVR17_Generic_GJ" presynapticPopulation="MVR16" postsynapticPopulation="MVR17">
+            <electricalConnectionInstance id="0" preCell="../MVR16/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR17/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR17_MVR16_Generic_GJ" presynapticPopulation="MVR17" postsynapticPopulation="MVR16">
+            <electricalConnectionInstance id="0" preCell="../MVR17/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR16/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR17_MVR18_Generic_GJ" presynapticPopulation="MVR17" postsynapticPopulation="MVR18">
+            <electricalConnectionInstance id="0" preCell="../MVR17/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR18/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR18_MVR17_Generic_GJ" presynapticPopulation="MVR18" postsynapticPopulation="MVR17">
+            <electricalConnectionInstance id="0" preCell="../MVR18/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR17/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR18_MVR19_Generic_GJ" presynapticPopulation="MVR18" postsynapticPopulation="MVR19">
+            <electricalConnectionInstance id="0" preCell="../MVR18/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR19/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR19_MVR18_Generic_GJ" presynapticPopulation="MVR19" postsynapticPopulation="MVR18">
+            <electricalConnectionInstance id="0" preCell="../MVR19/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR18/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR19_MVR20_Generic_GJ" presynapticPopulation="MVR19" postsynapticPopulation="MVR20">
+            <electricalConnectionInstance id="0" preCell="../MVR19/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR20/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR20_MVR19_Generic_GJ" presynapticPopulation="MVR20" postsynapticPopulation="MVR19">
+            <electricalConnectionInstance id="0" preCell="../MVR20/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR19/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR20_MVR21_Generic_GJ" presynapticPopulation="MVR20" postsynapticPopulation="MVR21">
+            <electricalConnectionInstance id="0" preCell="../MVR20/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR21/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR21_MVR20_Generic_GJ" presynapticPopulation="MVR21" postsynapticPopulation="MVR20">
+            <electricalConnectionInstance id="0" preCell="../MVR21/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR20/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR21_MVR22_Generic_GJ" presynapticPopulation="MVR21" postsynapticPopulation="MVR22">
+            <electricalConnectionInstance id="0" preCell="../MVR21/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR22/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR22_MVR21_Generic_GJ" presynapticPopulation="MVR22" postsynapticPopulation="MVR21">
+            <electricalConnectionInstance id="0" preCell="../MVR22/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR21/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR22_MVR23_Generic_GJ" presynapticPopulation="MVR22" postsynapticPopulation="MVR23">
+            <electricalConnectionInstance id="0" preCell="../MVR22/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR23/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <electricalProjection id="NC_MVR23_MVR22_Generic_GJ" presynapticPopulation="MVR23" postsynapticPopulation="MVR22">
+            <electricalConnectionInstance id="0" preCell="../MVR23/0/GenericMuscleCell" preSegment="0" preFractionAlong="0.5" postCell="../MVR22/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" synapse="muscle_to_muscle_elec_syn_15conns"/>
+        </electricalProjection>
+        <continuousProjection id="NC_AVAL_DA1_Acetylcholine" presynapticPopulation="AVAL" postsynapticPopulation="DA1">
+            <continuousConnectionInstance id="0" preCell="../AVAL/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA1/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_exc_syn_6conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_AVAL_DA2_Acetylcholine" presynapticPopulation="AVAL" postsynapticPopulation="DA2">
+            <continuousConnectionInstance id="0" preCell="../AVAL/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA2/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_exc_syn_10conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_AVAL_DA3_Acetylcholine" presynapticPopulation="AVAL" postsynapticPopulation="DA3">
+            <continuousConnectionInstance id="0" preCell="../AVAL/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA3/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_exc_syn_12conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_AVAL_DA4_Acetylcholine" presynapticPopulation="AVAL" postsynapticPopulation="DA4">
+            <continuousConnectionInstance id="0" preCell="../AVAL/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA4/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_exc_syn_12conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_AVAL_DA5_Acetylcholine" presynapticPopulation="AVAL" postsynapticPopulation="DA5">
+            <continuousConnectionInstance id="0" preCell="../AVAL/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA5/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_exc_syn_14conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_AVAL_DA7_Acetylcholine" presynapticPopulation="AVAL" postsynapticPopulation="DA7">
+            <continuousConnectionInstance id="0" preCell="../AVAL/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA7/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_exc_syn_4conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_AVAL_DA8_Acetylcholine" presynapticPopulation="AVAL" postsynapticPopulation="DA8">
+            <continuousConnectionInstance id="0" preCell="../AVAL/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA8/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_exc_syn_5conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_AVAL_DA9_Acetylcholine" presynapticPopulation="AVAL" postsynapticPopulation="DA9">
+            <continuousConnectionInstance id="0" preCell="../AVAL/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA9/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_AVAR_DA1_Acetylcholine" presynapticPopulation="AVAR" postsynapticPopulation="DA1">
+            <continuousConnectionInstance id="0" preCell="../AVAR/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA1/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_AVAR_DA2_Acetylcholine" presynapticPopulation="AVAR" postsynapticPopulation="DA2">
+            <continuousConnectionInstance id="0" preCell="../AVAR/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA2/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_exc_syn_9conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_AVAR_DA3_Acetylcholine" presynapticPopulation="AVAR" postsynapticPopulation="DA3">
+            <continuousConnectionInstance id="0" preCell="../AVAR/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA3/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_exc_syn_8conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_AVAR_DA4_Acetylcholine" presynapticPopulation="AVAR" postsynapticPopulation="DA4">
+            <continuousConnectionInstance id="0" preCell="../AVAR/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA4/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_exc_syn_9conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_AVAR_DA5_Acetylcholine" presynapticPopulation="AVAR" postsynapticPopulation="DA5">
+            <continuousConnectionInstance id="0" preCell="../AVAR/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA5/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_exc_syn_9conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_AVAR_DA6_Acetylcholine" presynapticPopulation="AVAR" postsynapticPopulation="DA6">
+            <continuousConnectionInstance id="0" preCell="../AVAR/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA6/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_exc_syn_4conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_AVAR_DA7_Acetylcholine" presynapticPopulation="AVAR" postsynapticPopulation="DA7">
+            <continuousConnectionInstance id="0" preCell="../AVAR/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA7/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_exc_syn_6conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_AVAR_DA8_Acetylcholine" presynapticPopulation="AVAR" postsynapticPopulation="DA8">
+            <continuousConnectionInstance id="0" preCell="../AVAR/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA8/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_exc_syn_20conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_AVAR_DA9_Acetylcholine" presynapticPopulation="AVAR" postsynapticPopulation="DA9">
+            <continuousConnectionInstance id="0" preCell="../AVAR/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA9/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_AVBR_DB4_Acetylcholine" presynapticPopulation="AVBR" postsynapticPopulation="DB4">
+            <continuousConnectionInstance id="0" preCell="../AVBR/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB4/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_exc_syn_1conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA1_DB1_Acetylcholine" presynapticPopulation="DA1" postsynapticPopulation="DB1">
+            <continuousConnectionInstance id="0" preCell="../DA1/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB1/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_exc_syn_1conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA2_DB1_Acetylcholine" presynapticPopulation="DA2" postsynapticPopulation="DB1">
+            <continuousConnectionInstance id="0" preCell="../DA2/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB1/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_exc_syn_1conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA3_DB3_Acetylcholine" presynapticPopulation="DA3" postsynapticPopulation="DB3">
+            <continuousConnectionInstance id="0" preCell="../DA3/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB3/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA4_DB2_Acetylcholine" presynapticPopulation="DA4" postsynapticPopulation="DB2">
+            <continuousConnectionInstance id="0" preCell="../DA4/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB2/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA5_DB4_Acetylcholine" presynapticPopulation="DA5" postsynapticPopulation="DB4">
+            <continuousConnectionInstance id="0" preCell="../DA5/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB4/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_exc_syn_1conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA6_DB5_Acetylcholine" presynapticPopulation="DA6" postsynapticPopulation="DB5">
+            <continuousConnectionInstance id="0" preCell="../DA6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB5/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_exc_syn_1conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA7_DB6_Acetylcholine" presynapticPopulation="DA7" postsynapticPopulation="DB6">
+            <continuousConnectionInstance id="0" preCell="../DA7/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB6/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_exc_syn_1conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA8_DB7_Acetylcholine" presynapticPopulation="DA8" postsynapticPopulation="DB7">
+            <continuousConnectionInstance id="0" preCell="../DA8/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB7/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_exc_syn_1conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA9_DB7_Acetylcholine" presynapticPopulation="DA9" postsynapticPopulation="DB7">
+            <continuousConnectionInstance id="0" preCell="../DA9/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DB7/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_exc_syn_1conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB1_AS1_Acetylcholine" presynapticPopulation="DB1" postsynapticPopulation="AS1">
+            <continuousConnectionInstance id="0" preCell="../DB1/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../AS1/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_inh_syn_28conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB1_AS2_Acetylcholine" presynapticPopulation="DB1" postsynapticPopulation="AS2">
+            <continuousConnectionInstance id="0" preCell="../DB1/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../AS2/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_inh_syn_4conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB2_AS3_Acetylcholine" presynapticPopulation="DB2" postsynapticPopulation="AS3">
+            <continuousConnectionInstance id="0" preCell="../DB2/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../AS3/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_inh_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB2_AS4_Acetylcholine" presynapticPopulation="DB2" postsynapticPopulation="AS4">
+            <continuousConnectionInstance id="0" preCell="../DB2/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../AS4/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB3_AS4_Acetylcholine" presynapticPopulation="DB3" postsynapticPopulation="AS4">
+            <continuousConnectionInstance id="0" preCell="../DB3/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../AS4/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_inh_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB3_AS5_Acetylcholine" presynapticPopulation="DB3" postsynapticPopulation="AS5">
+            <continuousConnectionInstance id="0" preCell="../DB3/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../AS5/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_inh_syn_1conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB4_AS6_Acetylcholine" presynapticPopulation="DB4" postsynapticPopulation="AS6">
+            <continuousConnectionInstance id="0" preCell="../DB4/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../AS6/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_inh_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB5_AS7_Acetylcholine" presynapticPopulation="DB5" postsynapticPopulation="AS7">
+            <continuousConnectionInstance id="0" preCell="../DB5/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../AS7/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_inh_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB5_AS8_Acetylcholine" presynapticPopulation="DB5" postsynapticPopulation="AS8">
+            <continuousConnectionInstance id="0" preCell="../DB5/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../AS8/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_inh_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB6_AS8_Acetylcholine" presynapticPopulation="DB6" postsynapticPopulation="AS8">
+            <continuousConnectionInstance id="0" preCell="../DB6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../AS8/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_inh_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB6_AS9_Acetylcholine" presynapticPopulation="DB6" postsynapticPopulation="AS9">
+            <continuousConnectionInstance id="0" preCell="../DB6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../AS9/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_inh_syn_1conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB7_AS10_Acetylcholine" presynapticPopulation="DB7" postsynapticPopulation="AS10">
+            <continuousConnectionInstance id="0" preCell="../DB7/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../AS10/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_inh_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB7_AS11_Acetylcholine" presynapticPopulation="DB7" postsynapticPopulation="AS11">
+            <continuousConnectionInstance id="0" preCell="../DB7/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../AS11/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_inh_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_AS1_DA1_Acetylcholine" presynapticPopulation="AS1" postsynapticPopulation="DA1">
+            <continuousConnectionInstance id="0" preCell="../AS1/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA1/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_exc_syn_8conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_AS3_DA3_Acetylcholine" presynapticPopulation="AS3" postsynapticPopulation="DA3">
+            <continuousConnectionInstance id="0" preCell="../AS3/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA3/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_exc_syn_1conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_AS4_DA3_Acetylcholine" presynapticPopulation="AS4" postsynapticPopulation="DA3">
+            <continuousConnectionInstance id="0" preCell="../AS4/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA3/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_AS6_DA5_Acetylcholine" presynapticPopulation="AS6" postsynapticPopulation="DA5">
+            <continuousConnectionInstance id="0" preCell="../AS6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../DA5/0/GenericNeuronCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_neuron_exc_syn_1conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA1_MDL06_Acetylcholine" presynapticPopulation="DA1" postsynapticPopulation="MDL06">
+            <continuousConnectionInstance id="0" preCell="../DA1/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL06/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_9conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA1_MDL07_Acetylcholine" presynapticPopulation="DA1" postsynapticPopulation="MDL07">
+            <continuousConnectionInstance id="0" preCell="../DA1/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL07/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_8conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA1_MDL08_Acetylcholine" presynapticPopulation="DA1" postsynapticPopulation="MDL08">
+            <continuousConnectionInstance id="0" preCell="../DA1/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL08/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA1_MDR06_Acetylcholine" presynapticPopulation="DA1" postsynapticPopulation="MDR06">
+            <continuousConnectionInstance id="0" preCell="../DA1/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR06/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_8conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA1_MDR07_Acetylcholine" presynapticPopulation="DA1" postsynapticPopulation="MDR07">
+            <continuousConnectionInstance id="0" preCell="../DA1/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR07/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_9conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA2_MDL07_Acetylcholine" presynapticPopulation="DA2" postsynapticPopulation="MDL07">
+            <continuousConnectionInstance id="0" preCell="../DA2/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL07/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_1conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA2_MDL08_Acetylcholine" presynapticPopulation="DA2" postsynapticPopulation="MDL08">
+            <continuousConnectionInstance id="0" preCell="../DA2/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL08/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_5conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA2_MDL09_Acetylcholine" presynapticPopulation="DA2" postsynapticPopulation="MDL09">
+            <continuousConnectionInstance id="0" preCell="../DA2/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL09/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_4conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA2_MDL10_Acetylcholine" presynapticPopulation="DA2" postsynapticPopulation="MDL10">
+            <continuousConnectionInstance id="0" preCell="../DA2/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL10/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA2_MDR07_Acetylcholine" presynapticPopulation="DA2" postsynapticPopulation="MDR07">
+            <continuousConnectionInstance id="0" preCell="../DA2/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR07/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA2_MDR08_Acetylcholine" presynapticPopulation="DA2" postsynapticPopulation="MDR08">
+            <continuousConnectionInstance id="0" preCell="../DA2/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR08/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_6conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA2_MDR09_Acetylcholine" presynapticPopulation="DA2" postsynapticPopulation="MDR09">
+            <continuousConnectionInstance id="0" preCell="../DA2/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR09/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_7conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA3_MDL09_Acetylcholine" presynapticPopulation="DA3" postsynapticPopulation="MDL09">
+            <continuousConnectionInstance id="0" preCell="../DA3/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL09/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA3_MDL10_Acetylcholine" presynapticPopulation="DA3" postsynapticPopulation="MDL10">
+            <continuousConnectionInstance id="0" preCell="../DA3/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL10/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_17conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA3_MDL11_Acetylcholine" presynapticPopulation="DA3" postsynapticPopulation="MDL11">
+            <continuousConnectionInstance id="0" preCell="../DA3/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL11/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_12conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA3_MDR09_Acetylcholine" presynapticPopulation="DA3" postsynapticPopulation="MDR09">
+            <continuousConnectionInstance id="0" preCell="../DA3/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR09/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA3_MDR10_Acetylcholine" presynapticPopulation="DA3" postsynapticPopulation="MDR10">
+            <continuousConnectionInstance id="0" preCell="../DA3/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR10/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_14conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA3_MDR11_Acetylcholine" presynapticPopulation="DA3" postsynapticPopulation="MDR11">
+            <continuousConnectionInstance id="0" preCell="../DA3/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR11/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_4conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA3_MDR12_Acetylcholine" presynapticPopulation="DA3" postsynapticPopulation="MDR12">
+            <continuousConnectionInstance id="0" preCell="../DA3/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR12/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA4_MDL11_Acetylcholine" presynapticPopulation="DA4" postsynapticPopulation="MDL11">
+            <continuousConnectionInstance id="0" preCell="../DA4/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL11/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_6conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA4_MDL12_Acetylcholine" presynapticPopulation="DA4" postsynapticPopulation="MDL12">
+            <continuousConnectionInstance id="0" preCell="../DA4/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL12/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_10conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA4_MDL13_Acetylcholine" presynapticPopulation="DA4" postsynapticPopulation="MDL13">
+            <continuousConnectionInstance id="0" preCell="../DA4/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL13/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_1conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA4_MDR11_Acetylcholine" presynapticPopulation="DA4" postsynapticPopulation="MDR11">
+            <continuousConnectionInstance id="0" preCell="../DA4/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR11/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_5conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA4_MDR12_Acetylcholine" presynapticPopulation="DA4" postsynapticPopulation="MDR12">
+            <continuousConnectionInstance id="0" preCell="../DA4/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR12/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_4conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA4_MDR13_Acetylcholine" presynapticPopulation="DA4" postsynapticPopulation="MDR13">
+            <continuousConnectionInstance id="0" preCell="../DA4/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR13/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_9conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA5_MDL12_Acetylcholine" presynapticPopulation="DA5" postsynapticPopulation="MDL12">
+            <continuousConnectionInstance id="0" preCell="../DA5/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL12/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_1conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA5_MDL13_Acetylcholine" presynapticPopulation="DA5" postsynapticPopulation="MDL13">
+            <continuousConnectionInstance id="0" preCell="../DA5/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL13/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_10conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA5_MDL14_Acetylcholine" presynapticPopulation="DA5" postsynapticPopulation="MDL14">
+            <continuousConnectionInstance id="0" preCell="../DA5/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL14/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_7conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA5_MDR12_Acetylcholine" presynapticPopulation="DA5" postsynapticPopulation="MDR12">
+            <continuousConnectionInstance id="0" preCell="../DA5/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR12/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA5_MDR13_Acetylcholine" presynapticPopulation="DA5" postsynapticPopulation="MDR13">
+            <continuousConnectionInstance id="0" preCell="../DA5/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR13/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_7conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA5_MDR14_Acetylcholine" presynapticPopulation="DA5" postsynapticPopulation="MDR14">
+            <continuousConnectionInstance id="0" preCell="../DA5/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR14/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_8conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA6_MDL11_Acetylcholine" presynapticPopulation="DA6" postsynapticPopulation="MDL11">
+            <continuousConnectionInstance id="0" preCell="../DA6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL11/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_1conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA6_MDL12_Acetylcholine" presynapticPopulation="DA6" postsynapticPopulation="MDL12">
+            <continuousConnectionInstance id="0" preCell="../DA6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL12/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_1conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA6_MDL13_Acetylcholine" presynapticPopulation="DA6" postsynapticPopulation="MDL13">
+            <continuousConnectionInstance id="0" preCell="../DA6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL13/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_5conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA6_MDL14_Acetylcholine" presynapticPopulation="DA6" postsynapticPopulation="MDL14">
+            <continuousConnectionInstance id="0" preCell="../DA6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL14/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_4conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA6_MDL15_Acetylcholine" presynapticPopulation="DA6" postsynapticPopulation="MDL15">
+            <continuousConnectionInstance id="0" preCell="../DA6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL15/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_4conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA6_MDL16_Acetylcholine" presynapticPopulation="DA6" postsynapticPopulation="MDL16">
+            <continuousConnectionInstance id="0" preCell="../DA6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL16/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_4conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA6_MDR10_Acetylcholine" presynapticPopulation="DA6" postsynapticPopulation="MDR10">
+            <continuousConnectionInstance id="0" preCell="../DA6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR10/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_1conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA6_MDR11_Acetylcholine" presynapticPopulation="DA6" postsynapticPopulation="MDR11">
+            <continuousConnectionInstance id="0" preCell="../DA6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR11/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_1conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA6_MDR12_Acetylcholine" presynapticPopulation="DA6" postsynapticPopulation="MDR12">
+            <continuousConnectionInstance id="0" preCell="../DA6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR12/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_1conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA6_MDR13_Acetylcholine" presynapticPopulation="DA6" postsynapticPopulation="MDR13">
+            <continuousConnectionInstance id="0" preCell="../DA6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR13/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_5conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA6_MDR14_Acetylcholine" presynapticPopulation="DA6" postsynapticPopulation="MDR14">
+            <continuousConnectionInstance id="0" preCell="../DA6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR14/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_4conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA6_MDR15_Acetylcholine" presynapticPopulation="DA6" postsynapticPopulation="MDR15">
+            <continuousConnectionInstance id="0" preCell="../DA6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR15/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_4conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA6_MDR16_Acetylcholine" presynapticPopulation="DA6" postsynapticPopulation="MDR16">
+            <continuousConnectionInstance id="0" preCell="../DA6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR16/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_4conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA7_MDL14_Acetylcholine" presynapticPopulation="DA7" postsynapticPopulation="MDL14">
+            <continuousConnectionInstance id="0" preCell="../DA7/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL14/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA7_MDL15_Acetylcholine" presynapticPopulation="DA7" postsynapticPopulation="MDL15">
+            <continuousConnectionInstance id="0" preCell="../DA7/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL15/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA7_MDL16_Acetylcholine" presynapticPopulation="DA7" postsynapticPopulation="MDL16">
+            <continuousConnectionInstance id="0" preCell="../DA7/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL16/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA7_MDL17_Acetylcholine" presynapticPopulation="DA7" postsynapticPopulation="MDL17">
+            <continuousConnectionInstance id="0" preCell="../DA7/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL17/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA7_MDL18_Acetylcholine" presynapticPopulation="DA7" postsynapticPopulation="MDL18">
+            <continuousConnectionInstance id="0" preCell="../DA7/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL18/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_4conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA7_MDL19_Acetylcholine" presynapticPopulation="DA7" postsynapticPopulation="MDL19">
+            <continuousConnectionInstance id="0" preCell="../DA7/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL19/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA7_MDR14_Acetylcholine" presynapticPopulation="DA7" postsynapticPopulation="MDR14">
+            <continuousConnectionInstance id="0" preCell="../DA7/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR14/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA7_MDR15_Acetylcholine" presynapticPopulation="DA7" postsynapticPopulation="MDR15">
+            <continuousConnectionInstance id="0" preCell="../DA7/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR15/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA7_MDR16_Acetylcholine" presynapticPopulation="DA7" postsynapticPopulation="MDR16">
+            <continuousConnectionInstance id="0" preCell="../DA7/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR16/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA7_MDR17_Acetylcholine" presynapticPopulation="DA7" postsynapticPopulation="MDR17">
+            <continuousConnectionInstance id="0" preCell="../DA7/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR17/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA7_MDR18_Acetylcholine" presynapticPopulation="DA7" postsynapticPopulation="MDR18">
+            <continuousConnectionInstance id="0" preCell="../DA7/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR18/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_4conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA7_MDR19_Acetylcholine" presynapticPopulation="DA7" postsynapticPopulation="MDR19">
+            <continuousConnectionInstance id="0" preCell="../DA7/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR19/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA8_MDL16_Acetylcholine" presynapticPopulation="DA8" postsynapticPopulation="MDL16">
+            <continuousConnectionInstance id="0" preCell="../DA8/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL16/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA8_MDL17_Acetylcholine" presynapticPopulation="DA8" postsynapticPopulation="MDL17">
+            <continuousConnectionInstance id="0" preCell="../DA8/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL17/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA8_MDL18_Acetylcholine" presynapticPopulation="DA8" postsynapticPopulation="MDL18">
+            <continuousConnectionInstance id="0" preCell="../DA8/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL18/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA8_MDL19_Acetylcholine" presynapticPopulation="DA8" postsynapticPopulation="MDL19">
+            <continuousConnectionInstance id="0" preCell="../DA8/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL19/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA8_MDL20_Acetylcholine" presynapticPopulation="DA8" postsynapticPopulation="MDL20">
+            <continuousConnectionInstance id="0" preCell="../DA8/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL20/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_4conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA8_MDL21_Acetylcholine" presynapticPopulation="DA8" postsynapticPopulation="MDL21">
+            <continuousConnectionInstance id="0" preCell="../DA8/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL21/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA8_MDR16_Acetylcholine" presynapticPopulation="DA8" postsynapticPopulation="MDR16">
+            <continuousConnectionInstance id="0" preCell="../DA8/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR16/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA8_MDR17_Acetylcholine" presynapticPopulation="DA8" postsynapticPopulation="MDR17">
+            <continuousConnectionInstance id="0" preCell="../DA8/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR17/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA8_MDR18_Acetylcholine" presynapticPopulation="DA8" postsynapticPopulation="MDR18">
+            <continuousConnectionInstance id="0" preCell="../DA8/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR18/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA8_MDR19_Acetylcholine" presynapticPopulation="DA8" postsynapticPopulation="MDR19">
+            <continuousConnectionInstance id="0" preCell="../DA8/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR19/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA8_MDR20_Acetylcholine" presynapticPopulation="DA8" postsynapticPopulation="MDR20">
+            <continuousConnectionInstance id="0" preCell="../DA8/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR20/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_4conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA8_MDR21_Acetylcholine" presynapticPopulation="DA8" postsynapticPopulation="MDR21">
+            <continuousConnectionInstance id="0" preCell="../DA8/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR21/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA9_MDL19_Acetylcholine" presynapticPopulation="DA9" postsynapticPopulation="MDL19">
+            <continuousConnectionInstance id="0" preCell="../DA9/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL19/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA9_MDL20_Acetylcholine" presynapticPopulation="DA9" postsynapticPopulation="MDL20">
+            <continuousConnectionInstance id="0" preCell="../DA9/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL20/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA9_MDL21_Acetylcholine" presynapticPopulation="DA9" postsynapticPopulation="MDL21">
+            <continuousConnectionInstance id="0" preCell="../DA9/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL21/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA9_MDL22_Acetylcholine" presynapticPopulation="DA9" postsynapticPopulation="MDL22">
+            <continuousConnectionInstance id="0" preCell="../DA9/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL22/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA9_MDL23_Acetylcholine" presynapticPopulation="DA9" postsynapticPopulation="MDL23">
+            <continuousConnectionInstance id="0" preCell="../DA9/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL23/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA9_MDL24_Acetylcholine" presynapticPopulation="DA9" postsynapticPopulation="MDL24">
+            <continuousConnectionInstance id="0" preCell="../DA9/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL24/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_4conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA9_MDR19_Acetylcholine" presynapticPopulation="DA9" postsynapticPopulation="MDR19">
+            <continuousConnectionInstance id="0" preCell="../DA9/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR19/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA9_MDR20_Acetylcholine" presynapticPopulation="DA9" postsynapticPopulation="MDR20">
+            <continuousConnectionInstance id="0" preCell="../DA9/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR20/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA9_MDR21_Acetylcholine" presynapticPopulation="DA9" postsynapticPopulation="MDR21">
+            <continuousConnectionInstance id="0" preCell="../DA9/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR21/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA9_MDR22_Acetylcholine" presynapticPopulation="DA9" postsynapticPopulation="MDR22">
+            <continuousConnectionInstance id="0" preCell="../DA9/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR22/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA9_MDR23_Acetylcholine" presynapticPopulation="DA9" postsynapticPopulation="MDR23">
+            <continuousConnectionInstance id="0" preCell="../DA9/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR23/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DA9_MDR24_Acetylcholine" presynapticPopulation="DA9" postsynapticPopulation="MDR24">
+            <continuousConnectionInstance id="0" preCell="../DA9/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR24/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_4conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB1_MDL06_Acetylcholine" presynapticPopulation="DB1" postsynapticPopulation="MDL06">
+            <continuousConnectionInstance id="0" preCell="../DB1/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL06/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="DB1_to_MDL06_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB1_MDL08_Acetylcholine" presynapticPopulation="DB1" postsynapticPopulation="MDL08">
+            <continuousConnectionInstance id="0" preCell="../DB1/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL08/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="DB1_to_MDL08_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB1_MDL09_Acetylcholine" presynapticPopulation="DB1" postsynapticPopulation="MDL09">
+            <continuousConnectionInstance id="0" preCell="../DB1/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL09/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="DB1_to_MDL09_exc_syn_6conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB1_MDR08_Acetylcholine" presynapticPopulation="DB1" postsynapticPopulation="MDR08">
+            <continuousConnectionInstance id="0" preCell="../DB1/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR08/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="DB1_to_MDR08_exc_syn_6conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB1_MDR09_Acetylcholine" presynapticPopulation="DB1" postsynapticPopulation="MDR09">
+            <continuousConnectionInstance id="0" preCell="../DB1/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR09/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="DB1_to_MDR09_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB2_MDL09_Acetylcholine" presynapticPopulation="DB2" postsynapticPopulation="MDL09">
+            <continuousConnectionInstance id="0" preCell="../DB2/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL09/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="DB2_to_MDL09_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB2_MDL10_Acetylcholine" presynapticPopulation="DB2" postsynapticPopulation="MDL10">
+            <continuousConnectionInstance id="0" preCell="../DB2/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL10/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="DB2_to_MDL10_exc_syn_4conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB2_MDL11_Acetylcholine" presynapticPopulation="DB2" postsynapticPopulation="MDL11">
+            <continuousConnectionInstance id="0" preCell="../DB2/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL11/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="DB2_to_MDL11_exc_syn_5conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB2_MDL12_Acetylcholine" presynapticPopulation="DB2" postsynapticPopulation="MDL12">
+            <continuousConnectionInstance id="0" preCell="../DB2/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL12/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="DB2_to_MDL12_exc_syn_1conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB2_MDR09_Acetylcholine" presynapticPopulation="DB2" postsynapticPopulation="MDR09">
+            <continuousConnectionInstance id="0" preCell="../DB2/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR09/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="DB2_to_MDR09_exc_syn_1conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB2_MDR10_Acetylcholine" presynapticPopulation="DB2" postsynapticPopulation="MDR10">
+            <continuousConnectionInstance id="0" preCell="../DB2/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR10/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="DB2_to_MDR10_exc_syn_6conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB2_MDR11_Acetylcholine" presynapticPopulation="DB2" postsynapticPopulation="MDR11">
+            <continuousConnectionInstance id="0" preCell="../DB2/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR11/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="DB2_to_MDR11_exc_syn_8conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB3_MDL11_Acetylcholine" presynapticPopulation="DB3" postsynapticPopulation="MDL11">
+            <continuousConnectionInstance id="0" preCell="../DB3/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL11/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_6conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB3_MDL12_Acetylcholine" presynapticPopulation="DB3" postsynapticPopulation="MDL12">
+            <continuousConnectionInstance id="0" preCell="../DB3/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL12/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_1conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB3_MDL13_Acetylcholine" presynapticPopulation="DB3" postsynapticPopulation="MDL13">
+            <continuousConnectionInstance id="0" preCell="../DB3/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL13/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB3_MDL14_Acetylcholine" presynapticPopulation="DB3" postsynapticPopulation="MDL14">
+            <continuousConnectionInstance id="0" preCell="../DB3/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL14/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_1conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB3_MDR11_Acetylcholine" presynapticPopulation="DB3" postsynapticPopulation="MDR11">
+            <continuousConnectionInstance id="0" preCell="../DB3/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR11/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB3_MDR12_Acetylcholine" presynapticPopulation="DB3" postsynapticPopulation="MDR12">
+            <continuousConnectionInstance id="0" preCell="../DB3/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR12/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_13conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB3_MDR13_Acetylcholine" presynapticPopulation="DB3" postsynapticPopulation="MDR13">
+            <continuousConnectionInstance id="0" preCell="../DB3/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR13/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_1conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB4_MDL13_Acetylcholine" presynapticPopulation="DB4" postsynapticPopulation="MDL13">
+            <continuousConnectionInstance id="0" preCell="../DB4/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL13/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_4conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB4_MDL14_Acetylcholine" presynapticPopulation="DB4" postsynapticPopulation="MDL14">
+            <continuousConnectionInstance id="0" preCell="../DB4/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL14/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_1conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB4_MDL15_Acetylcholine" presynapticPopulation="DB4" postsynapticPopulation="MDL15">
+            <continuousConnectionInstance id="0" preCell="../DB4/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL15/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB4_MDL16_Acetylcholine" presynapticPopulation="DB4" postsynapticPopulation="MDL16">
+            <continuousConnectionInstance id="0" preCell="../DB4/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL16/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB4_MDR13_Acetylcholine" presynapticPopulation="DB4" postsynapticPopulation="MDR13">
+            <continuousConnectionInstance id="0" preCell="../DB4/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR13/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB4_MDR14_Acetylcholine" presynapticPopulation="DB4" postsynapticPopulation="MDR14">
+            <continuousConnectionInstance id="0" preCell="../DB4/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR14/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_5conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB4_MDR15_Acetylcholine" presynapticPopulation="DB4" postsynapticPopulation="MDR15">
+            <continuousConnectionInstance id="0" preCell="../DB4/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR15/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB4_MDR16_Acetylcholine" presynapticPopulation="DB4" postsynapticPopulation="MDR16">
+            <continuousConnectionInstance id="0" preCell="../DB4/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR16/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_3conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB5_MDL14_Acetylcholine" presynapticPopulation="DB5" postsynapticPopulation="MDL14">
+            <continuousConnectionInstance id="0" preCell="../DB5/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL14/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB5_MDL15_Acetylcholine" presynapticPopulation="DB5" postsynapticPopulation="MDL15">
+            <continuousConnectionInstance id="0" preCell="../DB5/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL15/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB5_MDL16_Acetylcholine" presynapticPopulation="DB5" postsynapticPopulation="MDL16">
+            <continuousConnectionInstance id="0" preCell="../DB5/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL16/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB5_MDL17_Acetylcholine" presynapticPopulation="DB5" postsynapticPopulation="MDL17">
+            <continuousConnectionInstance id="0" preCell="../DB5/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL17/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB5_MDL18_Acetylcholine" presynapticPopulation="DB5" postsynapticPopulation="MDL18">
+            <continuousConnectionInstance id="0" preCell="../DB5/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL18/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB5_MDL19_Acetylcholine" presynapticPopulation="DB5" postsynapticPopulation="MDL19">
+            <continuousConnectionInstance id="0" preCell="../DB5/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL19/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB5_MDR14_Acetylcholine" presynapticPopulation="DB5" postsynapticPopulation="MDR14">
+            <continuousConnectionInstance id="0" preCell="../DB5/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR14/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB5_MDR15_Acetylcholine" presynapticPopulation="DB5" postsynapticPopulation="MDR15">
+            <continuousConnectionInstance id="0" preCell="../DB5/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR15/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB5_MDR16_Acetylcholine" presynapticPopulation="DB5" postsynapticPopulation="MDR16">
+            <continuousConnectionInstance id="0" preCell="../DB5/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR16/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB5_MDR17_Acetylcholine" presynapticPopulation="DB5" postsynapticPopulation="MDR17">
+            <continuousConnectionInstance id="0" preCell="../DB5/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR17/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB5_MDR18_Acetylcholine" presynapticPopulation="DB5" postsynapticPopulation="MDR18">
+            <continuousConnectionInstance id="0" preCell="../DB5/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR18/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB5_MDR19_Acetylcholine" presynapticPopulation="DB5" postsynapticPopulation="MDR19">
+            <continuousConnectionInstance id="0" preCell="../DB5/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR19/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB6_MDL16_Acetylcholine" presynapticPopulation="DB6" postsynapticPopulation="MDL16">
+            <continuousConnectionInstance id="0" preCell="../DB6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL16/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB6_MDL17_Acetylcholine" presynapticPopulation="DB6" postsynapticPopulation="MDL17">
+            <continuousConnectionInstance id="0" preCell="../DB6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL17/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB6_MDL18_Acetylcholine" presynapticPopulation="DB6" postsynapticPopulation="MDL18">
+            <continuousConnectionInstance id="0" preCell="../DB6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL18/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB6_MDL19_Acetylcholine" presynapticPopulation="DB6" postsynapticPopulation="MDL19">
+            <continuousConnectionInstance id="0" preCell="../DB6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL19/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB6_MDL20_Acetylcholine" presynapticPopulation="DB6" postsynapticPopulation="MDL20">
+            <continuousConnectionInstance id="0" preCell="../DB6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL20/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB6_MDL21_Acetylcholine" presynapticPopulation="DB6" postsynapticPopulation="MDL21">
+            <continuousConnectionInstance id="0" preCell="../DB6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL21/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB6_MDR16_Acetylcholine" presynapticPopulation="DB6" postsynapticPopulation="MDR16">
+            <continuousConnectionInstance id="0" preCell="../DB6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR16/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB6_MDR17_Acetylcholine" presynapticPopulation="DB6" postsynapticPopulation="MDR17">
+            <continuousConnectionInstance id="0" preCell="../DB6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR17/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB6_MDR18_Acetylcholine" presynapticPopulation="DB6" postsynapticPopulation="MDR18">
+            <continuousConnectionInstance id="0" preCell="../DB6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR18/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB6_MDR19_Acetylcholine" presynapticPopulation="DB6" postsynapticPopulation="MDR19">
+            <continuousConnectionInstance id="0" preCell="../DB6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR19/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB6_MDR20_Acetylcholine" presynapticPopulation="DB6" postsynapticPopulation="MDR20">
+            <continuousConnectionInstance id="0" preCell="../DB6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR20/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB6_MDR21_Acetylcholine" presynapticPopulation="DB6" postsynapticPopulation="MDR21">
+            <continuousConnectionInstance id="0" preCell="../DB6/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR21/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB7_MDL19_Acetylcholine" presynapticPopulation="DB7" postsynapticPopulation="MDL19">
+            <continuousConnectionInstance id="0" preCell="../DB7/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL19/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB7_MDL20_Acetylcholine" presynapticPopulation="DB7" postsynapticPopulation="MDL20">
+            <continuousConnectionInstance id="0" preCell="../DB7/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL20/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB7_MDL21_Acetylcholine" presynapticPopulation="DB7" postsynapticPopulation="MDL21">
+            <continuousConnectionInstance id="0" preCell="../DB7/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL21/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB7_MDL22_Acetylcholine" presynapticPopulation="DB7" postsynapticPopulation="MDL22">
+            <continuousConnectionInstance id="0" preCell="../DB7/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL22/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB7_MDL23_Acetylcholine" presynapticPopulation="DB7" postsynapticPopulation="MDL23">
+            <continuousConnectionInstance id="0" preCell="../DB7/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL23/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB7_MDL24_Acetylcholine" presynapticPopulation="DB7" postsynapticPopulation="MDL24">
+            <continuousConnectionInstance id="0" preCell="../DB7/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDL24/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB7_MDR19_Acetylcholine" presynapticPopulation="DB7" postsynapticPopulation="MDR19">
+            <continuousConnectionInstance id="0" preCell="../DB7/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR19/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB7_MDR20_Acetylcholine" presynapticPopulation="DB7" postsynapticPopulation="MDR20">
+            <continuousConnectionInstance id="0" preCell="../DB7/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR20/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB7_MDR21_Acetylcholine" presynapticPopulation="DB7" postsynapticPopulation="MDR21">
+            <continuousConnectionInstance id="0" preCell="../DB7/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR21/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB7_MDR22_Acetylcholine" presynapticPopulation="DB7" postsynapticPopulation="MDR22">
+            <continuousConnectionInstance id="0" preCell="../DB7/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR22/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB7_MDR23_Acetylcholine" presynapticPopulation="DB7" postsynapticPopulation="MDR23">
+            <continuousConnectionInstance id="0" preCell="../DB7/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR23/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+        </continuousProjection>
+        <continuousProjection id="NC_DB7_MDR24_Acetylcholine" presynapticPopulation="DB7" postsynapticPopulation="MDR24">
+            <continuousConnectionInstance id="0" preCell="../DB7/0/GenericNeuronCell" preSegment="0" preFractionAlong="0.5" postCell="../MDR24/0/GenericMuscleCell" postSegment="0" postFractionAlong="0.5" preComponent="silent" postComponent="neuron_to_muscle_exc_syn_2conns"/>
+        </continuousProjection>
         <inputList id="Input_AS1_stim_AS1_1" population="AS1" component="stim_AS1_1">
             <input id="0" target="../AS1/0/GenericNeuronCell" destination="synapses"/>
         </inputList>

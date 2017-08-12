@@ -25,18 +25,7 @@ Components:
     neuron_to_neuron_elec_syn_17conns (Type: gapJunction:  conductance=2.1284E-10 (SI conductance))
     neuron_to_neuron_elec_syn_13conns (Type: gapJunction:  conductance=1.6276E-10 (SI conductance))
     neuron_to_neuron_elec_syn_15conns (Type: gapJunction:  conductance=1.8780000000000001E-10 (SI conductance))
-    DB1_to_DB2_elec_syn_5conns (Type: gapJunction:  conductance=1.1260000000000002E-10 (SI conductance))
-    DB2_to_DB1_elec_syn_5conns (Type: gapJunction:  conductance=1.1260000000000002E-10 (SI conductance))
-    DB2_to_DB3_elec_syn_14conns (Type: gapJunction:  conductance=3.1528E-10 (SI conductance))
-    DB3_to_DB2_elec_syn_14conns (Type: gapJunction:  conductance=3.1528E-10 (SI conductance))
-    DB3_to_DB4_elec_syn_1conns (Type: gapJunction:  conductance=2.252E-11 (SI conductance))
-    DB4_to_DB3_elec_syn_1conns (Type: gapJunction:  conductance=2.252E-11 (SI conductance))
-    DB4_to_DB5_elec_syn_5conns (Type: gapJunction:  conductance=1.1260000000000002E-10 (SI conductance))
-    DB5_to_DB4_elec_syn_5conns (Type: gapJunction:  conductance=1.1260000000000002E-10 (SI conductance))
-    DB5_to_DB6_elec_syn_5conns (Type: gapJunction:  conductance=1.1260000000000002E-10 (SI conductance))
-    DB6_to_DB5_elec_syn_5conns (Type: gapJunction:  conductance=1.1260000000000002E-10 (SI conductance))
-    DB6_to_DB7_elec_syn_5conns (Type: gapJunction:  conductance=1.1260000000000002E-10 (SI conductance))
-    DB7_to_DB6_elec_syn_5conns (Type: gapJunction:  conductance=1.1260000000000002E-10 (SI conductance))
+    neuron_to_neuron_elec_syn_14conns (Type: gapJunction:  conductance=1.7528000000000001E-10 (SI conductance))
     muscle_to_muscle_elec_syn_15conns (Type: gapJunction:  conductance=0.0 (SI conductance))
     muscle_to_muscle_elec_syn_2conns (Type: gapJunction:  conductance=0.0 (SI conductance))
     silent (Type: silentSynapse)
@@ -4544,14 +4533,14 @@ class NeuronSimulation():
         # ######################   Electrical Projection: NC_DB1_DB2_Generic_GJ
         print("Adding electrical projection: NC_DB1_DB2_Generic_GJ from DB1 to DB2, with 1 connection(s)")
 
-        h("objectvar syn_NC_DB1_DB2_Generic_GJ_DB1_to_DB2_elec_syn_5conns_A[1]")
-        h("objectvar syn_NC_DB1_DB2_Generic_GJ_DB1_to_DB2_elec_syn_5conns_B[1]")
+        h("objectvar syn_NC_DB1_DB2_Generic_GJ_neuron_to_neuron_elec_syn_5conns_A[1]")
+        h("objectvar syn_NC_DB1_DB2_Generic_GJ_neuron_to_neuron_elec_syn_5conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_DB1[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_DB2[0].soma], weight: 1.0
-        h("a_DB1[0].soma { syn_NC_DB1_DB2_Generic_GJ_DB1_to_DB2_elec_syn_5conns_A[0] = new DB1_to_DB2_elec_syn_5conns(0.5) }")
-        h("a_DB2[0].soma { syn_NC_DB1_DB2_Generic_GJ_DB1_to_DB2_elec_syn_5conns_B[0] = new DB1_to_DB2_elec_syn_5conns(0.5) }")
-        h("setpointer syn_NC_DB1_DB2_Generic_GJ_DB1_to_DB2_elec_syn_5conns_A[0].vpeer, a_DB2[0].soma.v(0.5)")
-        h("setpointer syn_NC_DB1_DB2_Generic_GJ_DB1_to_DB2_elec_syn_5conns_B[0].vpeer, a_DB1[0].soma.v(0.5)")
+        h("a_DB1[0].soma { syn_NC_DB1_DB2_Generic_GJ_neuron_to_neuron_elec_syn_5conns_A[0] = new neuron_to_neuron_elec_syn_5conns(0.5) }")
+        h("a_DB2[0].soma { syn_NC_DB1_DB2_Generic_GJ_neuron_to_neuron_elec_syn_5conns_B[0] = new neuron_to_neuron_elec_syn_5conns(0.5) }")
+        h("setpointer syn_NC_DB1_DB2_Generic_GJ_neuron_to_neuron_elec_syn_5conns_A[0].vpeer, a_DB2[0].soma.v(0.5)")
+        h("setpointer syn_NC_DB1_DB2_Generic_GJ_neuron_to_neuron_elec_syn_5conns_B[0].vpeer, a_DB1[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_DB2_AVBL_Generic_GJ
         print("Adding electrical projection: NC_DB2_AVBL_Generic_GJ from DB2 to AVBL, with 1 connection(s)")
@@ -4580,26 +4569,26 @@ class NeuronSimulation():
         # ######################   Electrical Projection: NC_DB2_DB1_Generic_GJ
         print("Adding electrical projection: NC_DB2_DB1_Generic_GJ from DB2 to DB1, with 1 connection(s)")
 
-        h("objectvar syn_NC_DB2_DB1_Generic_GJ_DB2_to_DB1_elec_syn_5conns_A[1]")
-        h("objectvar syn_NC_DB2_DB1_Generic_GJ_DB2_to_DB1_elec_syn_5conns_B[1]")
+        h("objectvar syn_NC_DB2_DB1_Generic_GJ_neuron_to_neuron_elec_syn_5conns_A[1]")
+        h("objectvar syn_NC_DB2_DB1_Generic_GJ_neuron_to_neuron_elec_syn_5conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_DB2[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_DB1[0].soma], weight: 1.0
-        h("a_DB2[0].soma { syn_NC_DB2_DB1_Generic_GJ_DB2_to_DB1_elec_syn_5conns_A[0] = new DB2_to_DB1_elec_syn_5conns(0.5) }")
-        h("a_DB1[0].soma { syn_NC_DB2_DB1_Generic_GJ_DB2_to_DB1_elec_syn_5conns_B[0] = new DB2_to_DB1_elec_syn_5conns(0.5) }")
-        h("setpointer syn_NC_DB2_DB1_Generic_GJ_DB2_to_DB1_elec_syn_5conns_A[0].vpeer, a_DB1[0].soma.v(0.5)")
-        h("setpointer syn_NC_DB2_DB1_Generic_GJ_DB2_to_DB1_elec_syn_5conns_B[0].vpeer, a_DB2[0].soma.v(0.5)")
+        h("a_DB2[0].soma { syn_NC_DB2_DB1_Generic_GJ_neuron_to_neuron_elec_syn_5conns_A[0] = new neuron_to_neuron_elec_syn_5conns(0.5) }")
+        h("a_DB1[0].soma { syn_NC_DB2_DB1_Generic_GJ_neuron_to_neuron_elec_syn_5conns_B[0] = new neuron_to_neuron_elec_syn_5conns(0.5) }")
+        h("setpointer syn_NC_DB2_DB1_Generic_GJ_neuron_to_neuron_elec_syn_5conns_A[0].vpeer, a_DB1[0].soma.v(0.5)")
+        h("setpointer syn_NC_DB2_DB1_Generic_GJ_neuron_to_neuron_elec_syn_5conns_B[0].vpeer, a_DB2[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_DB2_DB3_Generic_GJ
         print("Adding electrical projection: NC_DB2_DB3_Generic_GJ from DB2 to DB3, with 1 connection(s)")
 
-        h("objectvar syn_NC_DB2_DB3_Generic_GJ_DB2_to_DB3_elec_syn_14conns_A[1]")
-        h("objectvar syn_NC_DB2_DB3_Generic_GJ_DB2_to_DB3_elec_syn_14conns_B[1]")
+        h("objectvar syn_NC_DB2_DB3_Generic_GJ_neuron_to_neuron_elec_syn_14conns_A[1]")
+        h("objectvar syn_NC_DB2_DB3_Generic_GJ_neuron_to_neuron_elec_syn_14conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_DB2[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_DB3[0].soma], weight: 1.0
-        h("a_DB2[0].soma { syn_NC_DB2_DB3_Generic_GJ_DB2_to_DB3_elec_syn_14conns_A[0] = new DB2_to_DB3_elec_syn_14conns(0.5) }")
-        h("a_DB3[0].soma { syn_NC_DB2_DB3_Generic_GJ_DB2_to_DB3_elec_syn_14conns_B[0] = new DB2_to_DB3_elec_syn_14conns(0.5) }")
-        h("setpointer syn_NC_DB2_DB3_Generic_GJ_DB2_to_DB3_elec_syn_14conns_A[0].vpeer, a_DB3[0].soma.v(0.5)")
-        h("setpointer syn_NC_DB2_DB3_Generic_GJ_DB2_to_DB3_elec_syn_14conns_B[0].vpeer, a_DB2[0].soma.v(0.5)")
+        h("a_DB2[0].soma { syn_NC_DB2_DB3_Generic_GJ_neuron_to_neuron_elec_syn_14conns_A[0] = new neuron_to_neuron_elec_syn_14conns(0.5) }")
+        h("a_DB3[0].soma { syn_NC_DB2_DB3_Generic_GJ_neuron_to_neuron_elec_syn_14conns_B[0] = new neuron_to_neuron_elec_syn_14conns(0.5) }")
+        h("setpointer syn_NC_DB2_DB3_Generic_GJ_neuron_to_neuron_elec_syn_14conns_A[0].vpeer, a_DB3[0].soma.v(0.5)")
+        h("setpointer syn_NC_DB2_DB3_Generic_GJ_neuron_to_neuron_elec_syn_14conns_B[0].vpeer, a_DB2[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_DB3_AVBL_Generic_GJ
         print("Adding electrical projection: NC_DB3_AVBL_Generic_GJ from DB3 to AVBL, with 1 connection(s)")
@@ -4628,26 +4617,26 @@ class NeuronSimulation():
         # ######################   Electrical Projection: NC_DB3_DB2_Generic_GJ
         print("Adding electrical projection: NC_DB3_DB2_Generic_GJ from DB3 to DB2, with 1 connection(s)")
 
-        h("objectvar syn_NC_DB3_DB2_Generic_GJ_DB3_to_DB2_elec_syn_14conns_A[1]")
-        h("objectvar syn_NC_DB3_DB2_Generic_GJ_DB3_to_DB2_elec_syn_14conns_B[1]")
+        h("objectvar syn_NC_DB3_DB2_Generic_GJ_neuron_to_neuron_elec_syn_14conns_A[1]")
+        h("objectvar syn_NC_DB3_DB2_Generic_GJ_neuron_to_neuron_elec_syn_14conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_DB3[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_DB2[0].soma], weight: 1.0
-        h("a_DB3[0].soma { syn_NC_DB3_DB2_Generic_GJ_DB3_to_DB2_elec_syn_14conns_A[0] = new DB3_to_DB2_elec_syn_14conns(0.5) }")
-        h("a_DB2[0].soma { syn_NC_DB3_DB2_Generic_GJ_DB3_to_DB2_elec_syn_14conns_B[0] = new DB3_to_DB2_elec_syn_14conns(0.5) }")
-        h("setpointer syn_NC_DB3_DB2_Generic_GJ_DB3_to_DB2_elec_syn_14conns_A[0].vpeer, a_DB2[0].soma.v(0.5)")
-        h("setpointer syn_NC_DB3_DB2_Generic_GJ_DB3_to_DB2_elec_syn_14conns_B[0].vpeer, a_DB3[0].soma.v(0.5)")
+        h("a_DB3[0].soma { syn_NC_DB3_DB2_Generic_GJ_neuron_to_neuron_elec_syn_14conns_A[0] = new neuron_to_neuron_elec_syn_14conns(0.5) }")
+        h("a_DB2[0].soma { syn_NC_DB3_DB2_Generic_GJ_neuron_to_neuron_elec_syn_14conns_B[0] = new neuron_to_neuron_elec_syn_14conns(0.5) }")
+        h("setpointer syn_NC_DB3_DB2_Generic_GJ_neuron_to_neuron_elec_syn_14conns_A[0].vpeer, a_DB2[0].soma.v(0.5)")
+        h("setpointer syn_NC_DB3_DB2_Generic_GJ_neuron_to_neuron_elec_syn_14conns_B[0].vpeer, a_DB3[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_DB3_DB4_Generic_GJ
         print("Adding electrical projection: NC_DB3_DB4_Generic_GJ from DB3 to DB4, with 1 connection(s)")
 
-        h("objectvar syn_NC_DB3_DB4_Generic_GJ_DB3_to_DB4_elec_syn_1conns_A[1]")
-        h("objectvar syn_NC_DB3_DB4_Generic_GJ_DB3_to_DB4_elec_syn_1conns_B[1]")
+        h("objectvar syn_NC_DB3_DB4_Generic_GJ_neuron_to_neuron_elec_syn_1conns_A[1]")
+        h("objectvar syn_NC_DB3_DB4_Generic_GJ_neuron_to_neuron_elec_syn_1conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_DB3[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_DB4[0].soma], weight: 1.0
-        h("a_DB3[0].soma { syn_NC_DB3_DB4_Generic_GJ_DB3_to_DB4_elec_syn_1conns_A[0] = new DB3_to_DB4_elec_syn_1conns(0.5) }")
-        h("a_DB4[0].soma { syn_NC_DB3_DB4_Generic_GJ_DB3_to_DB4_elec_syn_1conns_B[0] = new DB3_to_DB4_elec_syn_1conns(0.5) }")
-        h("setpointer syn_NC_DB3_DB4_Generic_GJ_DB3_to_DB4_elec_syn_1conns_A[0].vpeer, a_DB4[0].soma.v(0.5)")
-        h("setpointer syn_NC_DB3_DB4_Generic_GJ_DB3_to_DB4_elec_syn_1conns_B[0].vpeer, a_DB3[0].soma.v(0.5)")
+        h("a_DB3[0].soma { syn_NC_DB3_DB4_Generic_GJ_neuron_to_neuron_elec_syn_1conns_A[0] = new neuron_to_neuron_elec_syn_1conns(0.5) }")
+        h("a_DB4[0].soma { syn_NC_DB3_DB4_Generic_GJ_neuron_to_neuron_elec_syn_1conns_B[0] = new neuron_to_neuron_elec_syn_1conns(0.5) }")
+        h("setpointer syn_NC_DB3_DB4_Generic_GJ_neuron_to_neuron_elec_syn_1conns_A[0].vpeer, a_DB4[0].soma.v(0.5)")
+        h("setpointer syn_NC_DB3_DB4_Generic_GJ_neuron_to_neuron_elec_syn_1conns_B[0].vpeer, a_DB3[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_DB4_AVBL_Generic_GJ
         print("Adding electrical projection: NC_DB4_AVBL_Generic_GJ from DB4 to AVBL, with 1 connection(s)")
@@ -4676,26 +4665,26 @@ class NeuronSimulation():
         # ######################   Electrical Projection: NC_DB4_DB3_Generic_GJ
         print("Adding electrical projection: NC_DB4_DB3_Generic_GJ from DB4 to DB3, with 1 connection(s)")
 
-        h("objectvar syn_NC_DB4_DB3_Generic_GJ_DB4_to_DB3_elec_syn_1conns_A[1]")
-        h("objectvar syn_NC_DB4_DB3_Generic_GJ_DB4_to_DB3_elec_syn_1conns_B[1]")
+        h("objectvar syn_NC_DB4_DB3_Generic_GJ_neuron_to_neuron_elec_syn_1conns_A[1]")
+        h("objectvar syn_NC_DB4_DB3_Generic_GJ_neuron_to_neuron_elec_syn_1conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_DB4[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_DB3[0].soma], weight: 1.0
-        h("a_DB4[0].soma { syn_NC_DB4_DB3_Generic_GJ_DB4_to_DB3_elec_syn_1conns_A[0] = new DB4_to_DB3_elec_syn_1conns(0.5) }")
-        h("a_DB3[0].soma { syn_NC_DB4_DB3_Generic_GJ_DB4_to_DB3_elec_syn_1conns_B[0] = new DB4_to_DB3_elec_syn_1conns(0.5) }")
-        h("setpointer syn_NC_DB4_DB3_Generic_GJ_DB4_to_DB3_elec_syn_1conns_A[0].vpeer, a_DB3[0].soma.v(0.5)")
-        h("setpointer syn_NC_DB4_DB3_Generic_GJ_DB4_to_DB3_elec_syn_1conns_B[0].vpeer, a_DB4[0].soma.v(0.5)")
+        h("a_DB4[0].soma { syn_NC_DB4_DB3_Generic_GJ_neuron_to_neuron_elec_syn_1conns_A[0] = new neuron_to_neuron_elec_syn_1conns(0.5) }")
+        h("a_DB3[0].soma { syn_NC_DB4_DB3_Generic_GJ_neuron_to_neuron_elec_syn_1conns_B[0] = new neuron_to_neuron_elec_syn_1conns(0.5) }")
+        h("setpointer syn_NC_DB4_DB3_Generic_GJ_neuron_to_neuron_elec_syn_1conns_A[0].vpeer, a_DB3[0].soma.v(0.5)")
+        h("setpointer syn_NC_DB4_DB3_Generic_GJ_neuron_to_neuron_elec_syn_1conns_B[0].vpeer, a_DB4[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_DB4_DB5_Generic_GJ
         print("Adding electrical projection: NC_DB4_DB5_Generic_GJ from DB4 to DB5, with 1 connection(s)")
 
-        h("objectvar syn_NC_DB4_DB5_Generic_GJ_DB4_to_DB5_elec_syn_5conns_A[1]")
-        h("objectvar syn_NC_DB4_DB5_Generic_GJ_DB4_to_DB5_elec_syn_5conns_B[1]")
+        h("objectvar syn_NC_DB4_DB5_Generic_GJ_neuron_to_neuron_elec_syn_5conns_A[1]")
+        h("objectvar syn_NC_DB4_DB5_Generic_GJ_neuron_to_neuron_elec_syn_5conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_DB4[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_DB5[0].soma], weight: 1.0
-        h("a_DB4[0].soma { syn_NC_DB4_DB5_Generic_GJ_DB4_to_DB5_elec_syn_5conns_A[0] = new DB4_to_DB5_elec_syn_5conns(0.5) }")
-        h("a_DB5[0].soma { syn_NC_DB4_DB5_Generic_GJ_DB4_to_DB5_elec_syn_5conns_B[0] = new DB4_to_DB5_elec_syn_5conns(0.5) }")
-        h("setpointer syn_NC_DB4_DB5_Generic_GJ_DB4_to_DB5_elec_syn_5conns_A[0].vpeer, a_DB5[0].soma.v(0.5)")
-        h("setpointer syn_NC_DB4_DB5_Generic_GJ_DB4_to_DB5_elec_syn_5conns_B[0].vpeer, a_DB4[0].soma.v(0.5)")
+        h("a_DB4[0].soma { syn_NC_DB4_DB5_Generic_GJ_neuron_to_neuron_elec_syn_5conns_A[0] = new neuron_to_neuron_elec_syn_5conns(0.5) }")
+        h("a_DB5[0].soma { syn_NC_DB4_DB5_Generic_GJ_neuron_to_neuron_elec_syn_5conns_B[0] = new neuron_to_neuron_elec_syn_5conns(0.5) }")
+        h("setpointer syn_NC_DB4_DB5_Generic_GJ_neuron_to_neuron_elec_syn_5conns_A[0].vpeer, a_DB5[0].soma.v(0.5)")
+        h("setpointer syn_NC_DB4_DB5_Generic_GJ_neuron_to_neuron_elec_syn_5conns_B[0].vpeer, a_DB4[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_DB5_AVBL_Generic_GJ
         print("Adding electrical projection: NC_DB5_AVBL_Generic_GJ from DB5 to AVBL, with 1 connection(s)")
@@ -4724,26 +4713,26 @@ class NeuronSimulation():
         # ######################   Electrical Projection: NC_DB5_DB4_Generic_GJ
         print("Adding electrical projection: NC_DB5_DB4_Generic_GJ from DB5 to DB4, with 1 connection(s)")
 
-        h("objectvar syn_NC_DB5_DB4_Generic_GJ_DB5_to_DB4_elec_syn_5conns_A[1]")
-        h("objectvar syn_NC_DB5_DB4_Generic_GJ_DB5_to_DB4_elec_syn_5conns_B[1]")
+        h("objectvar syn_NC_DB5_DB4_Generic_GJ_neuron_to_neuron_elec_syn_5conns_A[1]")
+        h("objectvar syn_NC_DB5_DB4_Generic_GJ_neuron_to_neuron_elec_syn_5conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_DB5[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_DB4[0].soma], weight: 1.0
-        h("a_DB5[0].soma { syn_NC_DB5_DB4_Generic_GJ_DB5_to_DB4_elec_syn_5conns_A[0] = new DB5_to_DB4_elec_syn_5conns(0.5) }")
-        h("a_DB4[0].soma { syn_NC_DB5_DB4_Generic_GJ_DB5_to_DB4_elec_syn_5conns_B[0] = new DB5_to_DB4_elec_syn_5conns(0.5) }")
-        h("setpointer syn_NC_DB5_DB4_Generic_GJ_DB5_to_DB4_elec_syn_5conns_A[0].vpeer, a_DB4[0].soma.v(0.5)")
-        h("setpointer syn_NC_DB5_DB4_Generic_GJ_DB5_to_DB4_elec_syn_5conns_B[0].vpeer, a_DB5[0].soma.v(0.5)")
+        h("a_DB5[0].soma { syn_NC_DB5_DB4_Generic_GJ_neuron_to_neuron_elec_syn_5conns_A[0] = new neuron_to_neuron_elec_syn_5conns(0.5) }")
+        h("a_DB4[0].soma { syn_NC_DB5_DB4_Generic_GJ_neuron_to_neuron_elec_syn_5conns_B[0] = new neuron_to_neuron_elec_syn_5conns(0.5) }")
+        h("setpointer syn_NC_DB5_DB4_Generic_GJ_neuron_to_neuron_elec_syn_5conns_A[0].vpeer, a_DB4[0].soma.v(0.5)")
+        h("setpointer syn_NC_DB5_DB4_Generic_GJ_neuron_to_neuron_elec_syn_5conns_B[0].vpeer, a_DB5[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_DB5_DB6_Generic_GJ
         print("Adding electrical projection: NC_DB5_DB6_Generic_GJ from DB5 to DB6, with 1 connection(s)")
 
-        h("objectvar syn_NC_DB5_DB6_Generic_GJ_DB5_to_DB6_elec_syn_5conns_A[1]")
-        h("objectvar syn_NC_DB5_DB6_Generic_GJ_DB5_to_DB6_elec_syn_5conns_B[1]")
+        h("objectvar syn_NC_DB5_DB6_Generic_GJ_neuron_to_neuron_elec_syn_5conns_A[1]")
+        h("objectvar syn_NC_DB5_DB6_Generic_GJ_neuron_to_neuron_elec_syn_5conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_DB5[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_DB6[0].soma], weight: 1.0
-        h("a_DB5[0].soma { syn_NC_DB5_DB6_Generic_GJ_DB5_to_DB6_elec_syn_5conns_A[0] = new DB5_to_DB6_elec_syn_5conns(0.5) }")
-        h("a_DB6[0].soma { syn_NC_DB5_DB6_Generic_GJ_DB5_to_DB6_elec_syn_5conns_B[0] = new DB5_to_DB6_elec_syn_5conns(0.5) }")
-        h("setpointer syn_NC_DB5_DB6_Generic_GJ_DB5_to_DB6_elec_syn_5conns_A[0].vpeer, a_DB6[0].soma.v(0.5)")
-        h("setpointer syn_NC_DB5_DB6_Generic_GJ_DB5_to_DB6_elec_syn_5conns_B[0].vpeer, a_DB5[0].soma.v(0.5)")
+        h("a_DB5[0].soma { syn_NC_DB5_DB6_Generic_GJ_neuron_to_neuron_elec_syn_5conns_A[0] = new neuron_to_neuron_elec_syn_5conns(0.5) }")
+        h("a_DB6[0].soma { syn_NC_DB5_DB6_Generic_GJ_neuron_to_neuron_elec_syn_5conns_B[0] = new neuron_to_neuron_elec_syn_5conns(0.5) }")
+        h("setpointer syn_NC_DB5_DB6_Generic_GJ_neuron_to_neuron_elec_syn_5conns_A[0].vpeer, a_DB6[0].soma.v(0.5)")
+        h("setpointer syn_NC_DB5_DB6_Generic_GJ_neuron_to_neuron_elec_syn_5conns_B[0].vpeer, a_DB5[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_DB6_AVBL_Generic_GJ
         print("Adding electrical projection: NC_DB6_AVBL_Generic_GJ from DB6 to AVBL, with 1 connection(s)")
@@ -4772,26 +4761,26 @@ class NeuronSimulation():
         # ######################   Electrical Projection: NC_DB6_DB5_Generic_GJ
         print("Adding electrical projection: NC_DB6_DB5_Generic_GJ from DB6 to DB5, with 1 connection(s)")
 
-        h("objectvar syn_NC_DB6_DB5_Generic_GJ_DB6_to_DB5_elec_syn_5conns_A[1]")
-        h("objectvar syn_NC_DB6_DB5_Generic_GJ_DB6_to_DB5_elec_syn_5conns_B[1]")
+        h("objectvar syn_NC_DB6_DB5_Generic_GJ_neuron_to_neuron_elec_syn_5conns_A[1]")
+        h("objectvar syn_NC_DB6_DB5_Generic_GJ_neuron_to_neuron_elec_syn_5conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_DB6[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_DB5[0].soma], weight: 1.0
-        h("a_DB6[0].soma { syn_NC_DB6_DB5_Generic_GJ_DB6_to_DB5_elec_syn_5conns_A[0] = new DB6_to_DB5_elec_syn_5conns(0.5) }")
-        h("a_DB5[0].soma { syn_NC_DB6_DB5_Generic_GJ_DB6_to_DB5_elec_syn_5conns_B[0] = new DB6_to_DB5_elec_syn_5conns(0.5) }")
-        h("setpointer syn_NC_DB6_DB5_Generic_GJ_DB6_to_DB5_elec_syn_5conns_A[0].vpeer, a_DB5[0].soma.v(0.5)")
-        h("setpointer syn_NC_DB6_DB5_Generic_GJ_DB6_to_DB5_elec_syn_5conns_B[0].vpeer, a_DB6[0].soma.v(0.5)")
+        h("a_DB6[0].soma { syn_NC_DB6_DB5_Generic_GJ_neuron_to_neuron_elec_syn_5conns_A[0] = new neuron_to_neuron_elec_syn_5conns(0.5) }")
+        h("a_DB5[0].soma { syn_NC_DB6_DB5_Generic_GJ_neuron_to_neuron_elec_syn_5conns_B[0] = new neuron_to_neuron_elec_syn_5conns(0.5) }")
+        h("setpointer syn_NC_DB6_DB5_Generic_GJ_neuron_to_neuron_elec_syn_5conns_A[0].vpeer, a_DB5[0].soma.v(0.5)")
+        h("setpointer syn_NC_DB6_DB5_Generic_GJ_neuron_to_neuron_elec_syn_5conns_B[0].vpeer, a_DB6[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_DB6_DB7_Generic_GJ
         print("Adding electrical projection: NC_DB6_DB7_Generic_GJ from DB6 to DB7, with 1 connection(s)")
 
-        h("objectvar syn_NC_DB6_DB7_Generic_GJ_DB6_to_DB7_elec_syn_5conns_A[1]")
-        h("objectvar syn_NC_DB6_DB7_Generic_GJ_DB6_to_DB7_elec_syn_5conns_B[1]")
+        h("objectvar syn_NC_DB6_DB7_Generic_GJ_neuron_to_neuron_elec_syn_5conns_A[1]")
+        h("objectvar syn_NC_DB6_DB7_Generic_GJ_neuron_to_neuron_elec_syn_5conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_DB6[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_DB7[0].soma], weight: 1.0
-        h("a_DB6[0].soma { syn_NC_DB6_DB7_Generic_GJ_DB6_to_DB7_elec_syn_5conns_A[0] = new DB6_to_DB7_elec_syn_5conns(0.5) }")
-        h("a_DB7[0].soma { syn_NC_DB6_DB7_Generic_GJ_DB6_to_DB7_elec_syn_5conns_B[0] = new DB6_to_DB7_elec_syn_5conns(0.5) }")
-        h("setpointer syn_NC_DB6_DB7_Generic_GJ_DB6_to_DB7_elec_syn_5conns_A[0].vpeer, a_DB7[0].soma.v(0.5)")
-        h("setpointer syn_NC_DB6_DB7_Generic_GJ_DB6_to_DB7_elec_syn_5conns_B[0].vpeer, a_DB6[0].soma.v(0.5)")
+        h("a_DB6[0].soma { syn_NC_DB6_DB7_Generic_GJ_neuron_to_neuron_elec_syn_5conns_A[0] = new neuron_to_neuron_elec_syn_5conns(0.5) }")
+        h("a_DB7[0].soma { syn_NC_DB6_DB7_Generic_GJ_neuron_to_neuron_elec_syn_5conns_B[0] = new neuron_to_neuron_elec_syn_5conns(0.5) }")
+        h("setpointer syn_NC_DB6_DB7_Generic_GJ_neuron_to_neuron_elec_syn_5conns_A[0].vpeer, a_DB7[0].soma.v(0.5)")
+        h("setpointer syn_NC_DB6_DB7_Generic_GJ_neuron_to_neuron_elec_syn_5conns_B[0].vpeer, a_DB6[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_DB7_AVBL_Generic_GJ
         print("Adding electrical projection: NC_DB7_AVBL_Generic_GJ from DB7 to AVBL, with 1 connection(s)")
@@ -4820,14 +4809,14 @@ class NeuronSimulation():
         # ######################   Electrical Projection: NC_DB7_DB6_Generic_GJ
         print("Adding electrical projection: NC_DB7_DB6_Generic_GJ from DB7 to DB6, with 1 connection(s)")
 
-        h("objectvar syn_NC_DB7_DB6_Generic_GJ_DB7_to_DB6_elec_syn_5conns_A[1]")
-        h("objectvar syn_NC_DB7_DB6_Generic_GJ_DB7_to_DB6_elec_syn_5conns_B[1]")
+        h("objectvar syn_NC_DB7_DB6_Generic_GJ_neuron_to_neuron_elec_syn_5conns_A[1]")
+        h("objectvar syn_NC_DB7_DB6_Generic_GJ_neuron_to_neuron_elec_syn_5conns_B[1]")
 
         # Elect Connection 0: cell 0, seg 0 (0.5) [0.5 on a_DB7[0].soma] -> cell 0, seg 0 (0.5) [0.5 on a_DB6[0].soma], weight: 1.0
-        h("a_DB7[0].soma { syn_NC_DB7_DB6_Generic_GJ_DB7_to_DB6_elec_syn_5conns_A[0] = new DB7_to_DB6_elec_syn_5conns(0.5) }")
-        h("a_DB6[0].soma { syn_NC_DB7_DB6_Generic_GJ_DB7_to_DB6_elec_syn_5conns_B[0] = new DB7_to_DB6_elec_syn_5conns(0.5) }")
-        h("setpointer syn_NC_DB7_DB6_Generic_GJ_DB7_to_DB6_elec_syn_5conns_A[0].vpeer, a_DB6[0].soma.v(0.5)")
-        h("setpointer syn_NC_DB7_DB6_Generic_GJ_DB7_to_DB6_elec_syn_5conns_B[0].vpeer, a_DB7[0].soma.v(0.5)")
+        h("a_DB7[0].soma { syn_NC_DB7_DB6_Generic_GJ_neuron_to_neuron_elec_syn_5conns_A[0] = new neuron_to_neuron_elec_syn_5conns(0.5) }")
+        h("a_DB6[0].soma { syn_NC_DB7_DB6_Generic_GJ_neuron_to_neuron_elec_syn_5conns_B[0] = new neuron_to_neuron_elec_syn_5conns(0.5) }")
+        h("setpointer syn_NC_DB7_DB6_Generic_GJ_neuron_to_neuron_elec_syn_5conns_A[0].vpeer, a_DB6[0].soma.v(0.5)")
+        h("setpointer syn_NC_DB7_DB6_Generic_GJ_neuron_to_neuron_elec_syn_5conns_B[0].vpeer, a_DB7[0].soma.v(0.5)")
 
         # ######################   Electrical Projection: NC_DB7_AS10_Generic_GJ
         print("Adding electrical projection: NC_DB7_AS10_Generic_GJ from DB7 to AS10, with 1 connection(s)")
