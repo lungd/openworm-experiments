@@ -28,7 +28,7 @@ We played with the current injected into AVB/AVA/AS and with the conductance of 
 From case25 on, we observed oscillatory behavior.
 We got these output by removing the connections between AVA and AVB, besides changing the excitatory and inhibitory synapses.
 
-We want to point out that we could see a muscle wave propagating from the middle of body to the neck (MDR14 - MDR08) in case30 
+We want to point out that we could see a muscle wave propagating from the middle of body to the neck (MDR14 - MDR08) in case30.
 
 
 # Result of experiments

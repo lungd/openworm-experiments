@@ -36,9 +36,9 @@
 
 Continued from experiments [2017-07-31](../2017-07-31/).
 
-In these experiments we fine-tuned the conductance of DB-muscle (dorsal left) excitatory synapses while making use of the 'delayed' GJs between AVB and DB neurons.
+In these experiments, we fine-tuned the conductance of DB-muscle (dorsal left) excitatory synapses while making use of the 'delayed' GJs between AVB and DB neurons.
 
-The result of e.g. case34, or case36 (different conductance for muscle-muscle GJs) is still not perfect yet - posterior muscles don't receive as much synaptic input as anterior muscles, resulting into different spike frequencies.
+The result of e.g. case34, or case36 (different conductance for muscle-muscle GJs) is still not perfect yet - posterior muscles don't receive as much synaptic input as anterior muscles, resulting in different spike frequencies.
 
 
 # Result of experiments

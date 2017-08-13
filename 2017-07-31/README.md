@@ -34,11 +34,11 @@
 
 # Description
 
-In these experiments we were hand-tuning the conductance of excitatory synapses between DB motor neurons and muscle cells (only dorsal left).
+In these experiments, we were hand-tuning the conductance of excitatory synapses between DB motor neurons and muscle cells (only dorsal left).
 
 In case01-case05 we made some minor changes of the delayed GJs AVB-DB with the resulting parameters of a previous optimization, we also changed the conductance to muscles.  
 Although we could observe a wave of action potentials propagating from neck to tail (case05), there was an issue with these parameters.  
-We were optimizing the wave of the first spikes and after we increased the simulation duration we noticed that there was only one complete wave (case06) because motor neuron activity still changed after the first spike had occured.
+We were optimizing the wave of the first spikes and after we increased the simulation duration we noticed that there was only one complete wave (case06) because motor neuron activity still changed after the first spike had occurred.
 
 In case07-case13 we were playing with an increased conductance of muscle-muscle GJs.
 

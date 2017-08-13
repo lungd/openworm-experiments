@@ -24,10 +24,10 @@ See experiment
 
 Continued from experiments [2017-08-07](../2017-08-07/).
 
-In these experiments we only included AVA, AVB, AS4, DA3, and DB3.
+In these experiments, we only included AVA, AVB, AS4, DA3, and DB3.
 
 In case03 we got similar oscillation to the work of Olivares et al. (*"A ventral nerve cord CPG may underlie locomotion in C. elegans"*) but only without any input to AVB.  
-Then we tried to get oscillatory behavior in the presence of injected current into AVB what we achieved in case18 but in that experiment we saw a dampened oscillation.
+Then we tried to get oscillatory behavior in the presence of injected current into AVB what we achieved in case18 but in that experiment, we saw a dampened oscillation.
 
 
 # Result of experiments

@@ -21,7 +21,7 @@ See experiment
 
 # Description
 
-In these experiments we wanted to recreate Figure 6 (A2) of *"A ventral nerve cord CPG may underlie locomotion in C. elegans"* (Olivares et al.)
+In these experiments, we wanted to recreate Figure 6 (A2) of *"A ventral nerve cord CPG may underlie locomotion in C. elegans"* (Olivares et al.)
 
 They described an oscillating circuit with AS, DA, and DB motor neurons.  
 AS reaches an active steady state without any synaptic input.
