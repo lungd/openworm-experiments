@@ -1,5 +1,11 @@
 ![network](avb-db-muscles_3.jpeg)
 
+# Rationale of this experiment
+
+In the previous experiment, we narrowed the parameter space and optimized only the gap junction connections between DB motor neurons to AVB.  In this experiment we are taking the parameters that came out of the previous experiment for those connections and we are fixing them in this experiment.  Now we are optimizing over the DB to muscle connections only.  We have focused on DB1 and DB2 muscle connections only because to do it over all the DBs would still be too many parameters.  
+
+Here we are are targeting the spike frequency of the muscles to be 4 HZ.   And the result is the muscles spiking within 3.9 - 4.1 HZ range.  However, as you can see in the result, the first spike time looks good, but the subsequent spikes have a jitter in them.
+
 # Network:
 
 ### Neural Circuit:
