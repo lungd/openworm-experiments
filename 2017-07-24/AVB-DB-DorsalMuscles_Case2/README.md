@@ -1,5 +1,11 @@
 ![network](avb-db-muscles_2.jpeg)
 
+# Rationale of this experiment
+
+In the previous experiment, the parameter space includes connections from AVB to DB interneurons and DB to muscles.  That means the optimization is running for all parameters (conductances of synapses motor neurons to muscles, internurons to motor neurons, delay functions).  The previous experiment is stuck in a local minimum, defined by hitting the maximum number of evaluations (4K).  In that experiment we are optimizing for the first spike time of the DB motor neurons, while introducing a delay so as to try to get a sequence of spike times. 
+
+In this experiment, AVB to DB gap junction connections are the only thing that are able to be optimized among, all other parameters are fixed.  Same target of optimization is made.  This is shown on the diagram by the darker lines between AVB and the DB motor neurons.  The result is some success.  However, the very last DB neuron spikes somewhat before the second to last DB neuron. 
+
 # Network:
 
 ### Neural Circuit:
