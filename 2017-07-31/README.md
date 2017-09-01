@@ -1,5 +1,21 @@
 ![network](avb-db-muscles_3.jpeg)
 
+# Rationale of these experiments
+
+In these experiments we were **hand-tuning the conductances of excitatory synapses between DB motor neurons and muscle cells** (only dorsal left).  Because the results from the optimizer was not satisfactory, doing some hand-tuning allowed for the development of intuitions of the effects of changing certain parameters.  In this case we are starting from only the parameters that provide a delayed spike time for the DB neurons, but not using the results of optimizing the spike frequencies from the 7-25 experiment.  The target for the hand tuning is an improved version of having multiple spikes staggered without the jitter that was found in the 7-25 experiment.  The strategy to begin with was to begin picking connections between motor neurons and muscles and changing conductances in a trial and error approach.  
+
+In case01-case05 we made some minor changes of the delayed GJs AVB-DB with the resulting parameters of a previous optimization, we also changed the conductance to muscles.  
+Although we could observe a wave of action potentials propagating from neck to tail (case05), there was an issue with these parameters.  
+
+We were optimizing the wave of the first spikes and after we increased the simulation duration we noticed that there was only one complete wave (case06) because motor neuron activity still changed after the first spike had occured.  That meant there was jitter.  Looking at the problem, the motor neurons don't have steady state behavior until later in the simulation.
+
+In case07-case16 we were playing with an increased conductance of muscle-muscle GJs to try to improve the alignment of spikes
+
+From case 16 on we were trying to create a wave propagating from neck to tail but this time we only had a look at the muscle output after motor neurons had reached steady state.  This is done by changing the conductance between motor neuron and muscle cell.  If there is a muscle spiking too early or too late for the sequence, then we are shifting it by changing the weight of the synaptic conductance from DB to muscle.  In order to take into account the jitter in later spikes, instead of targeting the first spike time, we are looking at the timing of the second, third or fourth spike and adjusting the conductance to get it to be at the right time in seqence.
+
+In case 30 -- they are well aligned in the DL muscles.  The DRs are not optimized so they act as a control by using the default values.  Increasing perfection was happening after that.  By case 38 they are very well aligned, but the timings are not as linear as desired.
+
+
 # Network:
 
 ### Neural Circuit:
@@ -31,21 +47,6 @@
     - Target: AVB(L/R)
     - Current: 15 pA
     - Time: 50 ms <= t < (duration - 100) ms
-
-# Description
-
-In these experiments we were hand-tuning the conductance of excitatory synapses between DB motor neurons and muscle cells (only dorsal left).
-
-In case01-case05 we made some minor changes of the delayed GJs AVB-DB with the resulting parameters of a previous optimization, we also changed the conductance to muscles.  
-Although we could observe a wave of action potentials propagating from neck to tail (case05), there was an issue with these parameters.  
-We were optimizing the wave of the first spikes and after we increased the simulation duration we noticed that there was only one complete wave (case06) because motor neuron activity still changed after the first spike had occured.
-
-In case07-case13 we were playing with an increased conductance of muscle-muscle GJs.
-
-In the remaining experiments we were trying to create a wave propagating from neck to tail by changing the conductance of DB-muscle synapses but this time we only had a look at the muscle output after motor neurons had reached steady state.
-
-More changes must be made to get a wave propagating more smoothly.
-
 
 
 # Result of experiments
