@@ -1,5 +1,22 @@
 <img src="AS-DA-DB_all_conns.jpeg" width="380"><img src="AS-DA-DB_subset_conns.jpeg" width="380">
 
+# Rationale for experiments
+
+In these experiments we wanted to recreate Figure 6 (A2) of *"A ventral nerve cord CPG may underlie locomotion in C. elegans"* (Olivares et al. 2017)
+
+They described an oscillating circuit with AS, DA, and DB motor neurons: 
+* AS reaches an active steady state without any synaptic input.
+* AS stimulates DA through excitatory synapses and DA stimulates DB also through excitatory synapses.
+* DB inhibits AS through inhibitory synapses, thus diminished excitatory synaptic current to DA, thus also the activity of DB reduces, thus diminished inhibitory input to AS.
+* Without inhibitory input to AS, they can reach an active state again and we have come full circle.
+
+In the first experiments (case01-06) we included all connections from the connectome (described in the left figure) we use and injected current into AVB or AVA and AS motor neurons to approximate the active state of AS.
+
+Then we included different subsets (the same subset for every experiment) of connections and changed the conductance of excitatory and inhibitory synapses - only one value for all the excitatory and one value for all the inhibitory synapses.
+
+We couldn't manage to get oscillatory behavior. This could be due to electrical synapses with a too high conductance.
+
+
 # Network:
 
 ### Neural Circuit:
@@ -17,24 +34,6 @@ See experiment
 - duration: see experiment
 - dt: 0.05
 - Injected current: see experiment
-
-
-# Description
-
-In these experiments we wanted to recreate Figure 6 (A2) of *"A ventral nerve cord CPG may underlie locomotion in C. elegans"* (Olivares et al.)
-
-They described an oscillating circuit with AS, DA, and DB motor neurons.  
-AS reaches an active steady state without any synaptic input.
-AS stimulates DA through excitatory synapses and DA stimulates DB also through excitatory synapses.
-DB inhibits AS through inhibitory synapses, thus diminished excitatory synaptic current to DA, thus also the activity of DB reduces, thus diminished inhibitory input to AS.
-Without inhibitory input to AS, they can reach an active state again and we have come full circle.
-
-In the first experiments (case01-06) we included all connections from the connectome we use and injected current into AVB or AVA and AS motor neurons to approximate the active state of AS.
-
-Then we included only a subset (the same subset for every experiment) of connections and changed the conductance of excitatory and inhibitory synapses - only one value for all the excitatory and one value for all the inhibitory synapses.
-
-We couldn't manage to get oscillatory behavior. This could be due to electrical synapses with a too high conductance.
-
 
 # Result of experiments
 | Id | Neurons (membrane) | Neurons (membrane) | Muscles (membrane) | Muscles (membrane) | Neurons (activity) | Neurons (activity) | Muscles (activity) | Muscles (activity) |
