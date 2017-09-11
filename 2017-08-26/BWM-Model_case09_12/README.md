@@ -1,0 +1,27 @@
+# Override default parameters with:
+## Connections to include:
+- DB2-MDL12
+
+## Inject current:
+- Cell: DB2
+    - delay: 3000ms
+    - end: 3000ms
+    - amplitude: 5pA
+
+## Other parameters:
+- custom_component_type_gate_overrides: {'ca_muscle__m__scale': '7.5 mV', 'ca_muscle__h__tau': '10 ms', 'k_muscle__n__scale': '13.5 mV', 'ca_muscle__m__midpoint': '-1.7 mV', 'k_muscle__n__tau': '20 ms', 'ca_muscle__m__tau': '1 ms', 'k_muscle__n__midpoint': '3 mV'}
+- muscle_leak_cond_density: 0.0052 mS_per_cm2
+- ca_conc_decay_time: 430.811870945509265 ms
+- muscle_leak_erev: -23 mV
+- DB2_to_MDL12_exc_syn_beta: 1.125 per_mV
+- DB2_to_MDL12_exc_syn_erev: 10 mV
+- DB2_to_MDL12_exc_syn_conductance: 5 nS
+- DB2_to_MDL12_exc_syn_ar: .5 per_s
+- ca_conc_rho: 0.000000919 mol_per_m_per_A_per_s
+- muscle_k_slow_erev: -83 mV
+- muscle_ca_boyle_cond_density: 0.284 mS_per_cm2
+- DB2_to_MDL12_exc_syn_ad: 50 per_s
+- muscle_k_slow_cond_density: 0.964 mS_per_cm2
+- muscle_ca_boyle_erev: 46 mV
+- DB2_to_MDL12_exc_syn_vth: -25 mV
+

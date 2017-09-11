@@ -1,0 +1,145 @@
+<Lems>
+    
+    <!--
+
+
+Parameters and setting used to generate this network:
+
+    Data reader:                    UpdatedSpreadsheetDataReader
+    Cells:                          ['DB2', 'DD2']
+    Cell stimulated:                []
+    Connection:                     ['DB2-MDL12', 'DD2-MDL12']
+    Connection numbers overridden:  {}
+    Connection numbers scaled:      {}
+    Connection polarities override: {}
+    Muscles:                        ['MDL12']
+
+    Known BioParameters:
+        BioParameter: cell_diameter = 5 (SRC: BlindGuess, certainty 0.1)
+        BioParameter: muscle_length = 20 (SRC: BlindGuess, certainty 0.1)
+        BioParameter: initial_memb_pot = -60 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: muscle_initial_memb_pot = -28 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: specific_capacitance = 5 uF_per_cm2 (SRC: BlindGuess, certainty 0.1)
+        BioParameter: muscle_specific_capacitance = 1 uF_per_cm2 (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_spike_thresh = -55 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: muscle_spike_thresh = -10 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: muscle_leak_cond_density = 0.0072 mS_per_cm2 (SRC: Set with param_overrides, certainty 0)
+        BioParameter: neuron_leak_cond_density = 0.002 mS_per_cm2 (SRC: BlindGuess, certainty 0.1)
+        BioParameter: leak_erev = -60 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: muscle_leak_erev = -17 mV (SRC: Set with param_overrides, certainty 0)
+        BioParameter: muscle_k_slow_cond_density = 0.964 mS_per_cm2 (SRC: Set with param_overrides, certainty 0)
+        BioParameter: neuron_k_slow_cond_density = 0.45833751019872582 mS_per_cm2 (SRC: BlindGuess, certainty 0.1)
+        BioParameter: k_slow_erev = -60 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: muscle_k_slow_erev = -83 mV (SRC: Set with param_overrides, certainty 0)
+        BioParameter: neuron_k_fast_cond_density = 0.042711643917483308 mS_per_cm2 (SRC: BlindGuess, certainty 0.1)
+        BioParameter: k_fast_erev = -70 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: muscle_ca_boyle_cond_density = 0.284 mS_per_cm2 (SRC: Set with param_overrides, certainty 0)
+        BioParameter: neuron_ca_boyle_cond_density = 1.812775772264702 mS_per_cm2 (SRC: BlindGuess, certainty 0.1)
+        BioParameter: ca_boyle_erev = 10 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: muscle_ca_boyle_erev = 36 mV (SRC: Set with param_overrides, certainty 0)
+        BioParameter: ca_conc_decay_time = 13.811870945509265 ms (SRC: BlindGuess, certainty 0.1)
+        BioParameter: ca_conc_rho = 0.000238919 mol_per_m_per_A_per_s (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_neuron_exc_syn_conductance = 0.49 nS (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_muscle_exc_syn_conductance = 0.10 nS (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_neuron_exc_syn_delta = 5 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_neuron_exc_syn_vth = 00 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_neuron_exc_syn_erev = -10 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_neuron_exc_syn_k = 0.5per_ms (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_muscle_exc_syn_weight = 1 (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_muscle_exc_syn_delta = 19 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_muscle_exc_syn_vth = 27 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_muscle_exc_syn_erev = 37 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_muscle_exc_syn_k = 1.205per_ms (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_muscle_exc_syn_sigma = 0.5 per_mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_muscle_exc_syn_mu = 5 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_neuron_inh_syn_conductance = 0.29 nS (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_muscle_inh_syn_conductance = 1.29 nS (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_neuron_inh_syn_delta = 5 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_neuron_inh_syn_vth = 0 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_neuron_inh_syn_erev = -70 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_neuron_inh_syn_k = 0.015per_ms (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_muscle_inh_syn_delta = 5 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_muscle_inh_syn_vth = 0 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_muscle_inh_syn_erev = -50 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_muscle_inh_syn_k = 0.025per_ms (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_neuron_elec_syn_weight = 1 (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_neuron_elec_syn_gbase = 0.01252 nS (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_muscle_elec_syn_gbase = 0.00152 nS (SRC: BlindGuess, certainty 0.1)
+        BioParameter: muscle_to_muscle_elec_syn_gbase = 0 nS (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_motor_delayed_elec_syn_weight = 1 (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_motor_delayed_elec_syn_gbase = 0.01252 nS (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_motor_delayed_elec_syn_sigma = 0.4 (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_motor_delayed_elec_syn_mu = -30 (SRC: BlindGuess, certainty 0.1)
+        BioParameter: unphysiological_offset_current = 0pA (SRC: Testing TapWithdrawal, certainty 0)
+        BioParameter: unphysiological_offset_current_del = 0 ms (SRC: Testing TapWithdrawal, certainty 0)
+        BioParameter: unphysiological_offset_current_dur = 2000 ms (SRC: Testing TapWithdrawal, certainty 0)
+
+   
+    -->
+
+    <Target component="sim_c302_C2_BWM_Model" />
+
+    <!-- Include core NeuroML2 ComponentType definitions -->
+
+    <Include file="Cells.xml" />
+    <Include file="Networks.xml" />
+    <Include file="Simulation.xml" />
+    
+    <Include file="cell_C.xml" />
+    
+    <Include file="custom_muscle_components.xml" />
+    
+    <Include file="custom_synapses.xml" />
+    
+    <Include file="c302_C2_BWM_Model.nml" />
+
+    <!-- End of NeuroML2 content -->
+    
+
+    <Simulation id="sim_c302_C2_BWM_Model" length="1000ms" step="0.05ms" target="c302_C2_BWM_Model">
+
+        <Display id="neurons" title="c302_C2_BWM_Model: Membrane potential of a number of neurons" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-60" ymax="25">
+            
+            <Line id="DB2" quantity="DB2/0/GenericNeuronCell/v" scale="1mV" color="#f87100" timeScale="1ms" />
+            <Line id="DD2" quantity="DD2/0/GenericNeuronCell/v" scale="1mV" color="#ac15c4" timeScale="1ms" />
+            
+        </Display>
+      
+        <Display id="muscles" title="c302_C2_BWM_Model: Membrane potential of a number of muscles" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-60" ymax="25">
+            
+            <Line id="MDL12" quantity="MDL12/0/GenericMuscleCell/v" scale="1mV" color="#58a09e" timeScale="1ms" />
+
+        </Display>
+      
+        <Display id="activity_neurons" title="c302_C2_BWM_Model: Activity of a number of neurons" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-0.1" ymax="1.1">
+            
+            <Line id="DB2" quantity="DB2/0/GenericNeuronCell/caConc" scale="1" color="#eaf195" timeScale="1ms" />
+            <Line id="DD2" quantity="DD2/0/GenericNeuronCell/caConc" scale="1" color="#3c00ca" timeScale="1ms" />
+
+        </Display>
+      
+        <Display id="activity_muscles" title="c302_C2_BWM_Model: Activity of a number of muscles" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-0.1" ymax="1.1">
+            
+            <Line id="MDL12" quantity="MDL12/0/GenericMuscleCell/caConc" scale="1" color="#262f1d" timeScale="1ms" />
+
+        </Display>
+
+        <OutputFile id="neurons_v" fileName="c302_C2_BWM_Model.dat">
+            <OutputColumn id="DB2_v" quantity="DB2/0/GenericNeuronCell/v"/>
+            <OutputColumn id="DD2_v" quantity="DD2/0/GenericNeuronCell/v"/>
+        </OutputFile>
+        
+        <OutputFile id="neurons_activity" fileName="c302_C2_BWM_Model.activity.dat">
+            <OutputColumn id="DB2_v" quantity="DB2/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="DD2_v" quantity="DD2/0/GenericNeuronCell/caConc"/>
+        </OutputFile>
+        <OutputFile id="muscles_v" fileName="c302_C2_BWM_Model.muscles.dat">
+            <OutputColumn id="MDL12_v" quantity="MDL12/0/GenericMuscleCell/v"/>
+        </OutputFile>
+        <OutputFile id="muscles_activity" fileName="c302_C2_BWM_Model.muscles.activity.dat">
+            <OutputColumn id="MDL12_v" quantity="MDL12/0/GenericMuscleCell/caConc"/>
+        </OutputFile>
+    </Simulation>
+
+
+</Lems>
