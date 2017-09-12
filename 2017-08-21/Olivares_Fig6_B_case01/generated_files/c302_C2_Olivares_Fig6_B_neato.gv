@@ -1,0 +1,36 @@
+digraph exp {
+graph [layout = neato];
+splines=true; sep="+25,25"; overlap=false; fontsize=12;
+node [fontsize=11]; AS4; AVAL; AVAR; AVBL; AVBR; DA3; DB3; VA4; VB3; VD4; 
+AVAL -> AVAR [style="dashed" minlen=2 arrowhead="none"];
+AVAL -> DA3 [style="dashed" minlen=2 arrowhead="none"];
+AVAL -> VA4 [style="dashed" minlen=2 arrowhead="none"];
+AVAR -> AVBL [style="dashed" minlen=2 arrowhead="none"];
+AVAR -> DA3 [style="dashed" minlen=2 arrowhead="none"];
+AVAR -> VA4 [style="dashed" minlen=2 arrowhead="none"];
+AVBL -> AVBR [style="dashed" minlen=2 arrowhead="none"];
+AVBL -> DB3 [style="dashed" minlen=2 arrowhead="none"];
+AVBR -> DB3 [style="dashed" minlen=2 arrowhead="none"];
+AVBR -> VB3 [style="dashed" minlen=2 arrowhead="none"];
+AVAL -> AVAR [minlen=2 color="black"];
+AVAL -> AVBL [minlen=2 color=red arrowhead="tee"];
+AVAL -> DA3 [minlen=2 color="black"];
+AVAL -> VA4 [minlen=2 color="black"];
+AVAR -> AVAL [minlen=2 color="black"];
+AVAR -> AVBL [minlen=2 color=red arrowhead="tee"];
+AVAR -> AVBR [minlen=2 color=red arrowhead="tee"];
+AVAR -> DA3 [minlen=2 color="black"];
+AVAR -> VA4 [minlen=2 color="black"];
+AVBL -> AVAL [minlen=2 color=red arrowhead="tee"];
+AVBL -> AVAR [minlen=2 color=red arrowhead="tee"];
+AVBL -> AVBR [minlen=2 color="black"];
+AVBR -> AVAL [minlen=2 color=red arrowhead="tee"];
+AVBR -> AVAR [minlen=2 color=red arrowhead="tee"];
+AVBR -> AVBL [minlen=2 color="black"];
+DA3 -> DB3 [minlen=2 color="black"];
+DB3 -> AS4 [minlen=2 color=red arrowhead="tee"];
+AS4 -> DA3 [minlen=2 color="black"];
+AS4 -> VD4 [minlen=2 color=red arrowhead="tee"];
+VD4 -> VA4 [minlen=2 color="black"];
+VD4 -> VB3 [minlen=2 color="black"];
+}
