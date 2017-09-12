@@ -1,5 +1,16 @@
 <img src="AS-DA-DB_subset2_conns.jpeg" width="380"><img src="AS-DA-DB_subset3_conns.jpeg" width="380">
 
+# Rationale of experiments
+
+Continued from experiments [2017-08-06](../2017-08-06/).
+
+We played with the current injected into AVB/AVA/AS and with the conductance of excitatory and inhibitory synapses.
+
+From case25 on, we observed oscillatory behavior.
+We got these output by removing the connections between AVA and AVB, besides changing the excitatory and inhibitory synapses.
+
+We want to point out that we could see a muscle wave propagating from the middle of body to the neck (MDR14 - MDR08) in case30 
+
 # Network:
 
 ### Neural Circuit:
@@ -17,19 +28,6 @@ See experiment
 - duration: 2000 ms
 - dt: 0.05
 - Injected current: see experiment
-
-
-# Description
-
-Continued from experiments [2017-08-06](../2017-08-06/).
-
-We played with the current injected into AVB/AVA/AS and with the conductance of excitatory and inhibitory synapses.
-
-From case25 on, we observed oscillatory behavior.
-We got these output by removing the connections between AVA and AVB, besides changing the excitatory and inhibitory synapses.
-
-We want to point out that we could see a muscle wave propagating from the middle of body to the neck (MDR14 - MDR08) in case30.
-
 
 # Result of experiments
 

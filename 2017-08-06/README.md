@@ -1,5 +1,13 @@
 <img src="AS-DA-DB_subset2_conns.jpeg" width="380">
 
+# Rationale of experiments
+
+Continued from experiments [2017-08-03/AS_DA_DB](../2017-08-03/AS_DA_DB/).
+
+We played with the current injected into AVB/AVA/AS and with the conductance of excitatory and inhibitory synapses.
+
+No oscillatory behavior yet.
+
 # Network:
 
 ### Neural Circuit:
@@ -17,16 +25,6 @@ See experiment
 - duration: 2000 ms
 - dt: 0.05
 - Injected current: see experiment
-
-
-# Description
-
-Continued from experiments [2017-08-03/AS_DA_DB](../2017-08-03/AS_DA_DB/).
-
-We played with the current injected into AVB/AVA/AS and with the conductance of excitatory and inhibitory synapses.
-
-No oscillatory behavior yet.
-
 
 # Result of experiments
 
