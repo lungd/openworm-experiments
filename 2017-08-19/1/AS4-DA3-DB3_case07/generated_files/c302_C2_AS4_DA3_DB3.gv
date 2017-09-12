@@ -1,0 +1,44 @@
+digraph exp {
+node [fontsize=11]; AS4; AVAL; AVAR; AVBL; AVBR; DA3; DB3; 
+AVAL -> AVAR [minlen=2 arrowhead="tee"];
+AVAL -> DA3 [minlen=2 arrowhead="tee"];
+AVAR -> AVAL [minlen=2 arrowhead="tee"];
+AVAR -> AVBL [minlen=2 arrowhead="tee"];
+AVAR -> DA3 [minlen=2 arrowhead="tee"];
+AVBL -> AVAR [minlen=2 arrowhead="tee"];
+AVBL -> AVBR [minlen=2 arrowhead="tee"];
+AVBL -> DB3 [minlen=2 arrowhead="tee"];
+AVBR -> AVBL [minlen=2 arrowhead="tee"];
+AVBR -> DB3 [minlen=2 arrowhead="tee"];
+DA3 -> AVAL [minlen=2 arrowhead="tee"];
+DA3 -> AVAR [minlen=2 arrowhead="tee"];
+DA3 -> AS4 [minlen=2 arrowhead="tee"];
+DB3 -> AVBL [minlen=2 arrowhead="tee"];
+DB3 -> AVBR [minlen=2 arrowhead="tee"];
+AS4 -> DA3 [minlen=2 arrowhead="tee"];
+AVAL -> AVAR [minlen=2];
+AVAL -> AVBL [minlen=2 color=red];
+AVAL -> DA3 [minlen=2];
+AVAL -> AS4 [minlen=2];
+AVAR -> AVAL [minlen=2];
+AVAR -> AVBL [minlen=2 color=red];
+AVAR -> AVBR [minlen=2 color=red];
+AVAR -> DA3 [minlen=2];
+AVAR -> DB3 [minlen=2];
+AVAR -> AS4 [minlen=2];
+AVBL -> AVAL [minlen=2 color=red];
+AVBL -> AVAR [minlen=2 color=red];
+AVBL -> AVBR [minlen=2];
+AVBL -> AS4 [minlen=2];
+AVBR -> AVAL [minlen=2 color=red];
+AVBR -> AVAR [minlen=2 color=red];
+AVBR -> AVBL [minlen=2];
+AVBR -> DA3 [minlen=2];
+AVBR -> AS4 [minlen=2];
+DA3 -> DB3 [minlen=2];
+DA3 -> AS4 [minlen=2];
+DB3 -> AS4 [minlen=2 color=red];
+AS4 -> DA3 [minlen=2];
+splines=true;sep="+25,25";overlap=false
+fontsize=12;
+}

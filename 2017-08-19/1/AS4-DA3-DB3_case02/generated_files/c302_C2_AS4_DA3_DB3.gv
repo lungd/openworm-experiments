@@ -1,0 +1,15 @@
+digraph exp {
+node [fontsize=11]; AS4; AVAL; AVAR; AVBL; AVBR; DA3; DB3; 
+AVBL -> DB3 [minlen=2 arrowhead="tee"];
+AVBR -> DB3 [minlen=2 arrowhead="tee"];
+DB3 -> AVBL [minlen=2 arrowhead="tee"];
+DB3 -> AVBR [minlen=2 arrowhead="tee"];
+AS4 -> DA3 [minlen=2 arrowhead="tee"];
+AVBL -> AS4 [minlen=2];
+AVBR -> AS4 [minlen=2];
+DA3 -> DB3 [minlen=2];
+DB3 -> AS4 [minlen=2 color=red];
+AS4 -> DA3 [minlen=2];
+splines=true;sep="+25,25";overlap=false
+fontsize=12;
+}

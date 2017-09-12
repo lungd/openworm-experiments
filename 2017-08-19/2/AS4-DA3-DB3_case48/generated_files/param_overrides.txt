@@ -1,0 +1,82 @@
+config_param_overrides = {
+    "conn_number_override": {}, 
+    "conn_polarity_override": {
+        "^AVB.-AVA.+$": "inh", 
+        "^AVA.-AVB.+$": "inh", 
+        "DB3-AS4": "inh"
+    }, 
+    "conns_to_include": [
+        "AVA.-AVB.*", 
+        "AVB.-AVA.*", 
+        "^AS\\d+-DA.+$", 
+        "^DA\\d+-DB\\d+$", 
+        "^DB\\d+-AS\\d+$", 
+        "AVA.-DA.*", 
+        "AVB.-DB.*", 
+        "DA\\d+-AVA.*", 
+        "DB\\d+-AVB.*", 
+        "DA\\d+-M(D|V)(L|R).*", 
+        "DB\\d+-M(D|V)(L|R).*", 
+        "M(D|V)(L|R)\\d+-M(D|V)(L|R).*", 
+        "AVA.-AS.*"
+    ], 
+    "input": [
+        [
+            "AVBL", 
+            "0ms", 
+            "1000ms", 
+            "1pA"
+        ], 
+        [
+            "AVBR", 
+            "0ms", 
+            "1000ms", 
+            "1pA"
+        ], 
+        [
+            "AVAL", 
+            "1000ms", 
+            "1000ms", 
+            "1pA"
+        ], 
+        [
+            "AVAR", 
+            "1000ms", 
+            "1000ms", 
+            "1pA"
+        ], 
+        [
+            "AVBL", 
+            "2000ms", 
+            "900ms", 
+            "1pA"
+        ], 
+        [
+            "AVBR", 
+            "2000ms", 
+            "900ms", 
+            "1pA"
+        ], 
+        [
+            "AS4", 
+            "0ms", 
+            "2900ms", 
+            "15.0pA"
+        ]
+    ]
+},
+param_overrides = {
+    "^AVB._to_AVA.\\_GJ$_elec_syn_gbase": "0.00052 nS", 
+    "^AVA._to_AVB.\\_GJ$_elec_syn_gbase": "0.00052 nS", 
+    "^AVA._to_AS\\d+$_exc_syn_conductance": "4.2 nS", 
+    "DA3_to_DB3_exc_syn_conductance": "2.6 nS", 
+    "^AVA._to_AVB.$_inh_syn_conductance": "4.7 nS", 
+    "neuron_to_neuron_exc_syn_conductance": "5.2 nS", 
+    "^AS\\d+_to_DA\\d+$_exc_syn_conductance": "2 nS", 
+    "^AS\\d+_to_DA\\d+\\_GJ$_elec_syn_gbase": "0.00012 nS", 
+    "^AVB._to_DB\\d+\\_GJ$_elec_syn_gbase": "0.01052 nS", 
+    "^AVA._to_DA\\d+\\_GJ$_elec_syn_gbase": "0.00052 nS", 
+    "^AVB._to_AS\\d+$_exc_syn_conductance": "2.2 nS", 
+    "^AVB._to_AVA.$_inh_syn_conductance": "2.2 nS", 
+    "neuron_to_neuron_inh_syn_conductance": "7.2 nS"
+},

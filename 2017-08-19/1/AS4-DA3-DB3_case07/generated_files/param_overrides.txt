@@ -1,0 +1,34 @@
+config_param_overrides = {
+    "conn_number_override": {}, 
+    "conn_polarity_override": {
+        "^AVB.-AVA.+$": "inh", 
+        "^AVA.-AVB.+$": "inh", 
+        "DB3-AS4": "inh"
+    }, 
+    "conns_to_include": [], 
+    "input": [
+        [
+            "AVAL", 
+            "50ms", 
+            "1900ms", 
+            "2pA"
+        ], 
+        [
+            "AVAR", 
+            "50ms", 
+            "1900ms", 
+            "2pA"
+        ], 
+        [
+            "AS4", 
+            "50ms", 
+            "1900ms", 
+            "15.0pA"
+        ]
+    ]
+},
+param_overrides = {
+    "neuron_to_neuron_inh_syn_conductance": "7.2 nS", 
+    "DA3_to_DB3_exc_syn_conductance": "3.0 nS", 
+    "neuron_to_neuron_exc_syn_conductance": "4.2 nS"
+},

@@ -1,0 +1,70 @@
+config_param_overrides = {
+    "conn_number_override": {}, 
+    "conn_polarity_override": {
+        "DB3-AS4": "inh"
+    }, 
+    "conns_to_include": [
+        "AVA.-DA.*", 
+        "^DA3-AVA.\\_GJ$", 
+        "AVB.-DB.*", 
+        "^DB3-AVB.\\_GJ$", 
+        "AS4-DA3", 
+        "DA3-DB3", 
+        "DB3-AS4"
+    ], 
+    "input": [
+        [
+            "AVBL", 
+            "0ms", 
+            "1000ms", 
+            "1pA"
+        ], 
+        [
+            "AVBR", 
+            "0ms", 
+            "1000ms", 
+            "1pA"
+        ], 
+        [
+            "AVAL", 
+            "1000ms", 
+            "1000ms", 
+            "1pA"
+        ], 
+        [
+            "AVAR", 
+            "1000ms", 
+            "1000ms", 
+            "1pA"
+        ], 
+        [
+            "AVBL", 
+            "2000ms", 
+            "900ms", 
+            "1pA"
+        ], 
+        [
+            "AVBR", 
+            "2000ms", 
+            "900ms", 
+            "1pA"
+        ], 
+        [
+            "AS4", 
+            "0ms", 
+            "2900ms", 
+            "15.0pA"
+        ]
+    ]
+},
+param_overrides = {
+    "^AVA._to_DA3$_exc_syn_conductance": "1 nS", 
+    "^DA3_to_AVA.\\_GJ$_elec_syn_gbase": "0.00052 nS", 
+    "^AVB._to_DB3$_exc_syn_conductance": "5 nS", 
+    "DB3_to_AS4_inh_syn_conductance": "4.2 nS", 
+    "AS4_to_DA3_exc_syn_conductance": "0.2 nS", 
+    "^DB3_to_AVB.\\_GJ$_elec_syn_gbase": "0.00052 nS", 
+    "^AVA._to_DA3\\_GJ$_elec_syn_gbase": "0.00052 nS", 
+    "DA3_to_DB3_exc_syn_conductance": "2.6 nS", 
+    "^AVB._to_DB3\\_GJ$_elec_syn_gbase": "0.00052 nS"
+},

@@ -1,0 +1,137 @@
+config_param_overrides = {
+    "conn_number_override": {}, 
+    "conn_polarity_override": {
+        "AVA.-AVB.": "inh", 
+        "^DB\\d+-AS\\d+": "inh", 
+        "AVB.-AVA.": "inh"
+    }, 
+    "conns_to_include": [
+        "AVA.-AVA.*", 
+        "AVA.-AVB.*", 
+        "AVB.-AVB.*", 
+        "AVB.-AVA.*", 
+        "AVA.-DA.*", 
+        "^DA\\d+-AVA.\\_GJ$", 
+        "AVB.-DB.*", 
+        "^DB\\d+-AVB.\\_GJ$", 
+        "^AS\\d+-DA\\d+$", 
+        "^DA\\d+-DB\\d+$", 
+        "^DB\\d+-AS\\d+$"
+    ], 
+    "input": [
+        [
+            "AVBL", 
+            "0ms", 
+            "1000ms", 
+            "5pA"
+        ], 
+        [
+            "AVBR", 
+            "0ms", 
+            "1000ms", 
+            "5pA"
+        ], 
+        [
+            "AVAL", 
+            "1000ms", 
+            "1000ms", 
+            "5pA"
+        ], 
+        [
+            "AVAR", 
+            "1000ms", 
+            "1000ms", 
+            "5pA"
+        ], 
+        [
+            "AVBL", 
+            "2000ms", 
+            "900ms", 
+            "5pA"
+        ], 
+        [
+            "AVBR", 
+            "2000ms", 
+            "900ms", 
+            "5pA"
+        ], 
+        [
+            "AS1", 
+            "0ms", 
+            "2900ms", 
+            "5.0pA"
+        ], 
+        [
+            "AS2", 
+            "0ms", 
+            "2900ms", 
+            "5.0pA"
+        ], 
+        [
+            "AS3", 
+            "0ms", 
+            "2900ms", 
+            "5.0pA"
+        ], 
+        [
+            "AS4", 
+            "0ms", 
+            "2900ms", 
+            "5.0pA"
+        ], 
+        [
+            "AS5", 
+            "0ms", 
+            "2900ms", 
+            "5.0pA"
+        ], 
+        [
+            "AS6", 
+            "0ms", 
+            "2900ms", 
+            "5.0pA"
+        ], 
+        [
+            "AS7", 
+            "0ms", 
+            "2900ms", 
+            "5.0pA"
+        ], 
+        [
+            "AS8", 
+            "0ms", 
+            "2900ms", 
+            "5.0pA"
+        ], 
+        [
+            "AS9", 
+            "0ms", 
+            "2900ms", 
+            "5.0pA"
+        ], 
+        [
+            "AS10", 
+            "0ms", 
+            "2900ms", 
+            "5.0pA"
+        ], 
+        [
+            "AS11", 
+            "0ms", 
+            "2900ms", 
+            "5.0pA"
+        ]
+    ]
+},
+param_overrides = {
+    "^DA\\d+_to_AVA.\\_GJ$_elec_syn_gbase": "0.00252 nS", 
+    "^AVA._to_AVB.$_inh_syn_conductance": "0.059 nS", 
+    "^DB\\d+_to_AVB.\\_GJ$_elec_syn_gbase": "0.00302 nS", 
+    "^AVB._to_AVA.$_inh_syn_conductance": "0.019 nS", 
+    "^DB\\d+_to_AS\\d+$_inh_syn_conductance": "1.4 nS", 
+    "^AVA._to_DA\\d+$_exc_syn_conductance": "0.01 nS", 
+    "^AVA._to_DA\\d+\\_GJ$_elec_syn_gbase": "0.00252 nS", 
+    "^AVB._to_DB\\d+\\_GJ$_elec_syn_gbase": "0.00302 nS", 
+    "^AS\\d+_to_DA\\d+$_exc_syn_conductance": "1.0 nS", 
+    "^DA\\d+_to_DB\\d+$_exc_syn_conductance": "1.4 nS"
+},

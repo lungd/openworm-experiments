@@ -1,0 +1,101 @@
+# Override default parameters with:
+## Connections to include:
+- AVA.-AVA.*
+- AVA.-AVB.*
+- AVB.-AVB.*
+- AVB.-AVA.*
+- AVA.-DA.*
+- ^DA\d+-AVA.\_GJ$
+- AVB.-DB.*
+- ^DB\d+-AVB.\_GJ$
+- ^AS\d+-DA\d+$
+- ^DA\d+-DB\d+$
+- ^DB\d+-AS\d+$
+
+## Change polarity of connections:
+- AVA.-AVB.: inh
+- ^DB\d+-AS\d+: inh
+- AVB.-AVA.: inh
+
+## Inject current:
+- Cell: AVBL
+    - delay: 0ms
+    - end: 1000ms
+    - amplitude: 5pA
+- Cell: AVBR
+    - delay: 0ms
+    - end: 1000ms
+    - amplitude: 5pA
+- Cell: AVAL
+    - delay: 1000ms
+    - end: 1000ms
+    - amplitude: 5pA
+- Cell: AVAR
+    - delay: 1000ms
+    - end: 1000ms
+    - amplitude: 5pA
+- Cell: AVBL
+    - delay: 2000ms
+    - end: 900ms
+    - amplitude: 5pA
+- Cell: AVBR
+    - delay: 2000ms
+    - end: 900ms
+    - amplitude: 5pA
+- Cell: AS1
+    - delay: 0ms
+    - end: 2900ms
+    - amplitude: 5.0pA
+- Cell: AS2
+    - delay: 0ms
+    - end: 2900ms
+    - amplitude: 5.0pA
+- Cell: AS3
+    - delay: 0ms
+    - end: 2900ms
+    - amplitude: 5.0pA
+- Cell: AS4
+    - delay: 0ms
+    - end: 2900ms
+    - amplitude: 5.0pA
+- Cell: AS5
+    - delay: 0ms
+    - end: 2900ms
+    - amplitude: 5.0pA
+- Cell: AS6
+    - delay: 0ms
+    - end: 2900ms
+    - amplitude: 5.0pA
+- Cell: AS7
+    - delay: 0ms
+    - end: 2900ms
+    - amplitude: 5.0pA
+- Cell: AS8
+    - delay: 0ms
+    - end: 2900ms
+    - amplitude: 5.0pA
+- Cell: AS9
+    - delay: 0ms
+    - end: 2900ms
+    - amplitude: 5.0pA
+- Cell: AS10
+    - delay: 0ms
+    - end: 2900ms
+    - amplitude: 5.0pA
+- Cell: AS11
+    - delay: 0ms
+    - end: 2900ms
+    - amplitude: 5.0pA
+
+## Other parameters:
+- ^DA\d+_to_AVA.\_GJ$_elec_syn_gbase: 0.00252 nS
+- ^AVA._to_AVB.$_inh_syn_conductance: 0.059 nS
+- ^DB\d+_to_AVB.\_GJ$_elec_syn_gbase: 0.00302 nS
+- ^AVB._to_AVA.$_inh_syn_conductance: 0.019 nS
+- ^DB\d+_to_AS\d+$_inh_syn_conductance: 1.4 nS
+- ^AVA._to_DA\d+$_exc_syn_conductance: 0.01 nS
+- ^AVA._to_DA\d+\_GJ$_elec_syn_gbase: 0.00252 nS
+- ^AVB._to_DB\d+\_GJ$_elec_syn_gbase: 0.00302 nS
+- ^AS\d+_to_DA\d+$_exc_syn_conductance: 1.0 nS
+- ^DA\d+_to_DB\d+$_exc_syn_conductance: 1.4 nS
+
